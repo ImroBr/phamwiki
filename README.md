@@ -5,6 +5,7 @@ Process Hazard Analysis Methodologies Wiki
 Assignment goal: 
 Create a Wiki-environment in where risk mitigation methodologies (Process Hazard Analyses) are described. Each methodology must contain a general descriptive overview at the minimum, while also delineating the differences between each methodology.
 
+Scope of the project is ISO 26262.
 
 Each particular wiki-page must contain the following headings:
 •	Method name
