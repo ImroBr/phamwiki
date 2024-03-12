@@ -1,9 +1,10 @@
-# phamwiki
-Process Hazard Analysis Methodologies Wiki
+# Process Hazard Analysis Meta-Analysis (phamwiki)
+In an evolving automotive industry, there must exist an equal or greater evolving need for safety. Many Proces Hazard Analyses (PHA) exist to mitigate risks, but may risk falling behind in a world where processes increase in complexity, creating unforeseen risks.
+As such, a need arises for a robust foundation and contrast of PHA methodologies. This project aims to add to this foundation in the form of online documentation for future use.
 
+Assignment goal
+Create a Wiki-environment in where risk mitigation methodologies (Process Hazard Analyses) are described. Each methodology must contain a general descriptive overview, while also delineating the differences between each methodology. Description of methodological steps of each approach and supplementation of examples and references are also prerequisites.
 
-Assignment goal: 
-Create a Wiki-environment in where risk mitigation methodologies (Process Hazard Analyses) are described. Each methodology must contain a general descriptive overview at the minimum, while also delineating the differences between each methodology.
 
 Scope of the project is ISO 26262.
 
