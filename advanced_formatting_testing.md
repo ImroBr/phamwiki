@@ -24,7 +24,8 @@ public static void main(String args[]) {
 ```
 
 ### Local (relative) linking
-[Readme.md](/readme.md)
+[Readme.md](/README.md)
+[testfile mark](/testfilemark)
 
 ### Mathematical expressions
 $\sqrt{3x-1}+(1+x)^2$
