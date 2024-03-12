@@ -24,7 +24,8 @@ public static void main(String args[]) {
 ```
 
 ### Local (relative) linking
-[Readme.md](/README.md)
+[Readme.md](/README.md) <!-- Case sensitive -->
+
 [testfile mark](/testfilemark)
 
 ### Mathematical expressions
