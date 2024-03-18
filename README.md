@@ -1,5 +1,5 @@
 # Process Hazard Analysis Meta-Analysis (phamwiki)
-In an evolving automotive industry, there must exist an equal or greater evolving need for safety. Many `Proces Hazard Analyses (PHA)` exist to mitigate risks, but may risk falling behind in a world where processes increase in complexity, creating unforeseen risks.
+In an evolving automotive industry, there must exist an equal or greater evolving need for safety. Many `Process Hazard Analyses (PHA)` exist to mitigate risks, but may risk falling behind in a world where processes increase in complexity, creating unforeseen risks.
 As such, a need arises for a robust foundation and contrast of PHA methodologies. This project aims to add to this foundation in the form of online documentation for future use.
 
 ## Assignment goal
@@ -10,7 +10,7 @@ Scope of the project is [**ISO 26262**](https://www.iso.org/standard/68383.html)
 
 ## Wiki page prerequisites
 Each particular wiki-page must contain the following headings:
-*	Method name [ ]
+*	Method name
 *	Method description
 *	Method steps
 *	Pro’s and con’s
