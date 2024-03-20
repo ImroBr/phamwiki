@@ -26,8 +26,20 @@ https://www.worldscientific.com/doi/abs/10.1142/S0218539394000362
 _STPA Handbook_ (20-04-2024)
 https://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf
 
+
 _A comprehensive safety engineering approach for software-intensive systems based on STPA_
 https://www.sciencedirect.com/science/article/pii/S1877705815038588
+
+
+_Model Based STPA for Assisted Driving Functions_ (20-04-2024)
+_IEEE, 22-12-2023_
+> **Abstract: **
+
+> In the context of safety analyses for driving functions of advanced driver assistance systems, weaknesses were identified in executing STPAs (System Theoretic Process Analysis) with a given tool. Transparency, interrelations between domain-specific work products and traceability issues made it difficult to work efficiently and prove compliance to relevant standards. An exploration activity investigated the feasibility and benefits of a model-based approach, incorporating the STPA into the existing system design framework. The RAAML (Risk Analysis and Assessment Mark-up Language) was used as a starting point. Additional model artefacts and dependencies were defined as needed. The activity resulted in a model based STPA environment prototype with diagram and table views as well as a preliminary method guideline. The selected approach avoids tool-breaks and an early evaluation indicates an easier justification of standard compliance.
+
+> [!IMPORTANT]
+> Access required
+https://ieeexplore.ieee.org/document/10350810/
 
 ## FTA (Fault-Tree Analysis)
 
