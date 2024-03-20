@@ -12,6 +12,7 @@ Specific variations of main hazard analysis method.
 First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location)
 
 ### Application
+Used for: (List)
 Most use cases in current day. Type(s) of application domains.
 
 ## Method steps
