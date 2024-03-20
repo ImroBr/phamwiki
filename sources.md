@@ -62,12 +62,16 @@ https://ieeexplore.ieee.org/document/8599114
 - [ ] _IEEE, 14-01-2021
 > **Abstract:** Recently, machine learning, particularly deep learning, is attracting much interest and is applied in various systems. Applications include not only entertainment systems, but safety-critical systems such as those found in autonomous vehicles. The reliability of such safety-critical systems must be guaranteed before they are released into society. However, methods for ensuring the safety of machine learning-based systems have yet to be established. In this paper, we propose a method for systematically evaluating the safety of such systems. The method consists of dataset-based safety analysis and statistical evaluation of testing results. In the safety analysis, we extend the widely used fault tree analysis to deal with datasets. In the testing, we use statistical estimation to guarantee recognition rates obtained in the safety analysis. We conducted experiments using a handwritten character recognition system implemented as a CNN to demonstrate the feasibility and effectiveness of our method.
 
+> [!IMPORTANT]
+> Access required
 https://ieeexplore.ieee.org/document/9320326
 
 ### _Ontology-Based Fault Tree Analysis Algorithms in a Fuzzy Environment for Autonomous Ships_ (20-03-2024)
 - [ ] _IEEE, 24-02-2021
 > **Abstract:** This study deals with fault tree analysis algorithms based on an ontology-based approach in a fuzzy environment. We extend fuzzy fault tree analysis by embedding ontology-based fault tree structures. The ontology-based approach allows conducting advanced analyses grounded on rich domain knowledge. Two approaches as the conventional approach and rule-based method are applied for the calculations of failure probability and analysis of the fault tree. Collision and grounding of an autonomous ship are investigated in two scenarios. The structural design, probability calculations, and sensitivity analyses prove that the proposed system is applicable, robust, accurate and reliable. Thus, the propounded ontology-based fault tree algorithms fill a gap in safety engineering by its capability of comprehensiveness.
 
+> [!IMPORTANT]
+> Access required
 https://ieeexplore.ieee.org/document/9361551
 
 ## ETA	(Event-Tree Analysis)
