@@ -3,9 +3,7 @@
 ## FMEA (Failure Mode and Effects Analysis)
 _Failure analysis of FMEA_ (20-04-2024)
 _IEEE, 12-05-2009_
-> **Abstract: **
-
-> Failure mode and effect analysis (FMEA) is a proactive tool developed to identify, evaluate and prevent product and/or process failures. The conventional FMEA procedure suffers from inadequate definitions for some steps, high uncertainty, and even decision making failures throughout the procedure. The effectiveness of an FMEA can be significantly improved by identifying potential pitfalls, and raising awareness of potential problems. Applying a strategy that utilizes controls and rules can efficiently mitigate, or even avoid, all known possible harmful effects. This article proposes proven solutions that support the entire end-to-end FMEA sequence of activities (from the point of initiation of the analysis - Failure Modes identification - up to its culmination - evaluation of the effectiveness of the procedure), and the remedies proposed, in reducing risk.
+> **Abstract: ** Failure mode and effect analysis (FMEA) is a proactive tool developed to identify, evaluate and prevent product and/or process failures. The conventional FMEA procedure suffers from inadequate definitions for some steps, high uncertainty, and even decision making failures throughout the procedure. The effectiveness of an FMEA can be significantly improved by identifying potential pitfalls, and raising awareness of potential problems. Applying a strategy that utilizes controls and rules can efficiently mitigate, or even avoid, all known possible harmful effects. This article proposes proven solutions that support the entire end-to-end FMEA sequence of activities (from the point of initiation of the analysis - Failure Modes identification - up to its culmination - evaluation of the effectiveness of the procedure), and the remedies proposed, in reducing risk.
 
 > [!IMPORTANT]
 > Access required
@@ -14,9 +12,7 @@ https://ieeexplore.ieee.org/abstract/document/4914700
 
 _A STATE-OF-THE-ART REVIEW OF FMEA/FMECA_ (20-04-2024)
 _World Scientific, 05-10-1994_
-> **Abstract: **
-
-> The Failure Mode and Effects Analysis (FMEA) documents single failures of a system, by identifying the failure modes, and the causes and effects of each potential failure mode on system service and defining appropriate detection procedures and corrective actions. When extended by Criticality Analysis procedure (CA) for failure modes classification, it is known as Failure Mode Effects and Criticality Analysis (FMECA). The present paper presents a literature review of FME(C)A, covering the following aspects: description and review of the basic principles of FME(C)A, types, enhancement of the method, automation and available computer codes, combination with other techniques and specific applications. We conclude with a discussion of various issues raised as a result of the review.
+> **Abstract: ** The Failure Mode and Effects Analysis (FMEA) documents single failures of a system, by identifying the failure modes, and the causes and effects of each potential failure mode on system service and defining appropriate detection procedures and corrective actions. When extended by Criticality Analysis procedure (CA) for failure modes classification, it is known as Failure Mode Effects and Criticality Analysis (FMECA). The present paper presents a literature review of FME(C)A, covering the following aspects: description and review of the basic principles of FME(C)A, types, enhancement of the method, automation and available computer codes, combination with other techniques and specific applications. We conclude with a discussion of various issues raised as a result of the review.
 
 > [!IMPORTANT]
 > Access required
@@ -33,13 +29,28 @@ https://www.sciencedirect.com/science/article/pii/S1877705815038588
 
 _Model Based STPA for Assisted Driving Functions_ (20-04-2024)
 _IEEE, 22-12-2023_
-> **Abstract: **
-
-> In the context of safety analyses for driving functions of advanced driver assistance systems, weaknesses were identified in executing STPAs (System Theoretic Process Analysis) with a given tool. Transparency, interrelations between domain-specific work products and traceability issues made it difficult to work efficiently and prove compliance to relevant standards. An exploration activity investigated the feasibility and benefits of a model-based approach, incorporating the STPA into the existing system design framework. The RAAML (Risk Analysis and Assessment Mark-up Language) was used as a starting point. Additional model artefacts and dependencies were defined as needed. The activity resulted in a model based STPA environment prototype with diagram and table views as well as a preliminary method guideline. The selected approach avoids tool-breaks and an early evaluation indicates an easier justification of standard compliance.
+> **Abstract: ** In the context of safety analyses for driving functions of advanced driver assistance systems, weaknesses were identified in executing STPAs (System Theoretic Process Analysis) with a given tool. Transparency, interrelations between domain-specific work products and traceability issues made it difficult to work efficiently and prove compliance to relevant standards. An exploration activity investigated the feasibility and benefits of a model-based approach, incorporating the STPA into the existing system design framework. The RAAML (Risk Analysis and Assessment Mark-up Language) was used as a starting point. Additional model artefacts and dependencies were defined as needed. The activity resulted in a model based STPA environment prototype with diagram and table views as well as a preliminary method guideline. The selected approach avoids tool-breaks and an early evaluation indicates an easier justification of standard compliance.
 
 > [!IMPORTANT]
 > Access required
 https://ieeexplore.ieee.org/document/10350810/
+
+
+_Algorithms Development for Automating the Execution of Safety Guided Test Scenarios in Automated Vehicles Based on STPA_ (20-04-2024)
+_IEEE, 19-12-2022_
+> **Abstract:** To achieve a high level of safety in a self-driving car, an almost infinite number of scenarios need to be tested, and a lot of time for testing to complete such level for safety. Automate execution for critical safety scenarios test is researched to achieve the goal that will significantly reduce total time of safety or safety guided testing with the STPA based test scenarios, including both functional safety(FUSA) and safety of the intended functionality(SOTIF). The execution for safety guided the test scenarios is aimed to virtual test platform and real world test platform. The algorithms for the automation are analyzed and explored in this paper. With these algorithms it will be possible to facilitate the test execution activities in an automated fashion.
+
+> [!IMPORTANT]
+> Access required
+https://ieeexplore.ieee.org/document/10071296
+
+
+_Safety analysis of wheel brake system based on STAMP/STPA and Monte Carlo simulation_ (20-04-2024)
+_IEEE, 12-2018_
+> **Abstract:** The wheel brake system safety is a complex problem which refers to its technical state, operating environment, human factors, etc., in aircraft landing taxiing process. Usually, professors consider system safety with traditional probability techniques based on the linear chain of events. However, it could not comprehensively analyze system safety problems, especially in operating environment, interaction of subsystems, and human factors. Thus, we consider system safety as a control problem based on the system-theoretic accident model, the processes (STAMP) model and the system theoretic process analysis (STPA) technique to compensate the deficiency of traditional techniques. Meanwhile, system safety simulation is considered as system control simulation, and Monte Carlo methods are used which consider the range of uncertain parameters and operation deviation to quantitatively study system safety influence factors in control simulation. Firstly, we construct the STAMP model and STPA feedback control loop of the wheel brake system based on the system functional requirement. Then four unsafe control actions are identified, and causes of them are analyzed. Finally, we construct the Monte Carlo simulation model to analyze different scenarios under disturbance. The results provide a basis for choosing corresponding process model variables in constructing the context table and show that appropriate brake strategies could prevent hazards in aircraft landing taxiing.
+
+https://ieeexplore.ieee.org/document/8599114
+
 
 ## FTA (Fault-Tree Analysis)
 
