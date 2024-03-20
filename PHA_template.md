@@ -32,6 +32,8 @@ Specific formulas, symbols and/or terminology
 
 ### Used terminology
 
+## See also
+
 ## References
 
 
