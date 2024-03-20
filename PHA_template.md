@@ -8,14 +8,17 @@ Abbreviation and full name.
 ### Sybtypes
 Specific variations of main hazard analysis method.
 
-### Origin
+### History
 First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location)
 
 ### Application
+Used for: (List)
 Most use cases in current day. Type(s) of application domains.
 
 ## Method steps
+ 
 Specific formulas, symbols and/or terminology
+
 
 ### Logical chronological steps
 
