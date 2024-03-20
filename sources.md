@@ -3,9 +3,10 @@
 ## FMEA (Failure Mode and Effects Analysis)
 _Failure analysis of FMEA_
 _IEEE, 12-05-2009_
+
 '''
-**Abstract:**
-Failure mode and effect analysis (FMEA) is a proactive tool developed to identify, evaluate and prevent product and/or process failures. The conventional FMEA procedure suffers from inadequate definitions for some steps, high uncertainty, and even decision making failures throughout the procedure. The effectiveness of an FMEA can be significantly improved by identifying potential pitfalls, and raising awareness of potential problems. Applying a strategy that utilizes controls and rules can efficiently mitigate, or even avoid, all known possible harmful effects. This article proposes proven solutions that support the entire end-to-end FMEA sequence of activities (from the point of initiation of the analysis - Failure Modes identification - up to its culmination - evaluation of the effectiveness of the procedure), and the remedies proposed, in reducing risk.
+> **Abstract:**
+> Failure mode and effect analysis (FMEA) is a proactive tool developed to identify, evaluate and prevent product and/or process failures. The conventional FMEA procedure suffers from inadequate definitions for some steps, high uncertainty, and even decision making failures throughout the procedure. The effectiveness of an FMEA can be significantly improved by identifying potential pitfalls, and raising awareness of potential problems. Applying a strategy that utilizes controls and rules can efficiently mitigate, or even avoid, all known possible harmful effects. This article proposes proven solutions that support the entire end-to-end FMEA sequence of activities (from the point of initiation of the analysis - Failure Modes identification - up to its culmination - evaluation of the effectiveness of the procedure), and the remedies proposed, in reducing risk.
 '''
 
 > [!IMPORTANT]
