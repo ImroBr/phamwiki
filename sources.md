@@ -126,6 +126,7 @@ https://ieeexplore.ieee.org/document/8050082
 
 
 | FMEA  | STPA | FTA | ETA | HAZOP |
+| - | - | - | - | - |
 | STPA  |  -   |     |     |       |
 | FTA   |      |  -  | XXX |       |
 | ETA   |      | XXX |  -  |       |
