@@ -110,5 +110,24 @@ https://ieeexplore.ieee.org/document/6740435
 
 ### _Integrating Fault Tree Analysis with System Theoretic Process Analysis_ (25-03-2024)
 - [ ] _IEEE, 05-04-2023_
-> **Abtract**: Abstract:
-Summary & ConclusionsWhen designing a digital instrumentation and control (DI&C) system, flaws in the architecture or software, failures of components, cyber-attacks, and human failures can lead to unintended effects on the system under control. There are several approaches for assessing potential hazards from inappropriate operation of a system, but that the best approach is likely a combination of assessment techniques [1]. The approach that showed the most potential was an integration of Systems Theoretic Process Analysis (STPA) with Fault Tree Analysis (FTA).While the STPA process is very effective at identifying things that could go wrong with the system, it does not have any tools to prioritize the Unsafe Control Actions (UCAs) to identify which UCAs are the most important. When a fault tree is available for assessing the risk of a system, the integration of FTA with STPA can be used to assign a risk rank to the UCAs. This allows the system designer to prioritize either design changes or control methods to address each UCA appropriately. This paper demonstrates one approach for integrating FTA and STPA for risk ranking the UCAs identified by the STPA.This integrated process allows the designer to focus on the most important aspects of the design when transitioning from conceptual design to preliminary design to detailed design. At each step, the design is informed by the STPA and FTA to make the final design safer and more reliable. The result is a final design that is complete, accurately specified, and has a low risk of emergent behaviors.
+> **Abstract:** Summary & ConclusionsWhen designing a digital instrumentation and control (DI&C) system, flaws in the architecture or software, failures of components, cyber-attacks, and human failures can lead to unintended effects on the system under control. There are several approaches for assessing potential hazards from inappropriate operation of a system, but that the best approach is likely a combination of assessment techniques [1]. The approach that showed the most potential was an integration of Systems Theoretic Process Analysis (STPA) with Fault Tree Analysis (FTA).While the STPA process is very effective at identifying things that could go wrong with the system, it does not have any tools to prioritize the Unsafe Control Actions (UCAs) to identify which UCAs are the most important. When a fault tree is available for assessing the risk of a system, the integration of FTA with STPA can be used to assign a risk rank to the UCAs. This allows the system designer to prioritize either design changes or control methods to address each UCA appropriately. This paper demonstrates one approach for integrating FTA and STPA for risk ranking the UCAs identified by the STPA.This integrated process allows the designer to focus on the most important aspects of the design when transitioning from conceptual design to preliminary design to detailed design. At each step, the design is informed by the STPA and FTA to make the final design safer and more reliable. The result is a final design that is complete, accurately specified, and has a low risk of emergent behaviors.
+
+> [!IMPORTANT]
+> Access required
+https://ieeexplore.ieee.org/document/10088187
+
+### _A reliability risk analysis method based on the fuzzy fault tree and fuzzy event tree_ (25-03-2024)
+- [ ] _IEEE, 28-09-2017_
+> **Abstract:** Based on the analyses systems of fuzzy fault tree and event tree, this paper proposes a method for a reliability risk analysis to mitigate problems associated with risk modeling of fuzzy and uncertain information. Risk event occurrence probabilities were obtained with fuzzy linguistic variables instead of exact values used in fault tree analysis. Quantitative analysis was applied to the fuzzy fault tree to determine the fuzzy importance degree of each basic event, which were then ranked and divided to distinguish the influence of these basic events. Based on this analysis, a fuzzy event tree was constructed and linguistic terms used to evaluate occurrence probabilities and outcomes. Mitigation measures were put forward for risk events and the expected risk magnitudes were calculated under the mitigation strategies. This ensured the mitigation measures were intuitive and accurate. Finally, an application example was illustrated to verify that the proposed method was effective and feasible.
+
+> [!IMPORTANT]
+> Access required
+https://ieeexplore.ieee.org/document/8050082
+
+
+| FMEA  | STPA | FTA | ETA | HAZOP |
+| STPA  |  -   |     |     |       |
+| FTA   |      |  -  | XXX |       |
+| ETA   |      | XXX |  -  |       |
+| HAZOP |      |     |     |   -   |
+
