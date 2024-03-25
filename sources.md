@@ -96,7 +96,13 @@ https://link.springer.com/article/10.1007/s11219-017-9396-0
 - [ ] _IEEE, 11-08-2011_
 > **Abstact:** Reliability design and reliability management have been fast developed for more than half a century. Failure Modes and Effects Analysis (FMEA), advanced Failure Modes and Effects Analysis (AFMEA) and Fault Tree Analysis (FTA) are three popular methods, which focus attention on finding the causes of functional and physical failure, rather than statistic mathematic methods. This paper compared and discussed the features of these three methods. After the discussion we proposed a scenario to incorporate FMEA and FTA, in order to solve some problems that cannot be managed by one method alone. With the comparison, further discussion of these three methods, and tentative incorporation of FMEA and FTA, we formed some new ideas of the possible development of reliability design.
 
-
+| Process hazard | Included  | 
+| ---:           |     :---  | 
+| FMEA           |     X     |   
+| STPA           |           |  
+| FTA            |     X     |    
+| ETA            |           |   
+| HAZOP          |           |  
 
 > [!IMPORTANT]
 > Access required
@@ -110,12 +116,13 @@ https://ieeexplore.ieee.org/document/5979423
 > Access required
 https://ieeexplore.ieee.org/document/6740435
 
-| FMEA  | STPA | FTA | ETA | HAZOP |
-| - | - | - | - | - |
-| STPA  |  -   | XXX |     |       |
-| FTA   | XXXX |  -  |     |       |
-| ETA   |      |     |  -  |       |
-| HAZOP |      |     |     |   -   |
+| Process hazard | Included  | 
+| ---:           |     :---  | 
+| FMEA           |    X      |   
+| STPA           |           |  
+| FTA            |    X      |    
+| ETA            |           |   
+| HAZOP          |           |  
 
 ### _Integrating Fault Tree Analysis with System Theoretic Process Analysis_ (25-03-2024)
 - [ ] _IEEE, 05-04-2023_
@@ -125,12 +132,13 @@ https://ieeexplore.ieee.org/document/6740435
 > Access required
 https://ieeexplore.ieee.org/document/10088187
 
-| FMEA  | STPA | FTA | ETA | HAZOP |
-| - | - | - | - | - |
-| STPA  |  -   | XXX |     |       |
-| FTA   | XXXX |  -  |     |       |
-| ETA   |      |     |  -  |       |
-| HAZOP |      |     |     |   -   |
+| Process hazard | Included  | 
+| ---:           |     :---  | 
+| FMEA           |           |   
+| STPA           |   X       |  
+| FTA            |   X       |    
+| ETA            |           |   
+| HAZOP          |           |  
 
 ### _A reliability risk analysis method based on the fuzzy fault tree and fuzzy event tree_ (25-03-2024)
 - [ ] _IEEE, 28-09-2017_
@@ -140,18 +148,11 @@ https://ieeexplore.ieee.org/document/10088187
 > Access required
 https://ieeexplore.ieee.org/document/8050082
 
+| Process hazard | Included  | 
+| ---:           |     :---  | 
+| FMEA           |           |   
+| STPA           |           |  
+| FTA            |   X       |    
+| ETA            |   X       |   
+| HAZOP          |           |  
 
-| FMEA  | STPA | FTA | ETA | HAZOP |
-| - | - | - | - | - |
-| STPA  |  -   |     |     |       |
-| FTA   |      |  -  | XXX |       |
-| ETA   |      | XXX |  -  |       |
-| HAZOP |      |     |     |   -   |
-
-| -  | FMEA | STPA | FTA | ETA | HAZOP |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| FMEA  |  -   |  |     |       |  |
-| STPA  |      | - |     |       |  |
-| FTA   |      |     |  -  |       |  |
-| ETA   |      |     |     |   -   |  |
-| HAZOP |      |     |     |       | - |
