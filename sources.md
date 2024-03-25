@@ -84,11 +84,26 @@ https://ieeexplore.ieee.org/document/9361551
 
 ## ETA	(Event-Tree Analysis)
 
+### _Event-tree analysis using binary decision diagrams_ (25-03-2024)
+- [ ] _IEEE, 02-06-2000_
+> **Abstract:** This paper is concerned with ETA (event-tree analysis) where the branch point event causes are defined using fault trees. Attention is on the nontrivial situation where there are dependencies amongst the branch point events. The dependencies are due to component-failures in more than one of the fault trees. In these situations the analysis methods based on traditional FTA (fault-tree analysis) are inaccurate and inefficient. The inaccuracies are not consistent across the outcome events. If frequency predictions calculated in this way are then used in a risk assessment then the relative risks would be distorted and could lead to resources being used inappropriately to reduce the overall risk. A new approach using BDD (binary decision diagram) is described which addresses these deficiencies.
 
-## Cross-Analysis
+> [!IMPORTANT]
+> Access required
+https://ieeexplore.ieee.org/document/877343
+
+## Cross-Analysis 
 ### _Comparison of the FMEA and STPA safety analysis methods-a case study_ (20-03-2024)
 - [x] _Springer, 04-12-2017_
 > **Abstract:** As our society becomes more and more dependent on IT systems, failures of these systems can harm more and more people and organizations. Diligently performing risk and hazard analysis helps to minimize the potential harm of IT system failures on the society and increases the probability of their undisturbed operation. Risk and hazard analysis is an important activity for the development and operation of critical software intensive systems, but the increased complexity and size puts additional requirements on the effectiveness of risk and hazard analysis methods. This paper presents a qualitative comparison of two hazard analysis methods, failure mode and effect analysis (FMEA) and system theoretic process analysis (STPA), using case study research methodology. Both methods have been applied on the same forward collision avoidance system to compare the effectiveness of the methods and to investigate what are the main differences between them. Furthermore, this study also evaluates the analysis process of both methods by using a qualitative criteria derived from the technology acceptance model (TAM). The results of the FMEA analysis were compared to the results of the STPA analysis, which were presented in a previous study. Both analyses were conducted on the same forward collision avoidance system. The comparison shows that FMEA and STPA deliver similar analysis results.
+
+| Process hazard | Included  | 
+| ---:           |     :---  | 
+| FMEA           |    X      |   
+| STPA           |    X      |  
+| FTA            |           |    
+| ETA            |           |   
+| HAZOP          |           |  
 
 https://link.springer.com/article/10.1007/s11219-017-9396-0
 
