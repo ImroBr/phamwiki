@@ -58,8 +58,16 @@ https://ieeexplore.ieee.org/document/8599114
 
 ## FTA (Fault-Tree Analysis)
 
+### _Application of fuzzy fault tree analysis in the fault diagnosis for automobile engine system_ (25-03-2024)
+- [ ] _IEEE, 22-03-2018_
+> **Abstract:** Fuzzy Fault tree analysis is one of important means for analysis of reliability and safety and fault diagnosis of the system. It features a strong logical and visual image. It is a reliable analysis method for both qualitative and quantitative analysis of the typical fault of a system and thus provides a theoretical basis for fault analysis processing and system design. This paper presents a fault tree analysis used in the analysis of fault mode for automobile engine system, builds the fault tree of common fault mode. Through the qualitative and quantitative analysis of fault tree, the causal relationship between the faults can be fully reflected, and the combination of the common fault mode for the system can be obtained. It can provide powerful technical support and decision basis for maintenance staff to improve the integrity of fault analysis, the accuracy of fault location and the timeliness of fault exclusion. 
+
+> [!IMPORTANT]
+> Access required
+https://ieeexplore.ieee.org/document/8321547
+
 ### _Dataset Fault Tree Analysis for Systematic Evaluation of Machine Learning Systems_ (20-03-2024)
-- [ ] _IEEE, 14-01-2021
+- [ ] _IEEE, 14-01-2021_
 > **Abstract:** Recently, machine learning, particularly deep learning, is attracting much interest and is applied in various systems. Applications include not only entertainment systems, but safety-critical systems such as those found in autonomous vehicles. The reliability of such safety-critical systems must be guaranteed before they are released into society. However, methods for ensuring the safety of machine learning-based systems have yet to be established. In this paper, we propose a method for systematically evaluating the safety of such systems. The method consists of dataset-based safety analysis and statistical evaluation of testing results. In the safety analysis, we extend the widely used fault tree analysis to deal with datasets. In the testing, we use statistical estimation to guarantee recognition rates obtained in the safety analysis. We conducted experiments using a handwritten character recognition system implemented as a CNN to demonstrate the feasibility and effectiveness of our method.
 
 > [!IMPORTANT]
@@ -67,7 +75,7 @@ https://ieeexplore.ieee.org/document/8599114
 https://ieeexplore.ieee.org/document/9320326
 
 ### _Ontology-Based Fault Tree Analysis Algorithms in a Fuzzy Environment for Autonomous Ships_ (20-03-2024)
-- [ ] _IEEE, 24-02-2021
+- [ ] _IEEE, 24-02-2021_
 > **Abstract:** This study deals with fault tree analysis algorithms based on an ontology-based approach in a fuzzy environment. We extend fuzzy fault tree analysis by embedding ontology-based fault tree structures. The ontology-based approach allows conducting advanced analyses grounded on rich domain knowledge. Two approaches as the conventional approach and rule-based method are applied for the calculations of failure probability and analysis of the fault tree. Collision and grounding of an autonomous ship are investigated in two scenarios. The structural design, probability calculations, and sensitivity analyses prove that the proposed system is applicable, robust, accurate and reliable. Thus, the propounded ontology-based fault tree algorithms fill a gap in safety engineering by its capability of comprehensiveness.
 
 > [!IMPORTANT]
@@ -95,9 +103,12 @@ https://ieeexplore.ieee.org/document/5979423
 ### _A combined analysis method of FMEA and FTA for improving the safety analysis quality of safety-critical software_ (25-03-2024)
 - [ ] _IEEE, 17-02-2014_
 > **Abstract:** Software safety analysis methods are used broadly in safety-critical systems to secure software safety and to recognize potential errors during software development, particularly at the early stage. FMEA and FTA are two traditional safety analysis methods, both of which provide a complementary way of identifying errors and tracking their possible influences. They have already been widely adopted in safety-critical industries. However, the effectiveness of FMEA and FTA depends on a complete understanding of the software being analyzed. Unlike hardware safety analysis, software safety analysis is usually a process of iteration. It is more difficult to get a comprehensive understanding of the software being analyzed at the early stage of software life cycle. A combined analysis method of FMEA and FTA was presented in this paper, which could detect more potential errors of software at the early stage. An analysis process which can convert and verify between FMEA and FTA was created. A semi-auto analyzing tool was developed to carry the process. Comparison experiments were carried out to testify the effectiveness of this method, which showed that the combined method proposed by this paper achieved better results.
+
 > [!IMPORTANT]
 > Access required
 https://ieeexplore.ieee.org/document/6740435
 
-
-
+### _Integrating Fault Tree Analysis with System Theoretic Process Analysis_ (25-03-2024)
+- [ ] _IEEE, 05-04-2023_
+> **Abtract**: Abstract:
+Summary & ConclusionsWhen designing a digital instrumentation and control (DI&C) system, flaws in the architecture or software, failures of components, cyber-attacks, and human failures can lead to unintended effects on the system under control. There are several approaches for assessing potential hazards from inappropriate operation of a system, but that the best approach is likely a combination of assessment techniques [1]. The approach that showed the most potential was an integration of Systems Theoretic Process Analysis (STPA) with Fault Tree Analysis (FTA).While the STPA process is very effective at identifying things that could go wrong with the system, it does not have any tools to prioritize the Unsafe Control Actions (UCAs) to identify which UCAs are the most important. When a fault tree is available for assessing the risk of a system, the integration of FTA with STPA can be used to assign a risk rank to the UCAs. This allows the system designer to prioritize either design changes or control methods to address each UCA appropriately. This paper demonstrates one approach for integrating FTA and STPA for risk ranking the UCAs identified by the STPA.This integrated process allows the designer to focus on the most important aspects of the design when transitioning from conceptual design to preliminary design to detailed design. At each step, the design is informed by the STPA and FTA to make the final design safer and more reliable. The result is a final design that is complete, accurately specified, and has a low risk of emergent behaviors.
