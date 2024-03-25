@@ -96,6 +96,8 @@ https://link.springer.com/article/10.1007/s11219-017-9396-0
 - [ ] _IEEE, 11-08-2011_
 > **Abstact:** Reliability design and reliability management have been fast developed for more than half a century. Failure Modes and Effects Analysis (FMEA), advanced Failure Modes and Effects Analysis (AFMEA) and Fault Tree Analysis (FTA) are three popular methods, which focus attention on finding the causes of functional and physical failure, rather than statistic mathematic methods. This paper compared and discussed the features of these three methods. After the discussion we proposed a scenario to incorporate FMEA and FTA, in order to solve some problems that cannot be managed by one method alone. With the comparison, further discussion of these three methods, and tentative incorporation of FMEA and FTA, we formed some new ideas of the possible development of reliability design.
 
+
+
 > [!IMPORTANT]
 > Access required
 https://ieeexplore.ieee.org/document/5979423
@@ -108,13 +110,27 @@ https://ieeexplore.ieee.org/document/5979423
 > Access required
 https://ieeexplore.ieee.org/document/6740435
 
+| FMEA  | STPA | FTA | ETA | HAZOP |
+| - | - | - | - | - |
+| STPA  |  -   | XXX |     |       |
+| FTA   | XXXX |  -  |     |       |
+| ETA   |      |     |  -  |       |
+| HAZOP |      |     |     |   -   |
+
 ### _Integrating Fault Tree Analysis with System Theoretic Process Analysis_ (25-03-2024)
 - [ ] _IEEE, 05-04-2023_
-> **Abstract:** Summary & ConclusionsWhen designing a digital instrumentation and control (DI&C) system, flaws in the architecture or software, failures of components, cyber-attacks, and human failures can lead to unintended effects on the system under control. There are several approaches for assessing potential hazards from inappropriate operation of a system, but that the best approach is likely a combination of assessment techniques [1]. The approach that showed the most potential was an integration of Systems Theoretic Process Analysis (STPA) with Fault Tree Analysis (FTA).While the STPA process is very effective at identifying things that could go wrong with the system, it does not have any tools to prioritize the Unsafe Control Actions (UCAs) to identify which UCAs are the most important. When a fault tree is available for assessing the risk of a system, the integration of FTA with STPA can be used to assign a risk rank to the UCAs. This allows the system designer to prioritize either design changes or control methods to address each UCA appropriately. This paper demonstrates one approach for integrating FTA and STPA for risk ranking the UCAs identified by the STPA.This integrated process allows the designer to focus on the most important aspects of the design when transitioning from conceptual design to preliminary design to detailed design. At each step, the design is informed by the STPA and FTA to make the final design safer and more reliable. The result is a final design that is complete, accurately specified, and has a low risk of emergent behaviors.
+> **Abstract:** When designing a digital instrumentation and control (DI&C) system, flaws in the architecture or software, failures of components, cyber-attacks, and human failures can lead to unintended effects on the system under control. There are several approaches for assessing potential hazards from inappropriate operation of a system, but that the best approach is likely a combination of assessment techniques [1]. The approach that showed the most potential was an integration of Systems Theoretic Process Analysis (STPA) with Fault Tree Analysis (FTA).While the STPA process is very effective at identifying things that could go wrong with the system, it does not have any tools to prioritize the Unsafe Control Actions (UCAs) to identify which UCAs are the most important. When a fault tree is available for assessing the risk of a system, the integration of FTA with STPA can be used to assign a risk rank to the UCAs. This allows the system designer to prioritize either design changes or control methods to address each UCA appropriately. This paper demonstrates one approach for integrating FTA and STPA for risk ranking the UCAs identified by the STPA.This integrated process allows the designer to focus on the most important aspects of the design when transitioning from conceptual design to preliminary design to detailed design. At each step, the design is informed by the STPA and FTA to make the final design safer and more reliable. The result is a final design that is complete, accurately specified, and has a low risk of emergent behaviors.
 
 > [!IMPORTANT]
 > Access required
 https://ieeexplore.ieee.org/document/10088187
+
+| FMEA  | STPA | FTA | ETA | HAZOP |
+| - | - | - | - | - |
+| STPA  |  -   | XXX |     |       |
+| FTA   | XXXX |  -  |     |       |
+| ETA   |      |     |  -  |       |
+| HAZOP |      |     |     |   -   |
 
 ### _A reliability risk analysis method based on the fuzzy fault tree and fuzzy event tree_ (25-03-2024)
 - [ ] _IEEE, 28-09-2017_
@@ -132,3 +148,10 @@ https://ieeexplore.ieee.org/document/8050082
 | ETA   |      | XXX |  -  |       |
 | HAZOP |      |     |     |   -   |
 
+| -  | FMEA | STPA | FTA | ETA | HAZOP |
+| :***: | :***: | :***: | :***: | :***: | :***: |
+| FMEA  |  -   |  |     |       |  |
+| STPA  |      | - |     |       |  |
+| FTA   |      |     |  -  |       |  |
+| ETA   |      |     |     |   -   |  |
+| HAZOP |      |     |     |       | - |
