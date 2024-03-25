@@ -149,7 +149,7 @@ https://ieeexplore.ieee.org/document/8050082
 | HAZOP |      |     |     |   -   |
 
 | -  | FMEA | STPA | FTA | ETA | HAZOP |
-| :***: | :***: | :***: | :***: | :***: | :***: |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | FMEA  |  -   |  |     |       |  |
 | STPA  |      | - |     |       |  |
 | FTA   |      |     |  -  |       |  |
