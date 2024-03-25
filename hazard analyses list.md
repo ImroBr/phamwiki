@@ -3,10 +3,10 @@
 
 | Hazard Analysis | Google Hits | IEEE Hits |
 | --- | --- | --- |
-| FMEA | | |
-| STPA | | |
-| ETA | | |
-| HAZOP | | |
-| FTA | | |
+| `FMEA` | `1.030.000` | |
+| `STPA` | `21.200` | |
+| `ETA` | `135.000` | |
+| `HAZOP` | `226.000` | |
+| `FTA` | `779.000` | |
 | - | - | - |
 | Bowtie | | |
