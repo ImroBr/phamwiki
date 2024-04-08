@@ -5,7 +5,7 @@ This is an early document which serves as a blueprint for adding specific Hazard
 Abbreviation and full name. 
 
 ## Sybtypes
-Specific variations of main hazard analysis method.
+Specific variations or successions of main hazard analysis method.
 
 ## History
 First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location)
@@ -18,9 +18,7 @@ Used for: (List)\
 Most use cases in current day. Type(s) of application domains.
 
 ## Method steps
- 
 Specific formulas, symbols and/or terminology
-
 
 ### Logical chronological steps
 
@@ -28,11 +26,16 @@ Specific formulas, symbols and/or terminology
 * Theoretical example
 * Example of historical factual application
 
+## Things to avoid
+Common (theoretical or practival) mistakes
+
 ## Pros and cons
+List of advantages and disadvantages
 
 ## Additions
 
 ## Used terminology
+Glossary containing as many relevant and specific terms
 
 ## See also
 
