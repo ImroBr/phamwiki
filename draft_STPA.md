@@ -1,12 +1,15 @@
-# Hazard Analysis Template
-This is an early document which serves as a blueprint for adding specific Hazard Analysys Methodologies.
+_Draft_
+
+# System-Theoretic Process Analysis
+_This is an early document which serves as a blueprint for adding specific Hazard Analysys Methodologies._
 
 
 ## Introduction 
-Abbreviation and full name. 
+_Abbreviation and full name._
+System-Theoretic Process Analysis (SPTA) is fairly recent hazard analysis technique. This technique is generally applied 
 
 ### Sybtypes
-Specific variations of main hazard analysis method.
+_Specific variations of main hazard analysis method._
 
 ### History
 First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location)
@@ -17,7 +20,7 @@ Most use cases in current day. Type(s) of application domains.
 
 ## Method steps
  
-Specific formulas, symbols and/or terminology
+Specific formulas, symbols and/or terminology.
 
 
 ### Logical chronological steps
