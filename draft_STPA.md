@@ -28,7 +28,6 @@ Used for: (List)\
 Most use cases in current day. Type(s) of application domains.
 
 ## Method steps
- 
 Specific formulas, symbols and/or terminology.
 
 
@@ -71,7 +70,7 @@ System Boundary\
 System Hazards\
 System input\
 System output\
-System-Level\
+System-Level
 
 
 ## See also
