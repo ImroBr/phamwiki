@@ -6,19 +6,19 @@ _This is an early document which serves as a blueprint for adding specific Hazar
 
 ## Introduction 
 _Abbreviation and full name._
-System-Theoretic Process Analysis (SPTA) is fairly recent hazard analysis technique. This technique is generally used in larger, complex systems.\
+System-Theoretic Process Analysis (SPTA) is fairly recent hazard analysis technique. This technique is generally used in larger, complex systems. What delineates the STPA method from other conventional hazard analysis methods is the assumption that unsafe interactions between system components could occur, while none of those system may have failed. \
 Based on _System Theory_...
 
-## Sybtypes
+## Subtypes
 _Specific variations of main hazard analysis method._
 
 
 ## History
-_First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location) Abbreviation_ 
+_First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location) Abbreviation_ \
 In use after World War II.
 
 ## Underlying systems
-_Possible underlying system or system predecessor of current hazard analysis_
+_Possible underlying system or system predecessor of current hazard analysis_ \
 System Theory - \
 STAMP - System-Theoretic Accident and Processes
 
@@ -49,6 +49,12 @@ Specific formulas, symbols and/or terminology.
 
 
 ## Pros and cons
+Advantages of STPA over other hazard analysis: [p4]
+* Very complex systems can be analyzed
+* STPA can be utilized early in concept Analysis
+* STPA includes software and human operators in analysis to ensure all potential causal factors in Losses
+* STPA provides documentation of system functionality, which may be missing in other hazard analyses in the context of large and complex systems
+* Easy integration into the system engineering process and model-based system engineering
 
 
 ## Additions
@@ -74,9 +80,10 @@ System-Level
 
 
 ## See also
+For a more thorough description of the System-Theoretic Process Analysis method, see the [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf).
 
 ## References
-[STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf)
+
 
 
 

@@ -1,36 +1,41 @@
 # Hazard Analysis Template
-This is an early document which serves as a blueprint for adding specific Hazard Analysys Methodologies.
-
+This is an early document which serves as a blueprint for adding specific Hazard Analysis Methodologies.
 
 ## Introduction 
 Abbreviation and full name. 
 
-### Sybtypes
-Specific variations of main hazard analysis method.
+## Subtypes
+Specific variations or successions of main hazard analysis method.
 
-### History
+## History
 First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location)
 
-### Application
-Used for: (List)
+## Underlying systems
+Possible underlying system or system predecessor of current hazard analysis
+
+## Application
+Used for: (List)\
 Most use cases in current day. Type(s) of application domains.
 
 ## Method steps
- 
 Specific formulas, symbols and/or terminology
 
-
 ### Logical chronological steps
-
-## Pros and cons
 
 ## Example(s)
 * Theoretical example
 * Example of historical factual application
 
-## Additions
+## Things to avoid
+Common (theoretical or practival) mistakes
 
-### Used terminology
+## Pros and cons
+List of advantages and disadvantages
+
+## Additions/ Notes
+
+## Used terminology
+Glossary containing as many relevant and specific terms
 
 ## See also
 
