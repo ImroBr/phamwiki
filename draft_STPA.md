@@ -15,7 +15,7 @@ _Specific variations of main hazard analysis method._
 
 ## History
 _First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location) Abbreviation_ \
-In use after World War II.
+STPA is a analysis technique developed by [Nance Leveson](http://sunnyday.mit.edu/bio-serious.html) and [John P. Thomas](http://web.mit.edu/jthomas4/www/index.htm). It is based on System Theory.
 
 ## Underlying systems
 _Possible underlying system or system predecessor of current hazard analysis_ \
@@ -44,8 +44,11 @@ Specific formulas, symbols and/or terminology.
 
 
 ## Example(s)
-* Theoretical example
-* Example of historical factual application
+_Theoretical example_ 
+
+
+
+* _Example of historical factual application_
 
 
 ## Pros and cons
@@ -55,6 +58,10 @@ Advantages of STPA over other hazard analysis: [p4]
 * STPA includes software and human operators in analysis to ensure all potential causal factors in Losses
 * STPA provides documentation of system functionality, which may be missing in other hazard analyses in the context of large and complex systems
 * Easy integration into the system engineering process and model-based system engineering
+
+Disadvantages of STPA:
+* Lesser known analysis technique; few online resources
+
 
 
 ## Additions
@@ -69,9 +76,9 @@ Control Structure\
 Controlled Process\
 Controller\
 Environment\
-Hazards\
-Losses\
-System\
+Hazards: System state or set of conditions that, together with a particular set of worst-case environmental conditions, will lead to a loss. \
+Losses: One or more undesired, safety-critical undesired outcomes to stakeholder(s). It may include a loss of human life or human injury, property damage, environmental pollution, loss of mission, loss of reputation, loss or leak of sensitive information, or any other unacceptable loss. [p16] \
+System: Set of components that function together as a whole to achieve a desired goal. A system can contain subsystems, or itself be a subsystem. \
 System Boundary\
 System Hazards\
 System input\
