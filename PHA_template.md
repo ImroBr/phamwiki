@@ -4,14 +4,14 @@ This is an early document which serves as a blueprint for adding specific Hazard
 ## Introduction 
 Abbreviation and full name. 
 
-## Subtypes/ variations
-Specific variations or successions of main hazard analysis method.
-
 ## History
 First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location)
 
 ## Underlying systems
 Possible underlying system or system predecessor of current hazard analysis
+
+## Variations
+Specific variations or successions of main hazard analysis method.
 
 ## Application
 Used for: (List)\

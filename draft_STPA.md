@@ -9,20 +9,18 @@ _Abbreviation and full name._
 System-Theoretic Process Analysis (SPTA) is fairly recent hazard analysis technique. This technique is generally used in larger, complex systems. What delineates the STPA method from other conventional hazard analysis methods is the assumption that unsafe interactions between system components could occur, while none of those system may have failed. \
 Based on _System Theory_...
 
-## Subtypes
-_Specific variations of main hazard analysis method._
-STAMP
-
-
 ## History
 _First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location) Abbreviation_ \
-STPA is a analysis technique developed by [Nancy Leveson](http://sunnyday.mit.edu/bio-serious.html) and [John P. Thomas](http://web.mit.edu/jthomas4/www/index.htm). It is based on System Theory.
+STPA is a analysis technique developed by [Nancy Leveson](http://sunnyday.mit.edu/bio-serious.html) and [John P. Thomas](http://web.mit.edu/jthomas4/www/index.htm). It is founded upon _System-Theoretic Accident Model and Process_ (STAMP), which is in turn based on Sytems Theory.
 
 ## Underlying systems
 _Possible underlying system or system predecessor of current hazard analysis_ \
 System Theory - \
 STAMP - System-Theoretic Accident and Processes
 
+## Variations
+_Specific variations of main hazard analysis method._ \
+Causal Analysis based on Sytems Theory (CAST), and is a retroactive analysis method that examines an accident/ incident that has occured and identifies the causal factors involved. It is another analysis method based on STAMP. [p12-13] 
 
 ## Application
 Used for: (List)\
@@ -36,13 +34,26 @@ Specific formulas, symbols and/or terminology.
 ### 1. Scope
 * What type of loss categories are at play (human life, reputation, privacy, security, etc)
 * What is the system and its boundary?
-* 
+
 
 ### 2. Control Structure
 * Capturing functional relationships and interactions
+Factoring in (global) functional relationships and establishing points of control with downward arrows (control actions, and points of feedback with upward arrows.
+
+### 3. Identify Unsafe Control Actions (UCAs)
+Defining 
+
+[introduction to stpa video]
+[~13:00](https://youtu.be/2W-iqnPbhyc?t=776)
+* Not provided causes hazard
+* Providing causes hazard
+* Too early, too late, out of order
+* Stopped too soon, applies too long
 
 
-
+### 4. Identify Loss Scenario
+* def
+Why did failure occur? 
 
 ## Example(s)
 _Theoretical example_ 
@@ -74,7 +85,7 @@ Disadvantages of STPA:
 | Term | Definition |
 | - | - |
 | Constraints | Conditions or behaviors that need to be satisfied to prevent hazards (and ultimately prevent losses) [p20] |
-| Control Action | - |
+| Control Action | A directive issued by a controller to another subsystem |
 | Control Structure | A hierarchical control structure is a system model that is composed of feedback control loops. An effective control structure will enforce constraints on the behavior of the overall system. |
 | Controller | - |
 | Controlled Process | - |
@@ -82,6 +93,7 @@ Disadvantages of STPA:
 | Environment | - |
 | Hazards | System state or set of conditions that, together with a particular set of worst-case environmental conditions, will lead to a loss. |
 | Losses | One or more undesired, safety-critical outcomes to stakeholder(s). It may include a loss of human life or human injury, property damage, environmental pollution, loss of mission, loss of reputation, loss or leak of sensitive information, or any other unacceptable loss. [p16] |
+| Loss scenario | Describes the causal factors that can lead to the unsafe control actions and to hazards. [p42] |
 | System | Set of components that function together as a whole to achieve a desired goal. A system can contain subsystems, or itself be a subsystem. |
 | System Boundary | - |
 | System Hazards | - |
@@ -92,7 +104,7 @@ Disadvantages of STPA:
 
 
 ## See also
-For a more thorough description of the System-Theoretic Process Analysis method, see the [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf).
+For a more thorough description of the System-Theoretic Process Analysis method including examples and use-cases, see the [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf).
 
 ## References
 
