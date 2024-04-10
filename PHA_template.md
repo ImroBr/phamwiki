@@ -4,7 +4,7 @@ This is an early document which serves as a blueprint for adding specific Hazard
 ## Introduction 
 Abbreviation and full name. 
 
-## Subtypes
+## Subtypes/ variations
 Specific variations or successions of main hazard analysis method.
 
 ## History
