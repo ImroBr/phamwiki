@@ -71,26 +71,25 @@ Disadvantages of STPA:
 
 ## Used terminology
 
-| Constraints | Conditions or behaviors that need to be satisfied to prevent hazards (and ultimately prevent losses) [p20] |
+| Term | Definition |
 | - | - |
-| d | dd |
+| Constraints | Conditions or behaviors that need to be satisfied to prevent hazards (and ultimately prevent losses) [p20] |
+| Control Action | - |
+| Control Structure | A hierarchical control structure is a system model that is composed of feedback control loops. An effective control structure will enforce constraints on the behavior of the overall system. |
+| Controller | - |
+| Controlled Process | - |
+| Controller Constraint | Specifies the controller behaviors that need to be satisfied to prevent UCAs. [p41] |
+| Environment | - |
+| Hazards | System state or set of conditions that, together with a particular set of worst-case environmental conditions, will lead to a loss. |
+| Losses | One or more undesired, safety-critical outcomes to stakeholder(s). It may include a loss of human life or human injury, property damage, environmental pollution, loss of mission, loss of reputation, loss or leak of sensitive information, or any other unacceptable loss. [p16] |
+| System | Set of components that function together as a whole to achieve a desired goal. A system can contain subsystems, or itself be a subsystem. |
+| System Boundary | - |
+| System Hazards | - |
+| System input | - |
+| System output | - |
+| System-Level- | - |
+| Unsafe Control Action (UCA) | A control action that, in a particular context and worst-case environment, will lead to a hazard. |
 
-Constraints: Conditions or behaviors that need to be satisfied to prevent hazards (and ultimately prevent losses) [p20] \
-Control Action\
-Control Structure: A  A hierarchical control structure is a system model that is composed of feedback control loops. An effective control structure will enforce constraints on the behavior of the overall system. \
-Controlled Process\
-Controller\
-Controller Constraint: Specifies the controller behaviors that need to be satisfied to prevent UCAs. \
-Environment\
-Hazards: System state or set of conditions that, together with a particular set of worst-case environmental conditions, will lead to a loss. \
-Losses: One or more undesired, safety-critical outcomes to stakeholder(s). It may include a loss of human life or human injury, property damage, environmental pollution, loss of mission, loss of reputation, loss or leak of sensitive information, or any other unacceptable loss. [p16] \
-System: Set of components that function together as a whole to achieve a desired goal. A system can contain subsystems, or itself be a subsystem. \
-System Boundary\
-System Hazards\
-System input\
-System output\
-System-Level
-Unsafe Control Action (UCA): A control action that, in a particular context and worst-case environment, will lead to a hazard.
 
 ## See also
 For a more thorough description of the System-Theoretic Process Analysis method, see the [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf).
