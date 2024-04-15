@@ -20,8 +20,6 @@ Most use cases in current day. Type(s) of application domains.
 ## Method steps
 Specific formulas, symbols and/or terminology
 
-### Logical chronological steps
-
 ## Example(s)
 * Theoretical example
 * Example of historical factual application
