@@ -27,11 +27,16 @@ Used for: (List)\
 Most use cases in current day. Type(s) of application domains.
 
 ## Method steps
-Specific formulas, symbols and/or terminology.
+_Specific formulas, symbols and/or terminology. _
 
+The STPA method steps are defined in 4 parts, described below.
 
-## Logical chronological steps
 ### 1. Scope
+* What is the purpose of the analysis?
+  1. Identify losses
+  2. Identify system-level hazards
+  3. Identify system-level Constraints
+  4. Refine hazards (Optional)
 * What type of loss categories are at play (human life, reputation, privacy, security, etc)
 * What is the system and its boundary?
 
@@ -41,18 +46,25 @@ Specific formulas, symbols and/or terminology.
 Factoring in (global) functional relationships and establishing points of control with downward arrows (control actions, and points of feedback with upward arrows.
 
 ### 3. Identify Unsafe Control Actions (UCAs)
-Defining 
+In the flow of control actions and feedback, what unsafe control actions can occur?
 
+There are broadly 4 possible categorizations of unsafe control actions that can lead to a hazard or loss:
 [introduction to stpa video]
 [~13:00](https://youtu.be/2W-iqnPbhyc?t=776)
-* Not provided causes hazard
-* Providing causes hazard
-* Too early, too late, out of order
-* Stopped too soon, applies too long
+1. **Command not provided causes hazard** \
+ A control action that **should** have been provided but isn't, such as not sending a brake command when a collision is imminent;
+2. **Command providing causes hazard** \
+ A control action that has been provided, but **in a scenario wherein such action is unsafe**, such as sending a brake command when on a highway;
+3. **Command provided too early, too late, out of order** \
+ A control action that has been provided in a correct situation, but **offset in its timing**, such as sending a brake command seconds later than is warranted;
+4. **Stopped too soon, applies too long** \
+ A control action that has been provided in a correct situation and timing, but **too long or short in duration**
 
 
 ### 4. Identify Loss Scenario
-* def
+Two types of loss scenarios are to be considered, namely: [p43] \
+a. Why would unsafe Control Action(s) occur?
+b. Why would control action(s) be improperly executed?
 Why did failure occur? 
 
 ## Example(s)
