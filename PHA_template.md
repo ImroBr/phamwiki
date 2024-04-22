@@ -18,7 +18,7 @@ Used for: (List)\
 Most use cases in current day. Type(s) of application domains.
 
 ## Method steps
-Specific formulas, symbols and/or terminology
+Specific steps, formulas, symbols and/or terminology
 
 ## Example(s)
 * Theoretical example
