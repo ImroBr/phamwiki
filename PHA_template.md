@@ -25,7 +25,7 @@ Specific steps, formulas, symbols and/or terminology
 * Example of historical factual application
 
 ## Things to avoid
-Common (theoretical or practival) mistakes
+Common (theoretical or practical) mistakes
 
 ## Pros and cons
 List of advantages and disadvantages

@@ -4,7 +4,7 @@ _Draft_
 
 ## Introduction 
 [[Failure Mode and Effects Analysis (FMEA) - asq.org](https://asq.org/quality-resources/fmea)] \
-Failure Mode and Effect Analysis (FMEA) is a hazard analysis technique, used for identifying all possible failures in a manufacturing/ assembly process, product or service. Best implemented early in the design phase, the goal of FMEA if to eliminate or mitigate failures. Through the FMEA process, failures are identified and numerically categorized from the most undesired outcome.
+Failure Mode and Effect Analysis (FMEA) is a hazard analysis technique, used for identifying all possible failures in a manufacturing/ assembly process, product or service. Best implemented early in the design phase, the goal of FMEA if to eliminate or mitigate failures. Through the FMEA process, failures are identified and numerically prioritized starting from the least desired outcome.
 
 ## History
 _First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location)_ \
@@ -16,9 +16,10 @@ Possible underlying system or system predecessor of current hazard analysis
 ## Variations
 _Specific variations or successions of main hazard analysis method._ \
 FMECA (FME Criticality A) \
+In this variant, criticality is 
 DFMEA (Design FMEA) \
-AFMEA (Advanced FMEA) \
 PFMEA (Process FMEA) (https://safetyculture.com/topics/fmea/)
+AFMEA (Advanced FMEA) \
 
 ## Application
 Used for: (List)\
@@ -26,7 +27,7 @@ Most use cases in current day. Type(s) of application domains.
 
 ## Method steps
 _Specific steps, formulas, symbols and/or terminology_ \
-[1] \
+<sub>[1]</sub> \
 1. 
 
 ## Example(s)
@@ -58,9 +59,11 @@ Glossary containing as many relevant and specific terms
 | Indenture levens | - |
 | Local Effect | - |
 | Next higher level effect | - |
+| Occurrence | Signified as "O", occurrence  |
 | Probalility | - |
+| Process Control | Preventative or mitigating procedures, mechanisms or tests that attempt to prevent or curtail a failure before the the client is affected. |
 | Risk Priority Number (RPN) | - |
-| Severity | - |
+| Severity | Signified as "S", severity denoted the degree of negative impact of a potential failure, usually noted on a 1-10 scale, in which 10 is the most damaging and 1 is the most insignificant. |
 | - | - |
 | - | - |
 | - | - |
