@@ -28,8 +28,43 @@ AFMEA (Advanced FMEA) \
 
 ## Method steps
 _Specific steps, formulas, symbols and/or terminology_ \
-<sub>[1]</sub> \
-1. 
+
+### 1. Scope
+What is the goal of the process? Is it in the realm of concept design, system or service? Is there a desired level of detail and what are the boundaries? The result should be clear 
+
+### 2. Interdisciplinary team
+A team of experts specializing in fields pertaining to the project should be assembled. 
+
+### 3. Identify scope functions
+Utilizing flowcharts, attempt to encompass the purpose and desired expectation of the system, design, process or service. Use it with a verb followed by a noun. Where necessary, break the scope down into smaller parts, and identify the function of those parts.
+
+### 4. Define failure Modes
+For all identified functions, identify every way that function might fail. At this point, most of the FMEA worksheet can be filled in, save for the numerical rating.
+
+### 5. Determine failure severity
+For each identified failure, determine the the severity. Signified as "S", severity denoted the degree of negative impact of a potential failure. Noted as "S" on the FMEA sheet, severity is usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant.
+
+### 6. Determine potential root causes
+For each identified failure, identify all possible root causes. Utilize expertise and cause analysis tools to encompass as many causes possible, and add them to the FMEA sheet.
+
+### 7. Determine occurence rating
+For each identified failure, estimate the probability of the failure actually occurring. Occurence is noted on a 1-10 scale, in which 10 can be likened to inevitability and 1 to (extreme) unlikeliness.
+
+### 8. Determine process controls
+For each identified failure, put measures in place that prevent or maximally mitigate a failure from reaching a potential customer or the rest of the system. 
+
+### 9. Determine detection rating
+For each failure, determine the rate a process control can detect a failure, before the rest of the system or outside world (customer) are affected. Noted as "D" on hte FMEA worksheet, detection is usually between a 1-10 scale, in which 10 can be likened to a problem being certainly undetectable (or no process control present) and 1 is a certainty of detecting a problem.
+
+### 10. Calculate the Risk Priority Number (RPN)
+Multiply the S<sub>(everity)</sub>, O<sub>(ccurence)</sub> and D<sub>(etection)</sub> ratings into a Risk Priority Number. This number is the potential failure score for the corresponding failure, and can be used to prioritize relevance.
+
+### 11. Implement changes
+Assign actions that lower the RPN, by focusing on mitigating the underlying Severity, Occurence and Detention rating. These actions should be assigned to an expert with a corresponding completion date.
+
+### 12. Measure effectiveness and evaluate
+Measure the effectiveness of the assigned actions and log their progress.
+
 
 ## Example(s)
 * Theoretical example
