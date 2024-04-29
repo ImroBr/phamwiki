@@ -56,7 +56,15 @@ For each identified failure, put measures in place that prevent or maximally mit
 ### 9. Determine detection rating
 For each failure, determine the rate a process control can detect a failure, before the rest of the system or outside world (customer) are affected. Noted as "D" on hte FMEA worksheet, detection is usually between a 1-10 scale, in which 10 can be likened to a problem being certainly undetectable (or no process control present) and 1 is a certainty of detecting a problem.
 
-### 10. 
+### 10. Calculate the Risk Priority Number (RPN)
+Multiply the S<sub>(everity)</sub>, O<sub>(ccurence)</sub> and D<sub>(etection)</sub> ratings into a Risk Priority Number. This number is the potential failure score for the corresponding failure, and can be used to prioritize relevance.
+
+### 11. Implement changes
+Assign actions that lower the RPN, by focusing on mitigating the underlying Severity, Occurence and Detention rating. These actions should be assigned to an expert with a corresponding completion date.
+
+### 12. Measure effectiveness and evaluate
+Measure the effectiveness of the assigned actions and log their progress.
+
 
 ## Example(s)
 * Theoretical example
