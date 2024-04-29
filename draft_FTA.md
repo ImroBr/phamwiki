@@ -7,7 +7,6 @@ This is an early document which serves as a blueprint for adding specific Hazard
 Abbreviation and full name. 
 
 ## History
-First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location)
 Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Watson and A Mears, to evaluate the _Minuteman I Intercontinental Ballistic Missile_ for the U.S. Air Force. Since then, faul trees have gained in popularity as a failure analysis tool.
 
 ## Underlying systems
@@ -35,7 +34,10 @@ List of advantages and disadvantages
 
 ## Additions/ Notes
 ### Event symbols
-![fta image](images/FTA_basic_event.jpg)
+
+| Symbol | Meaning |
+| - | - |
+| ![FTA Basic Event](images/FTA_basic_event.jpg) | - |
 
 ## Used terminology
 Glossary containing as many relevant and specific terms
