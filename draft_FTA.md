@@ -3,7 +3,7 @@ _Draft_
 # Fault Tree Analysis (FTA)
 
 ## Introduction 
-Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate undesired state of a system. This is usually done visually resembling a flowchart, utilizing branches and specific logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
+Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate undesired state of a system. This is usually done visually resembling a flowchart diagram, utilizing branches with corresponding probabilities and specific logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
 * Providing clarity and logical foundation directly starting from a failure or otherwise underised state.
 * Diagnosing and mitigating the caus(es) of a top event.
 * A tool to assist in the design of a system, name to heop create (output/ lower level) requirement.
@@ -11,30 +11,61 @@ Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Startin
 * Substantiate compliance with system safety/ reliability requirements.
 
 ## History
-Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Watson and A Mears, to evaluate the _Minuteman I Intercontinental Ballistic Missile_ for the U.S. Air Force.<sup>[1](#references)</sup> Since then, fault trees have gained in popularity as a failure analysis tool.
+Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Watson and A Mears, to evaluate the _Minuteman I Intercontinental Ballistic Missile_ for the U.S. Air Force.<sup>[[1]](#references)</sup> Since then, fault trees have gained in popularity as a failure analysis tool.
 
 ## Underlying systems
-FTA is based on Reliability theory, Boolean algebra and probability theory. A very simple set of rules and symbols provides the mechanism for analyzing very complex systems, and complex relationships between hardware, software and humans. <sup>[1](#references)</sup>
+FTA is based on Reliability theory, Boolean algebra and probability theory. A very simple set of rules and symbols provides the mechanism for analyzing very complex systems, and complex relationships between hardware, software and humans. <sup>[[1]](#references)</sup>
 
 ## Variations
 Specific variations or successions of main hazard analysis method.
 
 ## Application
 Used for: (List) \
-Most use cases in current day. Type(s) of application domains.
+Most use cases in current day. Type(s) of application domains. 
 
-### Event symbols
+## Symbols
+
+### Event Symbols
 
 | Symbol | Meaning |
 | :---: | - |
-| ![FTA Basic Event](images/FTA_basic_event.jpg) | - | 
+| ![FTA Basic Event](images/FTA_basic_event.jpg) | Lowest-level event that cannot be broken down further | 
 | ![FTA Basic Event](images/FTA_conditioning_event.jpg) | - |
 | ![FTA Basic Event](images/FTA_initiating_event.jpg) | - |
 | ![FTA Basic Event](images/FTA_intermediate_event.jpg) | - |
 | ![FTA Basic Event](images/FTA_undeveloped_event.jpg) | - |
 
 ## Method steps
-Specific steps, formulas, symbols and/or terminology
+Following are steps one could take to apply the FTA method. It is largely based on the page of 
+
+### 1. Define undesired event
+Start by clearly and concisely describing the undesired event (top event). As this will be the basis for following steps, a specific and measurable definition is recommended. Clarifying factors for top event precision may include: <sup>[[3]](#references)
+* How much?
+* How long (duration)?
+* What is the safety impact?
+* What is the environmental impact?
+* What is the regulatory impact?
+
+### 2. Identify conributing events and factors
+Identify factors and events that might contribute to the most undesired (top level) event. These factors should fall into 2 categories: [basic events](#used-terminology) and [intermediate events](#used-terminology). \
+Where applicable, experts on the subject matter and/ or external (historal) records could be consulted to encapulate a full range of causal factors.
+
+### 3. Construct the fault Tree
+Construct a visual fault tree diagram using standard [gate symbols and event symbols](#symbols). The _top event_ should at the top, and any relations to that cause below it in a hierarchical fashion. Following this, basic events must end up at the bottom. \
+
+
+### 4. Gather failure data
+
+
+### 5. Perform the Analysis
+
+
+### 6. Interpret the results
+
+
+### 7. Implement improvements and monitor progress
+
+
 
 ## Example(s)
 * Theoretical example
@@ -44,7 +75,11 @@ Specific steps, formulas, symbols and/or terminology
 Common (theoretical or practical) mistakes.
 
 ## Pros and cons
-List of advantages and disadvantages
+## Limitations to FTA
+* The accuracy and effectiveness of FTA in analyzing relevant the causes of failure is heavily reliant on the expertise of the analysts <sup>[[2]](#references)</sup>
+* Large and complex systems require large and complex fault trees, which makes analysis time-consuming and challenging <sup>[[2]](#references)</sup>
+* One single top event cam be examined at a time <sup>[[2]](#references)</sup>
+* Data regarding failure and quality determines precision of calculated probabilities in a fault tree <sup>[[2]](#references)</sup>
 
 ## Additions/ Notes
 
@@ -54,18 +89,22 @@ Glossary containing as many relevant and specific terms
 | Term | Definition |
 | - | - |
 | Binary Decision Diagram | - |
+| Basic event | Events that cannot be broken down further into more fundamental composite parts, the lowest level in a fault tree. | 
 | Cut set | Combination of events causing the top event. |
 | Common cause | - |
+| Input event | - |
+| Intermediate event | Event between the top event and lower level (basic) event. Therefore, an intermediate event always causes 1 or more event(s) and itself is cause by preceding event. |
 | Logic gate | - |
 | Minimal Cut Sets (MCS) | In a cut set, if no event can be removed without failing to cause the top event. |
 | Root | Top event |
+| Top event | - |
 
 ## See also
 ### FTA Standards
 
 
 ## References
-<sup>[1]</sup> [Fault Tree Analysis – A History](https://web.archive.org/web/20110723124816/http://www.fault-tree.net/papers/ericson-fta-history.pdf)
-
-
+<sup>[1]</sup> [Fault Tree Analysis – A History](https://web.archive.org/web/20110723124816/http://www.fault-tree.net/papers/ericson-fta-history.pdf) \
+<sup>[2]</sup> [What is fault tree analysis (FTA)?](https://www.ibm.com/topics/fault-tree-analysis) \
+<sup>[3]</sup> [FTA | Fault Tree Analysis](https://quality-one.com/fta/) \
 
