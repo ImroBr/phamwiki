@@ -11,10 +11,10 @@ Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Startin
 * Substantiate compliance with system safety/ reliability requirements.
 
 ## History
-Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Watson and A Mears, to evaluate the _Minuteman I Intercontinental Ballistic Missile_ for the U.S. Air Force.<sup>[1](# References)</sup> Since then, fault trees have gained in popularity as a failure analysis tool.
+Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Watson and A Mears, to evaluate the _Minuteman I Intercontinental Ballistic Missile_ for the U.S. Air Force.<sup>[1](#references)</sup> Since then, fault trees have gained in popularity as a failure analysis tool.
 
 ## Underlying systems
-FTA is based on Reliability theory, Boolean algebra and probability theory. A very simple set of rules and symbols provides the mechanism for analyzing very complex systems, and complex relationships between hardware, software and humans. <sup>[1](# References)</sup>
+FTA is based on Reliability theory, Boolean algebra and probability theory. A very simple set of rules and symbols provides the mechanism for analyzing very complex systems, and complex relationships between hardware, software and humans. <sup>[1](#references)</sup>
 
 ## Variations
 Specific variations or successions of main hazard analysis method.
