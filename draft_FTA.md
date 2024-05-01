@@ -3,12 +3,13 @@ _Draft_
 # Fault Tree Analysis (FTA)
 
 ## Introduction 
-Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate undesired state of a system. This is usually done visually resembling a flowchart diagram, utilizing branches with corresponding probabilities and specific logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
+Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate undesired state of a system. This is usually done visually resembling a flowchart diagram, with downwardly cascading branches with corresponding probabilities and Boolean logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
 * Providing clarity and logical foundation directly starting from a failure or otherwise underised state.
 * Diagnosing and mitigating the caus(es) of a top event.
 * A tool to assist in the design of a system, name to heop create (output/ lower level) requirement.
 * Optimize and minimize resources.
 * Substantiate compliance with system safety/ reliability requirements.
+
 
 ## History
 Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Watson and A Mears, to evaluate the _Minuteman I Intercontinental Ballistic Missile_ for the U.S. Air Force.<sup>[[1]](#references)</sup> Since then, fault trees have gained in popularity as a failure analysis tool.
@@ -36,24 +37,36 @@ Most use cases in current day. Type(s) of application domains.
 | ![FTA Basic Event](images/FTA_undeveloped_event.jpg) | - |
 
 ## Method steps
-Following are steps one could take to apply the FTA method. It is largely based on the page of 
+Following are steps one could take to apply the FTA method. 
 
-### 1. Define undesired event
-Start by clearly and concisely describing the undesired event (top event). As this will be the basis for following steps, a specific and measurable definition is recommended. Clarifying factors for top event precision may include: <sup>[[3]](#references)
+### 1. Define hazard
+Start by clearly and concisely describing the hazard (top event). As this will be the basis for following steps, a specific and measurable definition is recommended. Clarifying factors for top event precision may include: <sup>[[3]](#references)
 * How much?
 * How long (duration)?
 * What is the safety impact?
 * What is the environmental impact?
 * What is the regulatory impact?
 
-### 2. Identify conributing events and factors
+### 2. System analysis and contributing events identification
 Identify factors and events that might contribute to the most undesired (top level) event. These factors should fall into 2 categories: [basic events](#used-terminology) and [intermediate events](#used-terminology). \
-Where applicable, experts on the subject matter and/ or external (historal) records could be consulted to encapulate a full range of causal factors.
+* Create or utilize the following resources: <sup>[[3]](#references)</sup>
+ * List of components (Bill of Materials)
+ * Boundary Diagram
+ * Schematic
+ * Code requirements
+ * Engineering Noises and Environments
+ * Existing examples or templates of similar products or failures
+
+* Identify potential causes:
+ * Include experts on the subject (such as system design engineers or reliability engineers) 
+ * consult similar product or failure history \and/ or external (historical) records could be consulted to encapsulate a full range of causal factors.
+
+* Estimate probability of causes at the basic-event level
 
 ### 3. Construct the fault Tree
 Construct a visual fault tree diagram using standard [gate symbols and event symbols](#symbols). The _top event_ should at the top, and any relations to that cause below it in a hierarchical fashion. Following this, basic events must end up at the bottom. \
 
-
+ 
 ### 4. Gather failure data
 
 
@@ -90,7 +103,7 @@ Glossary containing as many relevant and specific terms
 | - | - |
 | Binary Decision Diagram | - |
 | Basic event | Events that cannot be broken down further into more fundamental composite parts, the lowest level in a fault tree. | 
-| Cut set | Combination of events causing the top event. |
+| Cut set | Combination of basic event(s) causing the top event. |
 | Common cause | - |
 | Input event | - |
 | Intermediate event | Event between the top event and lower level (basic) event. Therefore, an intermediate event always causes 1 or more event(s) and itself is cause by preceding event. |
