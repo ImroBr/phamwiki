@@ -50,16 +50,16 @@ Start by clearly and concisely describing the hazard (top event). As this will b
 ### 2. System analysis and contributing events identification
 Identify factors and events that might contribute to the most undesired (top level) event. These factors should fall into 2 categories: [basic events](#used-terminology) and [intermediate events](#used-terminology). \
 * Create or utilize the following resources: <sup>[[3]](#references)</sup>
- * List of components (Bill of Materials)
- * Boundary Diagram
- * Schematic
- * Code requirements
- * Engineering Noises and Environments
- * Existing examples or templates of similar products or failures
+	* List of components (Bill of Materials)
+	* Boundary Diagram
+	* Schematic
+	* Code requirements
+	* Engineering Noises and Environments
+	* Existing examples or templates of similar products or failures
 
 * Identify potential causes:
- * Include experts on the subject (such as system design engineers or reliability engineers) 
- * consult similar product or failure history \and/ or external (historical) records could be consulted to encapsulate a full range of causal factors.
+	* Include experts on the subject (such as system design engineers or reliability engineers) 
+	* consult similar product or failure history \and/ or external (historical) records could be consulted to encapsulate a full range of causal factors.
 
 * Estimate probability of causes at the basic-event level
 
