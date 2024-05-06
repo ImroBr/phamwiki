@@ -59,13 +59,14 @@ Identify factors and events that might contribute to the most undesired (top lev
 
 * Identify potential causes:
 	* Include experts on the subject (such as system design engineers or reliability engineers) 
-	* consult similar product or failure history \and/ or external (historical) records could be consulted to encapsulate a full range of causal factors.
+	* consult similar product or failure history and/ or external (historical) records
 
 * Estimate probability of causes at the basic-event level
 
 ### 3. Construct the fault Tree
 Construct a visual fault tree diagram using standard [gate symbols and event symbols](#symbols). The _top event_ should at the top, and any relations to that cause below it in a hierarchical fashion. Following this, basic events must end up at the bottom. \
 
+For clarity, color codes can be used for basic events to prioritize critical paths. These can range from green (acceptable risk) to yellow/orange (moderate/ high risk) to red (critical risk).
  
 ### 4. Gather failure data
 
