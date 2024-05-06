@@ -27,14 +27,30 @@ Most use cases in current day. Type(s) of application domains.
 ## Symbols
 
 ### Event Symbols
-
+Event symbols
 | Symbol | Meaning |
 | :---: | - |
-| ![FTA Basic Event](images/FTA_basic_event.jpg) | Lowest-level event that cannot be broken down further | 
-| ![FTA Basic Event](images/FTA_conditioning_event.jpg) | - |
-| ![FTA Basic Event](images/FTA_initiating_event.jpg) | - |
-| ![FTA Basic Event](images/FTA_intermediate_event.jpg) | - |
-| ![FTA Basic Event](images/FTA_undeveloped_event.jpg) | - |
+| ![FTA Basic Event](images/fta_symbol_event.png) | Lowest-level event that cannot be broken down further | 
+| ![FTA Basic Event](images/fta_symbol_conditional_event.png) | - |
+| ![FTA Basic Event](images/fta_symbol_top_event.png) | - |
+| ![FTA Basic Event](images/fta_symbol_intermediate_event.png) | - |
+| ![FTA Basic Event](images/fta_symbol_underdeveloped_event.png) | - |
+
+Logic gates
+| Symbol | Meaning |
+| :---: | - |
+| ![FTA Logic Gate](images/fta_symbol_and.png) | - |
+| ![FTA Logic Gate](images/fta_symbol_or.png) | - |
+| ![FTA Logic Gate](images/fta_symbol_xor) | - |
+| ![FTA Logic Gate](images/) | - |
+
+Advanced symbols
+| Symbol | Meaning |
+| :---: | - |
+| ![FTA Advanced](images/fta_symbol_inhibit.png) | - | 
+| ![FTA Advanced](images/fta_symbol_transfer_in.png) | - | 
+| ![FTA Advanced](images/fta_symbol_transfer_out.png) | - | 
+
 
 ## Method steps
 Following are steps one could take to apply the FTA method. 
