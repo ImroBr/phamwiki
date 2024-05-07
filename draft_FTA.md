@@ -55,7 +55,6 @@ Advanced symbols
 
 
 ## Method steps
-![Fault Tree Analysis example](images/fta_01.png)
 Following are steps one could take to apply the FTA method.
 
 ### 1. Define hazard
@@ -86,13 +85,27 @@ Identify factors and events that might contribute to the most undesired (top lev
 Construct a visual fault tree diagram using standard [gate symbols and event symbols](#symbols). The _top event_ should at the top, and any relations to that cause below it in a hierarchical fashion. Following this, basic events must end up at the bottom. \
 The middle portion of the tree which entails intermediate events require more attention. In pathing the tree, [logic gates](#event-symbols) should be utilized.
 
-For clarity, color codes can be used for basic events to prioritize critical paths. These can range from green (acceptable risk) to yellow/orange (moderate/ high risk) to red (critical risk).
+For clarity, color codes can be used for basic events to prioritize critical paths. These can range from green (acceptable risk) to yellow/orange (moderate/ high risk) to red (critical risk). \
+
+![Fault Tree Analysis example](images/fta_01.png) \
  
 ### 4. Gather failure data
-
+In order to assess risks of (basic) events occuring, resources should be allocated accruing failure data. This failure data is expressed as _failure data_ or _failure rates_, depending upon the type of analysis. \
+Sources for these failure data may include:
+* Historical records
+* Manual of similar product(s) or subcomponents
+* Industry databases
+* Expert opinions
 
 ### 5. Perform the analysis
+Calulate/ estimate the risk of each event by the acquired failure data to lay bare the critical chain to the top event ([cut sets](#used-terminology)). \
 
+These calculations are associated with _statistical probabilities_ or _Poisson-Exponentially distributed constant rates_. For example, for a givent component with constant _failure rate_ $λ$ and exposure time $t$, there is: \
+$P=1-e<sup>-λt</sup>$
+
+Cut sets wirth risk greater than the system can tolerate are selected for mitigation. Actions are required for _Critical_ (red) and _High Risk_ (orange). \
+
+List of cut sets can be used for identifying duplicated events and branches, often referred to as _MOB's_ (multiple occurring branches) and _MOE's_ (multiple occurring events). 
 
 ### 6. Interpret the results
 
@@ -130,6 +143,8 @@ Glossary containing as many relevant and specific terms
 | [Intermediate event](event-symbols) | Event between the top event and lower level (basic) event. Therefore, an intermediate event always causes 1 or more event(s) and itself is cause by preceding event. |
 | Logic gate | - |
 | Minimal Cut Sets (MCS) | In a cut set, if no event can be removed without failing to cause the top event. |
+| MOB | Multiple occurring branches |
+| MOE | Multiple occurring events |
 | Root | Top event |
 | Top event | - |
 
@@ -142,3 +157,5 @@ Glossary containing as many relevant and specific terms
 <sup>[2]</sup> [What is fault tree analysis (FTA)?](https://www.ibm.com/topics/fault-tree-analysis) \
 <sup>[3]</sup> [FTA | Fault Tree Analysis](https://quality-one.com/fta/) \
 
+----- \
+<sup>[4]</sup> [What is a "cutset"](https://www.wilderisk.co.uk/about/blog/cutset-in-fault-tree-analysis/) \
