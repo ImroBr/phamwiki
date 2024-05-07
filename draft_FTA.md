@@ -28,28 +28,29 @@ Most use cases in current day. Type(s) of application domains.
 
 ### Event Symbols
 Event symbols
-| Symbol | Meaning |
-| :---: | - |
-| ![FTA Basic Event](images/fta_symbol_event.png) | Lowest-level event that cannot be broken down further | 
-| ![FTA Basic Event](images/fta_symbol_conditional_event.png) | - |
-| ![FTA Basic Event](images/fta_symbol_top_event.png) | - |
-| ![FTA Basic Event](images/fta_symbol_intermediate_event.png) | - |
-| ![FTA Basic Event](images/fta_symbol_underdeveloped_event.png) | - |
+| Symbol | Term | Meaning |
+| :---: | - | - |
+| ![FTA Basic Event](images/fta_symbol_event.png) | Basic Event (BE) | Lowest-level event that cannot be broken down further | 
+| ![FTA Basic Event](images/fta_symbol_conditional_event.png) | Conditioning Event | - |
+| ![FTA Basic Event](images/fta_symbol_top_event.png) | Top Event (TE) | - |
+| ![FTA Basic Event](images/fta_symbol_intermediate_event.png) | Intermediate event | - |
+| ![FTA Basic Event](images/fta_symbol_house_event.png) | External (House) event | - |
+| ![FTA Basic Event](images/fta_symbol_underdeveloped_event.png) | Un(der)developed event | - |
 
 Logic gates
-| Symbol | Meaning |
-| :---: | - |
-| ![FTA Logic Gate](images/fta_symbol_and.png) | - |
-| ![FTA Logic Gate](images/fta_symbol_or.png) | - |
-| ![FTA Logic Gate](images/fta_symbol_xor) | - |
-| ![FTA Logic Gate](images/) | - |
+| Symbol | - | Meaning |
+| :---: | - | - |
+| ![FTA Logic Gate](images/fta_symbol_and.png) | `AND` gate | - |
+| ![FTA Logic Gate](images/fta_symbol_and_priority.png) | Priority `AND` gate | - |
+| ![FTA Logic Gate](images/fta_symbol_or.png) | `OR` gate | - |
+| ![FTA Logic Gate](images/fta_symbol_xor.png) | Exclusive `OR` gate (`XOR`) | - |
 
 Advanced symbols
-| Symbol | Meaning |
-| :---: | - |
-| ![FTA Advanced](images/fta_symbol_inhibit.png) | - | 
-| ![FTA Advanced](images/fta_symbol_transfer_in.png) | - | 
-| ![FTA Advanced](images/fta_symbol_transfer_out.png) | - | 
+| Symbol | - | Meaning |
+| :---: | - | - |
+| ![FTA Advanced](images/fta_symbol_inhibit.png) | Inhibit gate | - |
+| ![FTA Advanced](images/fta_symbol_transfer_in.png) | Transfer In | - |
+| ![FTA Advanced](images/fta_symbol_transfer_out.png) | Transfer Out | - |
 
 
 ## Method steps
