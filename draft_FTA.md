@@ -101,9 +101,9 @@ Sources for these failure data may include:
 Calulate/ estimate the risk of each event by the acquired failure data to lay bare the critical chain to the top event ([cut sets](#used-terminology)). \
 
 These calculations are associated with _statistical probabilities_ or _Poisson-Exponentially distributed constant rates_. For example, for a givent component with constant _failure rate_ $\lambda$ and exposure time $t$, there is: \
-$`P=1-e<sup>-λt</sup>`$ \
 $`P=1-e^{-λt}`$ \
-$P=1-e<sup>-λt</sup>$ \
+where:
+$`P\approx\lambdat`$ if etc
 
 Cut sets wirth risk greater than the system can tolerate are selected for mitigation. Actions are required for _Critical_ (red) and _High Risk_ (orange). \
 
