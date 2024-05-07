@@ -30,31 +30,33 @@ Most use cases in current day. Type(s) of application domains.
 Event symbols
 | Symbol | Term | Meaning |
 | :---: | - | - |
-| ![FTA Basic Event](images/fta_symbol_event.png) | Basic Event (BE) | Lowest-level event that cannot be broken down further | 
-| ![FTA Basic Event](images/fta_symbol_conditional_event.png) | Conditioning Event | - |
-| ![FTA Basic Event](images/fta_symbol_top_event.png) | Top Event (TE) | - |
-| ![FTA Basic Event](images/fta_symbol_intermediate_event.png) | Intermediate event | - |
-| ![FTA Basic Event](images/fta_symbol_house_event.png) | External (House) event | - |
-| ![FTA Basic Event](images/fta_symbol_underdeveloped_event.png) | Un(der)developed event | - |
+| ![FTA Basic Event](images/fta_symbol_event.png) | Basic Event (BE) | Lowest-level random event that cannot be broken down further with sufficient data available. | 
+| ![FTA Basic Event](images/fta_symbol_conditional_event.png) | Conditioning Event | Specific condition or restriction associated with another logic gate. |
+| ![FTA Basic Event](images/fta_symbol_top_event.png) | Top Event (TE) | The main undesired outcome or state of system. |
+| ![FTA Basic Event](images/fta_symbol_intermediate_event.png) | Intermediate event | Event between the top event and lower level (basic) event. Therefore, an intermediate event always causes 1 or more event(s) and itself is cause by preceding event. |
+| ![FTA Basic Event](images/fta_symbol_house_event.png) | External (House) event | event of which its occurence is expected. \\generally have a fixed probability of 0 or 1. |
+| ![FTA Basic Event](images/fta_symbol_underdeveloped_event.png) | Un(der)developed event | Event about which there is insufficient information available, or is inconsequential. |
 
 Logic gates
 | Symbol | - | Meaning |
 | :---: | - | - |
-| ![FTA Logic Gate](images/fta_symbol_and.png) | `AND` gate | - |
-| ![FTA Logic Gate](images/fta_symbol_and_priority.png) | Priority `AND` gate | - |
-| ![FTA Logic Gate](images/fta_symbol_or.png) | `OR` gate | - |
-| ![FTA Logic Gate](images/fta_symbol_xor.png) | Exclusive `OR` gate (`XOR`) | - |
+| ![FTA Logic Gate](images/fta_symbol_and.png) | `AND` gate | Output event occurs only when *all* input events occur. |
+| ![FTA Logic Gate](images/fta_symbol_and_priority.png) | Priority `AND` gate | Output event occurs when *all* input events occur, in a *specific sequence*. |
+| ![FTA Logic Gate](images/fta_symbol_or.png) | `OR` gate | Output event occurs when *any* of the input events occur. |
+| ![FTA Logic Gate](images/fta_symbol_xor.png) | Exclusive `OR` gate (`XOR`) | Output event occurs only if *either input* events occurs (never both or none). |
 
 Advanced symbols
 | Symbol | - | Meaning |
 | :---: | - | - |
-| ![FTA Advanced](images/fta_symbol_inhibit.png) | Inhibit gate | - |
-| ![FTA Advanced](images/fta_symbol_transfer_in.png) | Transfer In | - |
-| ![FTA Advanced](images/fta_symbol_transfer_out.png) | Transfer Out | - |
+| ![FTA Advanced](images/fta_symbol_kn.png) | k/N gate | Output event occurs a certain amount `k` of total input events `N` occur. |
+| ![FTA Advanced](images/fta_symbol_inhibit.png) | Inhibit gate | Output event occurs when input event occurs, and corresponding condition is satisfied. |
+| ![FTA Advanced](images/fta_symbol_transfer_in.png) | Transfer In | The tree is developed urther at another point within the tree. |
+| ![FTA Advanced](images/fta_symbol_transfer_out.png) | Transfer Out | This portion of the tree is attached to another location within the same tree. |
 
 
 ## Method steps
-Following are steps one could take to apply the FTA method. 
+![Fault Tree Analysis example](images/fta_01.png)
+Following are steps one could take to apply the FTA method.
 
 ### 1. Define hazard
 Start by clearly and concisely describing the hazard (top event). As this will be the basis for following steps, a specific and measurable definition is recommended. Clarifying factors for top event precision may include: <sup>[[3]](#references)
@@ -82,13 +84,14 @@ Identify factors and events that might contribute to the most undesired (top lev
 
 ### 3. Construct the fault Tree
 Construct a visual fault tree diagram using standard [gate symbols and event symbols](#symbols). The _top event_ should at the top, and any relations to that cause below it in a hierarchical fashion. Following this, basic events must end up at the bottom. \
+The middle portion of the tree which entails intermediate events require more attention. In pathing the tree, [logic gates](#event-symbols) should be utilized.
 
 For clarity, color codes can be used for basic events to prioritize critical paths. These can range from green (acceptable risk) to yellow/orange (moderate/ high risk) to red (critical risk).
  
 ### 4. Gather failure data
 
 
-### 5. Perform the Analysis
+### 5. Perform the analysis
 
 
 ### 6. Interpret the results
@@ -124,7 +127,7 @@ Glossary containing as many relevant and specific terms
 | Cut set | Combination of basic event(s) causing the top event. |
 | Common cause | - |
 | Input event | - |
-| Intermediate event | Event between the top event and lower level (basic) event. Therefore, an intermediate event always causes 1 or more event(s) and itself is cause by preceding event. |
+| [Intermediate event](event-symbols) | Event between the top event and lower level (basic) event. Therefore, an intermediate event always causes 1 or more event(s) and itself is cause by preceding event. |
 | Logic gate | - |
 | Minimal Cut Sets (MCS) | In a cut set, if no event can be removed without failing to cause the top event. |
 | Root | Top event |
