@@ -106,25 +106,34 @@ where: \
 $`P\approx \lambda t`$ if $`\lambda t<0.001`$ \
 
 When encountering logic gates in a cut set, care must be taken to maintain the corresponding input event integrity. Global rules for for conservation of inputs at logic gates are:
+
 | Symbol | Name | Formula |
-| : --- : | - | -
+| :---: | :---: | - |
 | ![FTA Logic Gate](images/fta_symbol_and.png) | `AND` | P (A and B) = P (A ∩ B) = P(A) P(B) |
 | ![FTA Logic Gate](images/fta_symbol_or.png) | `OR` | P (A or B) = P (A ∪ B) = P(A) + P(B) - P (A ∩ B) |
-| ![FTA Logic Gate](images/fta_symbol_xor.png) | Exclusive `OR` gate (`XOR`) | P (A xor B) = P(A) + P(B) - 2P (A ∩ B) |
+| ![FTA Logic Gate](images/fta_symbol_xor.png) | `XOR` | P (A xor B) = P(A) + P(B) - 2P (A ∩ B) |
+
 Output of an `AND` as a combination of input events $`1`$ and $`2`$ where $`Q=1-e^{-λt}`$ if $`\lambda t<0.001`$: \
-$`Failure frequency=\lambda_1 Q_2 + \lambda_2 Q_1`$ \
-$`Failure Frequency=\lambda_1 \lambda_2 t_2 + \lambda_2 \lambda_1 t_1 < 0.001`$ and $`\lambda_2 t_2 < 0.001`$ \
+Failure frequency=$`\lambda_1 Q_2 + \lambda_2 Q_1`$ \
+Failure frequency=$`\lambda_1 \lambda_2 t_2 + \lambda_2 \lambda_1 t_1`$ if $`\lambda_2 \lambda_1 t_1 < 0.001`$ and $`\lambda_2 t_2 < 0.001`$ \
 
 Cut sets wirth risk greater than the system can tolerate are selected for mitigation. Actions are required for _Critical_ (red) and _High Risk_ (orange). 
 
 List of cut sets can be used for identifying duplicated events and branches, often referred to as _MOB's_ (multiple occurring branches) and _MOE's_ (multiple occurring events). 
 
-### 6. Interpret the results
+### 6. Risk mitigation
+Depending on the system being analyzed, Risk Mitigation can take many forms. One popular method is the use of a _criticality method_, which use a broad selection of indicators to describe various factors including geological, technological, geopolitical, social, and environmental factors. \
 
+Other techniques require a level of mitigation calculated to _Defects per Million Opportunities_ (_DPMO_). DPMO is defined as: \
+$`DPMO=\frac{1.000.000 \times number of defects}{number of units \times number of Defects opportunities per unit}`$ \
 
-### 7. Implement improvements and monitor progress
-
-
+When unacceptable risks have been found, multiple mitigation strategies are available. Some examples:
+* Design change
+* Replacement of (Base-event) component with another component with higher reliability
+* Physical redundancy of (Base-event) component
+* Software redundancy
+* Warning system
+* Quality Control
 
 ## Example(s)
 * Theoretical example
@@ -134,11 +143,15 @@ List of cut sets can be used for identifying duplicated events and branches, oft
 Common (theoretical or practical) mistakes.
 
 ## Pros and cons
-## Limitations to FTA
+### Advantages of FTA
+* Very good at showing how resistant a system is to single or multiple iitiating faults
+
+### Limitations to FTA
 * The accuracy and effectiveness of FTA in analyzing relevant the causes of failure is heavily reliant on the expertise of the analysts <sup>[[2]](#references)</sup>
 * Large and complex systems require large and complex fault trees, which makes analysis time-consuming and challenging <sup>[[2]](#references)</sup>
 * One single top event cam be examined at a time <sup>[[2]](#references)</sup>
 * Data regarding failure and quality determines precision of calculated probabilities in a fault tree <sup>[[2]](#references)</sup>
+* Not good at finding all possible initiating faults
 
 ## Additions/ Notes
 
@@ -147,18 +160,14 @@ Common (theoretical or practical) mistakes.
 Glossary containing as many relevant and specific terms
 | Term | Definition |
 | - | - |
-| Binary Decision Diagram | - |
 | Basic event | Events that cannot be broken down further into more fundamental composite parts, the lowest level in a fault tree. | 
 | Cut set | Combination of basic event(s) causing the top event. |
-| Common cause | - |
-| Input event | - |
+| Input event | Event that is sent from a basic event or intermediate even into a (logic) gate. |
 | [Intermediate event](event-symbols) | Event between the top event and lower level (basic) event. Therefore, an intermediate event always causes 1 or more event(s) and itself is cause by preceding event. |
-| Logic gate | - |
+| Logic gate | A conjunction between events that output probabilities related to the set operations of Boolean logic. |
 | Minimal Cut Sets (MCS) | In a cut set, if no event can be removed without failing to cause the top event. |
 | MOB | Multiple occurring branches |
 | MOE | Multiple occurring events |
-| Root | Top event |
-| Top event | - |
 
 ## See also
 ### FTA Standards
