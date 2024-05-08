@@ -111,11 +111,11 @@ When encountering logic gates in a cut set, care must be taken to maintain the c
 | ![FTA Logic Gate](images/fta_symbol_and.png) | `AND` | P (A and B) = P (A ∩ B) = P(A) P(B) |
 | ![FTA Logic Gate](images/fta_symbol_or.png) | `OR` | P (A or B) = P (A ∪ B) = P(A) + P(B) - P (A ∩ B) |
 | ![FTA Logic Gate](images/fta_symbol_xor.png) | Exclusive `OR` gate (`XOR`) | P (A xor B) = P(A) + P(B) - 2P (A ∩ B) |
-Output of an `AND` as a combination of input events $`1`$ and $`2`$ where $`Q=1-e^{-λt}`$ if $`\lambda t<0.001`$:
-$`Failure frequency=\lambda_1 Q_2 + \lambda_2 Q_1`$
-$`Failure Frequency=\lambda_1 \lambda_2 t_2 + \lambda_2 \lambda_1 t_1 < 0.001`$ and $`\lmbda_2 t_2 < 0.001`$
+Output of an `AND` as a combination of input events $`1`$ and $`2`$ where $`Q=1-e^{-λt}`$ if $`\lambda t<0.001`$: \
+$`Failure frequency=\lambda_1 Q_2 + \lambda_2 Q_1`$ \
+$`Failure Frequency=\lambda_1 \lambda_2 t_2 + \lambda_2 \lambda_1 t_1 < 0.001`$ and $`\lambda_2 t_2 < 0.001`$ \
 
-Cut sets wirth risk greater than the system can tolerate are selected for mitigation. Actions are required for _Critical_ (red) and _High Risk_ (orange). \
+Cut sets wirth risk greater than the system can tolerate are selected for mitigation. Actions are required for _Critical_ (red) and _High Risk_ (orange). 
 
 List of cut sets can be used for identifying duplicated events and branches, often referred to as _MOB's_ (multiple occurring branches) and _MOE's_ (multiple occurring events). 
 
