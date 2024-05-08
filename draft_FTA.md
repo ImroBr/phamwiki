@@ -125,7 +125,7 @@ List of cut sets can be used for identifying duplicated events and branches, oft
 Depending on the system being analyzed, Risk Mitigation can take many forms. One popular method is the use of a _criticality method_, which use a broad selection of indicators to describe various factors including geological, technological, geopolitical, social, and environmental factors. 
 
 Other techniques require a level of mitigation calculated to _Defects per Million Opportunities_ (_DPMO_). DPMO is defined as: \
-$`DPMO=\frac{1.000.000 \times number \quad \quad of \quad defects}{number \quad of \quad units \times number \quad of \quad Defects \quad opportunities \quad per \quad unit}`$ 
+$`DPMO=\frac{1.000.000 \quad \times \quad number \quad \quad of \quad defects}{number \quad of \quad units \quad \times \quad number \quad of \quad Defects \quad opportunities \quad per \quad unit}`$ 
 
 When unacceptable risks have been found, multiple mitigation strategies are available. Some examples:
 * Design change
