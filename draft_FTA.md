@@ -41,9 +41,9 @@ Logic gates
 | Symbol | - | Meaning |
 | :---: | - | - |
 | ![FTA Logic Gate](images/fta_symbol_and.png) | `AND` gate | Output event occurs only when *all* input events occur. |
-| ![FTA Logic Gate](images/fta_symbol_and_priority.png) | Priority `AND` gate | Output event occurs when *all* input events occur, in a *specific sequence*. |
 | ![FTA Logic Gate](images/fta_symbol_or.png) | `OR` gate | Output event occurs when *any* of the input events occur. |
 | ![FTA Logic Gate](images/fta_symbol_xor.png) | Exclusive `OR` gate (`XOR`) | Output event occurs only if *either input* events occurs (never both or none). |
+| ![FTA Logic Gate](images/fta_symbol_and_priority.png) | Priority `AND` gate | Output event occurs when *all* input events occur, in a *specific sequence*. |
 
 Advanced symbols
 | Symbol | - | Meaning |
@@ -100,10 +100,20 @@ Sources for these failure data may include:
 ### 5. Perform the analysis
 Calulate/ estimate the risk of each event by the acquired failure data to lay bare the critical chain to the top event ([cut sets](#used-terminology)). \
 
-These calculations are associated with _statistical probabilities_ or _Poisson-Exponentially distributed constant rates_. For example, for a givent component with constant _failure rate_ $\lambda$ and exposure time $t$, there is: \
+These calculations are associated with _statistical probabilities_ or _Poisson-Exponentially distributed constant rates_. For example, for a given component with constant _failure rate_ $\lambda$ and exposure time $t$, there is: \
 $`P=1-e^{-λt}`$ \
-where:
-$`P\approx \lambda t`$ if $`\lambda t<0.001`$
+where: \
+$`P\approx \lambda t`$ if $`\lambda t<0.001`$ \
+
+When encountering logic gates in a cut set, care must be taken to maintain the corresponding input event integrity. Global rules for for conservation of inputs at logic gates are:
+| Symbol | Name | Formula |
+| : --- : | - | -
+| ![FTA Logic Gate](images/fta_symbol_and.png) | `AND` | P (A and B) = P (A ∩ B) = P(A) P(B) |
+| ![FTA Logic Gate](images/fta_symbol_or.png) | `OR` | P (A or B) = P (A ∪ B) = P(A) + P(B) - P (A ∩ B) |
+| ![FTA Logic Gate](images/fta_symbol_xor.png) | Exclusive `OR` gate (`XOR`) | P (A xor B) = P(A) + P(B) - 2P (A ∩ B) |
+Output of an `AND` as a combination of input events $`1`$ and $`2`$ where $`Q=1-e^{-λt}`$ if $`\lambda t<0.001`$:
+$`Failure frequency=\lambda_1 Q_2 + \lambda_2 Q_1`$
+$`Failure Frequency=\lambda_1 \lambda_2 t_2 + \lambda_2 \lambda_1 t_1 < 0.001`$ and $`\lmbda_2 t_2 < 0.001`$
 
 Cut sets wirth risk greater than the system can tolerate are selected for mitigation. Actions are required for _Critical_ (red) and _High Risk_ (orange). \
 
