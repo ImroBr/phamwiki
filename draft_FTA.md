@@ -144,7 +144,7 @@ Common (theoretical or practical) mistakes.
 
 ## Pros and cons
 ### Advantages of FTA
-* Very good at showing how resistant a system is to single or multiple iitiating faults
+* Very good at showing how resistant a system is to single or multiple initiating faults
 
 ### Limitations to FTA
 * The accuracy and effectiveness of FTA in analyzing relevant the causes of failure is heavily reliant on the expertise of the analysts <sup>[[2]](#references)</sup>

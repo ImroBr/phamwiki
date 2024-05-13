@@ -21,6 +21,7 @@ Most use cases in current day. Type(s) of application domains.
 Specific steps, formulas, symbols and/or terminology
 
 ## Example(s)
+* Example figure
 * Theoretical example
 * Example of historical factual application
 
