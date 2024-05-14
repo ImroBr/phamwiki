@@ -78,6 +78,12 @@ https://ieeexplore.ieee.org/document/9361551
 
 https://ieeexplore.ieee.org/document/877343
 
+### Analysis techniques for dependability - Event tree analysis (ETA) (14-05-2024)
+- [ ] _IEC, 27-10-2010_
+> **Abstract:** IEC 62502:2010 specifies the consolidated basic principles of Event Tree Analysis (ETA) and provides guidance on modelling the consequences of an initiating event as well as analysing these consequences qualitatively and quantitatively in the context of dependability and risk related measures.
+
+https://webstore.iec.ch/publication/7131
+
 ## Cross-Analysis 
 ### _Comparison of the FMEA and STPA safety analysis methods-a case study_ (20-03-2024)
 - [x] _Springer, 04-12-2017_
@@ -85,8 +91,8 @@ https://ieeexplore.ieee.org/document/877343
 
 | Process hazard | Included  | 
 | ---:           |     :---  | 
-| FMEA           |   [x]     |   
-| STPA           |   [x]     |  
+| FMEA           |    X      |   
+| STPA           |    X      |  
 | FTA            |           |    
 | ETA            |           |   
 | HAZOP          |           |  
@@ -174,18 +180,24 @@ _Author:_
 	Corporate Safety Manager \
 	Sverdrup Technology, Incorporated
 2. Rodney J. Simmons, Ph.D., CSP
-	Technical Director, Board of Certified Safety Professionals _
+	Technical Director, Board of Certified Safety Professionals _ \
 _Organisation: Centers for Disease Control and Prevention (CDC) \
 Subdivision: US Department of Health and Human Services, National Institute for Occupational Safety and Health \
+
 Date: March 1998 \
-Pages: 208
+Pages: 208 \
+Original link: [https://en.wikipedia.org/wiki/Event_tree_analysis](https://en.wikipedia.org/wiki/Event_tree_analysis) \
+Source page link: [https://en.wikipedia.org/wiki/Event_tree_analysis#cite_ref-Clemments_1_1-0](https://en.wikipedia.org/wiki/Event_tree_analysis#cite_ref-Clemments_1_1-0) \
 Note: OCR applied_
+
 
 | PHA | Included  | 
 | ---:           |     :---  | 
 | FMEA           |   X        |   
 | STPA           |          |  
 | FTA            |   X      |    
-| ETA            |   [x]        |   
+| ETA            |   X        |   
 | HAZOP          |   -        | 
+
+
 
