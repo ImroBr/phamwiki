@@ -2,7 +2,7 @@ _draft_
 
 # Event Tree Analysis (ETA)
 
-![Event Tree Analysis example figure](images/event_tree_diagram.jpg)
+![Event Tree Analysis example figure](images/Event_Tree_Diagram.JPG)
 
 ## Introduction 
 Event tree analysis (ETA) is a forward (bottom-up), logical modeling technique for both success and failure that explores responses through a single initiating event and lays a path for assessing probabilities of the outcomes and overall system analysis.<sup>[[1]](#references)</sup> This inductive analysis technique is used to analyze the effects of functioning or failed systems given that an event has occurred. <sup>[[2]](#references)</sup> \
