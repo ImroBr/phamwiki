@@ -2,8 +2,10 @@ _draft_
 
 # Event Tree Analysis (ETA)
 
+![Event Tree Analysis example figure](images/event_tree_diagram.jpg)
+
 ## Introduction 
-Event tree analysis (ETA) is a forward (bottum-up), logical modeling technique for both success and failure that explores responses through a single initiating event and lays a path for assessing probabilities of the outcomes and overall system analysis.<sup>[[1]](#references)</sup> This inductive analysis technique is used to analyze the effects of functioning or failed systems given that an event has occurred. <sup>[[2]](#references)</sup> \
+Event tree analysis (ETA) is a forward (bottom-up), logical modeling technique for both success and failure that explores responses through a single initiating event and lays a path for assessing probabilities of the outcomes and overall system analysis.<sup>[[1]](#references)</sup> This inductive analysis technique is used to analyze the effects of functioning or failed systems given that an event has occurred. <sup>[[2]](#references)</sup> \
 This technique explores system responses to an initiating _challenge_ and enables assessment ofthe probability of an unfavorable or favorable outcome. The system challenge may be a failure or fault, an undesirable event, or a normal system operating command.<sup>[[1]](#references)</sup>
 
 ## History
@@ -80,7 +82,6 @@ Disadvantages:
 * Requires an analyst with practical training and experience<sup>[[3]](#references)</sup>
 
 ## Best practices/ things to avoid
-Common (theoretical or practical) mistakes
 Following are 10 tips for Event Tree Analysis<sup>[[4]](#references)</sup>:
 
 1. List the barriers which are designed to protect against the initiating event of concern in the same order as the one in which they would be called upon to act as an incident progressed, e.g. fire alarm before sprinkler system. This is because their order of occurrence may affect the outcome (in this case, whether building occupants would have a chance to leave the building before being sprayed with water).
@@ -111,11 +112,9 @@ Glossary containing as many relevant and specific terms
 
 | Term | Definition |
 | - | - |
-| Accident event | First significant deviation from a normal situation that may lead to unwated consequences |
+| Accident event | First significant deviation from a normal situation that may lead to unwanted consequences |
 | Barrier | - |
-| - | - |
-| - | - |
-| - | - |
+| HAZOP | **Haz**ard and **Op**erability, a hazard analysis method utilized mainly for indentifuing possible hazards in a process. |
 | - | - |
 
 ## See also
