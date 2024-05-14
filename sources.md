@@ -199,5 +199,36 @@ Note: OCR applied_
 | ETA            |   X        |   
 | HAZOP          |   -        | 
 
+### Fault Tree Analysis (FTA) and Event Tree Analysis (ETA)
+Filename: **Fault Tree Analysis and Event Tree Analysis.pdf** \
+_Identifying Hazards, Assessing and Evaluting Risks \
+NEBOSH National Diploma \
+Organisation: Managing Health and Safety_ \
+
+### Fault Trees, Decision Trees, And Binary Decision Diagrams: A Systematic Comparison (08-05-2024)
+Filename:
+* **Fault_trees_def [2310.04448v1.pdf].pdf**
+* Fault_trees_def.pdf 
+
+_Author:_
+1. _Lisandro A. Jimenez-Roa \
+	Formal Methods and Tools (FMT) \
+	University of Twente, The Netherlands \
+	Email: l.jimenezroa@utwente.nl_
+2. _Tom Heskes \
+	Institute for Computing and Information Sciences \
+	Radboud Univerity Nijmegen, The Netherlands \
+	Email: Tom.Heskes@ru.nl_
+3. _Marielle Stoelinga \
+	Formal Methods and Tools (FMT) \
+	University of Twente, The Netherlands \
+	Email: m.i.a.stoelinga@utwente.nl_ 
+
+Date: 03-10-2023 \
+Pages: 8
+
+Original link: [Fault Trees, Decision Trees, And Binary Decision Diagrams: A Systematic Comparison](https://arxiv.org/pdf/2310.04448) \
+Source page link: [Fault Trees, Decision Trees, And Binary Decision Diagrams: A Systematic Comparison](https://arxiv.org/abs/2310.04448)
+
 
 

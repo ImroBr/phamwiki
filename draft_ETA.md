@@ -7,6 +7,7 @@ _draft_
 ## Introduction 
 Event tree analysis (ETA) is a forward (bottom-up), logical modeling technique for both success and failure that explores responses through a single initiating event and lays a path for assessing probabilities of the outcomes and overall system analysis.<sup>[[1]](#references)</sup> This inductive analysis technique is used to analyze the effects of functioning or failed systems given that an event has occurred. <sup>[[2]](#references)</sup> \
 This technique explores system responses to an initiating _challenge_ and enables assessment ofthe probability of an unfavorable or favorable outcome. The system challenge may be a failure or fault, an undesirable event, or a normal system operating command.<sup>[[1]](#references)</sup>
+The ETA method can be used in conjuction with the FTA (_Fault Tree Analysis_) method, where FTA focuses on preventing multiple causes to the main undesired event, whereas ETA focuses on mitigating multiple consequences from the main undesired event. This conjuction of these techniques is sometimes called a _'Bow-tie'_ technique.
 
 ## History
 The concept of what eventually came to be named _Event Tree_ was conceived by the UKAEA (United Kingdom Atomic Energy Agency) in 1968, as risk assesment tool to optimize the design of a 500MW Steam-Generating Heavy Water Reactor. Use of ETA resulted into a manageable form. <sup>[[1]](#references)</sup> 
@@ -20,12 +21,13 @@ Specific variations or successions of main hazard analysis method.
 
 ## Application
 ETA is mostly used in:
+The most popular fields wherein ETA is used:
 * Nuclear power plants
 * Spacecrafts
 * Chemical plants
 
 ## Method steps
-The followin steps are necessary to successfully employ the Event Tree Analysis.
+The following steps are necessary to successfully employ the Event Tree Analysis.
 
 1. Define the system: Define what needs to be involved or where to draw the boundaries.
 
@@ -55,7 +57,7 @@ The followin steps are necessary to successfully employ the Event Tree Analysis.
 ## Pros and cons
 Following are advantages and disadvantages of utilizing ETA.
 
-Advantages: 
+### Advantages: 
 * Enables the assessment of multiple, co-existing faults and failures<sup>[[1]](#references)</sup>
 * Functions simultaneously in cases of failure and success<sup>[[1]](#references)</sup>
 * No need to anticipate end events<sup>[[1]](#references)</sup>
@@ -71,7 +73,7 @@ Advantages:
 * Permits probability assessment<sup>[[3]](#references)</sup>
 * Commercial software is available<sup>[[3]](#references)</sup>
 
-Disadvantages: 
+### Disadvantages: 
 * Addresses only one initiating event at a time.<sup>[[1]](#references)</sup>
 * The initiating challenge must be identified by the analyst<sup>[[1]](#references)</sup>
 * Pathways must be identified by the analyst<sup>[[1]](#references)</sup>
@@ -124,5 +126,5 @@ Glossary containing as many relevant and specific terms
 1. Clemens, P.L.; Rodney J. Simmons (March 1998). "System Safety and Risk Management". NIOSH Instructional Module, A Guide for Engineering Educators. Cincinnati,OH: National Institute for Occupational Safety and Health: IX-3–IX-7.
 2. Wang, John et al. (2000). [What Every Engineer Should Know About Risk Engineering and Management, p. 69.](https://books.google.com/books?id=x4Ft7H_2Ik0C&pg=PA69), p. 69, at [Google Books](https://en.wikipedia.org/wiki/Google_Books)
 3. Ericson, Clifton A. (2005). [Hazard Analysis Techniques for System Safety](https://onlinelibrary.wiley.com/doi/book/10.1002/0471739421). John Wiley & Sons, Inc.
-4. Egerton, Amanda (March 7th, 2016) (10 Tips for Event Tree Analysis)[https://egertonconsulting.com/10-tips-for-event-tree-analysis/]
+4. Egerton, Amanda (March 7th, 2016) [10 Tips for Event Tree Analysis](https://egertonconsulting.com/10-tips-for-event-tree-analysis)
 
