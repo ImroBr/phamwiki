@@ -25,11 +25,11 @@ Specific steps, formulas, symbols and/or terminology
 * Theoretical example
 * Example of historical factual application
 
-## Things to avoid
-Common (theoretical or practical) mistakes
-
 ## Pros and cons
 List of advantages and disadvantages
+
+## Best practices or tips/ things to avoid
+Common (theoretical or practical) best practices or mistakes
 
 ## Additions/ Notes
 
