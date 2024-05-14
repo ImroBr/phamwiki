@@ -103,7 +103,7 @@ Glossary containing as many relevant and specific terms
 | Occurrence | Signified as "O", occurrence denotes a (probabilistic) chance of a failure occurring. Usually noted on a 1-10 scale, in which 10 can be likened to inevitability and 1 to (extreme) unlikeliness. |
 | Probalility | - |
 | Process Control | Preventative or mitigating procedures, mechanisms or tests that attempt to prevent or curtail a failure before the client is affected. |
-| Risk Priority Number (RPN) | The  |
+| Risk Priority Number (RPN) | A multiplication of $`S \times O \times D`$, the total score helps prioritize failures by overall criticality. |
 | Severity | Signified as "S", severity denoted the degree of negative impact of a potential failure. Usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant. |
 
 
