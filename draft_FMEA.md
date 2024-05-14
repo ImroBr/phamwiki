@@ -83,7 +83,7 @@ _Advantages_\
 * One of the most widely used and available hazard analysis methods
 
 ## Additions/ Notes
-[FMEA Example Worksheet](example_files/fmea testsheet_95.xls)
+[FMEA Example Worksheet](example_files/fmea_testsheet_95.xls)
 
 ## Used terminology
 Glossary containing as many relevant and specific terms
