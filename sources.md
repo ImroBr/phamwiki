@@ -85,8 +85,8 @@ https://ieeexplore.ieee.org/document/877343
 
 | Process hazard | Included  | 
 | ---:           |     :---  | 
-| FMEA           |    X      |   
-| STPA           |    X      |  
+| FMEA           |   [x]     |   
+| STPA           |   [x]     |  
 | FTA            |           |    
 | ETA            |           |   
 | HAZOP          |           |  
@@ -148,4 +148,44 @@ https://ieeexplore.ieee.org/document/8050082
 | FTA            |   X       |    
 | ETA            |   X       |   
 | HAZOP          |           |  
+
+## Miscellaneous public online resources
+
+### Chapter 3 - Event Tree Analysis
+Filename: **chapt03-eta.pdf** \
+_Author: Marvin Rausand \
+Organisation: Norwegian University of Science and Technology \
+Subdivision: RAMS Group/ Departmnt of Production and Quality Engineering \
+Year: \
+Pages: 24_
+
+| PHA | Included  | 
+| ---:           |     :---  | 
+| FMEA           |           |   
+| STPA           |          |  
+| FTA            |          |    
+| ETA            |   X        |   
+| HAZOP          |           | 
+
+### Systems Safety and Risk management
+Filename: **ClemensSimmonsSystemSafetyandRiskManagementNIOSH96-37768 [ETA] OCR.pdf** \
+_Author:_
+1. _Pat. L. Clemens, P.E., CSP \
+	Corporate Safety Manager \
+	Sverdrup Technology, Incorporated
+2. Rodney J. Simmons, Ph.D., CSP
+	Technical Director, Board of Certified Safety Professionals _
+_Organisation: Centers for Disease Control and Prevention (CDC) \
+Subdivision: US Department of Health and Human Services, National Institute for Occupational Safety and Health \
+Date: March 1998 \
+Pages: 208
+Note: OCR applied_
+
+| PHA | Included  | 
+| ---:           |     :---  | 
+| FMEA           |   X        |   
+| STPA           |          |  
+| FTA            |   X      |    
+| ETA            |   [x]        |   
+| HAZOP          |   -        | 
 
