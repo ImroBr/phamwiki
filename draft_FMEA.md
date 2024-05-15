@@ -86,7 +86,7 @@ _Advantages_\
 [FMEA Example Worksheet](example_files/fmea_testsheet_95.xls)
 
 ## Used terminology
-Glossary containing as many relevant and specific terms
+Glossary containing as many relevant and specific terms 
 
 | Term | Definition |
 | - | - |
