@@ -73,3 +73,11 @@ solid cube_corner
   endfacet
 endsolid
 ```
+
+### Image alignment
+_Surrounded by text_ \
+This is example text to illustrate something or rather, somewhat, text alignment, pineapple. More text is to be included, which may or not be useful considering a necessary thing with another specific thing.
+<img align="right" src="images/fta_symbol_xor.png">
+_Alignment should be broken with the following text/statement_
+<img align="right" src="images/fta_symbol_xor.png">
+This text should have space above it.
