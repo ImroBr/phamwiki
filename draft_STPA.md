@@ -4,15 +4,14 @@ _Draft_
 
 ## Introduction 
 System-Theoretic Process Analysis (SPTA) is fairly recent hazard analysis technique. This technique is generally used in larger, complex systems. What delineates the STPA method from other conventional hazard analysis methods is the assumption that unsafe interactions between system components could occur, while none of those system may have failed. \
-Based on _System Theory_...
 
 ## History
 _First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location) Abbreviation_ \
-STPA is a analysis technique developed by [Nancy Leveson](http://sunnyday.mit.edu/bio-serious.html) and [John P. Thomas](http://web.mit.edu/jthomas4/www/index.htm). It is founded upon _System-Theoretic Accident Model and Process_ (STAMP), which is in turn based on Sytems Theory.
+STPA is a analysis technique developed by [Nancy Leveson](http://sunnyday.mit.edu/bio-serious.html) and [John P. Thomas](http://web.mit.edu/jthomas4/www/index.htm). It is founded upon _System-Theoretic Accident Model and Process_ (STAMP), which is in turn based on Systems Theory.
 
 ## Underlying systems
 _Possible underlying system or system predecessor of current hazard analysis_ \
-System Theory - \
+Systems Theory - \
 STAMP - System-Theoretic Accident and Processes
 
 ## Variations
@@ -38,22 +37,20 @@ The STPA method steps are defined in 4 parts, described below.
 * What is the system and its boundary?
 
 [p19]
-\<Hazard specification\> = <System> & <Unsafe Condition> & <Link to Losses>
+\<Hazard specification\> = \<System\> & \<Unsafe Condition\> & \<Link to Losses\>
 E.g. H-1 = Aircraft violate minimum separation standards in flight [L-1, L-2, L-4, L-5]
 
-
 ### 2. Control Structure
-* Capturing functional relationships and interactions
+* Capturing functional relationships and interactions\
 Factoring in (global) functional relationships and establishing points of control with downward arrows (control actions, and points of feedback with upward arrows.
 
 ### 3. Identify Unsafe Control Actions (UCAs)
 In the flow of control actions and feedback, what unsafe control actions can occur?
 
 There are broadly 4 possible categorizations of unsafe control actions that can lead to a hazard or loss:
-[introduction to stpa video]
-[~13:00](https://youtu.be/2W-iqnPbhyc?t=776)
+[introduction to stpa video, ~13:00](https://youtu.be/2W-iqnPbhyc?t=776)
 1. **Command not provided causes hazard** \
- A control action that **should** have been provided but isn't, such as not sending a brake command when a collision is imminent;
+ A control action that **should** have been provided but isn't, such as not sending a brake command when a collision is imminent; 
 2. **Command providing causes hazard** \
  A control action that has been provided, but **in a scenario wherein such action is unsafe**, such as sending a brake command when on a highway;
 3. **Command provided too early, too late, out of order** \
@@ -63,10 +60,11 @@ There are broadly 4 possible categorizations of unsafe control actions that can 
 
 
 ### 4. Identify Loss Scenario
+<img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png">
 Two types of loss scenarios are to be considered, namely: [p43] \
 a. Why would unsafe Control Action(s) occur?
 b. Why would control action(s) be improperly executed?
-
+<br clear="right"/>
 
 ## Example(s)
 _Theoretical example_ 
@@ -107,25 +105,26 @@ Professionals who are experienced in other hazard analysis methods sometimes fal
 
 | Term | Definition |
 | - | - |
-| Constraints | Conditions or behaviors that need to be satisfied to prevent hazards (and ultimately prevent losses) [p20] |
+| Constraints | Conditions or behaviors that need to be satisfied to prevent hazards (and ultimately prevent losses) <sup>[[1]](#see-also), page 20</sup> |
 | Control Action | A directive issued by a controller to another subsystem |
 | Control Structure | A hierarchical control structure is a system model that is composed of feedback control loops. An effective control structure will enforce constraints on the behavior of the overall system. |
-| Controller | Part of a system (subsystem) that enforces constraints on the bahavior of a system. [p11] |
-| Controlled Process | The controlled process is any process that is controlled, such as a physical process or another controller. [p22] |
-| Controller Constraint | Specifies the controller behaviors that need to be satisfied to prevent UCAs. [p41] |
-| Environment | Part of the scenario outside the operational system boundary, of which there is little to no direct influence by the operator or designer [p17] |
+| Controller | Part of a system (subsystem) that enforces constraints on the bahavior of a system. <sup>[[1]](#see-also), page 11</sup> |
+| Controlled Process | The controlled process is any process that is controlled, such as a physical process or another controller. <sup>[[1]](#see-also), page 22</sup> |
+| Controller Constraint | Specifies the controller behaviors that need to be satisfied to prevent UCAs.<sup>[[1]](#see-also), page 41</sup> |
+| Environment | Part of the scenario outside the operational system boundary, of which there is little to no direct influence by the operator or designer <sup>[[1]](#see-also), page 17</sup> |
 | Hazards | System state or set of conditions that, together with a particular set of worst-case environmental conditions, will lead to a loss. |
-| Losses | One or more undesired, safety-critical outcomes to stakeholder(s). It may include a loss of human life or human injury, property damage, environmental pollution, loss of mission, loss of reputation, loss or leak of sensitive information, or any other unacceptable loss. [p16] |
-| Loss scenario | Describes the causal factors that can lead to the unsafe control actions and to hazards. [p42] |
+| Losses | One or more undesired, safety-critical outcomes to stakeholder(s). It may include a loss of human life or human injury, property damage, environmental pollution, loss of mission, loss of reputation, loss or leak of sensitive information, or any other unacceptable loss. <sup>[[1]](#see-also), page 16</sup> |
+| Loss scenario | Describes the causal factors that can lead to the unsafe control actions and to hazards. <sup>[[1]](#see-also), page 42</sup> |
+| Process Model | The Controllers represented internal beliefs for decisionmaking. Process Models may self-update based on feedback through observation of a controlled process.<sup>[[1]](#see-also), page 23</sup> |
 | System | Set of components that function together as a whole to achieve a desired goal. A system can contain subsystems, or itself be a subsystem. |
 | System Boundary | The transition between internal parts of a system that the designer or analyst has control over, as opposed to the (outside) environment of the system |
 | Unsafe Control Action (UCA) | A control action that, in a particular context and worst-case environment, will lead to a hazard. |
 
 ## See also
-For a more thorough description of the System-Theoretic Process Analysis method including examples and use-cases, see the [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf).
+For a more thorough description of the System-Theoretic Process Analysis method including examples and use-cases, see the
+1. [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf).
 
 ## References
-
 
 
 
