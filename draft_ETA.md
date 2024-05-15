@@ -5,11 +5,11 @@ _draft_
 ![Event Tree Analysis example figure](images/Event_Tree_Diagram.JPG)
 
 abc
-
+defghi
 <p align="right">
 	<img src="images/Event_Tree_Diagram.JPG">
-</p>
-
+</p> zz
+jklmno
 
 def
 
