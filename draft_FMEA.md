@@ -11,7 +11,7 @@ _First inception and cause of hazard analysis method. (Year, person/ group, (geo
 Procedures for FMEA were first described November 9th 1949 by the U.S. Department of Defense (MIL-P-1629) [x] as FMECA (Failure Mode, Effects and Criticality Analysis). Primarily utilized in the military industry, it was later adopted by the space industry (NASA). In the 1970 in was introduced to the automotive industry (Ford).
 
 ## Underlying systems
-Possible underlying system or system predecessor of current hazard analysis
+Possible underlying system or system predecessor of current hazard analysis.
 
 ## Application
 Used for: (List)\
@@ -30,7 +30,7 @@ AFMEA (Advanced FMEA) \
 _Specific steps, formulas, symbols and/or terminology_ \
 
 ### 1. Scope
-What is the goal of the process? Is it in the realm of concept design, system or service? Is there a desired level of detail and what are the boundaries? The result should be clear 
+What is the goal of the process? Is it in the realm of concept design, system or service? Is there a desired level of detail and what are the boundaries? The result should be clear. \
 
 ### 2. Interdisciplinary team
 A team of experts specializing in fields pertaining to the project should be assembled. 
