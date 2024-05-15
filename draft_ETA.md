@@ -7,9 +7,13 @@ _draft_
 abc
 defghi
 <p align="right">
-	<img src="images/Event_Tree_Diagram.JPG">
+	<img src="images/fta_symbol_xor.png">
 </p> zz
 jklmno
+ffabc
+dffefghi
+<img align="right" src="images/fta_symbol_xor.png"> ddd
+djklmno
 
 def
 
