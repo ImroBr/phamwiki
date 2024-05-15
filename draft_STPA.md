@@ -1,11 +1,8 @@
 _Draft_
 
 # System-Theoretic Process Analysis
-_This is an early document which serves as a blueprint for adding specific Hazard Analysis Methodologies._
-
 
 ## Introduction 
-_Abbreviation and full name._
 System-Theoretic Process Analysis (SPTA) is fairly recent hazard analysis technique. This technique is generally used in larger, complex systems. What delineates the STPA method from other conventional hazard analysis methods is the assumption that unsafe interactions between system components could occur, while none of those system may have failed. \
 Based on _System Theory_...
 
@@ -41,9 +38,8 @@ The STPA method steps are defined in 4 parts, described below.
 * What is the system and its boundary?
 
 [p19]
-<Hazard specification> = <System> & <Unsafe Condition> & <Link to Losses>
+\<Hazard specification\> = <System> & <Unsafe Condition> & <Link to Losses>
 E.g. H-1 = Aircraft violate minimum separation standards in flight [L-1, L-2, L-4, L-5]
-
 
 
 ### 2. Control Structure
