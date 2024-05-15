@@ -76,7 +76,7 @@ endsolid
 
 ### Image alignment
 _Surrounded by text_ \
-This is example text to illustrate something or rather, somewhat, text alignment, pineapple. More text is to be included, which may or not be useful considering a necessary thing with another specific thing.
+This is example text to illustrate something or rather, somewhat, text alignment, pineapple. More text is to be included, which may or not be useful considering a necessary thing with another specific thing. Following is the image text.
 <img align="right" src="images/fta_symbol_xor.png">
 _Alignment should be broken with the following text/statement_
 <br clear="right"/>
