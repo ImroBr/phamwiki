@@ -82,3 +82,16 @@ _Alignment should be broken with the following text/statement_
 <br clear="right"/>
 This text should have space above it. \
 Or perhaps, this one.
+
+abc
+defghi
+<p align="right">
+	<img src="images/fta_symbol_xor.png">
+</p> zz
+jklmno
+ffabc
+dffefghi
+<img align="right" src="images/fta_symbol_xor.png"> ddd
+djklmno
+
+def
