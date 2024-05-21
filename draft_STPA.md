@@ -12,7 +12,7 @@ STPA is a analysis technique developed by [Nancy Leveson](http://sunnyday.mit.ed
 ## Underlying systems
 _Possible underlying system or system predecessor of current hazard analysis_ \
 Systems Theory - \
-STAMP - System-Theoretic Accident and Processes
+STAMP - System-Theoretic Accident and Processes, an accident causality model based on Systems Theory. It expands beyond the traditional model of causality to include more complex processes and unsafe interaction among system components.
 
 ## Variations
 _Specific variations of main hazard analysis method._ \
@@ -61,21 +61,18 @@ There are broadly 4 possible categorizations of unsafe control actions that can 
 
 ### 4. Identify Loss Scenario
 <img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png">
-Two types of loss scenarios are to be considered, namely: [p43] \
-a. Why would unsafe Control Action(s) occur?
+Two types of loss scenarios are to be considered, as also illustrated by corresponding figure: <sup>[[1]](#see-also), page 43</sup>  
+a. Why would unsafe Control Action(s) occur? \
 b. Why would control action(s) be improperly executed?
 <br clear="right"/>
 
 ## Example(s)
-_Theoretical example_ 
-
-
-
+_Theoretical example_ \
 * _Example of historical factual application_
 
 
 ## Pros and cons
-Advantages of STPA over other hazard analysis: [p4]
+Advantages of STPA over other hazard analysis: <sup>[[1]](#see-also), page 4</sup>
 * Very complex systems can be analyzed
 * STPA can be utilized early in concept Analysis
 * STPA includes software and human operators in analysis to ensure all potential causal factors in Losses
