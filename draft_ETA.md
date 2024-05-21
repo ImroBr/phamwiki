@@ -4,19 +4,6 @@ _draft_
 
 ![Event Tree Analysis example figure](images/Event_Tree_Diagram.JPG)
 
-abc
-defghi
-<p align="right">
-	<img src="images/fta_symbol_xor.png">
-</p> zz
-jklmno
-ffabc
-dffefghi
-<img align="right" src="images/fta_symbol_xor.png"> ddd
-djklmno
-
-def
-
 ## Introduction 
 Event tree analysis (ETA) is a forward (bottom-up), logical modeling technique for both success and failure that explores responses through a single initiating event and lays a path for assessing probabilities of the outcomes and overall system analysis.<sup>[[1]](#references)</sup> This inductive analysis technique is used to analyze the effects of functioning or failed systems given that an event has occurred. <sup>[[2]](#references)</sup> \
 This technique explores system responses to an initiating _challenge_ and enables assessment ofthe probability of an unfavorable or favorable outcome. The system challenge may be a failure or fault, an undesirable event, or a normal system operating command.<sup>[[1]](#references)</sup>
@@ -24,6 +11,7 @@ The ETA method can be used in conjuction with the FTA (_Fault Tree Analysis_) me
 
 ## History
 The concept of what eventually came to be named _Event Tree_ was conceived by the UKAEA (United Kingdom Atomic Energy Agency) in 1968, as risk assesment tool to optimize the design of a 500MW Steam-Generating Heavy Water Reactor. Use of ETA resulted into a manageable form. <sup>[[1]](#references)</sup> 
+
 The term "Event Tree" was first introduced during the WASH-1400 nuclear power plant safety study circa 1974.
 
 ## Underlying systems
@@ -34,10 +22,11 @@ Specific variations or successions of main hazard analysis method.
 
 ## Application
 ETA is mostly used in:
-The most popular fields wherein ETA is used:
+Popular safety study fields wherein ETA is used:
 * Nuclear power plants
 * Spacecrafts
 * Chemical plants
+* Dams and levees <sup>[5](https://youtu.be/hhnPJxXFnXk?t=1800)</sup>
 
 ## Method steps
 The following steps are necessary to successfully employ the Event Tree Analysis.
@@ -97,6 +86,13 @@ Following are advantages and disadvantages of utilizing ETA.
 * Requires an analyst with practical training and experience<sup>[[3]](#references)</sup>
 
 ## Best practices/ things to avoid
+ETA must conform to certain rules in order to applied correctly. At all times, these rules must apply: \
+1. Al probabilities must be greater than or equal to zero and less than or equal to one
+	$`0 \leq P(x) \leq 1`$
+2. Sum of probabilities corresponding to a horizontal chance node column must be equal to one 
+
+
+
 Following are 10 tips for Event Tree Analysis<sup>[[4]](#references)</sup>:
 
 1. List the barriers which are designed to protect against the initiating event of concern in the same order as the one in which they would be called upon to act as an incident progressed, e.g. fire alarm before sprinkler system. This is because their order of occurrence may affect the outcome (in this case, whether building occupants would have a chance to leave the building before being sprayed with water).
@@ -127,9 +123,17 @@ Glossary containing as many relevant and specific terms
 
 | Term | Definition |
 | - | - |
-| Accident event | First significant deviation from a normal situation that may lead to unwanted consequences |
+| Accident event | First significant deviation from a normal situation that may lead to unwanted consequences. |
 | Barrier | - |
+| Branch | Represents an event, which may be system response, human action/ intervention, emergency response or a continuously operating/ standby sytems. |
+| Branch probability | Probability of the event (branch) conditioned on occurence of those events that precede it (to the left) in the tree. |
+| Chance node | Branching point at which a new (random) variable is introduced in the tree. |
+| Collectively exhaustive | Of a set of probabilistic events, the total sum of the probabilities must equal 1; unknowns are not permitted. |
+| End node | Nodes that is found at the end of a event tree, at the right most side. |
 | HAZOP | **Haz**ard and **Op**erability, a hazard analysis method utilized mainly for indentifuing possible hazards in a process. |
+| Mutually exclusive | In ETA, a requisite that 2 or more events cannot happen at the same time probabilistically; the have no or negligible overlap. |
+| Pathway | Vertical line that traverses (chance) nodes until the end node, from left to right. Each pathway must be unique. |
+| Pipe | Vertical line that seperates the conditional event(s) from (a) probabilistic variable(s). |
 | - | - |
 
 ## See also
@@ -140,4 +144,4 @@ Glossary containing as many relevant and specific terms
 2. Wang, John et al. (2000). [What Every Engineer Should Know About Risk Engineering and Management, p. 69.](https://books.google.com/books?id=x4Ft7H_2Ik0C&pg=PA69), p. 69, at [Google Books](https://en.wikipedia.org/wiki/Google_Books)
 3. Ericson, Clifton A. (2005). [Hazard Analysis Techniques for System Safety](https://onlinelibrary.wiley.com/doi/book/10.1002/0471739421). John Wiley & Sons, Inc.
 4. Egerton, Amanda (March 7th, 2016) [10 Tips for Event Tree Analysis](https://egertonconsulting.com/10-tips-for-event-tree-analysis)
-
+5. USACE Risk Management Center<sup>[channel](https://www.youtube.com/@usaceriskmanagementcenter)</sup>. [DLS-105 Module 1: Basics of Probability Theory and Event Tree Analysis](https://youtu.be/hhnPJxXFnXk)

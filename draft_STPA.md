@@ -10,12 +10,10 @@ _First inception and cause of hazard analysis method. (Year, person/ group, (geo
 STPA is a analysis technique developed by [Nancy Leveson](http://sunnyday.mit.edu/bio-serious.html) and [John P. Thomas](http://web.mit.edu/jthomas4/www/index.htm). It is founded upon _System-Theoretic Accident Model and Process_ (STAMP), which is in turn based on Systems Theory.
 
 ## Underlying systems
-_Possible underlying system or system predecessor of current hazard analysis_ \
 Systems Theory - \
 STAMP - System-Theoretic Accident and Processes, an accident causality model based on Systems Theory. It expands beyond the traditional model of causality to include more complex processes and unsafe interaction among system components.
 
 ## Variations
-_Specific variations of main hazard analysis method._ \
 Causal Analysis based on Sytems Theory (CAST), and is a retroactive analysis method that examines an accident/ incident that has occured and identifies the causal factors involved. It is another analysis method based on STAMP. [p12-13] 
 
 ## Application
@@ -73,14 +71,15 @@ _Theoretical example_ \
 
 ## Pros and cons
 Advantages of STPA over other hazard analysis: <sup>[[1]](#see-also), page 4</sup>
-* Very complex systems can be analyzed
-* STPA can be utilized early in concept Analysis
-* STPA includes software and human operators in analysis to ensure all potential causal factors in Losses
+* Very complex systems can be analyzed.
+* STPA can be utilized early in concept Analysis.
+* STPA includes software and human operators in analysis to ensure all potential causal factors in Losses.
 * STPA provides documentation of system functionality, which may be missing in other hazard analyses in the context of large and complex systems
-* Easy integration into the system engineering process and model-based system engineering
+* Easy integration into the system engineering process and model-based system engineering.
+* Rationale and intent of design safety requirements are made clear by applying the STPA methodology, which makes it easier understandable for laymen or designers after a long hiatus.
 
 Disadvantages of STPA:
-* Lesser known analysis technique; few online resources
+* Lesser known analysis technique; few online resources.
 
 
 
