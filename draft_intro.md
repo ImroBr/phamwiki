@@ -8,7 +8,8 @@ A Process Hazard Analysis (PHA) is a method of technical risk assessment. can be
 
 The PHA method is primarily applied to industrial processes, namely in the chemical process industry. Examples of these processes include purification, dilution, mixing or blending and packaging operations.
 
-Although the PHA methodology mostly applies to physical industrial processes, the other specific Hazard Analyses are described in a global manner. Meaning, these other methodologies are considered parallel or even complimentary in relation to PHA, rather than a subset of PHA. Rather, these other methodologies and indeed the PHA method are consideren subsets of _Hazard Analyses_.
+Although the PHA methodology mostly applies to physical industrial processes, the other specific Hazard Analyses are described in a global manner. Meaning, additional factors that go beyond industrial processes can be taken into consideration. These additional factors can be in a social context such as customer satisfaction or company reputation, or more abstract context such as computational scenarios or software interaction (which can also include emerging or future technology such a AI or quantum computing).  \ 
+As such, these other methodologies are considered parallel or even complimentary in relation to PHA, rather than a subset of PHA. Rather, these other methodologies and indeed the PHA method are considered a subset of _Hazard Analyses_.
 
 
 ## Available Hazard Analysis WIKI's in this project:
