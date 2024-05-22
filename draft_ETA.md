@@ -87,7 +87,7 @@ Following are advantages and disadvantages of utilizing ETA.
 
 ## Best practices/ things to avoid
 ETA must conform to certain rules in order to applied correctly. At all times, these rules must apply: \
-1. Al probabilities must be greater than or equal to zero and less than or equal to one
+1. Al probabilities must be greater than or equal to zero and less than or equal to one \
 	$`0 \leq P(x) \leq 1`$
 2. Sum of probabilities corresponding to a horizontal chance node column must be equal to one 
 
