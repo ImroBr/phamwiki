@@ -6,5 +6,5 @@
 * [System-Theoretic Process Analysis (STPA)]
 * [Failure Mode and Effect Analysis (FMEA]
 * [Failure Tree Analysis (FTA)]
-* [Event Tree Analysis (ETA)](/draft_eta.md)
+* [Event Tree Analysis (ETA)](/draft_ETA.md)
 
