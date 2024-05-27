@@ -14,14 +14,11 @@ The concept of what eventually came to be named _Event Tree_ was conceived by th
 
 The term "Event Tree" was first introduced during the WASH-1400 nuclear power plant safety study circa 1974.
 
-## Underlying systems
-Possible underlying system or system predecessor of current hazard analysis
 
 ## Variations
 Specific variations or successions of main hazard analysis method.
 
 ## Application
-ETA is mostly used in:
 Popular safety study fields wherein ETA is used:
 * Nuclear power plants
 * Spacecrafts
