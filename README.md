@@ -49,7 +49,7 @@ This WIKI may be supplemented with additional documents and features going forwa
 * More examples in the context of automobiles
 * (Advanced) cross-comparisons between Hazard Analysis methods
 
-<sub>_This project is currently maintained by [Imro Brammerloo, advisor at RDW]((mailto:ibrammerloo@rdw.nl))._ </sub> 
+<sub>_This project is currently maintained by [Imro Brammerloo, advisor at RDW](mailto:ibrammerloo@rdw.nl)._ </sub> 
 
 
 <!-- Hidden [SUCCESFUL DESKTOP] !-->
