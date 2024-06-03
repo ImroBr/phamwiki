@@ -34,7 +34,7 @@ Following are the available HA pages on this WIKI:
 * [Event Tree Analysis (ETA)](/draft_ETA.md)
 
 ## Future additions
-This WIKI may be supplemented with additional documents and features going forward, depending on available time and functional-utilitary demand. Some of these feature additions are already known and may be included in the next project update:
+This WIKI may be supplemented with additional documents and features going forward, depending on available time and functional-utilitary demand. Some of these feature are already known and may be included in the next project update:
 
 ### Future Hazard Analyses methodologies
 * Process Hazard Analysis (PHA) (stand-alone description)
