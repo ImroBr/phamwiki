@@ -66,9 +66,12 @@ There are broadly 4 possible categorizations of unsafe control actions that can 
 
 ### 4. Identify Loss Scenario
 <img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png">
-Two types of loss scenarios are to be considered, as also illustrated by corresponding figure<sup>[[1]](#see-also), page 43</sup>:   
+Two types of loss scenarios are to be considered, as also illustrated by corresponding figure<sup>[[1]](#see-also), page 43</sup>:  
+ 
 a. Why would unsafe Control Action(s) occur? 
+
 b. Why would control action(s) be improperly executed?
+
 <br clear="right"/>
 
 ## Example(s)
