@@ -3,7 +3,7 @@ _Draft_
 # System-Theoretic Process Analysis
 
 ## Introduction 
-System-Theoretic Process Analysis (SPTA) is fairly recent hazard analysis technique. This technique is generally used in larger, complex systems. What delineates the STPA method from other conventional hazard analysis methods is the assumption that unsafe interactions between system components could occur, while none of those system may have failed. \
+System-Theoretic Process Analysis (STPA) is fairly recent hazard analysis technique. This technique is generally used in larger, complex systems. What differentiates the STPA method from other traditional hazard analysis techniques is the emphasis on (abstract) intended functionality of subsystems from the top down, rather than a regression into the smallest subsystems or components of a system. Another differentiating approach of STPA is the conclusion that unsafe interactions between system components could occur, when none of those individual system components may have failed. \
 
 ## History
 _First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location) Abbreviation_ \
@@ -17,8 +17,11 @@ STAMP - System-Theoretic Accident and Processes, an accident causality model bas
 Causal Analysis based on Sytems Theory (CAST), and is a retroactive analysis method that examines an accident/ incident that has occured and identifies the causal factors involved. It is another analysis method based on STAMP. [p12-13] 
 
 ## Application
-Used for: (List)\
-Most use cases in current day. Type(s) of application domains.
+Fields in which the STPA is applied:
+* Aerospace (Such as NASA and in aviation)
+* Automotive (In the context of _Autonomous Driving Systems_ (ADS) and _Advanced Driver-Assistence Systems_ (ADAS)
+* Healthcare
+
 
 ## Method steps
 _Specific formulas, symbols and/or terminology. _
@@ -53,7 +56,7 @@ There are broadly 4 possible categorizations of unsafe control actions that can 
  A control action that has been provided, but **in a scenario wherein such action is unsafe**, such as sending a brake command when on a highway;
 3. **Command provided too early, too late, out of order** \
  A control action that has been provided in a correct situation, but **offset in its timing**, such as sending a brake command seconds later than is warranted;
-4. **Stopped too soon, applies too long** \
+4. **Stopped too soon, applied too long** \
  A control action that has been provided in a correct situation and timing, but **too long or short in duration**
 
 
@@ -121,6 +124,12 @@ For a more thorough description of the System-Theoretic Process Analysis method 
 1. [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf).
 
 ## References
-
+1. @article{antoine2013systems,
+  title={Systems Theoretic Hazard Analysis (STPA) applied to the risk review of complex systems: an example from the medical device industry},
+  author={Antoine, Blandine},
+  year={2013},
+  school={Massachusetts Institute of Technology},
+  url = {https://dspace.mit.edu/handle/1721.1/79424}
+}
 
 
