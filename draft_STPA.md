@@ -63,6 +63,11 @@ There are broadly 4 possible categorizations of unsafe control actions that can 
 4. **Stopped too soon, applied too long** \
  A control action that has been provided in a correct situation and timing, but **too long or short in duration**
 
+Any ACU action that can be derived will generally fall in the above4 categries.
+
+Once unsafe control actions are identified, controller functional safety requirements can be derived. For the 4 stated ACU's above, the following respective constraints van be constructed:
+1. **`Controller X` shall provide `Command Y`**
+
 
 ### 4. Identify Loss Scenario
 <img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png">
