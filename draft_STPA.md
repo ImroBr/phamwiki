@@ -20,7 +20,11 @@ Causal Analysis based on Sytems Theory (CAST), and is a retroactive analysis met
 Fields in which the STPA is applied:
 * Aerospace (Such as NASA and in aviation)
 * Automotive (In the context of _Autonomous Driving Systems_ (ADS) and _Advanced Driver-Assistence Systems_ (ADAS)
-* Healthcare
+* Healthcare <sup>[[2]](#references)</sup>
+* Nuclear Energy <sup>[[3]](#references)</sup>
+* Railroading <sup>[[4]](#references)</sup>
+* Military Defense <sup>[[5]](#references)</sup>
+* Chemical and Process Industries 
 
 
 ## Method steps
@@ -62,8 +66,8 @@ There are broadly 4 possible categorizations of unsafe control actions that can 
 
 ### 4. Identify Loss Scenario
 <img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png">
-Two types of loss scenarios are to be considered, as also illustrated by corresponding figure: <sup>[[1]](#see-also), page 43</sup>  
-a. Why would unsafe Control Action(s) occur? \
+Two types of loss scenarios are to be considered, as also illustrated by corresponding figure<sup>[[1]](#see-also), page 43</sup>:   
+a. Why would unsafe Control Action(s) occur? 
 b. Why would control action(s) be improperly executed?
 <br clear="right"/>
 
@@ -124,12 +128,9 @@ For a more thorough description of the System-Theoretic Process Analysis method 
 1. [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf).
 
 ## References
-1. @article{antoine2013systems,
-  title={Systems Theoretic Hazard Analysis (STPA) applied to the risk review of complex systems: an example from the medical device industry},
-  author={Antoine, Blandine},
-  year={2013},
-  school={Massachusetts Institute of Technology},
-  url = {https://dspace.mit.edu/handle/1721.1/79424}
-}
-
+2. Antoine, Blandine (2013), [Systems Theoretic Hazard Analysis (STPA) applied to the risk review of complex systems: an example from the medical device industry](https://dspace.mit.edu/handle/1721.1/79424)
+3. Torok, Ray; Geddes, Bruce (March 26-28, 2013), [Systems Theoretic Process Analysis (STPA) - Applied to a Nuclear Power Plant Control System](file:///C:/Users/BRAMMERL/Downloads/02_EPRI_MIT_STAMP_Mar2013.pdf)
+4. Dunsford, Ross; Chatzimichailidou, Mikela (January 14<sup>th</sup> 2020), [Introducing a system theoretic framework for safety in the rail sector: supplementing CSM-RA with STPA](https://doi.org/10.1080/09617353.2019.1709289) p. 59-82
+5. Homey, David Craig; B,S, Aeronautical Engineering, United States Air Force Academy (2015), [SYSTEMS-THEORETIC PROCESS ANALYSIS AND SAFETY-GUIDED
+DESIGN OF MILITARY SYSTEMS](https://apps.dtic.mil/sti/trecms/pdf/AD1109554.pdf)
 
