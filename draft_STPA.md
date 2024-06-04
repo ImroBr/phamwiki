@@ -65,9 +65,21 @@ There are broadly 4 possible categorizations of unsafe control actions that can 
 
 Any ACU action that can be derived will generally fall in the above4 categries.
 
-Once unsafe control actions are identified, controller functional safety requirements can be derived. For the 4 stated ACU's above, the following respective constraints van be constructed:
-1. **`Controller X` shall provide `Command Y`**
+Once unsafe control actions are identified, high-level safety constraints and controller functional safety requirements can be derived. 
 
+The following high-level safety constraints can be created:
+* **Controller X shall not allow A**
+* **Controller X shall enforce B**
+* ...
+
+For each of the 4 stated ACU's above, the following respective constraints van be constructed:
+1. **`Controller X` shall provide `Command Y` when `D`**\
+ `Controller X` = The responsible controller\
+ `Command Y` = output\
+  `D` = situation that needs to be responded to. Additionally, awareness of `D` should be done through feedback.
+2. **`Controller X` shall not provide `Command Y` when `E`**
+3. **`Controller X` shall provide `Command Y` within `F` seconds of `G`**
+4. **`Controller X` shall stop providing `Command Y` within `H` seconds of `J`**
 
 ### 4. Identify Loss Scenario
 <img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png">
