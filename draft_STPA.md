@@ -75,7 +75,7 @@ The following high-level safety constraints can be created:
 For each of the 4 stated ACU's above, the following respective constraints van be constructed:
 1. **`Controller X` shall provide `Command Y` when `D`**\
  `Controller X` = The responsible controller\
- `Command Y` = output\
+ `Command Y` = Output\
   `D` = situation that needs to be responded to. Additionally, awareness of `D` should be done through feedback.
 2. **`Controller X` shall not provide `Command Y` when `E`**
 3. **`Controller X` shall provide `Command Y` within `F` seconds of `G`**
@@ -83,13 +83,23 @@ For each of the 4 stated ACU's above, the following respective constraints van b
 
 ### 4. Identify Loss Scenario
 <img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png">
+Identification of loss scenarios can be considered as an inverse to identifying the unsafe control actions, askying _why_ a unsafe control action would occur. 
 Two types of loss scenarios are to be considered, as also illustrated by corresponding figure<sup>[[1]](#see-also), page 43</sup>:  
  
 a. Why would unsafe Control Action(s) occur? 
 
-b. Why would control action(s) be improperly executed?
+b. Why would control action(s) be improperly executed or not executed?
 
 <br clear="right"/>
+
+Some example scenarios include:
+* Controller incorrectly believes X because ...
+* Controller contorl algorithm does not enforce Y because ...
+* Incorrect ffedback Z received because ...
+* Sensor failure causes ...
+* Etc. ...
+
+Note that in this step, physical components such as actuators or sensors are included, if they are relevant to the initial [losses](#1.scope)
 
 ## Example(s)
 _Theoretical example_ \
@@ -144,6 +154,8 @@ Professionals who are experienced in other hazard analysis methods sometimes fal
 | Unsafe Control Action (UCA) | A control action that, in a particular context and worst-case environment, will lead to a hazard. |
 
 ## See also
+A [video introduction to STPA](https://www.youtube.com/watch?v=2W-iqnPbhyc).
+
 For a more thorough description of the System-Theoretic Process Analysis method including examples and use-cases, see the
 1. [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf).
 
