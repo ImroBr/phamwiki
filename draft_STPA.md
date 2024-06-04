@@ -83,7 +83,7 @@ For  each of the 4 stated ACU's above, the following respective constraints van 
 
 ### 4. Identify Loss Scenario
 <img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png"> 
-Two types of loss scenarios are to be considered, as also illustrated by corresponding figure<sup>[[1]](#see-also), page 43</sup>:  
+Two types of loss scenarios are to be considered, also illustrated in corresponding figure<sup>[[1]](#see-also), page 43</sup>:  
  
 a. Why would unsafe Control Action(s) occur? 
 
