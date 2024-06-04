@@ -72,7 +72,7 @@ The following high-level safety constraints can be created:
 * **Controller X shall enforce B**
 * ...
 
-For each of the 4 stated ACU's above, the following respective constraints van be constructed:
+For  each of the 4 stated ACU's above, the following respective constraints van be constructed:
 1. **`Controller X` shall provide `Command Y` when `D`**\
  `Controller X` = The responsible controller\
  `Command Y` = Output\
@@ -82,8 +82,7 @@ For each of the 4 stated ACU's above, the following respective constraints van b
 4. **`Controller X` shall stop providing `Command Y` within `H` seconds of `J`**
 
 ### 4. Identify Loss Scenario
-<img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png">
-Identification of loss scenarios can be considered as an inverse to identifying the unsafe control actions, askying _why_ a unsafe control action would occur. 
+<img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png"> 
 Two types of loss scenarios are to be considered, as also illustrated by corresponding figure<sup>[[1]](#see-also), page 43</sup>:  
  
 a. Why would unsafe Control Action(s) occur? 
@@ -92,7 +91,16 @@ b. Why would control action(s) be improperly executed or not executed?
 
 <br clear="right"/>
 
-Some example scenarios include:
+a. Identifying scenarios that lead to Unsafe Control Actions\
+ Identification of loss scenarios can be considered as an inverse to identifying the unsafe control actions, askying _why_ a unsafe control action would occur. Some of these that may lead to UCAs may include:\
+  * Failures related to physical controller 
+   * Physical failure of controller itself
+   * Power failure
+   * Etc.
+  * Inadequite control algorithm
+   * Flawed implementation of the specified control algorithm
+
+Some example scenarios may include:
 * Controller incorrectly believes X because ...
 * Controller contorl algorithm does not enforce Y because ...
 * Incorrect ffedback Z received because ...
