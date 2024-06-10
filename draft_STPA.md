@@ -98,12 +98,13 @@ b. Why would control action(s) be improperly executed or not executed?
 	 * Power failure
 	 * Etc
    * Inadequite control algorithm
-     * Flawed 
+     * Flawed implementation of specified control algorithm
    * Unsafe control input
+   * Inadequate process model
 
 Some example scenarios may include:
 * Controller incorrectly believes X because ...
-* Controller contorl algorithm does not enforce Y because ...
+* Controller control algorithm does not enforce Y because ...
 * Incorrect ffedback Z received because ...
 * Sensor failure causes ...
 * Etc. ...
@@ -126,7 +127,13 @@ Advantages of STPA over other hazard analysis: <sup>[[1]](#see-also), page 4</su
 
 Disadvantages of STPA:
 * Lesser known analysis technique; few online resources.
-
+  * Lesser software tools available.
+  * Less widely accepted/ mandated by industry standards and regulations.
+* More abstract in nature compared to conventional Hazard Analysis;
+  * Higher degree of familiarity required of participating engineers (which may required more time and resources comparitively).
+  * Harder to interpret by stakeholders.
+* May be unnecessarily complex for smaller/simpler projects.
+* May be less suited when a narrow, component-focused analysis is needed.
 
 
 # Additions/ Notes
