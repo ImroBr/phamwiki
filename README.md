@@ -1,7 +1,6 @@
-# Process Hazard Analyses (phamwiki)
+# Process Hazard Analysis Wiki (phamwiki)
 In an evolving automotive industry, there must exist an equal or greater evolving need for safety. Many `Process Hazard Analyses (PHA)` exist to mitigate risks, but may risk falling behind in a world where processes increase in complexity, creating unforeseen risks.
 As such, a need arises for a robust foundation and contrast of PHA methodologies. This project aims to add to this foundation in the form of online documentation for future use.
-
 
 ## WIKI environment
 This GitHub WIKI-environment contains documentation about Hazard Analysis (HA) methodologies. A _Hazard Analysis_ entails identification of undesired events that may lead to a hazard, analysis of underlying causes of this hazard, and coupled with an estimation of hazard likeliness and magnitude of harmful effects.
