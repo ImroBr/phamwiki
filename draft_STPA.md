@@ -95,10 +95,11 @@ b. Why would control action(s) be improperly executed or not executed?
    Identification of loss scenarios can be considered as an inverse to identifying the unsafe control actions, askying _why_ a unsafe control action would occur. Some of these that may lead to UCAs may include:
    * Failures related to physical controller 
      * Physical failure of controller itself
-     * Power failure
-     * Etc.
+	 * Power failure
+	 * Etc
    * Inadequite control algorithm
-     * Flawed implementation of the specified control algorithm
+     * Flawed 
+   * Unsafe control input
 
 Some example scenarios may include:
 * Controller incorrectly believes X because ...
