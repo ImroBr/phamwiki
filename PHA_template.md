@@ -13,7 +13,7 @@ Possible underlying system or system predecessor of current hazard analysis
 ## Variations
 Specific variations or successions of main hazard analysis method.
 
-## Application
+## Applications
 Used for: (List)\
 Most use cases in current day. Type(s) of application domains.
 
@@ -25,11 +25,11 @@ Specific steps, formulas, symbols and/or terminology
 * Theoretical example
 * Example of historical factual application
 
-## Pros and cons
-List of advantages and disadvantages
-
 ## Best practices or tips/ things to avoid
 Common (theoretical or practical) best practices or mistakes
+
+## Pros and cons
+List of advantages and disadvantages
 
 ## Additions/ Notes
 

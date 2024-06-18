@@ -53,6 +53,22 @@ The following steps are necessary to successfully employ the Event Tree Analysis
 * Theoretical example
 * Example of historical factual application
 
+## Best practices/ things to avoid
+Before constructing an event tree, there are rules of thumb that are to be considered: <sup>[[5]](#references)</sup>
+* All probabilities must be greater than or equal to zero and less than or equal to one \
+  $`0 \leq P(x) \leq 1`$
+* Sum of probabilities corresponding to a horizontal chance node column must be equal to one 
+* Probabilities for each branch must be conditional on all preceding branches (all prior pathway events)
+
+Additionally, these rules 
+
+* Each branch represents an event 
+* An event sequence must be logical, but not necessarily chronological
+* Branches must be [mutually exclusive](#used-terminology) and collectively exhaustive](#used-terminology)
+
+
+1. 
+
 ## Pros and cons
 Following are advantages and disadvantages of utilizing ETA.
 
@@ -82,15 +98,9 @@ Following are advantages and disadvantages of utilizing ETA.
 * Partial successes/failures are not distinguishable<sup>[[3]](#references)</sup>
 * Requires an analyst with practical training and experience<sup>[[3]](#references)</sup>
 
-## Best practices/ things to avoid
-ETA must conform to certain rules in order to applied correctly. At all times, these rules must apply: \
-1. Al probabilities must be greater than or equal to zero and less than or equal to one \
-	$`0 \leq P(x) \leq 1`$
-2. Sum of probabilities corresponding to a horizontal chance node column must be equal to one 
-3. Probabilities for each branch must be conditional on all preceding branches (all prior pathway events)
 
 
-
+## Additions/ Notes
 
 Following are 10 tips for Event Tree Analysis<sup>[[4]](#references)</sup>:
 
@@ -115,7 +125,8 @@ Following are 10 tips for Event Tree Analysis<sup>[[4]](#references)</sup>:
 10. When quantifying an event tree, a useful check is to sum the frequencies of all of the different outcomes. This sum should equal the frequency of the initiating event since the event tree should have identified all the possible outcomes resulting from the occurrence of that initiating event.
 
 
-## Additions/ Notes
+
+
 
 ## Used terminology
 Glossary containing as many relevant and specific terms
@@ -129,7 +140,7 @@ Glossary containing as many relevant and specific terms
 | Chance node | Branching point at which a new (random) variable is introduced in the tree. |
 | Collectively exhaustive | Of a set of probabilistic events, the total sum of the probabilities must equal 1; unknowns are not permitted. |
 | End node | Nodes that is found at the end of a event tree, at the right most side. |
-| HAZOP | **Haz**ard and **Op**erability, a hazard analysis method utilized mainly for indentifuing possible hazards in a process. |
+| HAZOP | **Haz**ard and **Op**erability, a hazard analysis method utilized mainly for indentifying possible hazards in a process. |
 | Mutually exclusive | In ETA, a requisite that 2 or more events cannot happen at the same time probabilistically; the have no or negligible overlap. |
 | Pathway | Vertical line that traverses (chance) nodes until the end node, from left to right. Each pathway must be unique. |
 | Pipe | Vertical line that seperates the conditional event(s) from (a) probabilistic variable(s). |
