@@ -2,7 +2,12 @@ _draft_
 
 # Event Tree Analysis (ETA)
 
-![Event Tree Analysis example figure](images/Event_Tree_Diagram.JPG)
+
+<img align="right" src="images/eta_global.png)>
+
+
+## Example(s)
+
 
 ## Introduction 
 Event tree analysis (ETA) is a forward (bottom-up), logical modeling technique for both success and failure that explores responses through a single initiating event and lays a path for assessing probabilities of the outcomes and overall system analysis.<sup>[[1]](#references)</sup> This inductive analysis technique is used to analyze the effects of functioning or failed systems given that an event has occurred. <sup>[[2]](#references)</sup> \
@@ -48,19 +53,17 @@ The following steps are necessary to successfully employ the Event Tree Analysis
 
 10. Document the ETA: Document the entire process on the event tree diagrams and update for new information as needed.
 
-
-## Example(s)
-* Theoretical example
+![Event Tree Analysis example figure](images/eta_global.png)* Theoretical example
 * Example of historical factual application
 
 ## Best practices/ things to avoid
-Before constructing an event tree, there are rules of thumb that are to be considered: <sup>[[5]](#references)</sup>
+Before constructing an event tree, here are some basics and rules to ensure a qualitative and robust event tree: <sup>[[5]](#references)</sup>
 * All probabilities must be greater than or equal to zero and less than or equal to one \
   $`0 \leq P(x) \leq 1`$
 * Sum of probabilities corresponding to a horizontal chance node column must be equal to one 
 * Probabilities for each branch must be conditional on all preceding branches (all prior pathway events)
 
-Additionally, these rules 
+Additionally, these rules of thumb are to be considered:
 
 * Each branch represents an event 
 * An event sequence must be logical, but not necessarily chronological
