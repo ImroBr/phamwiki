@@ -74,11 +74,12 @@ The generic ETA diagram and its layout, which is displayed above, will be utiliz
    As mentioned before, a fictional scenario wherein an Autonomous Car (AC) utilizing full Automatic Driving System (ADS) capabilities encounters an object on the road. Because this is an example scenario, further clarification is not necessary. In a real-life scenario however, this step should be defined in greater detail, such as (technical) boundaries, alotted resources, personnel expertise, etc.
 2. _Accident scenario identification_
    For the purposes of this example, the singular object detection by an AC will suffice.
-3. 
-4. 
+3. A
+4. B
+
 
 | Step | Description | Visualization/ calculation |
-| *---* | - | - |
+| :---: | - | - |
 | 1 - 3 | ABC | ![Event Tree Analysis example figure](images/eta_global_sm.png) |
 
 
