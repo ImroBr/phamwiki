@@ -40,6 +40,7 @@ This WIKI may be supplemented with additional documents and features going forwa
 * Hazard and Operability Study (HAZOP)
 * Bowtie-analysis
 * Layer of Protection Analysis (LOPA)
+* [Kepner-Tregoe method](https://kepner-tregoe.com/faqs/)
 
 ### Features to be added
 * Further theoretical expansion of method descriptions and literature

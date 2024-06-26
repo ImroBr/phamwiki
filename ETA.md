@@ -37,15 +37,22 @@ The following steps are necessary to successfully employ the Event Tree Analysis
 
 2. Identify the accident scenarios: Perform a system assessment to find hazards or accident scenarios within the system design.
 
-3. Identify the initiating events: Use a hazard analysis to define initiating events.
+3. Identify the initiating events: Use a hazard analysis to define initiating events. 
 
-4. Identify intermediate events: Identify countermeasures associated with the specific scenario.
+4. Identify intermediate events: Identify countermeasures associated with the specific scenario. 
 
 5. Build the event tree diagram
+   * Each branch represents an event 
+   * An event sequence must be logical, but not necessarily chronological
+   * Branches must be [mutually exclusive](#used-terminology) and collectively exhaustive](#used-terminology)
 
 6. Obtain event failure probabilities: If the failure probability can not be obtained use fault tree analysis to calculate it.
+   * All probabilities must be greater than or equal to zero and less than or equal to one \
+     $`0 \leq P(x) \leq 1`$
+   * Sum of probabilities corresponding to a horizontal chance node column must be equal to one 
 
 7. Identify the outcome risk: Calculate the overall probability of the event paths and determine the risk.
+   * Probabilities for each branch must be conditional on all preceding branches (all prior pathway events)
 
 8. Evaluate the outcome risk: Evaluate the risk of each path and determine its acceptability.
 
@@ -53,24 +60,24 @@ The following steps are necessary to successfully employ the Event Tree Analysis
 
 10. Document the ETA: Document the entire process on the event tree diagrams and update for new information as needed.
 
-![Event Tree Analysis example figure](images/eta_global.png)* Theoretical example
+* Theoretical example
 * Example of historical factual application
 
+## Example scenario
+![Event Tree Analysis example figure](images/eta_global.png)
+![Event Tree Analysis example figure](images/eta_global_sm.png)
+To clarification the the ETA methodology, following is a fictional (though not unrealistic) example scenario in the field of Automotive. In this scenario, an Automated Driving System (ADS) encounters an object when on the road. This example scenario mainly focuses on the contruction of the event tree, including any necessary preceding or following [method steps](#method-steps).
+
+The generic ETA diagram and its layout, which is displayed above, will be utilized to clarify each step.
+
+1-3. _System definition_
+   As mentioned before, a fictional scenario wherein an Autonomous Car (AC) utilizing full Automatic Driving System (ADS) capabilities encounters an object on the road. Because this is an example scenario, further clarification is not necessary. In a real-life scenario however, this step should be defined in greater detail, such as (technical) boundaries, alotted resources, personnel expertise, etc.
+2. _Accident scenario identification_
+   For the purposes of this example, the singular object detection by an AC will suffice.
+3. 
+4. 
+
 ## Best practices/ things to avoid
-Before constructing an event tree, here are some basics and rules to ensure a qualitative and robust event tree: <sup>[[5]](#references)</sup>
-* All probabilities must be greater than or equal to zero and less than or equal to one \
-  $`0 \leq P(x) \leq 1`$
-* Sum of probabilities corresponding to a horizontal chance node column must be equal to one 
-* Probabilities for each branch must be conditional on all preceding branches (all prior pathway events)
-
-Additionally, these rules of thumb are to be considered:
-
-* Each branch represents an event 
-* An event sequence must be logical, but not necessarily chronological
-* Branches must be [mutually exclusive](#used-terminology) and collectively exhaustive](#used-terminology)
-
-
-1. 
 
 ## Pros and cons
 Following are advantages and disadvantages of utilizing ETA.
