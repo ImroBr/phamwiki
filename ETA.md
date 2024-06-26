@@ -80,8 +80,7 @@ The generic ETA diagram and its layout, which is displayed above, will be utiliz
 
 | Step | Description | Visualization/ calculation |
 | :---: | - | - |
-| 1 - 2 |_System definition_ \ 
-As mentioned before, a fictional scenario wherein an Autonomous Car (AC) utilizing full Automatic Driving System (ADS) capabilities encounters an object on the road. Because this is an example scenario, further clarification is not necessary. In a real-life scenario however, this step should be defined in greater detail, such as (technical) boundaries, alotted resources, personnel expertise, etc. | ![Event Tree Analysis example figure](images/eta_global_sm.png) |
+| 1 - 2 |As mentioned before, a fictional scenario wherein an Autonomous Car (AC) utilizing full Automatic Driving System (ADS) capabilities encounters an object on the road. Because this is an example scenario, further clarification is not necessary. In a real-life scenario however, this step should be defined in greater detail, such as (technical) boundaries, alotted resources, personnel expertise, etc. | ![Event Tree Analysis example figure](images/eta_global_sm.png) |
 | 3 | - | ![Event Tree Analysis example figure](images/eta_example_step3.png) |
 | 4 | - | | 3 | - | ![Event Tree Analysis example figure](images/eta_example_step4.png) |
 
