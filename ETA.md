@@ -77,6 +77,11 @@ The generic ETA diagram and its layout, which is displayed above, will be utiliz
 3. 
 4. 
 
+| Step | Description | Visualization/ calculation |
+| *---* | - | - |
+| 1 - 3 | ABC | ![Event Tree Analysis example figure](images/eta_global_sm.png) |
+
+
 ## Best practices/ things to avoid
 
 ## Pros and cons
