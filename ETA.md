@@ -44,7 +44,7 @@ The following steps are necessary to successfully employ the Event Tree Analysis
 5. Build the event tree diagram
    * Each branch represents an event 
    * An event sequence must be logical, but not necessarily chronological
-   * Branches must be [mutually exclusive](#used-terminology) and collectively exhaustive](#used-terminology)
+   * Branches must be [mutually exclusive](#used-terminology) and [collectively exhaustive](#used-terminology)
 
 6. Obtain event failure probabilities: If the failure probability can not be obtained use fault tree analysis to calculate it.
    * All probabilities must be greater than or equal to zero and less than or equal to one \
@@ -80,8 +80,10 @@ The generic ETA diagram and its layout, which is displayed above, will be utiliz
 
 | Step | Description | Visualization/ calculation |
 | :---: | - | - |
-| 1 - 3 | ABC | ![Event Tree Analysis example figure](images/eta_global_sm.png) |
-
+| 1 - 2 |_System definition_ \ 
+As mentioned before, a fictional scenario wherein an Autonomous Car (AC) utilizing full Automatic Driving System (ADS) capabilities encounters an object on the road. Because this is an example scenario, further clarification is not necessary. In a real-life scenario however, this step should be defined in greater detail, such as (technical) boundaries, alotted resources, personnel expertise, etc. | ![Event Tree Analysis example figure](images/eta_global_sm.png) |
+| 3 | - | ![Event Tree Analysis example figure](images/eta_example_step3.png) |
+| 4 | - | | 3 | - | ![Event Tree Analysis example figure](images/eta_example_step4.png) |
 
 ## Best practices/ things to avoid
 
