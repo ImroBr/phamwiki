@@ -26,11 +26,10 @@ Each particular wiki-page at will at least contain the following subjects/ headi
 
 ## Prerequisite hazard methodologies
 Following are the available HA pages on this WIKI:
-* [Process Hazard Analysis (PHA)](/draft_PHA.md)
-* [System-Theoretic Process Analysis (STPA)](/draft_STPA.md)
-* [Failure Mode and Effect Analysis (FMEA)](/draft_FMEA.md)
-* [Failure Tree Analysis (FTA)](/draft_FTA.md)
-* [Event Tree Analysis (ETA)](/draft_ETA.md)
+* [System-Theoretic Process Analysis (STPA)](/STPA.md)
+* [Failure Mode and Effect Analysis (FMEA)](/FMEA.md)
+* [Failure Tree Analysis (FTA)](/FTA.md)
+* [Event Tree Analysis (ETA)](/ETA.md)
 
 ## Future additions
 This WIKI may be supplemented with additional documents and features going forward, depending on available time and functional-utilitary demand. Some of these feature are already known and may be included in the next project update:

@@ -2,17 +2,10 @@ _draft_
 
 # Event Tree Analysis (ETA)
 
-
-<img align="right" src="images/eta_global.png)>
-
-
-## Example(s)
-
-
 ## Introduction 
 Event tree analysis (ETA) is a forward (bottom-up), logical modeling technique for both success and failure that explores responses through a single initiating event and lays a path for assessing probabilities of the outcomes and overall system analysis.<sup>[[1]](#references)</sup> This inductive analysis technique is used to analyze the effects of functioning or failed systems given that an event has occurred. <sup>[[2]](#references)</sup> \
-This technique explores system responses to an initiating _challenge_ and enables assessment ofthe probability of an unfavorable or favorable outcome. The system challenge may be a failure or fault, an undesirable event, or a normal system operating command.<sup>[[1]](#references)</sup>
-The ETA method can be used in conjuction with the FTA (_Fault Tree Analysis_) method, where FTA focuses on preventing multiple causes to the main undesired event, whereas ETA focuses on mitigating multiple consequences from the main undesired event. This conjuction of these techniques is sometimes called a _'Bow-tie'_ technique.
+This technique explores system responses to an initiating _challenge_ and enables assessment of the probability of an unfavorable or favorable outcome. The system challenge may be a failure or fault, an undesirable event, or a normal system operating command.<sup>[[1]](#references)</sup>
+The ETA method can be used in conjuction with the [FTA (_Fault Tree Analysis_)]((/FTA.md)) method, where FTA focuses on preventing multiple causes to the main undesired event, whereas ETA focuses on mitigating multiple consequences from the main undesired event. The conjuction of these techniques is sometimes called a _'Bow-tie'_ technique.
 
 ## History
 The concept of what eventually came to be named _Event Tree_ was conceived by the UKAEA (United Kingdom Atomic Energy Agency) in 1968, as risk assesment tool to optimize the design of a 500MW Steam-Generating Heavy Water Reactor. Use of ETA resulted into a manageable form. <sup>[[1]](#references)</sup> 
@@ -68,12 +61,8 @@ The following steps are necessary to successfully employ the Event Tree Analysis
 
 10. Document the ETA: Document the entire process on the event tree diagrams and update for new information as needed.
 
-* Theoretical example
-* Example of historical factual application
-
 ## Example scenario
 ![Event Tree Analysis example figure](images/eta_global.png)
-![Event Tree Analysis example figure](images/eta_global_sm.png)
 To clarification the the ETA methodology, following is a fictional (though not unrealistic) example scenario in the field of Automotive. In this scenario, an Automated Driving System (ADS) encounters an object when on the road. This example scenario mainly focuses on the contruction of the event tree, including any necessary preceding or following [method steps](#method-steps).
 
 The generic ETA diagram and its layout, which is displayed above, will be utilized to clarify each step.
@@ -84,13 +73,13 @@ The generic ETA diagram and its layout, which is displayed above, will be utiliz
 | 3 | Identify initiating events: We will place this event over the `$(IE)`$ term in the example diagram. For this example, the initiating event is `ADS detects obstacle`. | ![Event Tree Analysis example figure](images/eta_example_step3.png) |
 | 4 | Identify intermediate events: Fill in the _event branch_ names with the appropriate scenario events. | ![Event Tree Analysis example figure](images/eta_example_step4.png) |
 | 5 | Build the event tree diagram: Given that the event tree structure is already provided at the start of this scenario, we will instead this example event tree diagram with the updated fields from previous steps. | ![Event Tree Analysis example figure](images/eta_example_step5.png) |
-| 6 | Obtain event failure probabilities: Fill in each $`(S)uccess`$ and $`(F)ailure`$ variable with the appropriate probabilities. For the purposes of this example, probabilities used are approximated. | ![Event Tree Analysis example figure](images/eta_example_step6.png) |
-| 7 | - | - |
-| 8 | - | - |
-| 9 | - | - |
-| 10 | - | - |
+| 6 | Obtain event failure probabilities: Fill in each $`(S)uccess_n`$ and $`(F)ailure`_n$ variable(s) at the chance nodes with the appropriate probabilities. For the purposes of this example, probabilities used are approximated. Note that the pair of probabilities at each chance node must be [mutually exclusive](#used-terminology) and [collectively exhaustive](#used-terminology) (addition of probabilities must equal $`1`$. | ![Event Tree Analysis example figure](images/eta_example_step6.png) |
+| 7 | Identify outcome risk: For each pathway, multiply every corresponding probability. Note that in this example, the _Initial Event_ is assumed to always be $`1`$, and thus $`(IE)`$ is made superfluous for calculation. This is done for purpose of simplification and the closing off of any external unknowns. | ![Event Tree Analysis example figure](images/eta_example_step7.png |
+| 8-10 | These evaluating/corrective/mitigating steps are beyond the scope of the Event Tree construction. These steps can vary depending on the outcome of the probabilities and the nature of respective field of analysis. | - |
 
-## Best practices/ things to avoid
+
+
+
 
 ## Pros and cons
 Following are advantages and disadvantages of utilizing ETA.
@@ -121,9 +110,7 @@ Following are advantages and disadvantages of utilizing ETA.
 * Partial successes/failures are not distinguishable<sup>[[3]](#references)</sup>
 * Requires an analyst with practical training and experience<sup>[[3]](#references)</sup>
 
-
-
-## Additions/ Notes
+## Best practice/ things to avoid
 
 Following are 10 tips for Event Tree Analysis<sup>[[4]](#references)</sup>:
 
@@ -147,27 +134,23 @@ Following are 10 tips for Event Tree Analysis<sup>[[4]](#references)</sup>:
 
 10. When quantifying an event tree, a useful check is to sum the frequencies of all of the different outcomes. This sum should equal the frequency of the initiating event since the event tree should have identified all the possible outcomes resulting from the occurrence of that initiating event.
 
-
-
-
-
 ## Used terminology
 Glossary containing as many relevant and specific terms
 
 | Term | Definition |
 | - | - |
-| Accident event | First significant deviation from a normal situation that may lead to unwanted consequences. |
-| Barrier | - |
-| Branch | Represents an event, which may be system response, human action/ intervention, emergency response or a continuously operating/ standby sytems. |
+| Accident event | Sometimes called the _Initial Event_. The first event (and base of the event tree) that may lead to unwanted consequences. |
+| Branch | Represents an event, which may be system response, human action/ intervention, emergency response or a continuously operating/ standby sytems. These may be signified by a _chance node_ in an event tree diagram. |
 | Branch probability | Probability of the event (branch) conditioned on occurence of those events that precede it (to the left) in the tree. |
-| Chance node | Branching point at which a new (random) variable is introduced in the tree. |
+| Chance node | Branching point at which a new (random) variable is introduced in the tree. Note that a visual representation of a chance node in an event tree diagram is not required. |
 | Collectively exhaustive | Of a set of probabilistic events, the total sum of the probabilities must equal 1; unknowns are not permitted. |
-| End node | Nodes that is found at the end of a event tree, at the right most side. |
+| End node | Nodes that is found at the end of a event tree, at the right most side, and precedes the final probabilistic outcomes. |
 | HAZOP | **Haz**ard and **Op**erability, a hazard analysis method utilized mainly for indentifying possible hazards in a process. |
 | Mutually exclusive | In ETA, a requisite that 2 or more events cannot happen at the same time probabilistically; the have no or negligible overlap. |
 | Pathway | Vertical line that traverses (chance) nodes until the end node, from left to right. Each pathway must be unique. |
 | Pipe | Vertical line that seperates the conditional event(s) from (a) probabilistic variable(s). |
-| - | - |
+
+## Additions/ Notes
 
 ## See also
 * WASH-1400 [NUREG-75/014](https://www.nrc.gov/docs/ML0706/ML070610293.pdf) Reactor Safety Study, United States Nuclear Regulatory Commission, October 1975
