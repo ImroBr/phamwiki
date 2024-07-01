@@ -46,10 +46,18 @@ The following steps are necessary to successfully employ the Event Tree Analysis
    * An event sequence must be logical, but not necessarily chronological
    * Branches must be [mutually exclusive](#used-terminology) and [collectively exhaustive](#used-terminology)
 
-6. Obtain event failure probabilities: If the failure probability can not be obtained use fault tree analysis to calculate it.
+6. Obtain event failure probabilities: If the failure probability can not be obtained fault tree analysis to calculate it.
    * All probabilities must be greater than or equal to zero and less than or equal to one \
      $`0 \leq P(x) \leq 1`$
    * Sum of probabilities corresponding to a horizontal chance node column must be equal to one 
+   
+   Alternate ways of obtaining probabilities:
+   * Historical data and incident reports.
+   * Industry standards, guidelines and benchmarks, such as the [International Organization for Standardization (ISO)](https://www.iso.org/home.html) and the [International Electrotechnical Commision](https://www.iec.ch/homepage). 
+   * Expert judgment, if not available in the analysis team, outside expertise.
+   * Reliability data of system components, derived from sources such as reliability databases or manufacturer specifications.
+   * Simulation and modeling of the system.
+   * AI/ Machine Learning and predictive analytics.
 
 7. Identify the outcome risk: Calculate the overall probability of the event paths and determine the risk.
    * Probabilities for each branch must be conditional on all preceding branches (all prior pathway events)
@@ -70,19 +78,17 @@ To clarification the the ETA methodology, following is a fictional (though not u
 
 The generic ETA diagram and its layout, which is displayed above, will be utilized to clarify each step.
 
-1-3. _System definition_
-   As mentioned before, a fictional scenario wherein an Autonomous Car (AC) utilizing full Automatic Driving System (ADS) capabilities encounters an object on the road. Because this is an example scenario, further clarification is not necessary. In a real-life scenario however, this step should be defined in greater detail, such as (technical) boundaries, alotted resources, personnel expertise, etc.
-2. _Accident scenario identification_
-   For the purposes of this example, the singular object detection by an AC will suffice.
-3. A
-4. B
-
-
 | Step | Description | Visualization/ calculation |
 | :---: | - | - |
-| 1 - 2 |As mentioned before, a fictional scenario wherein an Autonomous Car (AC) utilizing full Automatic Driving System (ADS) capabilities encounters an object on the road. Because this is an example scenario, further clarification is not necessary. In a real-life scenario however, this step should be defined in greater detail, such as (technical) boundaries, alotted resources, personnel expertise, etc. | ![Event Tree Analysis example figure](images/eta_global_sm.png) |
-| 3 | - | ![Event Tree Analysis example figure](images/eta_example_step3.png) |
-| 4 | - | | 3 | - | ![Event Tree Analysis example figure](images/eta_example_step4.png) |
+| 1-2 | As mentioned before, a fictional scenario wherein an Autonomous Car (AC) utilizing full Automatic Driving System (ADS) capabilities encounters an object on the road. Because this is an example scenario, further clarification is not necessary. In a real-life scenario however, this step should be defined in greater detail, such as (technical) boundaries, alotted resources, personnel expertise, etc. | ![Event Tree Analysis example figure](images/eta_global_sm.png) |
+| 3 | Identify initiating events: We will place this event over the `$(IE)`$ term in the example diagram. For this example, the initiating event is `ADS detects obstacle`. | ![Event Tree Analysis example figure](images/eta_example_step3.png) |
+| 4 | Identify intermediate events: Fill in the _event branch_ names with the appropriate scenario events. | ![Event Tree Analysis example figure](images/eta_example_step4.png) |
+| 5 | Build the event tree diagram: Given that the event tree structure is already provided at the start of this scenario, we will instead this example event tree diagram with the updated fields from previous steps. | ![Event Tree Analysis example figure](images/eta_example_step5.png) |
+| 6 | Obtain event failure probabilities: Fill in each $`(S)uccess`$ and $`(F)ailure`$ variable with the appropriate probabilities. For the purposes of this example, probabilities used are approximated. | ![Event Tree Analysis example figure](images/eta_example_step6.png) |
+| 7 | - | - |
+| 8 | - | - |
+| 9 | - | - |
+| 10 | - | - |
 
 ## Best practices/ things to avoid
 
