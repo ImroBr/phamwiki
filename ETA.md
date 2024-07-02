@@ -1,5 +1,3 @@
-_draft_
-
 # Event Tree Analysis (ETA)
 
 ## Introduction 
@@ -11,7 +9,6 @@ The ETA method can be used in conjuction with the [FTA (_Fault Tree Analysis_)](
 The concept of what eventually came to be named _Event Tree_ was conceived by the UKAEA (United Kingdom Atomic Energy Agency) in 1968, as risk assesment tool to optimize the design of a 500MW Steam-Generating Heavy Water Reactor. Use of ETA resulted into a manageable form. <sup>[[1]](#references)</sup> 
 
 The term "Event Tree" was first introduced during the WASH-1400 nuclear power plant safety study circa 1974.
-
 
 ## Variations
 Specific variations or successions of main hazard analysis method.
@@ -74,12 +71,8 @@ The generic ETA diagram and its layout, which is displayed above, will be utiliz
 | 4 | Identify intermediate events: Fill in the _event branch_ names with the appropriate scenario events. | ![Event Tree Analysis example figure](images/eta_example_step4.png) |
 | 5 | Build the event tree diagram: Given that the event tree structure is already provided at the start of this scenario, we will instead this example event tree diagram with the updated fields from previous steps. | ![Event Tree Analysis example figure](images/eta_example_step5.png) |
 | 6 | Obtain event failure probabilities: Fill in each $`(S)uccess_n`$ and $`(F)ailure`_n$ variable(s) at the chance nodes with the appropriate probabilities. For the purposes of this example, probabilities used are approximated. Note that the pair of probabilities at each chance node must be [mutually exclusive](#used-terminology) and [collectively exhaustive](#used-terminology) (addition of probabilities must equal $`1`$. | ![Event Tree Analysis example figure](images/eta_example_step6.png) |
-| 7 | Identify outcome risk: For each pathway, multiply every corresponding probability. Note that in this example, the _Initial Event_ is assumed to always be $`1`$, and thus $`(IE)`$ is made superfluous for calculation. This is done for purpose of simplification and the closing off of any external unknowns. | ![Event Tree Analysis example figure](images/eta_example_step7.png |
+| 7 | Identify outcome risk: For each pathway, multiply every corresponding probability. Note that in this example, the _Initial Event_ is assumed to always be $`1`$, and thus $`(IE)`$ is made superfluous for calculation. This is done for purpose of simplification and the closing off of any external unknowns. | ![Event Tree Analysis example figure](images/eta_example_step7).png |
 | 8-10 | These evaluating/corrective/mitigating steps are beyond the scope of the Event Tree construction. These steps can vary depending on the outcome of the probabilities and the nature of respective field of analysis. | - |
-
-
-
-
 
 ## Pros and cons
 Following are advantages and disadvantages of utilizing ETA.
