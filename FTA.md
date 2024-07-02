@@ -2,6 +2,8 @@ _Draft_
 
 # Fault Tree Analysis (FTA)
 
+![FTA Diagram](images/Fault-Tree-Analysis-FTA-functional-safety-measures-prevent-traffic-accidents-caused-by.png)
+
 ## Introduction 
 Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate undesired state of a system. This is usually done visually resembling a flowchart diagram, with downwardly cascading branches with corresponding probabilities and Boolean logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
 * Providing clarity and logical foundation directly starting from a failure or otherwise underised state.
@@ -87,7 +89,7 @@ The middle portion of the tree which entails intermediate events require more at
 
 For clarity, color codes can be used for basic events to prioritize critical paths. These can range from green (acceptable risk) to yellow/orange (moderate/ high risk) to red (critical risk). \
 
-![Fault Tree Analysis example](images/fta_01.png) \
+![Fault Tree Analysis example](images/fta_01b.png) \
  
 ### 4. Gather failure data
 In order to assess risks of (basic) events occuring, resources should be allocated accruing failure data. This failure data is expressed as _failure data_ or _failure rates_, depending upon the type of analysis. \
