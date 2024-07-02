@@ -3,6 +3,7 @@ _Draft_
 # Fault Tree Analysis (FTA)
 
 ![FTA Diagram](images/Fault-Tree-Analysis-FTA-functional-safety-measures-prevent-traffic-accidents-caused-by.png)
+<p align="right"><sup>Image from Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks, [1](#references), CC4.0 </sup></p>
 
 ## Introduction 
 Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate undesired state of a system. This is usually done visually resembling a flowchart diagram, with downwardly cascading branches with corresponding probabilities and Boolean logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
@@ -14,10 +15,10 @@ Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Startin
 
 
 ## History
-Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Watson and A Mears, to evaluate the _Minuteman I Intercontinental Ballistic Missile_ for the U.S. Air Force.<sup>[[1]](#references)</sup> Since then, fault trees have gained in popularity as a failure analysis tool.
+Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Watson and A Mears, to evaluate the _Minuteman I Intercontinental Ballistic Missile_ for the U.S. Air Force.<sup>[[2]](#references)</sup> Since then, fault trees have gained in popularity as a failure analysis tool.
 
 ## Underlying systems
-FTA is based on Reliability theory, Boolean algebra and probability theory. A very simple set of rules and symbols provides the mechanism for analyzing very complex systems, and complex relationships between hardware, software and humans. <sup>[[1]](#references)</sup>
+FTA is based on Reliability theory, Boolean algebra and probability theory. A very simple set of rules and symbols provides the mechanism for analyzing very complex systems, and complex relationships between hardware, software and humans. <sup>[[2]](#references)</sup>
 
 ## Variations
 Specific variations or successions of main hazard analysis method.
@@ -60,7 +61,7 @@ Advanced symbols
 Following are steps one could take to apply the FTA method.
 
 ### 1. Define hazard
-Start by clearly and concisely describing the hazard (top event). As this will be the basis for following steps, a specific and measurable definition is recommended. Clarifying factors for top event precision may include: <sup>[[3]](#references)
+Start by clearly and concisely describing the hazard (top event). As this will be the basis for following steps, a specific and measurable definition is recommended. Clarifying factors for top event precision may include: <sup>[[4]](#references)
 * How much?
 * How long (duration)?
 * What is the safety impact?
@@ -69,7 +70,7 @@ Start by clearly and concisely describing the hazard (top event). As this will b
 
 ### 2. System analysis and contributing events identification
 Identify factors and events that might contribute to the most undesired (top level) event. These factors should fall into 2 categories: [basic events](#used-terminology) and [intermediate events](#used-terminology). \
-* Create or utilize the following resources: <sup>[[3]](#references)</sup>
+* Create or utilize the following resources: <sup>[[4]](#references)</sup>
 	* List of components (Bill of Materials)
 	* Boundary Diagram
 	* Schematic
@@ -149,10 +150,10 @@ Common (theoretical or practical) mistakes.
 * Very good at showing how resistant a system is to single or multiple initiating faults
 
 ### Limitations to FTA
-* The accuracy and effectiveness of FTA in analyzing relevant the causes of failure is heavily reliant on the expertise of the analysts <sup>[[2]](#references)</sup>
-* Large and complex systems require large and complex fault trees, which makes analysis time-consuming and challenging <sup>[[2]](#references)</sup>
-* One single top event cam be examined at a time <sup>[[2]](#references)</sup>
-* Data regarding failure and quality determines precision of calculated probabilities in a fault tree <sup>[[2]](#references)</sup>
+* The accuracy and effectiveness of FTA in analyzing relevant the causes of failure is heavily reliant on the expertise of the analysts <sup>[[3]](#references)</sup>
+* Large and complex systems require large and complex fault trees, which makes analysis time-consuming and challenging <sup>[[3]](#references)</sup>
+* One single top event cam be examined at a time <sup>[[3]](#references)</sup>
+* Data regarding failure and quality determines precision of calculated probabilities in a fault tree <sup>[[3]](#references)</sup>
 * Not good at finding all possible initiating faults
 
 ## Additions/ Notes
@@ -176,9 +177,10 @@ Glossary containing as many relevant and specific terms
 
 
 ## References
-<sup>[1]</sup> [Fault Tree Analysis – A History](https://web.archive.org/web/20110723124816/http://www.fault-tree.net/papers/ericson-fta-history.pdf) \
-<sup>[2]</sup> [What is fault tree analysis (FTA)?](https://www.ibm.com/topics/fault-tree-analysis) \
-<sup>[3]</sup> [FTA | Fault Tree Analysis](https://quality-one.com/fta/) \
+[1] Winkle, Thomas. 2016. ["Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks"](https://www.researchgate.net/publication/303480787_Development_and_Approval_of_Automated_Vehicles_Considerations_of_Technical_Legal_and_Economic_Risks), Technische Universität München \
+[2] [Fault Tree Analysis – A History](https://web.archive.org/web/20110723124816/http://www.fault-tree.net/papers/ericson-fta-history.pdf) \
+[3] [What is fault tree analysis (FTA)?](https://www.ibm.com/topics/fault-tree-analysis) \
+[4] [FTA | Fault Tree Analysis](https://quality-one.com/fta/) \
 
 ----- \
-<sup>[4]</sup> [What is a "cutset"](https://www.wilderisk.co.uk/about/blog/cutset-in-fault-tree-analysis/) \
+<sup>[5]</sup> [What is a "cutset"](https://www.wilderisk.co.uk/about/blog/cutset-in-fault-tree-analysis/) \
