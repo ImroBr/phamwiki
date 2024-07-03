@@ -1,6 +1,6 @@
-_Draft_ 
-
 # Failure Mode and Effect Analysis (FMEA)
+
+![FTA Diagram](images/fmea_example01.png)
 
 ## Introduction 
 [[Failure Mode and Effects Analysis (FMEA) - asq.org](https://asq.org/quality-resources/fmea)] \
@@ -29,10 +29,10 @@ AFMEA (Advanced FMEA) \
 ## Method steps
 _Specific steps, formulas, symbols and/or terminology_ \
 
-### 1. Scope
+### 1. Define scope
 What is the goal of the process? Is it in the realm of concept design, system or service? Is there a desired level of detail and what are the boundaries? The result should be clear. \
 
-### 2. Interdisciplinary team
+### 2. Assemble interdisciplinary team
 A team of experts specializing in fields pertaining to the project should be assembled. 
 
 ### 3. Identify scope functions
@@ -65,22 +65,32 @@ Assign actions that lower the RPN, by focusing on mitigating the underlying Seve
 ### 12. Measure effectiveness and evaluate
 Measure the effectiveness of the assigned actions and log their progress.
 
-
 ## Example(s)
-* Theoretical example
-* Example of historical factual application
+Now we will go through the [steps](#method-steps) in wherein the filling in of an FMEA worksheet takes place. These steps will start from #5 through #11. The worksheet layout used will be the same as the above FMEA image.
 
-## Things to avoid
-Common (theoretical or practival) mistakes
+The example scenario will be in the context of and _ADS (Automated Driving System)_ detecting an object while on the road. 
+
+
+| Step | Description | Visualization |
+| - | - | - |
+| 1-3 | Define scope <br>Assemble Interdisciplinary team<br>Identify scope functions | Due to these steps already being defined, these steps will be skipped for the purposes of this example case. |
+| 4 | Define failure modes. | - |
+| 5 | - | - | 
 
 ## Pros and cons
 List of advantages and disadvantages
 
 _Disadvantages_ \
-
+* Possibly labor intensive: FMEA can become time-consuming and laborious when in the case of complex systems with numerous components and potential failure modes
+* Subjectivity: Assignment of Severity, Occurence and Detection can be subjective, making it harder to find concensus (similar RPN scores) between (many) analysts, which may lead to inconsistent results
+* FMEA focuses more on individual single-point failures, and is not equipped for subsystem-interactive failures
+* FMEA does not formally encapsulate time-based effects of system components, potentially missing failure modes that are time-dependant
 
 _Advantages_\
 * One of the most widely used and available hazard analysis methods
+* Detailed focus on overview and analysis of individual components and subsystems
+* (Advanced) probabilistic techniques not required for implementation
+* Encourages a proactive approach to identify and mitigate potential failure modes before they occur, enhancing reliability and safety
 
 ## Additions/ Notes
 [FMEA Example Worksheet](example_files/fmea_testsheet_95.xls)
@@ -96,12 +106,10 @@ Glossary containing as many relevant and specific terms
 | End Effect | Consequence a failure mode has upon operation, function or status at the highest indenture level |
 | Failure | Any error, defects or abnormalities that negatively impact system functionality, especially affecting the customer. |
 | Failure Effect | The immediate consequence of a failure during operation.  |
-| Failure Mode | - |
 | Indenture levels | Levels which indentify or describe (relative) complexity of a function or assembly. |
 | Local Effect | The consequence a failure mode has on the current specific operation, function or status under analysis. |
 | Next higher level effect | Consequence a failure mode has on operation, function or status at the next higher indenture level above the currently analyzed item. |
 | Occurrence | Signified as "O", occurrence denotes a (probabilistic) chance of a failure occurring. Usually noted on a 1-10 scale, in which 10 can be likened to inevitability and 1 to (extreme) unlikeliness. |
-| Probalility | - |
 | Process Control | Preventative or mitigating procedures, mechanisms or tests that attempt to prevent or curtail a failure before the client is affected. |
 | Risk Priority Number (RPN) | A multiplication of $`S \times O \times D`$, the total score helps prioritize failures by overall criticality. |
 | Severity | Signified as "S", severity denoted the degree of negative impact of a potential failure. Usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant. |
@@ -118,8 +126,6 @@ FMECA)”](https://knowledge.bsigroup.com/products/reliability-of-systems-equipm
 * SAE J1739  - [“Potential Failure Mode and effects Analysis in Design (Design FMEA) and Potential Failure Mode and effects Analysis in Manufacturing and Assembly Processes (Process FMEA) and effects Analysis for Machinery (Machinery FMEA)”](https://www.sae.org/standards/content/j1739_202101/) _(Revised 2021-01-13)_
 * SEMATECH (1992) - [“Failure Modes and effects Analysis (FMEA): A Guide for Continuous Improvement for the Semiconductor Equipment Industry”](https://www.yumpu.com/en/document/view/3574368/failure-mode-and-effects-analysis-fmea-a-guide-for-sematech)
 * FMEAAV-1 - _IAG& VDA FMEA Handbook_ <sup>[2]</sup> _(Automotive) (August 2022)_
-
-
 
 ## References
 <sup>[1]</sup> [What is FMEA? Failure Mode & Effects Analysis | ASQ](https://asq.org/quality-resources/fmea) \
