@@ -79,11 +79,12 @@ The example scenario will be in the context of and _ADS (Automated Driving Syste
 | 4 | Define failure modes: Find the maximum amount of ways each of the above (sub)systems may fail, following by what would be the consequence of that failure.  | ![FMEA Example step 4](images/fmea_example_step04.png) |
 | 5 | Determine failure severity | ![FMEA Example step 5](images/fmea_example_step05.png) | 
 | 6 | Determine potential root causes | ![FMEA Example step 6](images/fmea_example_step06.png) |
-| 7 | Determine occurence rating | ![FMEA Example step 6](images/fmea_example_step07.png) |
-| 8 | Determine process controls | - |
-| 9 | Determine detection rating | - |
-| 10 | Calculate Risk Priority Number | - |
-| 11 | Implement changes | - |
+| 7 | Determine occurence rating | ![FMEA Example step 7](images/fmea_example_step07.png) |
+| 8 | Determine process controls | ![FMEA Example step 8](images/fmea_example_step08.png) |
+| 9 | Determine detection rating | ![FMEA Example step 8](images/fmea_example_step09.png) |
+| 10 | Calculate Risk Priority Number | ![FMEA Example step 8](images/fmea_example_step10.png) |
+| 11 | Implement changes | ![FMEA Example step 8](images/fmea_example_step11.png) |
+| 12 | Measure effectiveness and evaluate | - |
 
 ## Pros and cons
 List of advantages and disadvantages
