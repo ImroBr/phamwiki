@@ -43,8 +43,6 @@ For all identified functions, identify every way that function might fail. Failu
 2. Erroneous function: The item or functional block is operating within design thresholds and parameters, but not in the desired way.
 3. Incorrect function: The item or functional block is operating outside design thresholds and parameters.
 
-At this point, most of the FMEA worksheet can be filled in, save for the numerical rating.
-
 ### 5. Determine failure severity
 For each identified failure, determine the the severity. Signified as "S", severity denoted the degree of negative impact of a potential failure. Noted as "S" on the FMEA sheet, severity is usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant.
 
@@ -77,9 +75,15 @@ The example scenario will be in the context of and _ADS (Automated Driving Syste
 | Step | Description | Visualization |
 | - | - | - |
 | 1-2 | Define scope <br>Assemble Interdisciplinary team<br>Identify scope functions | Due to these steps already being defined, these steps will be skipped for the purposes of this example case. |
-| 3 | Identify scope functions: In the scenario of an ADS detecting an obstacle, what are the main subsystems that are involved in that process? For this excercise, these will be: Obstacle Detection <br>Obstacle Identification <br>Decision Making <br>Braking System <br>Driver Intervention. | ![FTA Diagram](images/fmea_example_step03.png) |
-| 4 | Define failure modes. | (images/fmea_example_step04.png) |
-| 5 | - | - | 
+| 3 | Identify scope functions: In the scenario of an ADS detecting an obstacle, what are the main functions or (sub)systems that are involved in that scenario? For this excercise, these will be: Obstacle Detection <br>Obstacle Identification <br>Decision Making <br>Braking System <br>Driver Intervention. | ![FMEA Example step 3](images/fmea_example_step03.png) |
+| 4 | Define failure modes: Find the maximum amount of ways each of the above (sub)systems may fail, following by what would be the consequence of that failure.  | ![FMEA Example step 4](images/fmea_example_step04.png) |
+| 5 | Determine failure severity | ![FMEA Example step 5](images/fmea_example_step05.png) | 
+| 6 | Determine potential root causes | - |
+| 7 | Determine occurence rating | - |
+| 8 | Determine process controls | - |
+| 9 | Determine detection rating | - |
+| 10 | Calculate Risk Priority Number | - |
+| 11 | Implement changes | - |
 
 ## Pros and cons
 List of advantages and disadvantages
