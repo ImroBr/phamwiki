@@ -19,27 +19,31 @@ Most use cases in current day. Type(s) of application domains.
 
 ## Variations
 _Specific variations or successions of main hazard analysis method._ \
-### FMECA (*Failure Modes, effects and criticality analysis*)
-Similar to the FMEA process, this variant encorporates Criticality as an additional parameter. A Critical characteristic associated with a failure mode is a measurements or indicators that reflect safety or compliance with government regulations and need special controls. Critical characteristics have a high severity rating because of this. \
-FMECA is sometimes used interchangably with FMEA. \
-DFMEA (Design FMEA) \
-PFMEA (Process FMEA) (https://safetyculture.com/topics/fmea/)
-AFMEA (Advanced FMEA) \
+* FMECA (*Failure Modes, effects and criticality analysis*)
+  Similar to the FMEA process, this variant encorporates Criticality as an additional parameter. A Critical characteristic associated with a failure mode is a measurements or indicators that reflect safety or compliance with government regulations and need special controls. Critical characteristics have a high severity rating because of this. Note: FMECA is sometimes used interchangably with FMEA. \
+* DFMEA (Design FMEA)
+* PFMEA (Process FMEA) (https://safetyculture.com/topics/fmea/)
+* AFMEA (Advanced FMEA)
 
 ## Method steps
 _Specific steps, formulas, symbols and/or terminology_ \
 
 ### 1. Define scope
-What is the goal of the process? Is it in the realm of concept design, system or service? Is there a desired level of detail and what are the boundaries? The result should be clear. \
+What is the goal of the process? Is it in the realm of concept design, system or service? Is there a desired level of detail and what are the boundaries? The result should be clear.
 
 ### 2. Assemble interdisciplinary team
 A team of experts specializing in fields pertaining to the project should be assembled. 
 
 ### 3. Identify scope functions
-Utilizing flowcharts, attempt to encompass the purpose and desired expectation of the system, design, process or service. Use it with a verb followed by a noun. Where necessary, break the scope down into smaller parts, and identify the function of those parts.
+Utilizing flowcharts, attempt to encompass the purpose and desired expectation of the system, design, process or service. Use it with a verb followed by a noun. Where necessary, break the scope down into smaller parts, and identify the function of those parts. 
 
-### 4. Define failure Modes
-For all identified functions, identify every way that function might fail. At this point, most of the FMEA worksheet can be filled in, save for the numerical rating.
+### 4. Define Failure Modes
+For all identified functions, identify every way that function might fail. Failure modes can generally fill in 1 of 3 categories:
+1. Loss of function: The item, functional block or subsystem is no longer operating and the function previously performed by it is gone.
+2. Erroneous function: The item or functional block is operating within design thresholds and parameters, but not in the desired way.
+3. Incorrect function: The item or functional block is operating outside design thresholds and parameters.
+
+At this point, most of the FMEA worksheet can be filled in, save for the numerical rating.
 
 ### 5. Determine failure severity
 For each identified failure, determine the the severity. Signified as "S", severity denoted the degree of negative impact of a potential failure. Noted as "S" on the FMEA sheet, severity is usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant.
@@ -66,15 +70,15 @@ Assign actions that lower the RPN, by focusing on mitigating the underlying Seve
 Measure the effectiveness of the assigned actions and log their progress.
 
 ## Example(s)
-Now we will go through the [steps](#method-steps) in wherein the filling in of an FMEA worksheet takes place. These steps will start from #5 through #11. The worksheet layout used will be the same as the above FMEA image.
+Now we will go through the [steps](#method-steps) in wherein the filling in of an FMEA worksheet takes place. These steps will start from #3 through #11. The worksheet layout used will be the same as the FMEA worksheet image displayed above.
 
 The example scenario will be in the context of and _ADS (Automated Driving System)_ detecting an object while on the road. 
 
-
 | Step | Description | Visualization |
 | - | - | - |
-| 1-3 | Define scope <br>Assemble Interdisciplinary team<br>Identify scope functions | Due to these steps already being defined, these steps will be skipped for the purposes of this example case. |
-| 4 | Define failure modes. | - |
+| 1-2 | Define scope <br>Assemble Interdisciplinary team<br>Identify scope functions | Due to these steps already being defined, these steps will be skipped for the purposes of this example case. |
+| 3 | Identify scope functions: In the scenario of an ADS detecting an obstacle, what are the main subsystems that are involved in that process? For this excercise, these will be: Obstacle Detection <br>Obstacle Identification <br>Decision Making <br>Braking System <br>Driver Intervention. | ![FTA Diagram](images/fmea_example_step03.png) |
+| 4 | Define failure modes. | (images/fmea_example_step04.png) |
 | 5 | - | - | 
 
 ## Pros and cons
@@ -91,6 +95,7 @@ _Advantages_\
 * Detailed focus on overview and analysis of individual components and subsystems
 * (Advanced) probabilistic techniques not required for implementation
 * Encourages a proactive approach to identify and mitigate potential failure modes before they occur, enhancing reliability and safety
+
 
 ## Additions/ Notes
 [FMEA Example Worksheet](example_files/fmea_testsheet_95.xls)
@@ -113,12 +118,14 @@ Glossary containing as many relevant and specific terms
 | Process Control | Preventative or mitigating procedures, mechanisms or tests that attempt to prevent or curtail a failure before the client is affected. |
 | Risk Priority Number (RPN) | A multiplication of $`S \times O \times D`$, the total score helps prioritize failures by overall criticality. |
 | Severity | Signified as "S", severity denoted the degree of negative impact of a potential failure. Usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant. |
+| Single Point of Failure (SPOF)<br>Single Failure Points (SFP) | Part of a system that, if it fails, will stop the whole system form working |
 
 
 ## See also
 A more extensive history and standards regarding FMEA can be found at [FMEA history](https://www.superengineer.net/blog/fmea-history) \
 ### FMEA Standards
 * MIL-STR 1629  - “Procedures for performing a failure mode and effect analysis” (FMECA) _(Discontinued 1998)_
+* MIL-HDBK-338B
 * IEC 60812  - [“Procedures for failure mode and effect analysis (FMEA)”](https://webstore.iec.ch/publication/26359) _(2018-18-10)_
 * BS 5760-5  - [“Guide to failure modes, effects and criticality analysis (FMEA and
 FMECA)”](https://knowledge.bsigroup.com/products/reliability-of-systems-equipment-and-components-guide-to-failure-modes-effects-and-criticality-analysis-fmea-and-fmeca?version=standard) _(Withdrawn June 6<sup>th</sup> 2006)_
