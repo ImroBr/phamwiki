@@ -1,9 +1,7 @@
-_Draft_
-
 # Fault Tree Analysis (FTA)
 
 ![FTA Diagram](images/Fault-Tree-Analysis-FTA-functional-safety-measures-prevent-traffic-accidents-caused-by.png)
-<p align="right"><sup>Image from Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks, [1](#references), CC4.0 </sup></p>
+<p align="right"><sup>Image from Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks, [1], CC4.0 </sup></p>
 
 ## Introduction 
 Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate undesired state of a system. This is usually done visually resembling a flowchart diagram, with downwardly cascading branches with corresponding probabilities and Boolean logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
@@ -177,7 +175,7 @@ Glossary containing as many relevant and specific terms
 
 
 ## References
-[1] Winkle, Thomas. 2016. ["Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks"](https://www.researchgate.net/publication/303480787_Development_and_Approval_of_Automated_Vehicles_Considerations_of_Technical_Legal_and_Economic_Risks), Technische Universität München \
+[1] Winkle, Thomas. 2016. Technische Universität München. ["Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks"](https://www.researchgate.net/publication/303480787_Development_and_Approval_of_Automated_Vehicles_Considerations_of_Technical_Legal_and_Economic_Risks), Autonomous Driving (pp.589-618) \
 [2] [Fault Tree Analysis – A History](https://web.archive.org/web/20110723124816/http://www.fault-tree.net/papers/ericson-fta-history.pdf) \
 [3] [What is fault tree analysis (FTA)?](https://www.ibm.com/topics/fault-tree-analysis) \
 [4] [FTA | Fault Tree Analysis](https://quality-one.com/fta/) \
