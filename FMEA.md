@@ -1,6 +1,6 @@
 # Failure Mode and Effect Analysis (FMEA)
 
-![FTA Diagram](images/fmea_example01.png)
+![FTA Diagram](images/fmea_example02.png)
 
 ## Introduction 
 [[Failure Mode and Effects Analysis (FMEA) - asq.org](https://asq.org/quality-resources/fmea)] \
@@ -78,8 +78,8 @@ The example scenario will be in the context of and _ADS (Automated Driving Syste
 | 3 | Identify scope functions: In the scenario of an ADS detecting an obstacle, what are the main functions or (sub)systems that are involved in that scenario? For this excercise, these will be: Obstacle Detection <br>Obstacle Identification <br>Decision Making <br>Braking System <br>Driver Intervention. | ![FMEA Example step 3](images/fmea_example_step03.png) |
 | 4 | Define failure modes: Find the maximum amount of ways each of the above (sub)systems may fail, following by what would be the consequence of that failure.  | ![FMEA Example step 4](images/fmea_example_step04.png) |
 | 5 | Determine failure severity | ![FMEA Example step 5](images/fmea_example_step05.png) | 
-| 6 | Determine potential root causes | - |
-| 7 | Determine occurence rating | - |
+| 6 | Determine potential root causes | ![FMEA Example step 6](images/fmea_example_step06.png) |
+| 7 | Determine occurence rating | ![FMEA Example step 6](images/fmea_example_step07.png) |
 | 8 | Determine process controls | - |
 | 9 | Determine detection rating | - |
 | 10 | Calculate Risk Priority Number | - |
@@ -92,7 +92,7 @@ _Disadvantages_ \
 * Possibly labor intensive: FMEA can become time-consuming and laborious when in the case of complex systems with numerous components and potential failure modes
 * Subjectivity: Assignment of Severity, Occurence and Detection can be subjective, making it harder to find concensus (similar RPN scores) between (many) analysts, which may lead to inconsistent results
 * FMEA focuses more on individual single-point failures, and is not equipped for subsystem-interactive failures
-* FMEA does not formally encapsulate time-based effects of system components, potentially missing failure modes that are time-dependant
+* FMEA does not formally encapsulate time-based effects of system components, potentially missing failure modes that are time-dependent
 
 _Advantages_\
 * One of the most widely used and available hazard analysis methods
