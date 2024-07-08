@@ -72,18 +72,23 @@ Now we will go through the [steps](#method-steps) in wherein the filling in of a
 
 The example scenario will be in the context of and _ADS (Automated Driving System)_ detecting an object while on the road. 
 
+Note that the example FMEA sheet may vary depending on the context and scope of the hazard. Here are some ways other FMEA sheets may vary:
+* The FMEA sheet column order may be in the same order as the method execution steps, from left to right. This may make filing an FMEA sheet quicker and easier for the individual filing it, due to only having to shift to the right and adhering to the column name. Though this may make it (marginally) harder to interpret.
+* The detection process controls (or any) may not be present in some variations
+* Some FMEA contain a [_Criticality_](#used-references) rating column typically similar to the Severity, Occurence and Detection rating. If present, this must be taen into account for RPN calculation, usually also by way of multiplication. This will make this a [FMECA](#variations) sheet.
+
 | Step | Description | Visualization |
 | - | - | - |
 | 1-2 | Define scope <br>Assemble Interdisciplinary team<br>Identify scope functions | Due to these steps already being defined, these steps will be skipped for the purposes of this example case. |
 | 3 | Identify scope functions: In the scenario of an ADS detecting an obstacle, what are the main functions or (sub)systems that are involved in that scenario? For this excercise, these will be: Obstacle Detection <br>Obstacle Identification <br>Decision Making <br>Braking System <br>Driver Intervention. | ![FMEA Example step 3](images/fmea_example_step03.png) |
 | 4 | Define failure modes: Find the maximum amount of ways each of the above (sub)systems may fail, following by what would be the consequence of that failure.  | ![FMEA Example step 4](images/fmea_example_step04.png) |
-| 5 | Determine failure severity | ![FMEA Example step 5](images/fmea_example_step05.png) | 
-| 6 | Determine potential root causes | ![FMEA Example step 6](images/fmea_example_step06.png) |
-| 7 | Determine occurence rating | ![FMEA Example step 7](images/fmea_example_step07.png) |
-| 8 | Determine process controls | ![FMEA Example step 8](images/fmea_example_step08.png) |
-| 9 | Determine detection rating | ![FMEA Example step 8](images/fmea_example_step09.png) |
-| 10 | Calculate Risk Priority Number | ![FMEA Example step 8](images/fmea_example_step10.png) |
-| 11 | Implement changes | ![FMEA Example step 8](images/fmea_example_step11.png) |
+| 5 | Determine failure severity: For each failure mode, assign a severity rating under `S`. | ![FMEA Example step 5](images/fmea_example_step05.png) | 
+| 6 | Determine potential root causes: Write down the (potential) root cause for the failure. | ![FMEA Example step 6](images/fmea_example_step06.png) |
+| 7 | Determine occurence rating: Calculate the occurence and write it down (next to the Severity rating) | ![FMEA Example step 7](images/fmea_example_step07.png) |
+| 8 | Determine process controls: Write down the procedure, test or mechanism that prevent or mitigate the (root) cause from happening under _Process Controls for Prevention_. <br>Similary, write down the procedure or mechanism that detects failure after the cause happened but before the entire failure comes to fruition under _Process Controls for Detection_.  | ![FMEA Example step 8](images/fmea_example_step08.png) |
+| 9 | Determine detection rating: Write down the likelihood the _Process Control for Detection_ can successfully detect the cause or its failure under `D`. | ![FMEA Example step 8](images/fmea_example_step09.png) |
+| 10 | Calculate Risk Priority Number: Multiply the `S`, `O` and `D` rating and write the answer down under the corresponding RPN column. | ![FMEA Example step 8](images/fmea_example_step10.png) |
+| 11 | Implement changes: The last step (possibly iterative) step that contains multiple actions, which typically starts with the designation of an assigned team or person(s) and a (due) date. Then, note the action that the designated entity will undertake which will reduce the initial RPN value. Upon testing by theory or the iterative practice, write down the updated `S`, `O` and `D` rating on the right hand side. Then calculate these value for the final RPN value. | ![FMEA Example step 8](images/fmea_example_step11.png) |
 | 12 | Measure effectiveness and evaluate | - |
 
 ## Pros and cons
