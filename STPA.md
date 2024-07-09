@@ -40,11 +40,10 @@ The first step defines the purpose of the analysis. What is the system boundary 
 1. Identify [losses](#used-terminology)
    * Encapsulation of relevant stakeholders, and their stake in the system
    * What type of losses? (human life, reputation, privacy, security, etc)
-   * Translate each relevant goal or value into a list of losses: `L-<number>: Loss (of) <critical objective>`
+   * Translate each relevant goal or value into a list of losses: `L-<number>: Loss (of) <critical objective>` \
      Such as: `L-1: Loss of life or injury to people`
    
-   > [!TIP]
-   > Some tips to prvent common mistaks when identifying losses:
+   Some tips to prevent common mistaks when identifying losses:
    1. Losses can include any loss that is unacceptable to any stakeholder
    2. Losses should not reference individual components or specific causes like “human error” and “brake failure”
    3. Losses may involve aspects of the environment that are not directly controlled by the system designer
@@ -52,8 +51,8 @@ The first step defines the purpose of the analysis. What is the system boundary 
 2. Identify [system-level hazards](#used-terminology):
 
    Once the system and system boundary is identified, the next step is to define the system-level hazards by identifying system states or conditions that will lead to a loss in worst-case environmental conditions. 
-   * Translate each system-level hazard into a list using the follosing syntax: `<Hazard specification> = <System> & <Unsafe Condition> & <Link to Losses>`
-     Such as: _H-1 = Aircraft violate minimum separation standards in flight \[L-1, L-2, L-4, L-5\]_
+   * Translate each system-level hazard into a list using the follosing general notation: `<Hazard specification> = <System> & <Unsafe Condition> & <Link to Losses>`
+     Such as: `H-1 = Aircraft violate minimum separation standards in flight [L-1, L-2, L-4, L-5]`
 	 
     In general, a hazard can lead to one or more losses and each hazard should be traced to the resulting losses. This traceability is typically documented in brackets after the hazard description. The example above shows the traceability to the loss(es) previously constructed.
 	
@@ -63,14 +62,41 @@ The first step defines the purpose of the analysis. What is the system boundary 
     3. Hazards must describe states or conditions to be prevented
 	
 	See [Common mistakes when identifying system-level hazards](#common-mistakes-when-identifying-system-level-hazards) for help when identifying system-level hazards.
-3. Identify system-level Constraints
+3. Identify [system-level Constraints](#used-references)
+   Once the system-level hazards are identified, it is straightforward to identify system-level constraints that must be enforced: simply invert the condition. \
+   Translate the system-level constraints using the general notation: `<System-level Constraint> = <System> & <Condition to Enforce> & <Link to Hazards>`
+   
+   An example in the correct syntax and the respective inversion:
+   ```
+   H-1: Aircraft violate minimum separation standards [L-1, L-2, L-4, L-5]
+   SC-1: Aircraft must satisfy minimum separation standards from other aircraft and objects [H-1]
+   
+   H-2: Aircraft airframe integrity is lost [L-1, L-2, L-4, L-5]
+   SC-2: Aircraft airframe integrity must be maintained under worst-case conditions [H-2]
+   ```
+   
 4. Refine hazards (Optional)
-
-
 
 ### 2. Control Structure
 * Capturing functional relationships and interactions\
-Factoring in (global) functional relationships and establishing points of control with downward arrows (control actions, and points of feedback with upward arrows.
+Factoring in (global) functional relationships and establishing points of control with downward arrows (control actions), and points of feedback with upward arrows.
+
+
+| Generic control loop |
+| - |
+| ![STPA Generic Control Loop](images/stpa_handbook_figure2.6_page23_noreference.png) |
+
+
+| - |
+| - |
+| ![STPA Generic Control Loop](images/stpa_handbook_figure2.6_page23_noreference.png) |
+
+
+| ![STPA Generic Control Loop](images/stpa_handbook_figure2.6_page23_noreference.png) |
+| - |
+| | Generic control loop |
+
+
 
 ### 3. Identify Unsafe Control Actions (UCA)s
 In the flow of control actions and feedback, what unsafe control actions can occur?
