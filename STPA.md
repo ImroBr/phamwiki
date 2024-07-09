@@ -87,14 +87,9 @@ Factoring in (global) functional relationships and establishing points of contro
 | ![STPA Generic Control Loop](images/stpa_handbook_figure2.6_page23_noreference.png) |
 
 
-| - |
-| - |
-| ![STPA Generic Control Loop](images/stpa_handbook_figure2.6_page23_noreference.png) |
-
-
 | ![STPA Generic Control Loop](images/stpa_handbook_figure2.6_page23_noreference.png) |
 | - |
-| | Generic control loop |
+| <sup>Generic control loop</sup> |
 
 
 
