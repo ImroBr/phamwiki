@@ -78,17 +78,13 @@ The first step defines the purpose of the analysis. What is the system boundary 
 <img align="right" src="images/stpa_handbook_figure2.6_page23_noreference.png"> 
 
 Capturing functional relationships and interactions\
-Factoring in (global) functional relationships and establishing points of control with downward arrows (control actions), and points of feedback with upward arrows.
+Factoring in (global) functional relationships and establishing points of control with downward arrows (control actions), and points of feedback with upward arrows, as seen on the image on the right.
 
+A [controller](#used-terminology) makes decisions to achive goals via _control actions_. The decision-making porgress is represented as the _control algorithm_. Additionally, controller have _process models_ that represent the controller's internal beliefs used in decisionmaking. Below is a more detailed example of a control structure.
 
-| Generic control loop |
+| ![STPA hierarchical control structure](images/stpa_handbook_figure2.8_page24_noreference.png) |
 | - |
-| ![STPA Generic Control Loop](images/stpa_handbook_figure2.6_page23_noreference.png) |
-
-
-| ![STPA Generic Control Loop](images/stpa_handbook_figure2.6_page23_noreference.png) |
-| - |
-| <sup>Generic control loop</sup> |
+| <sup>Example of a hierarchical control structure for aviation</sup> |
 
 
 
@@ -202,6 +198,26 @@ Tips to prevent common mistakes when identifying hazards:
 > * All hazards should describe system-level conditions to be prevented
 > * The number of hazards should be relatively small, usually no more than 7 to 10
 > * Hazards should not include ambiguous or recursive words like “unsafe”, “unintended”, “accidental”, etc.
+
+### Common points of confusion when formalizing control structures
+From the [STPA Handbook](#see-also) (page 25):
+> **A control structure is not a physical model** \
+The hierarchical control structure used in STPA is a functional model, not a physical model like a physical block diagram, a schematic, or a piping and instrumentation diagram. The connections show information that can be sent, such as commands and feedback—they do not necessarily correspond to physical connections. For example, the interactions between the flight crew and air traffic control are not of a physical nature, but they are modeled in a functional control structure. 
+
+> **A control structure is not an executable model** \
+The control structure is not an executable model or a simulation model. In fact, control structures often include components for which executable models do not exist (such as humans). Instead, STPA can be used to carefully derive the necessary behavioral constraints, requirements, and specifications needed enforce the desired system properties. For example, the control structure in the [aviation example image](#2.-control-structure) does not assume that air traffic control will always sent instructions to the flight crew when needed, that they will always have the capability to send instructions (e.g. that radios will always be operational), that the correct instructions will always be sent, or that the instructions will always be followed by the pilots. It simply indicates that a system was/will be created to allow air traffic control to send instructions to the flight crew. The next steps in STPA will carefully examine how unsafe behaviors may occur, including instructions that are sent but not received, unsafe instructions that may be sent, etc. Although the control structure itself is not an executable model, the STPA method will produce precise requirements and other outputs that can be used to generate executable models and specifications.
+
+> **Use abstraction to manage complexity** \
+One of the biggest challenges in any hazard analysis is managing system complexity. Control structures use abstraction in several ways to help manage complexity. For example, in commercial flights the flight crew might consist of two or three individual pilots. Rather than clutter the control structure right from the beginning with three separate pilots, we can group them together as a flight crew that collectively provides control actions and collects feedback. Similarly, rather than explicitly listing every individual aircraft subsystem, we could begin at a more abstract level by modeling aircraft automation and the physical processes they control as two levels in the control hierarchy. 
+
+> The principle of abstraction can also be applied to the command and feedback paths in the control 
+structure. Rather than listing each individual button, switch, and lever in the cockpit, we might begin with much broader actions like a climb maneuver. Later, we could refine these broad actions into pitch, thrust, or other commands as appropriate. This principle is especially useful during early development phases when individual commands and sensors are not yet known.
+
+The control action path may contain mechanisms by which the controller acts upon a controlled process (referred to as actuators) and mechanisms by which the controller senses feedback from a controlled process (referred to as sensors). These details are usually abstracted away when initially creating the control structure, but the control structure will be refined to include actuators and sensors later during the scenario creation step.
+
+One additional type of abstraction is used in control structures. Consider the flight commands sent from the flight crew to the aircraft automation. In a remotely piloted UAV application, those commands may need to pass through many different components—from a physical button on the command console, through an embedded system that encodes the command within a digital packet, to a network switch, a radio transmitter, a satellite, and a radio receiver on the UAV. It is not necessary to show all of these detailed steps along the control path in the initial control structure—what matters is that the remote pilot will have some way to send flight commands to the UAV.
+
+In fact, the most efficient way to apply STPA is to begin before those design decisions have been made and before such details are known. The abstract control structure above can be used to begin STPA and identify the requirements and constraints for the communication path and other parts of the system. Then, STPA results can be used to drive the architecture, preliminary and detailed design, make implementation decisions, and refine the control structure. Even if details are known and design decisions have been made, it can be helpful to first apply STPA at a higher abstract level first to provide quicker results and identify broader issues before analyzing more detailed control structure models.
 
 ## Used terminology
 
