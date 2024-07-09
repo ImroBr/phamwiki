@@ -26,7 +26,7 @@ _Specific variations or successions of main hazard analysis method._ \
 * AFMEA (Advanced FMEA)
 
 ## Method steps
-_Specific steps, formulas, symbols and/or terminology_ \
+Below are the steps necessary to utilize the FMEA method.
 
 ### 1. Define scope
 What is the goal of the process? Is it in the realm of concept design, system or service? Is there a desired level of detail and what are the boundaries? The result should be clear.
@@ -72,10 +72,11 @@ Now we will go through the [steps](#method-steps) in wherein the filling in of a
 
 The example scenario will be in the context of and _ADS (Automated Driving System)_ detecting an object while on the road. 
 
-Note that the example FMEA sheet may vary depending on the context and scope of the hazard. Here are some ways other FMEA sheets may vary:
+Note that the example FMEA sheet may vary depending on the context and scope of the hazard. Here are some ways other FMEA sheets may vary from the example or vice versa:
 * The FMEA sheet column order may be in the same order as the method execution steps, from left to right. This may make filing an FMEA sheet quicker and easier for the individual filing it, due to only having to shift to the right and adhering to the column name. Though this may make it (marginally) harder to interpret.
 * The detection process controls (or any) may not be present in some variations
 * Some FMEA contain a [_Criticality_](#used-references) rating column typically similar to the Severity, Occurence and Detection rating. If present, this must be taen into account for RPN calculation, usually also by way of multiplication. This will make this a [FMECA](#variations) sheet.
+* This sheets utilizes some color coding, to signify difference in the numerical values. This is purely visual and optional.
 
 | Step | Description | Visualization |
 | - | - | - |
@@ -94,13 +95,13 @@ Note that the example FMEA sheet may vary depending on the context and scope of 
 ## Pros and cons
 List of advantages and disadvantages
 
-_Disadvantages_ \
+_Disadvantages_ 
 * Possibly labor intensive: FMEA can become time-consuming and laborious when in the case of complex systems with numerous components and potential failure modes
 * Subjectivity: Assignment of Severity, Occurence and Detection can be subjective, making it harder to find concensus (similar RPN scores) between (many) analysts, which may lead to inconsistent results
 * FMEA focuses more on individual single-point failures, and is not equipped for subsystem-interactive failures
 * FMEA does not formally encapsulate time-based effects of system components, potentially missing failure modes that are time-dependent
 
-_Advantages_\
+_Advantages_
 * One of the most widely used and available hazard analysis methods
 * Detailed focus on overview and analysis of individual components and subsystems
 * (Advanced) probabilistic techniques not required for implementation
