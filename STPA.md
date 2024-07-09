@@ -3,18 +3,23 @@ _Draft_
 # System-Theoretic Process Analysis
 
 ## Introduction 
-System-Theoretic Process Analysis (STPA) is fairly recent hazard analysis technique. This technique is generally used in larger, complex systems. What differentiates the STPA method from other traditional hazard analysis techniques is the emphasis on (abstract) intended functionality of subsystems from the top down, rather than a regression into the smallest subsystems or components of a system. Another differentiating approach of STPA is the conclusion that unsafe interactions between system components could occur, when none of those individual system components may have failed. \
+System-Theoretic Process Analysis (STPA) is fairly recent hazard analysis technique. This technique is generally used in larger, complex systems. What differentiates the STPA method from other traditional hazard analysis techniques is the emphasis on (abstract) intended functionality of subsystems from the top down, rather than a regression into the smallest subsystems or components of a system. Another differentiating approach of STPA is the conclusion that unsafe interactions between system components could occur, when none of those individual system components may have failed.
 
 ## History
-_First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location) Abbreviation_ \
 STPA is a analysis technique developed by [Nancy Leveson](http://sunnyday.mit.edu/bio-serious.html) and [John P. Thomas](http://web.mit.edu/jthomas4/www/index.htm). It is founded upon _System-Theoretic Accident Model and Process_ (STAMP), which is in turn based on Systems Theory.
 
 ## Underlying systems
-Systems Theory - \
-STAMP - System-Theoretic Accident and Processes, an accident causality model based on Systems Theory. It expands beyond the traditional model of causality to include more complex processes and unsafe interaction among system components.
+Underpinning STPA are other theoretical frameworks, which are described below.
+
+### STAMP - System-Theoretic Accident and Processes
+STAMP is an accident causality model based on Systems Theory. It expands beyond the traditional model of causality to include more complex processes and unsafe interaction among system components. STAMP focuses on understanding and managing the control structures and safety constraints necessary to prevent accidents in complex systems.
+
+### Systems Theory 
+Systems Theory is an interdisciplinary framework that studies the complex interactions and behaviors of systems as wholes rather than just the sum of their parts. It emphasizes the importance of relationships, feedback loops, and the dynamic behavior of systems over time. Systems Theory is applied to a wide range of fields, including biology, engineering, and social sciences, to understand how components of a system interact to produce emergent properties and behaviors that cannot be understood by examining the components in isolation.
 
 ## Variations
-Causal Analysis based on Sytems Theory (CAST), and is a retroactive analysis method that examines an accident/ incident that has occured and identifies the causal factors involved. It is another analysis method based on STAMP. [p12-13] 
+**CAST** - Causal Analysis based on Sytems Theory (CAST) is a retroactive analysis method that examines an accident/incident that has occurred and 
+identifies the causal factors that were involved. It is another analysis method based on STAMP. [p12-13] 
 
 ## Application
 Fields in which the STPA is applied:
@@ -28,8 +33,6 @@ Fields in which the STPA is applied:
 
 
 ## Method steps
-_Specific formulas, symbols and/or terminology. _
-
 The STPA method steps are defined in 4 parts, described below.
 
 ### 1. Scope
@@ -49,7 +52,7 @@ E.g. H-1 = Aircraft violate minimum separation standards in flight [L-1, L-2, L-
 * Capturing functional relationships and interactions\
 Factoring in (global) functional relationships and establishing points of control with downward arrows (control actions, and points of feedback with upward arrows.
 
-### 3. Identify Unsafe Control Actions (UCAs)
+### 3. Identify Unsafe Control Actions (UCA)s
 In the flow of control actions and feedback, what unsafe control actions can occur?
 
 There are broadly 4 possible categorizations of unsafe control actions that can lead to a hazard or loss:
@@ -63,7 +66,7 @@ There are broadly 4 possible categorizations of unsafe control actions that can 
 4. **Stopped too soon, applied too long** \
  A control action that has been provided in a correct situation and timing, but **too long or short in duration**
 
-Any ACU action that can be derived will generally fall in the above4 categries.
+Any ACU action that can be derived will generally fall in the above 4 categries.
 
 Once unsafe control actions are identified, high-level safety constraints and controller functional safety requirements can be derived. 
 
@@ -105,7 +108,7 @@ b. Why would control action(s) be improperly executed or not executed?
 Some example scenarios may include:
 * Controller incorrectly believes X because ...
 * Controller control algorithm does not enforce Y because ...
-* Incorrect ffedback Z received because ...
+* Incorrect feedback Z received because ...
 * Sensor failure causes ...
 * Etc. ...
 
@@ -136,9 +139,8 @@ Disadvantages of STPA:
 * May be less suited when a narrow, component-focused analysis is needed.
 
 
-# Additions/ Notes
 ## _Things to avoid_
-From the STPA Handbook (page 19):
+From the [STPA Handbook](#see-also) (page 19):
 > _A common mistake in defining hazards is to confuse hazards with causes of hazards. For example, “brake failure”, “brake failure not annunciated”, “operator is distracted”, “engine failure”, and “hydraulic leak” are not system-level hazards but potential causes of hazards. To avoid this mistake, make sure the identified hazards do not refer to individual components of the system, like brakes, engines, hydraulic lines, etc. Instead, the hazards should refer to the overall system and system states. 
 
 > **Too many hazards containing unnecessary detail** \
