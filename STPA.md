@@ -1,5 +1,3 @@
-_Draft_
-
 # System-Theoretic Process Analysis
 
 ## Introduction 
@@ -67,18 +65,19 @@ The first step defines the purpose of the analysis. What is the system boundary 
    Translate the system-level constraints using the general notation: `<System-level Constraint> = <System> & <Condition to Enforce> & <Link to Hazards>`
    
    An example in the correct syntax and the respective inversion:
-   ```
-   H-1: Aircraft violate minimum separation standards [L-1, L-2, L-4, L-5]
-   SC-1: Aircraft must satisfy minimum separation standards from other aircraft and objects [H-1]
+   * `H-1: Aircraft violate minimum separation standards [L-1, L-2, L-4, L-5]`
+     `SC-1: Aircraft must satisfy minimum separation standards from other aircraft and objects [H-1]`
    
-   H-2: Aircraft airframe integrity is lost [L-1, L-2, L-4, L-5]
-   SC-2: Aircraft airframe integrity must be maintained under worst-case conditions [H-2]
-   ```
+   * `H-2: Aircraft airframe integrity is lost [L-1, L-2, L-4, L-5]`
+     `SC-2: Aircraft airframe integrity must be maintained under worst-case conditions [H-2]`
+   
    
 4. Refine hazards (Optional)
 
 ### 2. Control Structure
-* Capturing functional relationships and interactions\
+<img align="right" src="images/stpa_handbook_figure2.6_page23_noreference.png"> 
+
+Capturing functional relationships and interactions\
 Factoring in (global) functional relationships and establishing points of control with downward arrows (control actions), and points of feedback with upward arrows.
 
 
