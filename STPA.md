@@ -86,7 +86,7 @@ A [controller](#used-terminology) makes decisions to achive goals via _control a
 | - |
 | <sup>Example of a hierarchical control structure for aviation</sup> |
 
-
+[Common points of confusion](#common-points-of-confusion-when-modeling-control-structures) should be avoided when modeling the control structures.
 
 ### 3. Identify Unsafe Control Actions (UCA)s
 In the flow of control actions and feedback, what unsafe control actions can occur?
@@ -119,6 +119,19 @@ For  each of the 4 stated ACU's above, the following respective constraints van 
 2. **`Controller X` shall not provide `Command Y` when `E`**
 3. **`Controller X` shall provide `Command Y` within `F` seconds of `G`**
 4. **`Controller X` shall stop providing `Command Y` within `H` seconds of `J`**
+
+Below is an example table of UCAs for a BSCU (Brake System Control Unit):
+
+| Control Action | Not providing causes hazard | Providing causes hazard | Too early, too late, out of order | Stopped too soon, aplied too long |
+| - | - | - | - | - |
+| Brake | UCA-1: BSCU Autobrake does not provide the Brake control action during landing roll when the BSCU is armed [H-4.1] | UCA-2: BSCU Autobrake provides Brake control action during a normal takeoff [H-4.3, H-4.6]<br><br>UCA-5: BSCU Autobrake provides Brake control action with an insufficient level of braking during landing roll [H-4.1] <br><br>UCA-6: BSCU Autobrake provides Brake control action with directional or asymmetrical braking during landing roll [H-4.1, H-4.2] | UCA-3: BSCU Autobrake provides the Brake control action too late (>TBD seconds) after touchdown [H-4.1] | UCA-4: BSCU Autobrake stops providing the Brake control 
+action too early (before TBD taxi speed attained) when aircraft lands [H-4.1] |
+
+
+
+
+
+Use the following general notation when describing UCAs: `UCA-2: <Source> <Type> <Control Action> <Context> <Link to Hazards>`
 
 ### 4. Identify Loss Scenario
 <img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png"> 
@@ -175,7 +188,7 @@ Disadvantages of STPA:
 * May be less suited when a narrow, component-focused analysis is needed.
 
 
-## _Things to avoid_
+## Do's and dont's
 
 ### Common mistakes when identifying system-level hazards
 From the [STPA Handbook](#see-also) (page 19):
@@ -199,7 +212,7 @@ Tips to prevent common mistakes when identifying hazards:
 > * The number of hazards should be relatively small, usually no more than 7 to 10
 > * Hazards should not include ambiguous or recursive words like “unsafe”, “unintended”, “accidental”, etc.
 
-### Common points of confusion when formalizing control structures
+### Common points of confusion when modeling control structures
 From the [STPA Handbook](#see-also) (page 25):
 > **A control structure is not a physical model** \
 The hierarchical control structure used in STPA is a functional model, not a physical model like a physical block diagram, a schematic, or a piping and instrumentation diagram. The connections show information that can be sent, such as commands and feedback—they do not necessarily correspond to physical connections. For example, the interactions between the flight crew and air traffic control are not of a physical nature, but they are modeled in a functional control structure. 
@@ -208,16 +221,23 @@ The hierarchical control structure used in STPA is a functional model, not a phy
 The control structure is not an executable model or a simulation model. In fact, control structures often include components for which executable models do not exist (such as humans). Instead, STPA can be used to carefully derive the necessary behavioral constraints, requirements, and specifications needed enforce the desired system properties. For example, the control structure in the [aviation example image](#2.-control-structure) does not assume that air traffic control will always sent instructions to the flight crew when needed, that they will always have the capability to send instructions (e.g. that radios will always be operational), that the correct instructions will always be sent, or that the instructions will always be followed by the pilots. It simply indicates that a system was/will be created to allow air traffic control to send instructions to the flight crew. The next steps in STPA will carefully examine how unsafe behaviors may occur, including instructions that are sent but not received, unsafe instructions that may be sent, etc. Although the control structure itself is not an executable model, the STPA method will produce precise requirements and other outputs that can be used to generate executable models and specifications.
 
 > **Use abstraction to manage complexity** \
-One of the biggest challenges in any hazard analysis is managing system complexity. Control structures use abstraction in several ways to help manage complexity. For example, in commercial flights the flight crew might consist of two or three individual pilots. Rather than clutter the control structure right from the beginning with three separate pilots, we can group them together as a flight crew that collectively provides control actions and collects feedback. Similarly, rather than explicitly listing every individual aircraft subsystem, we could begin at a more abstract level by modeling aircraft automation and the physical processes they control as two levels in the control hierarchy. 
-
-> The principle of abstraction can also be applied to the command and feedback paths in the control 
-structure. Rather than listing each individual button, switch, and lever in the cockpit, we might begin with much broader actions like a climb maneuver. Later, we could refine these broad actions into pitch, thrust, or other commands as appropriate. This principle is especially useful during early development phases when individual commands and sensors are not yet known.
-
-The control action path may contain mechanisms by which the controller acts upon a controlled process (referred to as actuators) and mechanisms by which the controller senses feedback from a controlled process (referred to as sensors). These details are usually abstracted away when initially creating the control structure, but the control structure will be refined to include actuators and sensors later during the scenario creation step.
-
-One additional type of abstraction is used in control structures. Consider the flight commands sent from the flight crew to the aircraft automation. In a remotely piloted UAV application, those commands may need to pass through many different components—from a physical button on the command console, through an embedded system that encodes the command within a digital packet, to a network switch, a radio transmitter, a satellite, and a radio receiver on the UAV. It is not necessary to show all of these detailed steps along the control path in the initial control structure—what matters is that the remote pilot will have some way to send flight commands to the UAV.
-
+One of the biggest challenges in any hazard analysis is managing system complexity. Control structures use abstraction in several ways to help manage complexity. For example, in commercial flights the flight crew might consist of two or three individual pilots. Rather than clutter the control structure right from the beginning with three separate pilots, we can group them together as a flight crew that collectively provides control actions and collects feedback. Similarly, rather than explicitly listing every individual aircraft subsystem, we could begin at a more abstract level by modeling aircraft automation and the physical processes they control as two levels in the control hierarchy. \
+The principle of abstraction can also be applied to the command and feedback paths in the control 
+structure. Rather than listing each individual button, switch, and lever in the cockpit, we might begin with much broader actions like a climb maneuver. Later, we could refine these broad actions into pitch, thrust, or other commands as appropriate. This principle is especially useful during early development phases when individual commands and sensors are not yet known. \
+The control action path may contain mechanisms by which the controller acts upon a controlled process (referred to as actuators) and mechanisms by which the controller senses feedback from a controlled process (referred to as sensors). These details are usually abstracted away when initially creating the control structure, but the control structure will be refined to include actuators and sensors later during the scenario creation step. \
+One additional type of abstraction is used in control structures. Consider the flight commands sent from the flight crew to the aircraft automation. In a remotely piloted UAV application, those commands may need to pass through many different components—from a physical button on the command console, through an embedded system that encodes the command within a digital packet, to a network switch, a radio transmitter, a satellite, and a radio receiver on the UAV. It is not necessary to show all of these detailed steps along the control path in the initial control structure—what matters is that the remote pilot will have some way to send flight commands to the UAV. \
 In fact, the most efficient way to apply STPA is to begin before those design decisions have been made and before such details are known. The abstract control structure above can be used to begin STPA and identify the requirements and constraints for the communication path and other parts of the system. Then, STPA results can be used to drive the architecture, preliminary and detailed design, make implementation decisions, and refine the control structure. Even if details are known and design decisions have been made, it can be helpful to first apply STPA at a higher abstract level first to provide quicker results and identify broader issues before analyzing more detailed control structure models.
+
+(page 34):
+> **What should I look for when reviewing a control structure?** \
+The following tips can help find common mistakes in a control structure: 
+> * Ensure labels describe functional information that is sent, not a specific physical implementation.
+> * Avoid ambiguous and vague labels like simply "Command" or "Feedback" when the type of information is known.
+> * Check that every controlled physical process is controlled by one or more controllers (not always required, but often indicates a mistake).
+> * Review responsibilities (including traceability) for conflicts and gaps.
+> * Check that control actions needed to satisfy the responsibilities are included.
+> * Check that feedback needed to satisfy the responsibilities is included.
+>   (optional if applied early in concept development when feedback is unknown; later steps can identify missing feedback)
 
 ## Used terminology
 
