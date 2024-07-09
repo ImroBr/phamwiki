@@ -124,7 +124,7 @@ Below is an example table of UCAs for a BSCU (Brake System Control Unit):
 
 | Control Action | Not providing causes hazard | Providing causes hazard | Too early, too late, out of order | Stopped too soon, aplied too long |
 | - | - | - | - | - |
-| Brake | UCA-1: BSCU Autobrake does not provide the Brake control action during landing roll when the BSCU is armed [H-4.1] | UCA-2: BSCU Autobrake provides Brake control action during a normal takeoff [H-4.3, H-4.6]<br><br>UCA-5: BSCU Autobrake provides Brake control action with an insufficient level of braking during landing roll [H-4.1] <br><br>UCA-6: BSCU Autobrake provides Brake control action with directional or asymmetrical braking during landing roll [H-4.1, H-4.2] | UCA-3: BSCU Autobrake provides the Brake control action too late (>TBD seconds) after touchdown [H-4.1] | UCA-4: BSCU Autobrake stops providing the Brake control 
+| Brake | UCA-1: BSCU Autobrake does not provide the Brake control action during landing roll when the BSCU is armed [H-4.1] | UCA-2: BSCU Autobrake provides Brake control action during a normal takeoff [H-4.3, H-4.6]<br><br>UCA-5: BSCU Autobrake provides Brake control action with an insufficient level of braking during landing roll [H-4.1] <br><br>UCA-6: BSCU Autobrake provides Brake control action with directional or asymmetrical braking during landing roll [H-4.1, H-4.2] | UCA-3: BSCU Autobrake provides the Brake control action too late (>TBD seconds) after touchdown [H-4.1] | UCA-4: BSCU Autobrake stops providing the Brake control
 action too early (before TBD taxi speed attained) when aircraft lands [H-4.1] |
 
 
