@@ -36,16 +36,36 @@ Fields in which the STPA is applied:
 The STPA method steps are defined in 4 parts, described below.
 
 ### 1. Scope
-* What is the purpose of the analysis?
-  1. Identify losses
-  2. Identify system-level hazards
-  3. Identify system-level Constraints
-  4. Refine hazards (Optional)
-* What type of loss categories are at play (human life, reputation, privacy, security, etc)
-* What is the system and its boundary?
+The first step defines the purpose of the analysis. What is the system boundary that is being described that seperates all relevant subsystems (the _system_) from the outside/ negligible parts (the _environment_)? This part consists of four steps:
+1. Identify [losses](#used-terminology)
+   * Encapsulation of relevant stakeholders, and their stake in the system
+   * What type of losses? (human life, reputation, privacy, security, etc)
+   * Translate each relevant goal or value into a list of losses: `L-<number>: Loss (of) \<critical objective\>`
+     Such as: `L-1: Loss of life or injury to people`
+   
+   Some tips to prvent common mistaks when identifying losses:
+   1. Losses can include any loss that is unacceptable to any stakeholder
+   2. Losses should not reference individual components or specific causes like “human error” and “brake failure”
+   3. Losses may involve aspects of the environment that are not directly controlled by the system designer
+   4. Document any special considerations or assumptions made, such as losses that are explicitly excluded
+2. Identify [system-level hazards](#used-terminology)
+   Once the system and system boundary is identified, the next step is to define the system-level hazards by identifying system states or conditions that will lead to a loss in worst-case environmental conditions. 
+   * Translate each system-level hazard into a list using the follosing syntax: `\<Hazard specification\> = \<System\> & \<Unsafe Condition\> & \<Link to Losses\>`
+     Such as: _H-1 = Aircraft violate minimum separation standards in flight \[L-1, L-2, L-4, L-5\]_
+    In general, a hazard can lead to one or more losses and each hazard should be traced to the resulting losses. This traceability is typically documented in brackets after the hazard description. The example above shows the traceability to the loss(es) previously constructed.
+	
+    There are three basic criteria for defining system-level hazards:
+    1. Hazards are _system_ states or conditions (not component-level causes or environmental states)
+    2. Hazards _will_ lead to a loss in some worst-case environment
+    3. Hazards must describe states or conditions to be prevented
+	
+	See [Common mistakes when identifying system-level hazards](#common-mistakes-when-identifying-system-level-hazards) for help when identifying system-level hazards.
+3. Identify system-level Constraints
+4. Refine hazards (Optional)
+
 
 [p19]
-\<Hazard specification\> = \<System\> & \<Unsafe Condition\> & \<Link to Losses\>
+
 E.g. H-1 = Aircraft violate minimum separation standards in flight [L-1, L-2, L-4, L-5]
 
 ### 2. Control Structure
@@ -140,6 +160,8 @@ Disadvantages of STPA:
 
 
 ## _Things to avoid_
+
+### Common mistakes when identifying system-level hazards
 From the [STPA Handbook](#see-also) (page 19):
 > _A common mistake in defining hazards is to confuse hazards with causes of hazards. For example, “brake failure”, “brake failure not annunciated”, “operator is distracted”, “engine failure”, and “hydraulic leak” are not system-level hazards but potential causes of hazards. To avoid this mistake, make sure the identified hazards do not refer to individual components of the system, like brakes, engines, hydraulic lines, etc. Instead, the hazards should refer to the overall system and system states. 
 
@@ -151,6 +173,15 @@ The system-level hazards define exactly what “unsafe” means at the system le
 
 > **Confusing hazards with failures** \
 Professionals who are experienced in other hazard analysis methods sometimes fall into the trap of writing STPA hazards describing potential deviations from specified technical functions or describing physical component failures. You may be familiar with traditional techniques that begin by searching for a set of deviations, faults, or functional failures in the technical system. To identify a broader set of causes in STPA, we cannot assume that the defined and specified functions are safe and correct, that human operators will perform as expected, that automated behaviors will not induce human error or confusion, that off-nominal cases will not occur, or that the technical design, specification, and requirements are correct. For example, the hazard “Controlled flight of aircraft into terrain” can be included in STPA while it may be omitted by efforts to examine only purely technical functional failures. Hazard identification in STPA is about system states and conditions that are inherently unsafe—regardless of the cause. In fact, the system hazards should be specified at a high-enough level that does not distinguish between causes related to technical failures, design errors, flawed requirements, or human procedures and interactions._
+
+> **What should I look for when reviewing hazards?** \
+Tips to prevent common mistakes when identifying hazards:
+* Hazards should not refer to individual components of the system
+* All hazards should refer to the overall system and system state
+* Hazards should refer to factors that can be controlled or managed by the system designers and operators
+* All hazards should describe system-level conditions to be prevented
+* The number of hazards should be relatively small, usually no more than 7 to 10
+* Hazards should not include ambiguous or recursive words like “unsafe”, “unintended”, “accidental”, etc.
 
 ## Used terminology
 
@@ -175,7 +206,7 @@ Professionals who are experienced in other hazard analysis methods sometimes fal
 A [video introduction to STPA](https://www.youtube.com/watch?v=2W-iqnPbhyc).
 
 For a more thorough description of the System-Theoretic Process Analysis method including examples and use-cases, see the
-1. [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf).
+* [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf)
 
 ## References
 2. Antoine, Blandine (2013), [Systems Theoretic Hazard Analysis (STPA) applied to the risk review of complex systems: an example from the medical device industry](https://dspace.mit.edu/handle/1721.1/79424)
