@@ -40,18 +40,21 @@ The first step defines the purpose of the analysis. What is the system boundary 
 1. Identify [losses](#used-terminology)
    * Encapsulation of relevant stakeholders, and their stake in the system
    * What type of losses? (human life, reputation, privacy, security, etc)
-   * Translate each relevant goal or value into a list of losses: `L-<number>: Loss (of) \<critical objective\>`
+   * Translate each relevant goal or value into a list of losses: `L-<number>: Loss (of) <critical objective>`
      Such as: `L-1: Loss of life or injury to people`
    
-   Some tips to prvent common mistaks when identifying losses:
+   > [!TIP]
+   > Some tips to prvent common mistaks when identifying losses:
    1. Losses can include any loss that is unacceptable to any stakeholder
    2. Losses should not reference individual components or specific causes like “human error” and “brake failure”
    3. Losses may involve aspects of the environment that are not directly controlled by the system designer
    4. Document any special considerations or assumptions made, such as losses that are explicitly excluded
-2. Identify [system-level hazards](#used-terminology)
+2. Identify [system-level hazards](#used-terminology):
+
    Once the system and system boundary is identified, the next step is to define the system-level hazards by identifying system states or conditions that will lead to a loss in worst-case environmental conditions. 
-   * Translate each system-level hazard into a list using the follosing syntax: `\<Hazard specification\> = \<System\> & \<Unsafe Condition\> & \<Link to Losses\>`
+   * Translate each system-level hazard into a list using the follosing syntax: `<Hazard specification> = <System> & <Unsafe Condition> & <Link to Losses>`
      Such as: _H-1 = Aircraft violate minimum separation standards in flight \[L-1, L-2, L-4, L-5\]_
+	 
     In general, a hazard can lead to one or more losses and each hazard should be traced to the resulting losses. This traceability is typically documented in brackets after the hazard description. The example above shows the traceability to the loss(es) previously constructed.
 	
     There are three basic criteria for defining system-level hazards:
@@ -64,9 +67,6 @@ The first step defines the purpose of the analysis. What is the system boundary 
 4. Refine hazards (Optional)
 
 
-[p19]
-
-E.g. H-1 = Aircraft violate minimum separation standards in flight [L-1, L-2, L-4, L-5]
 
 ### 2. Control Structure
 * Capturing functional relationships and interactions\
@@ -176,12 +176,12 @@ Professionals who are experienced in other hazard analysis methods sometimes fal
 
 > **What should I look for when reviewing hazards?** \
 Tips to prevent common mistakes when identifying hazards:
-* Hazards should not refer to individual components of the system
-* All hazards should refer to the overall system and system state
-* Hazards should refer to factors that can be controlled or managed by the system designers and operators
-* All hazards should describe system-level conditions to be prevented
-* The number of hazards should be relatively small, usually no more than 7 to 10
-* Hazards should not include ambiguous or recursive words like “unsafe”, “unintended”, “accidental”, etc.
+> * Hazards should not refer to individual components of the system
+> * All hazards should refer to the overall system and system state
+> * Hazards should refer to factors that can be controlled or managed by the system designers and operators
+> * All hazards should describe system-level conditions to be prevented
+> * The number of hazards should be relatively small, usually no more than 7 to 10
+> * Hazards should not include ambiguous or recursive words like “unsafe”, “unintended”, “accidental”, etc.
 
 ## Used terminology
 
