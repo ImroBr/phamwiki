@@ -150,9 +150,9 @@ Note the during this final step, physical sensors and actuators may be included 
 <br clear="right"/>
 
 1. **Identifying scenarios that lead to Unsafe Control Actions** \
-   Identification of loss scenarios can be considered as an inverse to identifying the unsafe control actions, askying _why_ a unsafe control action would occur. Some of these that may lead to UCAs may include:
+   <img align="right" src="images/stpa_handbook_figure2.18_page44_noreference.png">    
    
-   <img align="right" src="images/stpa_handbook_figure2.18_page44_noreference.png"> 
+   Identification of loss scenarios can be considered as an inverse to identifying the unsafe control actions, askying _why_ a unsafe control action would occur. Some of these that may lead to UCAs may include:
    
    * Failures related to physical controller 
      * Physical failure of controller itself
@@ -182,7 +182,14 @@ Note the during this final step, physical sensors and actuators may be included 
    _Causes of inadequate feedback information_
    Regarding _causes of inadequate feedbackand information_, the following factors may be involved:
    * Feedback/ information not received (transmission errors, lost communication, delays in communication, etc.)
+     * Feedback/info sent by sensor(s) but not received by controller
+	 * Feedback/info is not sent by sensor(s) but is received or applied to sensor(s)
+	 * Feedback/info is not received or applied to sensor(s)
+	 * Feedback/info does not exist in control structure or sensor(s) do not exist
    * Inadequate feedback is received (Sensor failures, loss of power to sensor, inaccuracies in sensor operation, etc.)
+     * Sensor(s) respond adequately but controller receives inadequate feedback/info
+	 * Sensor(s) respond inadequately to feedback/info that is received or applied to sensor(s)
+	 * Sensor(s) are not capable or not designed to provide necessary feedback/info
    
 2. **Identifying scenarios in which control actions are improperly executed or not executed**   
    
@@ -192,15 +199,28 @@ Note the during this final step, physical sensors and actuators may be included 
    
    _Scenarios involving the control path_
    Generally, scenoarios involving the control path may include:
-   * Control action not executed
+   * Control action not executed 
+     * Control action is sent by controller, but not received by actuator(s)
+	 * Control action is received by actuator(s), but actuator(s) do not respond
+	 * Actuator(s) responds, but the control action is not applied ot or received by the controlled process
    * Control action improperly executed   
+     * Control action is sent by controller, but received improperly bu actuator(s)
+	 * Control action is received coorectly, but actuator(s) but actuator(s) respond inadequately
+	 * Actuator(s) respond adequately, but the control action is applied or received improperly at the controlled Process
+	 * Control action action is not sent by controller, but actuator(s) or other elements respond as if it has been sent
    
-   | A | B |
-   | - | - |
-   | C | D |
+   _Scenarios related to the controlled Process_
+   Generally, scenarios related to the controlled process may include:
+   * Control action not executed
+     * Control action is applied or received process, but the controlled process does not respond
+   * Control action improperly executed
+     * Control action is applied or received by the controlled process, but the controlled process responds improperly
+	 * Control action is not applied or received by the controlled process, but the process responds as if the control ation had been applied or received
    
-   
-   
+Finally, here are 2 control structure examples in the context of automotive processes:
+| ![STPA Control Structure example 1](images/stpa_handbook_figureB.7_page154_noreference.png) | ![STPA Control Structure example 2](images/stpa_handbook_figureB.6_page153_noreference.png) |
+| :---: | :---: |
+| <sup>Control Structure for Automotive Auto-Hold System</sup> | <sup>Automotive Adaptive Cruise Control System</sup> |
 
 ## Example(s)
 _Theoretical example_ \
