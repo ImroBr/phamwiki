@@ -147,13 +147,9 @@ b. Why would control action(s) be improperly executed or not executed?
 
 Note the during this final step, physical sensors and actuators may be included (as seen in the image), if they are relevant to the initial [losses](#1.-scope) 
 
-* A
-* B
-* C
-
 <br clear="right"/>
 
-1. **Identifying scenarios that lead to Unsafe Control Actions**
+1. **Identifying scenarios that lead to Unsafe Control Actions** \
    Identification of loss scenarios can be considered as an inverse to identifying the unsafe control actions, askying _why_ a unsafe control action would occur. Some of these that may lead to UCAs may include:
    
    <img align="right" src="images/stpa_handbook_figure2.18_page44_noreference.png"> 
@@ -174,12 +170,16 @@ Note the during this final step, physical sensors and actuators may be included 
    * Sensor failure causes ...
    * Etc. ...
 
-   To create scenarios involving UCAs, we must consider the _unsafe controller behaviour_, or the _causes of inadequate feedback/information_ that caused the UCA. Regarding _unsafe controller behaviour_, there are 4 general reasons why a controller may (or may not) provide a ACU:
+   To create scenarios involving UCAs, we must consider the _unsafe controller behaviour_, or the _causes of inadequate feedback/information_ that caused the UCA. 
+   
+   _Unsafe controller behaviour_
+   Regarding _unsafe controller behaviour_, there are 4 general reasons why a controller may (or may not) provide a ACU:
    * Failures involving controller (for physical controllers)
    * Inadequate control algorithm
    * Unsafe control input (from other controller)
    * Inadequate [process models](#used-terminology)
    
+   _Causes of inadequate feedback information_
    Regarding _causes of inadequate feedbackand information_, the following factors may be involved:
    * Feedback/ information not received (transmission errors, lost communication, delays in communication, etc.)
    * Inadequate feedback is received (Sensor failures, loss of power to sensor, inaccuracies in sensor operation, etc.)
@@ -188,7 +188,18 @@ Note the during this final step, physical sensors and actuators may be included 
    
    <img align="right" src="images/stpa_handbook_figure2.19_page49_noreference.png"> 
    
-   Hazards can be cause by UCAs, but can also be cause without an UCA if the control actions are not executed properly or not executed at all. To create these scenarios, the control path as well as factors affecting the controlled process, must be considered, as shown in the image to the right.
+   Hazards can be cause by UCAs, but can also be cause without an UCA if the control actions are not executed properly or not executed at all. To create these scenarios, the [control path](#used-terminology) as well as factors affecting the controlled process, must be considered, as shown in the image to the right.
+   
+   _Scenarios involving the control path_
+   Generally, scenoarios involving the control path may include:
+   * Control action not executed
+   * Control action improperly executed   
+   
+   | A | B |
+   | - | - |
+   | C | D |
+   
+   
    
 
 ## Example(s)
@@ -288,6 +299,7 @@ From the [STPA Handbook](#see-also) (page 25):
 | - | - |
 | Constraints | Conditions or behaviors that need to be satisfied to prevent hazards (and ultimately prevent losses) <sup>[[1]](#see-also), page 20</sup> |
 | Control Action | A directive issued by a controller to another subsystem |
+| Control Path | The control path transfers control actions to the controlled process. The control path may consist of one or a (complex) series of actuators. | 
 | Control Structure | A hierarchical control structure is a system model that is composed of feedback control loops. An effective control structure will enforce constraints on the behavior of the overall system. |
 | Controller | Part of a system (subsystem) that enforces constraints on the bahavior of a system. <sup>[[1]](#see-also), page 11</sup> |
 | Controlled Process | The controlled process is any process that is controlled, such as a physical process or another controller. <sup>[[1]](#see-also), page 22</sup> |
