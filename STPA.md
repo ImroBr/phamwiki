@@ -155,6 +155,9 @@ Note the during this final step, physical sensors and actuators may be included 
 
 1. Identifying scenarios that lead to Unsafe Control Actions
    Identification of loss scenarios can be considered as an inverse to identifying the unsafe control actions, askying _why_ a unsafe control action would occur. Some of these that may lead to UCAs may include:
+   
+   <img align="right" src="images/eta_global_sm.png"> 
+   
    * Failures related to physical controller 
      * Physical failure of controller itself
 	 * Power failure
