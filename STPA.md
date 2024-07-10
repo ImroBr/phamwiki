@@ -127,7 +127,9 @@ Below is an example table of UCAs for a BSCU (Brake System Control Unit):
 | Brake | UCA-1: BSCU Autobrake does not provide the Brake control action during landing roll when the BSCU is armed [H-4.1] | UCA-2: BSCU Autobrake provides Brake control action during a normal takeoff [H-4.3, H-4.6]<br><br>UCA-5: BSCU Autobrake provides Brake control action with an insufficient level of braking during landing roll [H-4.1] <br><br>UCA-6: BSCU Autobrake provides Brake control action with directional or asymmetrical braking during landing roll [H-4.1, H-4.2] | UCA-3: BSCU Autobrake provides the Brake control action too late (>TBD seconds) after touchdown [H-4.1] | UCA-4: BSCU Autobrake stops providing the Brake control action too early (before TBD taxi speed attained) when aircraft lands [H-4.1] |
 
 Use the following general notation when describing UCAs: `UCA-2: <Source> <Type> <Control Action> <Context> <Link to Hazards>`, as examplified below:
-| Notation: | UCA # | /<Source/> | /<Type/> | /<Control Action/> | /<Context/> | /<Link to Hazards/> |
+
+
+| Notation: | `UCA <nr>` | `<Source>` | `<Type>` | `<Control Action>` | `<Context>` | `<Link to Hazards>` |
 | Example: | _UCA-2_ | _BSCU Autobrake_ | _provides_ | _Brake command_ | _during a normal takeoff_ | _[H-4.3] |
 
 **Defining Controller Constraints**
@@ -144,6 +146,10 @@ a. Why would unsafe Control Action(s) occur?
 b. Why would control action(s) be improperly executed or not executed?
 
 Note the during this final step, physical sensors and actuators may be included (as seen in the image), if they are relevant to the initial [losses](#1.-scope) 
+
+* A
+* B
+* C
 
 <br clear="right"/>
 
@@ -172,9 +178,10 @@ Note the during this final step, physical sensors and actuators may be included 
    * Inadequate [process models](#used-terminology)
    
    Regarding _causes of inadequate feedbackand information_, the following factors may be involved:
-   * Feedback/ information not received
-   * Inadequate feedback is received
+   * Feedback/ information not received (transmission errors, lost communication, delays in communication, etc.)
+   * Inadequate feedback is received (Sensor failures, loss of power to sensor, inaccuracies in sensor operation, etc.)
    
+2. Identifying scenarios in which control actions are improperly executed or not executed   
    
    
 
