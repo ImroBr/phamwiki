@@ -153,10 +153,10 @@ Note the during this final step, physical sensors and actuators may be included 
 
 <br clear="right"/>
 
-1. Identifying scenarios that lead to Unsafe Control Actions
+1. **Identifying scenarios that lead to Unsafe Control Actions**
    Identification of loss scenarios can be considered as an inverse to identifying the unsafe control actions, askying _why_ a unsafe control action would occur. Some of these that may lead to UCAs may include:
    
-   <img align="right" src="images/eta_global_sm.png"> 
+   <img align="right" src="images/stpa_handbook_figure2.18_page44_noreference.png"> 
    
    * Failures related to physical controller 
      * Physical failure of controller itself
@@ -184,8 +184,11 @@ Note the during this final step, physical sensors and actuators may be included 
    * Feedback/ information not received (transmission errors, lost communication, delays in communication, etc.)
    * Inadequate feedback is received (Sensor failures, loss of power to sensor, inaccuracies in sensor operation, etc.)
    
-2. Identifying scenarios in which control actions are improperly executed or not executed   
+2. **Identifying scenarios in which control actions are improperly executed or not executed**   
    
+   <img align="right" src="images/stpa_handbook_figure2.19_page49_noreference.png"> 
+   
+   Hazards can be cause by UCAs, but can also be cause without an UCA if the control actions are not executed properly or not executed at all. To create these scenarios, the control path as well as factors affecting the controlled process, must be considered, as shown in the image to the right.
    
 
 ## Example(s)
