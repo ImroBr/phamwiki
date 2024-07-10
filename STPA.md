@@ -124,22 +124,26 @@ Below is an example table of UCAs for a BSCU (Brake System Control Unit):
 
 | Control Action | Not providing causes hazard | Providing causes hazard | Too early, too late, out of order | Stopped too soon, aplied too long |
 | - | - | - | - | - |
-| Brake | UCA-1: BSCU Autobrake does not provide the Brake control action during landing roll when the BSCU is armed [H-4.1] | UCA-2: BSCU Autobrake provides Brake control action during a normal takeoff [H-4.3, H-4.6]<br><br>UCA-5: BSCU Autobrake provides Brake control action with an insufficient level of braking during landing roll [H-4.1] <br><br>UCA-6: BSCU Autobrake provides Brake control action with directional or asymmetrical braking during landing roll [H-4.1, H-4.2] | UCA-3: BSCU Autobrake provides the Brake control action too late (>TBD seconds) after touchdown [H-4.1] | UCA-4: BSCU Autobrake stops providing the Brake control
-action too early (before TBD taxi speed attained) when aircraft lands [H-4.1] |
+| Brake | UCA-1: BSCU Autobrake does not provide the Brake control action during landing roll when the BSCU is armed [H-4.1] | UCA-2: BSCU Autobrake provides Brake control action during a normal takeoff [H-4.3, H-4.6]<br><br>UCA-5: BSCU Autobrake provides Brake control action with an insufficient level of braking during landing roll [H-4.1] <br><br>UCA-6: BSCU Autobrake provides Brake control action with directional or asymmetrical braking during landing roll [H-4.1, H-4.2] | UCA-3: BSCU Autobrake provides the Brake control action too late (>TBD seconds) after touchdown [H-4.1] | UCA-4: BSCU Autobrake stops providing the Brake control action too early (before TBD taxi speed attained) when aircraft lands [H-4.1] |
+
+Use the following general notation when describing UCAs: `UCA-2: <Source> <Type> <Control Action> <Context> <Link to Hazards>`, as examplified below:
+| Notation: | UCA # | /<Source/> | /<Type/> | /<Control Action/> | /<Context/> | /<Link to Hazards/> |
+| Example: | _UCA-2_ | _BSCU Autobrake_ | _provides_ | _Brake command_ | _during a normal takeoff_ | _[H-4.3] |
+
+**Defining Controller Constraints**
+Once UCAs have been identified, contraints for the controller can be defined. Similar to defining [system-level constraints](#1.-scope), controller contraints can be attained by effectively inverting the UCAs.
 
 
+### 4. Identify Loss Scenarios
 
-
-
-Use the following general notation when describing UCAs: `UCA-2: <Source> <Type> <Control Action> <Context> <Link to Hazards>`
-
-### 4. Identify Loss Scenario
+Two types of [loss scenarios](#used-definitions) are to be considered, also illustrated in corresponding figure<sup>[[1]](#see-also), page 43</sup>:  
 <img align="right" src="images/stpa_handbook_figure2.17_page43_noreference.png"> 
-Two types of loss scenarios are to be considered, also illustrated in corresponding figure<sup>[[1]](#see-also), page 43</sup>:  
  
 a. Why would unsafe Control Action(s) occur? 
 
 b. Why would control action(s) be improperly executed or not executed?
+
+Note the during this final step, physical sensors and actuators may be included (as seen in the image), if they are relevant to the initial [losses](#1.-scope) 
 
 <br clear="right"/>
 
@@ -154,14 +158,25 @@ b. Why would control action(s) be improperly executed or not executed?
    * Unsafe control input
    * Inadequate process model
 
-Some example scenarios may include:
-* Controller incorrectly believes X because ...
-* Controller control algorithm does not enforce Y because ...
-* Incorrect feedback Z received because ...
-* Sensor failure causes ...
-* Etc. ...
+   Some example scenarios may include:
+   * Controller incorrectly believes X because ...
+   * Controller control algorithm does not enforce Y because ...
+   * Incorrect feedback Z received because ...
+   * Sensor failure causes ...
+   * Etc. ...
 
-Note that in this step, physical components such as actuators or sensors are included, if they are relevant to the initial [losses](#1.scope)
+   To create scenarios involving UCAs, we must consider the _unsafe controller behaviour_, or the _causes of inadequate feedback/information_ that caused the UCA. Regarding _unsafe controller behaviour_, there are 4 general reasons why a controller may (or may not) provide a ACU:
+   * Failures involving controller (for physical controllers)
+   * Inadequate control algorithm
+   * Unsafe control input (from other controller)
+   * Inadequate [process models](#used-terminology)
+   
+   Regarding _causes of inadequate feedbackand information_, the following factors may be involved:
+   * Feedback/ information not received
+   * Inadequate feedback is received
+   
+   
+   
 
 ## Example(s)
 _Theoretical example_ \
@@ -238,6 +253,21 @@ The following tips can help find common mistakes in a control structure:
 > * Check that control actions needed to satisfy the responsibilities are included.
 > * Check that feedback needed to satisfy the responsibilities is included.
 >   (optional if applied early in concept development when feedback is unknown; later steps can identify missing feedback)
+
+### Tips to prevent common mistake when identifying UCAs
+From the [STPA Handbook](#see-also) (page 41):
+> * Ensure every UCA specifies the context that makes the control action unsafe.
+> * Ensure UCA contexts specify the actual states or conditions that would make the control action unsafe, not potential beliefs about the actual states.
+> * Ensure the UCA contexts are defined clearly.
+> * Ensure the UCA contexts are included and not replaced by future effects or outcomes.
+> * Ensure traceability is documented to link every UCA with one or more hazards.
+> * Review any control action types assumed to be N/A, and verify they are not applicable.
+> * For any continuous control actions with a parameter, ensure that excessive, insufficient, and wrong direction of the parameters are considered.
+> * Ensure any assumptions or special reasoning behind the UCAs are documented
+
+### Tips to prevent common mistakes when identifying loss scenarios
+From the [STPA Handbook](#see-also) (page 25):
+> Tips to prevent common mistakes The most common mistake is to identify individual causal factors rather than a scenario. For example, you may be tempted to create list of factors like “wheel speed sensor failure”, “wheel speed feedback is delayed”, “loss of power”, etc. The problem with listing individual factors outside the context of a scenario is that it’s easy to overlook how several factors interact with each other, you can overlook non-trivial and non-obvious factors that indirectly lead to UCAs and hazards, and you may not consider how combinations of factors can lead to a hazard. Considering single factors essentially reduces to a FMEA where only single component failures are considered. 
 
 ## Used terminology
 
