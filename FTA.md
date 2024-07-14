@@ -1,7 +1,6 @@
 # Fault Tree Analysis (FTA)
+<img align="right" src="images/stpa_handbook_figure2.6_page23_noreference.png" width="425" height="319"> 
 
-![FTA Diagram](images/Fault-Tree-Analysis-FTA-functional-safety-measures-prevent-traffic-accidents-caused-by.png)
-<p align="right"><sup>Image from Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks, [1], CC4.0 </sup></p>
 
 ## Introduction 
 Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate undesired state of a system. This is usually done visually resembling a flowchart diagram, with downwardly cascading branches with corresponding probabilities and Boolean logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
@@ -137,6 +136,12 @@ When unacceptable risks have been found, multiple mitigation strategies are avai
 * Quality Control
 
 ## Example(s)
+
+![FTA Diagram](images/Fault-Tree-Analysis-FTA-functional-safety-measures-prevent-traffic-accidents-caused-by.png)
+<p align="right"><sup>Image from Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks, [1], CC4.0 </sup></p>
+
+
+
 * Theoretical example
 * Example of historical factual application
 
