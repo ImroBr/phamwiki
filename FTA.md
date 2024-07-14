@@ -24,25 +24,25 @@ FTA is based on Reliability theory, Boolean algebra and probability theory. A ve
 
 There are several variations of the FTA method. Though not exhaustive, the following list contains 10 FTA variations of note.
 
-1. **Dynamic Fault Tree Analysis (DFTA)**:
+1. **Dynamic Fault Tree Analysis (DFTA)**: \
    DFTA incorporates time-dependent behavior and system dynamics into traditional FTA. It is particularly useful for systems where component failures and repairs occur over time.
-2. **Probabilistic Fault Tree Analysis (PFTA)**:
+2. **Probabilistic Fault Tree Analysis (PFTA)**: \
    PFTA quantifies the likelihood of the top event by assigning probabilities to the basic events. This approach uses probability theory and statistical methods to calculate the overall system failure probability.
-3. **Common Cause Failure Analysis (CCFA)**:
+3. **Common Cause Failure Analysis (CCFA)**: \
    CCFA is an extension of FTA that focuses on common cause failures (CCFs) where multiple failures result from a single root cause. It is used to identify and analyze dependencies between events that can lead to simultaneous failures.
-4. **Bayesian Fault Tree Analysis (BFTA)**:
+4. **Bayesian Fault Tree Analysis (BFTA)**: \
    BFTA integrates Bayesian networks with FTA to handle uncertainties and update failure probabilities as new information becomes available. This method is particularly useful for complex systems with limited failure data.
-5. **Markov Fault Tree Analysis (MFTA)**:
+5. **Markov Fault Tree Analysis (MFTA)**: \
    MFTA combines Markov chains with FTA to model state transitions and time-dependent behaviors in the system. It is useful for systems with multiple states and transitions over time.
-6. **Dynamic Reliability Block Diagram (DRBD)**:
+6. **Dynamic Reliability Block Diagram (DRBD)**: \
    DRBD combines the concepts of reliability block diagrams (RBD) with dynamic behaviors to model complex systems. It is similar to DFTA but uses a block diagram representation instead of a fault tree.
-7. **Software Fault Tree Analysis (SFTA)**:
+7. **Software Fault Tree Analysis (SFTA)**: \
    SFTA is tailored for software systems and focuses on identifying potential software faults and their impacts on the overall system. It considers software-specific issues such as bugs, code errors, and logic flaws.
-8. **Integrated FTA (IFTA)**:
+8. **Integrated FTA (IFTA)**: \
    IFTA integrates FTA with other analysis techniques such as Failure Modes and Effects Analysis (FMEA) or Event Tree Analysis (ETA) to provide a comprehensive assessment of system reliability and safety.
-9. **Hierarchical Fault Tree Analysis (HFTA)**:
+9. **Hierarchical Fault Tree Analysis (HFTA)**: \
    HFTA organizes fault trees into hierarchical levels, allowing for a more structured and scalable analysis of complex systems. It breaks down the system into manageable sub-systems and analyzes each level separately.
-10. **Petri Net Fault Tree Analysis (PNFTA)**:
+10. **Petri Net Fault Tree Analysis (PNFTA)**: \
     PNFTA uses Petri nets to represent fault trees, enabling the modeling of concurrent and asynchronous events. It is useful for analyzing systems with parallel processes and interactions.
 
 
@@ -87,7 +87,7 @@ Advanced symbols
 
 
 ## Method steps
-Following are steps one could take to apply the FTA method.
+Following are steps necessary to apply the FTA method.
 
 ### 1. Define hazard
 Start by clearly and concisely describing the hazard (top event). As this will be the basis for following steps, a specific and measurable definition is recommended. Clarifying factors for top event precision may include: <sup>[[4]](#references)
@@ -176,7 +176,12 @@ When unacceptable risks have been found, multiple mitigation strategies are avai
 * Example of historical factual application
 
 ## Things to avoid
-Common (theoretical or practical) mistakes.
+While going through the steps of utilizing a FTA cycle, there are some elements best to avoid in order to reach success. Following are some matters best to be avoided: 
+* Relying on incomplete, outdated or inaccurate data.
+* Performing the analysis without consulting with experts of the relevant field
+* Too broad categorizations; events not sufficiently broken down
+* Using non-standard symbols and conventions
+* Overlooking cases where a single cause leads to multiple failures (_CCFs, Common Cause Failure_)
 
 ## Pros and cons
 ### Advantages of FTA
@@ -207,7 +212,8 @@ Glossary containing as many relevant and specific terms
 
 ## See also
 ### FTA Standards
-
+* [NEN-EN-IEC 61025:2007](https://www.nen.nl/nen-en-iec-61025-2007-en-fr-116774) _(Published April 1st, 2007)_
+* [ISO/IEC 31010:2019](https://www.iso.org/standard/72140.html) _(Published June 2019)_
 
 ## References
 [1] Winkle, Thomas. 2016. Technische Universität München. ["Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks"](https://www.researchgate.net/publication/303480787_Development_and_Approval_of_Automated_Vehicles_Considerations_of_Technical_Legal_and_Economic_Risks), Autonomous Driving (pp.589-618) \
