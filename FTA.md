@@ -4,7 +4,6 @@
 Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate undesired state of a system. This is usually done visually resembling a flowchart diagram, with downwardly cascading branches with corresponding probabilities and Boolean logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
 
 <img align="right" src="images/Fault-Tree-Analysis-FTA-functional-safety-measures-prevent-traffic-accidents-caused-by.png" width="425" height="319"> 
-<p align="right"><sup>Image from Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks, [1], CC4.0 </sup></p>
 
 * Providing clarity and logical foundation directly starting from a failure or otherwise underised state.
 * Diagnosing and mitigating the caus(es) of a top event.
@@ -12,6 +11,7 @@ Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Startin
 * Optimize and minimize resources.
 * Substantiate compliance with system safety/ reliability requirements.
 
+<p align="right"><sup>Image from Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks, [1], CC4.0 </sup></p>
 
 ## History
 Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Watson and A Mears, to evaluate the _Minuteman I Intercontinental Ballistic Missile_ for the U.S. Air Force.<sup>[[2]](#references)</sup> Since then, fault trees have gained in popularity as a failure analysis tool.
