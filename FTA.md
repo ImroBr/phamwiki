@@ -21,11 +21,40 @@ Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Wat
 FTA is based on Reliability theory, Boolean algebra and probability theory. A very simple set of rules and symbols provides the mechanism for analyzing very complex systems, and complex relationships between hardware, software and humans. <sup>[[2]](#references)</sup>
 
 ## Variations
-Specific variations or successions of main hazard analysis method.
 
-## Application
-Used for: (List) \
-Most use cases in current day. Type(s) of application domains. 
+There are several variations of the FTA method. Though not exhaustive, the following list contains 10 FTA variations of note.
+
+1. **Dynamic Fault Tree Analysis (DFTA)**:
+   DFTA incorporates time-dependent behavior and system dynamics into traditional FTA. It is particularly useful for systems where component failures and repairs occur over time.
+2. **Probabilistic Fault Tree Analysis (PFTA)**:
+   PFTA quantifies the likelihood of the top event by assigning probabilities to the basic events. This approach uses probability theory and statistical methods to calculate the overall system failure probability.
+3. **Common Cause Failure Analysis (CCFA)**:
+   CCFA is an extension of FTA that focuses on common cause failures (CCFs) where multiple failures result from a single root cause. It is used to identify and analyze dependencies between events that can lead to simultaneous failures.
+4. **Bayesian Fault Tree Analysis (BFTA)**:
+   BFTA integrates Bayesian networks with FTA to handle uncertainties and update failure probabilities as new information becomes available. This method is particularly useful for complex systems with limited failure data.
+5. **Markov Fault Tree Analysis (MFTA)**:
+   MFTA combines Markov chains with FTA to model state transitions and time-dependent behaviors in the system. It is useful for systems with multiple states and transitions over time.
+6. **Dynamic Reliability Block Diagram (DRBD)**:
+   DRBD combines the concepts of reliability block diagrams (RBD) with dynamic behaviors to model complex systems. It is similar to DFTA but uses a block diagram representation instead of a fault tree.
+7. **Software Fault Tree Analysis (SFTA)**:
+   SFTA is tailored for software systems and focuses on identifying potential software faults and their impacts on the overall system. It considers software-specific issues such as bugs, code errors, and logic flaws.
+8. **Integrated FTA (IFTA)**:
+   IFTA integrates FTA with other analysis techniques such as Failure Modes and Effects Analysis (FMEA) or Event Tree Analysis (ETA) to provide a comprehensive assessment of system reliability and safety.
+9. **Hierarchical Fault Tree Analysis (HFTA)**:
+   HFTA organizes fault trees into hierarchical levels, allowing for a more structured and scalable analysis of complex systems. It breaks down the system into manageable sub-systems and analyzes each level separately.
+10. **Petri Net Fault Tree Analysis (PNFTA)**:
+    PNFTA uses Petri nets to represent fault trees, enabling the modeling of concurrent and asynchronous events. It is useful for analyzing systems with parallel processes and interactions.
+
+
+## Applications
+Fault Tree Analysis is a tried-and-true analysis method utilizied in many industries. A few these include (including a few use cases):
+
+* Aerospace/ aviation (such as analyzing potential failure modes entailing engine failure or loss of control)
+* Nuclear energy (such as evaluating scenarios that could lead to reactor core damage or radioactive release)
+* Automotive (such as analysis potential causes of brake failure or unintended acceleration)
+* Chemical and Process industries (such as identifying potential causes of chemical releases or explosions)
+* Defense and Military (such as evaluating causes of missile guidance system failures or communication breakdowns)
+* Software and IT systems (such as identifying possible causes of software bugs or cyber-security breaches.)
 
 ## Symbols
 
