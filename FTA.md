@@ -21,7 +21,6 @@ Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Wat
 FTA is based on Reliability theory, Boolean algebra and probability theory. A very simple set of rules and symbols provides the mechanism for analyzing very complex systems, and complex relationships between hardware, software and humans. <sup>[[2]](#references)</sup>
 
 ## Variations
-
 There are several variations of the FTA method. Though not exhaustive, the following list contains 10 FTA variations of note.
 
 1. **Dynamic Fault Tree Analysis (DFTA)**: \
@@ -84,7 +83,6 @@ Advanced symbols
 | ![FTA Advanced](images/fta_symbol_inhibit.png) | Inhibit gate | Output event occurs when input event occurs, and corresponding condition is satisfied. |
 | ![FTA Advanced](images/fta_symbol_transfer_in.png) | Transfer In | The tree is developed urther at another point within the tree. |
 | ![FTA Advanced](images/fta_symbol_transfer_out.png) | Transfer Out | This portion of the tree is attached to another location within the same tree. |
-
 
 ## Method steps
 Following are steps necessary to apply the FTA method.
@@ -167,14 +165,6 @@ When unacceptable risks have been found, multiple mitigation strategies are avai
 * Warning system
 * Quality Control
 
-## Example(s)
-
-![FTA Diagram](images/Fault-Tree-Analysis-FTA-functional-safety-measures-prevent-traffic-accidents-caused-by.png)
-
-
-* Theoretical example
-* Example of historical factual application
-
 ## Things to avoid
 While going through the steps of utilizing a FTA cycle, there are some elements best to avoid in order to reach success. Following are some matters best to be avoided: 
 * Relying on incomplete, outdated or inaccurate data.
@@ -193,9 +183,6 @@ While going through the steps of utilizing a FTA cycle, there are some elements 
 * One single top event cam be examined at a time <sup>[[3]](#references)</sup>
 * Data regarding failure and quality determines precision of calculated probabilities in a fault tree <sup>[[3]](#references)</sup>
 * Not good at finding all possible initiating faults
-
-## Additions/ Notes
-
 
 ## Used terminology
 Glossary containing as many relevant and specific terms
@@ -223,3 +210,5 @@ Glossary containing as many relevant and specific terms
 
 ----- \
 <sup>[5]</sup> [What is a "cutset"](https://www.wilderisk.co.uk/about/blog/cutset-in-fault-tree-analysis/) \
+
+

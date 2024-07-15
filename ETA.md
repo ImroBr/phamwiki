@@ -143,8 +143,6 @@ Glossary containing as many relevant and specific terms
 | Pathway | Vertical line that traverses (chance) nodes until the end node, from left to right. Each pathway must be unique. |
 | Pipe | Vertical line that seperates the conditional event(s) from (a) probabilistic variable(s). |
 
-## Additions/ Notes
-
 ## See also
 * WASH-1400 [NUREG-75/014](https://www.nrc.gov/docs/ML0706/ML070610293.pdf) Reactor Safety Study, United States Nuclear Regulatory Commission, October 1975
 
