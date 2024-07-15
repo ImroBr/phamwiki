@@ -71,7 +71,6 @@ The first step defines the purpose of the analysis. What is the system boundary 
    * `H-2: Aircraft airframe integrity is lost [L-1, L-2, L-4, L-5]`
      `SC-2: Aircraft airframe integrity must be maintained under worst-case conditions [H-2]`
    
-   
 4. Refine hazards (Optional)
 
 ### 2. Control Structure
@@ -222,11 +221,6 @@ Finally, here are 2 control structure examples in the context of automotive proc
 | :---: | :---: |
 | <sup>Control Structure for Automotive Auto-Hold System</sup> | <sup>Automotive Adaptive Cruise Control System</sup> |
 
-## Example(s)
-_Theoretical example_ \
-* _Example of historical factual application_
-
-
 ## Pros and cons
 Advantages of STPA over other hazard analysis: <sup>[[1]](#see-also), page 4</sup>
 * Very complex systems can be analyzed.
@@ -245,7 +239,6 @@ Disadvantages of STPA:
   * Harder to interpret by stakeholders.
 * May be unnecessarily complex for smaller/simpler projects.
 * May be less suited when a narrow, component-focused analysis is needed.
-
 
 ## Do's and dont's
 

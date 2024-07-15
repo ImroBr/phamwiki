@@ -107,7 +107,6 @@ _Advantages_
 * (Advanced) probabilistic techniques not required for implementation
 * Encourages a proactive approach to identify and mitigate potential failure modes before they occur, enhancing reliability and safety
 
-
 ## Additions/ Notes
 [FMEA Example Worksheet](example_files/fmea_testsheet_95.xls)
 
@@ -130,7 +129,6 @@ Glossary containing as many relevant and specific terms
 | Risk Priority Number (RPN) | A multiplication of $`S \times O \times D`$, the total score helps prioritize failures by overall criticality. |
 | Severity | Signified as "S", severity denoted the degree of negative impact of a potential failure. Usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant. |
 | Single Point of Failure (SPOF)<br>Single Failure Points (SFP) | Part of a system that, if it fails, will stop the whole system form working |
-
 
 ## See also
 A more extensive history and standards regarding FMEA can be found at [FMEA history](https://www.superengineer.net/blog/fmea-history) \
