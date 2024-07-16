@@ -47,10 +47,10 @@ Each particular wiki-page at will at least contain the following subjects/ headi
 
 ## Available hazard analysis methods
 Following are the available HA pages on this WIKI:
-* [System-Theoretic Process Analysis (STPA)](/STPA.md)
-* [Failure Mode and Effect Analysis (FMEA)](/FMEA.md)
-* [Failure Tree Analysis (FTA)](/FTA.md)
-* [Event Tree Analysis (ETA)](/ETA.md)
+* [System-Theoretic Process Analysis (STPA)](/STPA.md) _(Top-down approach)_
+* [Failure Mode and Effect Analysis (FMEA)](/FMEA.md) _(Bottom-up approach)_
+* [Failure Tree Analysis (FTA)](/FTA.md) _(Top-down approach)_
+* [Event Tree Analysis (ETA)](/ETA.md) _(Bottom-up approach)_
 
 ## Future additions
 This WIKI may be supplemented with additional documents and features going forward, depending on available time and functional-utilitary demand. Some of these feature are already known and may be included in the next project update:
@@ -69,7 +69,6 @@ This WIKI may be supplemented with additional documents and features going forwa
 * Further theoretical expansion of method descriptions and literature
 * Better visual support along with method steps
 * (More advanced) examples
-* More examples in the context of automobiles
 * (Advanced) cross-comparisons between Hazard Analysis methods
 
 ### References
