@@ -4,7 +4,7 @@
 
 ## Introduction 
 [[Failure Mode and Effects Analysis (FMEA) - asq.org](https://asq.org/quality-resources/fmea)] \
-Failure Mode and Effect Analysis (FMEA) is a hazard analysis technique, used for identifying all possible failures in a manufacturing/ assembly process, product or service. Best implemented early in the design phase, the goal of FMEA if to eliminate or mitigate failures. Through the FMEA process, failures are identified and numerically prioritized starting from the least desired outcome.
+Failure Mode and Effect Analysis (FMEA) is an inductive bottom-up hazard analysis technique, used for identifying all possible failures in a manufacturing/ assembly process, product or service. Best implemented early in the design phase, the goal of FMEA if to eliminate or mitigate failures. Through the FMEA process, failures are identified and numerically prioritized starting from the least desired outcome.
 
 ## History
 _First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location)_ \
