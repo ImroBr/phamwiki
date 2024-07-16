@@ -55,35 +55,6 @@ Fault Tree Analysis is a tried-and-true analysis method utilizied in many indust
 * Defense and Military (such as evaluating causes of missile guidance system failures or communication breakdowns)
 * Software and IT systems (such as identifying possible causes of software bugs or cyber-security breaches.)
 
-## Symbols
-
-### Event Symbols
-Event symbols
-| Symbol | Term | Meaning |
-| :---: | - | - |
-| ![FTA Basic Event](images/fta_symbol_event.png) | Basic Event (BE) | Lowest-level random event that cannot be broken down further with sufficient data available. | 
-| ![FTA Basic Event](images/fta_symbol_conditional_event.png) | Conditioning Event | Specific condition or restriction associated with another logic gate. |
-| ![FTA Basic Event](images/fta_symbol_top_event.png) | Top Event (TE) | The main undesired outcome or state of system. |
-| ![FTA Basic Event](images/fta_symbol_intermediate_event.png) | Intermediate event | Event between the top event and lower level (basic) event. Therefore, an intermediate event always causes 1 or more event(s) and itself is cause by preceding event. |
-| ![FTA Basic Event](images/fta_symbol_house_event.png) | External (House) event | event of which its occurence is expected. \\generally have a fixed probability of 0 or 1. |
-| ![FTA Basic Event](images/fta_symbol_underdeveloped_event.png) | Un(der)developed event | Event about which there is insufficient information available, or is inconsequential. |
-
-Logic gates
-| Symbol | - | Meaning |
-| :---: | - | - |
-| ![FTA Logic Gate](images/fta_symbol_and.png) | `AND` gate | Output event occurs only when *all* input events occur. |
-| ![FTA Logic Gate](images/fta_symbol_or.png) | `OR` gate | Output event occurs when *any* of the input events occur. |
-| ![FTA Logic Gate](images/fta_symbol_xor.png) | Exclusive `OR` gate (`XOR`) | Output event occurs only if *either input* events occurs (never both or none). |
-| ![FTA Logic Gate](images/fta_symbol_and_priority.png) | Priority `AND` gate | Output event occurs when *all* input events occur, in a *specific sequence*. |
-
-Advanced symbols
-| Symbol | - | Meaning |
-| :---: | - | - |
-| ![FTA Advanced](images/fta_symbol_kn.png) | k/N gate | Output event occurs a certain amount `k` of total input events `N` occur. |
-| ![FTA Advanced](images/fta_symbol_inhibit.png) | Inhibit gate | Output event occurs when input event occurs, and corresponding condition is satisfied. |
-| ![FTA Advanced](images/fta_symbol_transfer_in.png) | Transfer In | The tree is developed urther at another point within the tree. |
-| ![FTA Advanced](images/fta_symbol_transfer_out.png) | Transfer Out | This portion of the tree is attached to another location within the same tree. |
-
 ## Method steps
 Following are steps necessary to apply the FTA method.
 
@@ -196,6 +167,27 @@ Glossary containing as many relevant and specific terms
 | Minimal Cut Sets (MCS) | In a cut set, if no event can be removed without failing to cause the top event. |
 | MOB | Multiple occurring branches |
 | MOE | Multiple occurring events |
+
+## Symbols
+
+### Event Symbols
+Event symbols
+| Symbol | Term | Meaning |
+| :---: | - | - |
+| ![FTA Basic Event](images/fta_symbol_event.png) | Basic Event (BE) | Lowest-level random event that cannot be broken down further with sufficient data available. | 
+| ![FTA Basic Event](images/fta_symbol_conditional_event.png) | Conditioning Event | Specific condition or restriction associated with another logic gate. |
+| ![FTA Basic Event](images/fta_symbol_top_event.png) | Top Event (TE) | The main undesired outcome or state of system. |
+| ![FTA Basic Event](images/fta_symbol_intermediate_event.png) | Intermediate event | Event between the top event and lower level (basic) event. Therefore, an intermediate event always causes 1 or more event(s) and itself is cause by preceding event. |
+| ![FTA Basic Event](images/fta_symbol_house_event.png) | External (House) event | Event of which its occurence is expected. Generally has a fixed probability of 0 or 1. |
+| ![FTA Basic Event](images/fta_symbol_underdeveloped_event.png) | Un(der)developed event | Event about which there is insufficient information available, or is inconsequential. |
+
+Logic gates and advanced symbols
+| Symbol \ Logic Gate | - | Meaning | Symbol \ Advanced | - | Meaning |
+| :---: | - | - | :---: | - | - |
+| ![FTA Logic Gate](images/fta_symbol_and.png) | `AND` gate | Output event occurs only when *all* input events occur. | ![FTA Advanced](images/fta_symbol_kn.png) | k/N gate | Output event occurs a certain amount `k` of total input events `N` occur. |
+| ![FTA Logic Gate](images/fta_symbol_or.png) | `OR` gate | Output event occurs when *any* of the input events occur. | ![FTA Advanced](images/fta_symbol_inhibit.png) | Inhibit gate | Output event occurs when input event occurs, and corresponding condition is satisfied. |
+| ![FTA Logic Gate](images/fta_symbol_xor.png) | Exclusive `OR` gate (`XOR`) | Output event occurs only if *either input* events occurs (never both or none). | ![FTA Advanced](images/fta_symbol_transfer_in.png) | Transfer In | The tree is developed urther at another point within the tree. |
+| ![FTA Logic Gate](images/fta_symbol_and_priority.png) | Priority `AND` gate | Output event occurs when *all* input events occur, in a *specific sequence*. | ![FTA Advanced](images/fta_symbol_transfer_out.png) | Transfer Out | This portion of the tree is attached to another location within the same tree. |
 
 ## See also
 ### FTA Standards
