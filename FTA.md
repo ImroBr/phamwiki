@@ -8,7 +8,7 @@ Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Startin
 
 * Providing clarity and logical foundation directly starting from a failure or otherwise underised state.
 * Diagnosing and mitigating the caus(es) of a top event.
-* A tool to assist in the design of a system, name to heop create (output/ lower level) requirement.
+* A tool to assist in the design of a system, name to hope create (output/ lower level) requirement.
 * Optimize and minimize resources.
 * Substantiate compliance with system safety/ reliability requirements.
 
@@ -178,9 +178,9 @@ While going through the steps of utilizing a FTA cycle, there are some elements 
 * Very good at showing how resistant a system is to single or multiple initiating faults
 
 ### Limitations to FTA
-* The accuracy and effectiveness of FTA in analyzing relevant the causes of failure is heavily reliant on the expertise of the analysts <sup>[[3]](#references)</sup>
+* The accuracy and effectiveness of FTA in analyzing relevant causes of failure is heavily reliant on the expertise of the analysts <sup>[[3]](#references)</sup>
 * Large and complex systems require large and complex fault trees, which makes analysis time-consuming and challenging <sup>[[3]](#references)</sup>
-* One single top event cam be examined at a time <sup>[[3]](#references)</sup>
+* One single top event can be examined at a time <sup>[[3]](#references)</sup>
 * Data regarding failure and quality determines precision of calculated probabilities in a fault tree <sup>[[3]](#references)</sup>
 * Not good at finding all possible initiating faults
 
