@@ -10,9 +10,6 @@ Failure Mode and Effect Analysis (FMEA) is an inductive bottom-up hazard analysi
 _First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location)_ \
 Procedures for FMEA were first described November 9th 1949 by the U.S. Department of Defense (MIL-P-1629) [x] as FMECA (Failure Mode, Effects and Criticality Analysis). Primarily utilized in the military industry, it was later adopted by the space industry (NASA). In the 1970 in was introduced to the automotive industry (Ford).
 
-## Underlying systems
-Possible underlying system or system predecessor of current hazard analysis.
-
 ## Application
 Used for: (List)\
 Most use cases in current day. Type(s) of application domains.
@@ -115,6 +112,7 @@ _Disadvantages_
 * Subjectivity: Assignment of Severity, Occurence and Detection can be subjective, making it harder to find concensus (similar RPN scores) between (many) analysts, which may lead to inconsistent results
 * FMEA focuses more on individual single-point failures, and is not equipped for subsystem-interactive failures
 * FMEA does not formally encapsulate time-based effects of system components, potentially missing failure modes that are time-dependent
+* The Severity, Occurence and Detection 1 to 10 scale numbers are comprised of ordinal numbers (ordinal measurement); actually rankings representing scenarios, and do not necessarily reflect the evenly spaced numerical 1-10 relation (interval measurement). This can cause differing S, O and D numbers, especially when multiplied to get the RPN number, a risk value not proportional to other FMEA failure mode or real-life scenarios.
 
 _Advantages_
 * One of the most widely used and available hazard analysis methods
