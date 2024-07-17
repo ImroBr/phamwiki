@@ -44,19 +44,32 @@ For all identified functions, identify every way that function might fail. Failu
 3. Incorrect function: The item or functional block is operating outside design thresholds and parameters.
 
 ### 5. Determine failure severity
-For each identified failure, determine the the severity. Signified as "S", severity denoted the degree of negative impact of a potential failure. Noted as "S" on the FMEA sheet, severity is usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant.
+For each identified failure, determine the the severity. Signified as "S", severity denoted the degree of negative impact of a potential failure. Noted as "S" on the FMEA sheet, severity is usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant. 
+
+Take note of first properly defining the number scaling with correlatory terms, which shall be known to everyone, before commiting the numbers to paper. \
+For example, a Severity rating regarding a scenario of driving with a flat tire:
+1. Inconvenience: Slight delay in travel plans.
+2. Reduced Fuel Efficiency: Slight increase in fuel consumption.
+3. Handling Issues: Minor difficulty in steering and control.
+4. Increased Wear: Accelerated wear and tear on the tire and vehicle components.
+5. Vibration: Noticeable vibrations making driving uncomfortable.
+6. Damage to Wheel: Potential damage to the wheel rim.
+7. Overheating: Tire overheating and risk of further damage.
+8. Blowout Risk: Increased risk of the tire completely blowing out.
+9. Loss of Control: Significant loss of vehicle control, particularly at high speeds.
+10. Accident: High potential for a serious accident leading to injury or fatality.
 
 ### 6. Determine potential root causes
 For each identified failure, identify all possible root causes. Utilize expertise and cause analysis tools to encompass as many causes possible, and add them to the FMEA sheet.
 
 ### 7. Determine occurence rating
-For each identified failure, estimate the probability of the failure actually occurring. Occurence is noted on a 1-10 scale, in which 10 can be likened to inevitability and 1 to (extreme) unlikeliness.
+For each identified failure, estimate the probability of the failure actually occurring. Occurence is noted on a 1-10 scale, in which 10 can be likened to inevitability and 1 to (extreme) unlikeliness. Note: similarly to [step 5](#5.-determine-failure-severity), assign an explicit occurence corresponding to the numbers, before commiting the numbers to paper.
 
 ### 8. Determine process controls
 For each identified failure, put measures in place that prevent or maximally mitigate a failure from reaching a potential customer or the rest of the system. 
 
 ### 9. Determine detection rating
-For each failure, determine the rate a process control can detect a failure, before the rest of the system or outside world (customer) are affected. Noted as "D" on hte FMEA worksheet, detection is usually between a 1-10 scale, in which 10 can be likened to a problem being certainly undetectable (or no process control present) and 1 is a certainty of detecting a problem.
+For each failure, determine the rate a process control can detect a failure, before the rest of the system or outside world (customer) are affected. Noted as "D" on hte FMEA worksheet, detection is usually between a 1-10 scale, in which 10 can be likened to a problem being certainly undetectable (or no process control present) and 1 is a certainty of detecting a problem. Note: similarly to [step 5](#5.-determine-failure-severity), assign explicit detection terms corresponding to the numbers, before commiting the numbers to paper.
 
 ### 10. Calculate the Risk Priority Number (RPN)
 Multiply the S<sub>(everity)</sub>, O<sub>(ccurence)</sub> and D<sub>(etection)</sub> ratings into a Risk Priority Number. This number is the potential failure score for the corresponding failure, and can be used to prioritize relevance.
@@ -91,6 +104,8 @@ Note that the example FMEA sheet may vary depending on the context and scope of 
 | 10 | Calculate Risk Priority Number: Multiply the `S`, `O` and `D` rating and write the answer down under the corresponding RPN column. | ![FMEA Example step 8](images/fmea_example_step10.png) |
 | 11 | Implement changes: The last step (possibly iterative) step that contains multiple actions, which typically starts with the designation of an assigned team or person(s) and a (due) date. Then, note the action that the designated entity will undertake which will reduce the initial RPN value. Upon testing by theory or the iterative practice, write down the updated `S`, `O` and `D` rating on the right hand side. Then calculate these value for the final RPN value. | ![FMEA Example step 8](images/fmea_example_step11.png) |
 | 12 | Measure effectiveness and evaluate | - |
+
+
 
 ## Pros and cons
 List of advantages and disadvantages

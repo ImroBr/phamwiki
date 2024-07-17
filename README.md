@@ -9,16 +9,16 @@ This Wiki documents Process Hazard Analyses, aiming to support (automotive/ RDW)
 * Formulating better informed advice regarding OEM's PHA decision choice(s)
 * Better validating process methodology steps 
 
-### Wiki scope and legal foundation
-This wiki is (in the process of) being deployed as a consequence of the _ALKS (Assisted Lane Keeping System)_'s: 
-* [UN Regulation No. 157 <sup>[1]</sup>](#references) annex 4, 3.4.4 (p. 34 of pdf), namely:
+### Wiki scope and regulatory foundation
+This wiki is (in the process of) being deployed as a consequence of:
+* In the ontext of _ALKS (Assisted Lane Keeping System)_; [UN Regulation No. 157 <sup>[1]</sup>](#references) annex 4, 3.4.4 (p. 34 of pdf), namely:
 
 > **3.4.4**: ... The Type Approval Authority shall perform an assessment of the application 
 of the analytical approach(es):  
 
 > **(b)<sub>(1st)</sub>**: Inspection of the safety approach at the system level including a top down (from possible hazard to design) and bottom up approach (from design to possible hazards). The safety approach may be based on a Failure Mode and Effect Analysis (FMEA), a Fault Tree Analysis (FTA) and a System-Theoretic Process Analysis (STPA) or any similar process appropriate to system functional and operational safety. 
 
-* And in the more broader context of ADSs [EU 2022/1426 <sup>[2]</sup>](#references) 3.5.5.2, namely:
+* And in the more broader context of ADS; [EU 2022/1426 <sup>[2]</sup>](#references) 3.5.5.2, namely:
 > **3.5.5.2** ... The type-approval authority shall assess the application of the analytical approach(es): 
 
 > **(b)**: Inspection of the safety approach at the ADS level including a top down (from possible hazard to design) and bottom-up approach (from design to possible hazards). The safety approach may be based on a failure mode and effect analysis (FMEA), a fault tree analysis (FTA) and a System-theoretic process analysis (STPA) or any similar process appropriate to system functional and operational safety.
