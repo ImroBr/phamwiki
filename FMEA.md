@@ -15,12 +15,25 @@ Used for: (List)\
 Most use cases in current day. Type(s) of application domains.
 
 ## Variations
-_Specific variations or successions of main hazard analysis method._ \
 * FMECA (*Failure Modes, effects and criticality analysis*)
   Similar to the FMEA process, this variant encorporates Criticality as an additional parameter. A Critical characteristic associated with a failure mode is a measurements or indicators that reflect safety or compliance with government regulations and need special controls. Critical characteristics have a high severity rating because of this. Note: FMECA is sometimes used interchangably with FMEA. \
 * DFMEA (Design FMEA)
 * PFMEA (Process FMEA) (https://safetyculture.com/topics/fmea/)
 * AFMEA (Advanced FMEA)
+* Revised FMEA standard (AIAG & VDA FMEA) for Automotive \
+  A more detailed, structured and automotive industry-specific opproach to FMEA. Key differences to the traditional FMEA include:
+  * A more structured and systematic approach, better distinguishing between design FMEA (DFMEA) and process FMEA (PFMEA)
+  * Consist of 7 steps:
+    1. Planning and Preparation
+	2. Structure analysis
+	3. Function analysis
+	4. Failure analysis
+	5. Risk analysis
+	6. Optimization
+	7. Results documentation
+  * Removal of the RPN concept, instead a new parameter [AP (_Action Priority_)](#used-terminology) is used. This was done to address some of the [disadvantages of the RPN rating](#disadvantages).
+  * Additional emphasis on communication of FMEA results, ensuring all stakeholders are informed and involved.
+
 
 ## Method steps
 Below are the steps necessary to utilize the FMEA method.
@@ -102,19 +115,19 @@ Note that the example FMEA sheet may vary depending on the context and scope of 
 | 11 | Implement changes: The last step (possibly iterative) step that contains multiple actions, which typically starts with the designation of an assigned team or person(s) and a (due) date. Then, note the action that the designated entity will undertake which will reduce the initial RPN value. Upon testing by theory or the iterative practice, write down the updated `S`, `O` and `D` rating on the right hand side. Then calculate these value for the final RPN value. | ![FMEA Example step 8](images/fmea_example_step11.png) |
 | 12 | Measure effectiveness and evaluate | - |
 
-
-
 ## Pros and cons
-List of advantages and disadvantages
+In relation to other Hazard Analyses, FMEA has both advantageous and disadvantageous characteristics. Some of these are described below.
 
-_Disadvantages_ 
+### Disadvantages
 * Possibly labor intensive: FMEA can become time-consuming and laborious when in the case of complex systems with numerous components and potential failure modes
 * Subjectivity: Assignment of Severity, Occurence and Detection can be subjective, making it harder to find concensus (similar RPN scores) between (many) analysts, which may lead to inconsistent results
 * FMEA focuses more on individual single-point failures, and is not equipped for subsystem-interactive failures
 * FMEA does not formally encapsulate time-based effects of system components, potentially missing failure modes that are time-dependent
-* The Severity, Occurence and Detection 1 to 10 scale numbers are comprised of ordinal numbers (ordinal measurement); actually rankings representing scenarios, and do not necessarily reflect the evenly spaced numerical 1-10 relation (interval measurement). This can cause differing S, O and D numbers, especially when multiplied to get the RPN number, a risk value not proportional to other FMEA failure mode or real-life scenarios.
+* Regarding the RPN:
+  * The Severity, Occurence and Detection 1 to 10 scale numbers represent categorical ordinal variables; actually rankings representing scenarios, and do not necessarily reflect the evenly spaced numerical 1-10 relation (quantitative discrete variables). This can cause differing S, O and D numbers, especially when multiplied to get the RPN number, a risk value not proportional to other FMEA failure mode or real-life scenarios.
+  * The is no standard RPN value from which corrective action should be taken
 
-_Advantages_
+### Advantages
 * One of the most widely used and available hazard analysis methods
 * Detailed focus on overview and analysis of individual components and subsystems
 * (Advanced) probabilistic techniques not required for implementation
@@ -128,7 +141,7 @@ Glossary containing as many relevant and specific terms
 
 | Term | Definition |
 | - | - |
-| Action Priority (AP) | A new gradient from the AIAG/ VDA handbook<sup>[2]</sup>, replacing the classical FMEA RPN and risk matrix. The AP aims to encompass additional improvement measures. |
+| Action Priority (AP) | A new parameter from the AIAG/ VDA handbook<sup>[2]</sup>, replacing the classical FMEA RPN and risk matrix. The AP puts a higher emphasis on the Severity value, and quantification of the AP does not come about through multiplication, but instead through evaluation using a decision table/ matrix. |
 | Criticality | - |
 | Detection | Signified as "D", detection denotes the degree a process controls can detect either the failure mode or its cause before the client is affected. Usually noted on a 1-10 scale, in which 10 can be likened to a problem being certainly undetectable (or no process control present) and 1 is a certainty of detecting a problem. |
 | End Effect | Consequence a failure mode has upon operation, function or status at the highest indenture level |
@@ -158,6 +171,6 @@ FMECA)”](https://knowledge.bsigroup.com/products/reliability-of-systems-equipm
 * FMEAAV-1 - _IAG& VDA FMEA Handbook_ <sup>[2]</sup> _(Automotive) (August 2022)_
 
 ## References
-<sup>[1]</sup> [What is FMEA? Failure Mode & Effects Analysis | ASQ](https://asq.org/quality-resources/fmea) \
-<sup>[2]</sup> [IAG& VDA FMEA Handbook](https://www.aiag.org/quality/automotive-core-tools/fmea) _(Automotive) (August 2022)_
+1. [What is FMEA? Failure Mode & Effects Analysis | ASQ](https://asq.org/quality-resources/fmea) \
+2. [AIAG & VDA FMEA Handbook 2022](https://www.aiag.org/store/publications/details?ProductCode=FMEAAV-1) _(Automotive) (August 2022)_
 
