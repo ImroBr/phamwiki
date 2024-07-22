@@ -132,7 +132,9 @@ In relation to other Hazard Analyses, FMEA has both advantageous and disadvantag
 
 ## Additions/ Notes
 <img align="right" src="images/fmea_example02.png" width="274" height="81"> 
+
 A FMEA example worksheet can be found [here](example_files/fmea_testsheet_95.xls).
+
 <br clear="right"/>
 
 ## Used terminology
