@@ -11,27 +11,6 @@ Procedures for FMEA were first described November 9th 1949 by the U.S. Departmen
 Used for: (List)\
 Most use cases in current day. Type(s) of application domains.
 
-## Variations
-* FMECA (*Failure Modes, effects and criticality analysis*)
-  Similar to the FMEA process, this variant encorporates Criticality as an additional parameter. A Critical characteristic associated with a failure mode is a measurements or indicators that reflect safety or compliance with government regulations and need special controls. Critical characteristics have a high severity rating because of this. Note: FMECA is sometimes used interchangably with FMEA. \
-* DFMEA (Design FMEA)
-* PFMEA (Process FMEA) (https://safetyculture.com/topics/fmea/)
-* AFMEA (Advanced FMEA)
-* Revised FMEA standard (AIAG & VDA FMEA) for Automotive \
-  A more detailed, structured and automotive industry-specific opproach to FMEA. Key differences to the traditional FMEA include:
-  * A more structured and systematic approach, better distinguishing between design FMEA (DFMEA) and process FMEA (PFMEA)
-  * Consist of 7 steps:
-    1. Planning and Preparation
-	2. Structure analysis
-	3. Function analysis
-	4. Failure analysis
-	5. Risk analysis
-	6. Optimization
-	7. Results documentation
-  * Removal of the RPN concept, instead a new parameter [AP (_Action Priority_)](#used-terminology) is used. This was done to address some of the [disadvantages of the RPN rating](#disadvantages).
-  * Additional emphasis on communication of FMEA results, ensuring all stakeholders are informed and involved.
-
-
 ## Method steps
 Below are the steps necessary to utilize the FMEA method.
 
@@ -112,6 +91,26 @@ Note that the example FMEA sheet may vary depending on the context and scope of 
 | 11 | Implement changes: The last step (possibly iterative) step that contains multiple actions, which typically starts with the designation of an assigned team or person(s) and a (due) date. Then, note the action that the designated entity will undertake which will reduce the initial RPN value. Upon testing by theory or the iterative practice, write down the updated `S`, `O` and `D` rating on the right hand side. Then calculate these value for the final RPN value. | ![FMEA Example step 8](images/fmea_example_step11.png) |
 | 12 | Measure effectiveness and evaluate | - |
 
+## Variations
+* **FMECA** (*Failure Modes, effects and criticality analysis*): 
+  In addition to the FMEA process, FMECA also includes a Criticality Analysis (CA) that ultimately produces a [(C)riticality Ranking](#used-references). A Criticality ranking associated with a failure mode is a measurements or indicator that usually reflects safety or compliance with government regulations and need special controls. Criticality rankings have a high importance because of this, and thus FMECA is usually applied when increased reliability and safety are required. Note: FMECA is sometimes used interchangably with FMEA. 
+* **DFMEA** (Design FMEA)
+* **PFMEA** (Process FMEA) (https://safetyculture.com/topics/fmea/)
+* **AFMEA** (Advanced FMEA)
+* Revised FMEA standard **(AIAG & VDA FMEA 2022)**<sup>[[2]](#references)</sup> for Automotive:
+  A more detailed, structured and automotive industry-specific opproach to FMEA. Key differences to the traditional FMEA include:
+  * A more structured and systematic approach, better distinguishing between design FMEA (DFMEA) and process FMEA (PFMEA)
+  * Consist of 7 steps:
+    1. Planning and Preparation
+	2. Structure analysis
+	3. Function analysis
+	4. Failure analysis
+	5. Risk analysis
+	6. Optimization
+	7. Results documentation
+  * Removal of the RPN ranking, instead a new parameter [AP (_Action Priority_)](#used-terminology) is used. This was done to address some of the [disadvantages of the RPN rating](#disadvantages).
+  * Additional emphasis on communication of FMEA results, ensuring all stakeholders are informed and involved.
+
 ## Pros and cons
 In relation to other Hazard Analyses, FMEA has both advantageous and disadvantageous characteristics. Some of these are described below.
 
@@ -123,6 +122,7 @@ In relation to other Hazard Analyses, FMEA has both advantageous and disadvantag
 * Regarding the RPN:
   * The Severity, Occurence and Detection 1 to 10 scale numbers represent categorical ordinal variables; actually rankings representing scenarios, and do not necessarily reflect the evenly spaced numerical 1-10 relation (quantitative discrete variables). This can cause differing S, O and D numbers, especially when multiplied to get the RPN number, a risk value not proportional to other FMEA failure mode or real-life scenarios.
   * The is no standard RPN value from which corrective action should be taken
+* Tendency towards high Severity ratings <sup>[[3]](#references)</sup>
 
 ### Advantages
 * One of the most widely used and available hazard analysis methods
@@ -133,7 +133,7 @@ In relation to other Hazard Analyses, FMEA has both advantageous and disadvantag
 ## Additions/ Notes
 <img align="right" src="images/fmea_example02.png" width="274" height="81"> 
 
-A FMEA example worksheet can be found [here](example_files/fmea_testsheet_95.xls).
+A FMEA example Excel worksheet (as visible on the right) can be found [here](example_files/fmea_testsheet_95.xls).
 
 <br clear="right"/>
 
@@ -142,9 +142,9 @@ Glossary containing as many relevant and specific terms
 
 | Term | Definition |
 | - | - |
-| Action Priority (AP) | A new parameter from the AIAG/ VDA handbook<sup>[2]</sup>, replacing the classical FMEA RPN and risk matrix. The AP puts a higher emphasis on the Severity value, and quantification of the AP does not come about through multiplication, but instead through evaluation using a decision table/ matrix. |
-| Criticality | - |
-| Detection | Signified as "D", detection denotes the degree a process controls can detect either the failure mode or its cause before the client is affected. Usually noted on a 1-10 scale, in which 10 can be likened to a problem being certainly undetectable (or no process control present) and 1 is a certainty of detecting a problem. |
+| Action Priority (AP) | A new parameter from the AIAG/ VDA handbook<sup>[[2]](#references)</sup>, replacing the classical FMEA RPN and risk matrix. The AP puts a higher emphasis on the Severity value, and quantification of the AP does not come about through multiplication, but instead through evaluation using a decision table/ matrix. |
+| Criticality rating | An rating similar to the RPN, but differs in calculation: `(C)riticality = Expected Failures * Mode Ratio of Unreliability * Probability of Loss`. |
+| Detection | Signified as "D", detection denotes the degree a process controls can detect either the failure mode or its cause before the client is affected. Usually noted on a 1-10 scale, in which 10 may signify being undetectable (or no process control present) and 1 is a certainty of detecting a problem (in time). |
 | End Effect | Consequence a failure mode has upon operation, function or status at the highest indenture level |
 | Failure | Any error, defects or abnormalities that negatively impact system functionality, especially affecting the customer. |
 | Failure Effect | The immediate consequence of a failure during operation.  |
@@ -152,7 +152,7 @@ Glossary containing as many relevant and specific terms
 | Local Effect | The consequence a failure mode has on the current specific operation, function or status under analysis. |
 | Next higher level effect | Consequence a failure mode has on operation, function or status at the next higher indenture level above the currently analyzed item. |
 | Occurrence | Signified as "O", occurrence denotes a (probabilistic) chance of a failure occurring. Usually noted on a 1-10 scale, in which 10 can be likened to inevitability and 1 to (extreme) unlikeliness. |
-| Process Control | Preventative or mitigating procedures, mechanisms or tests that attempt to prevent or curtail a failure before the client is affected. |
+| Process Control | Preventative or mitigating procedures, mechanisms or tests that attempt to prevent, or detect a failure before the client is affected. |
 | Risk Priority Number (RPN) | A multiplication of $`S \times O \times D`$, the total score helps prioritize failures by overall criticality. |
 | Severity | Signified as "S", severity denoted the degree of negative impact of a potential failure. Usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant. |
 | Single Point of Failure (SPOF)<br>Single Failure Points (SFP) | Part of a system that, if it fails, will stop the whole system form working |
@@ -161,7 +161,7 @@ Glossary containing as many relevant and specific terms
 A more extensive history and standards regarding FMEA can be found at [FMEA history](https://www.superengineer.net/blog/fmea-history) \
 
 ### FMEA Standards
-* MIL-STR 1629  - “Procedures for performing a failure mode and effect analysis” (FMECA) _(Discontinued 1998)_
+* MIL-STD 1629A  - “Procedures for performing a failure mode and effect analysis” (FMECA)
 * MIL-HDBK-338B
 * IEC 60812  - [“Procedures for failure mode and effect analysis (FMEA)”](https://webstore.iec.ch/publication/26359) _(2018-18-10)_
 * BS 5760-5  - [“Guide to failure modes, effects and criticality analysis (FMEA and
@@ -169,9 +169,9 @@ FMECA)”](https://knowledge.bsigroup.com/products/reliability-of-systems-equipm
 * SAE ARP 5580 - [“Recommended failure modes and effects analysis (FMEA) practices for non-automobile applications”](https://www.sae.org/standards/content/arp5580/) _(Reaffirmed 2020-08-07)_
 * SAE J1739  - [“Potential Failure Mode and effects Analysis in Design (Design FMEA) and Potential Failure Mode and effects Analysis in Manufacturing and Assembly Processes (Process FMEA) and effects Analysis for Machinery (Machinery FMEA)”](https://www.sae.org/standards/content/j1739_202101/) _(Revised 2021-01-13)_
 * SEMATECH (1992) - [“Failure Modes and effects Analysis (FMEA): A Guide for Continuous Improvement for the Semiconductor Equipment Industry”](https://www.yumpu.com/en/document/view/3574368/failure-mode-and-effects-analysis-fmea-a-guide-for-sematech)
-* FMEAAV-1 - _IAG& VDA FMEA Handbook_ <sup>[2]</sup> _(Automotive) (August 2022)_
+* FMEAAV-1 - _AIAG & VDA FMEA Handbook_ <sup>[2]</sup> _(Automotive) (August 2022)_ <sup>[[2]](#references)</sup>
 
 ## References
 1. [What is FMEA? Failure Mode & Effects Analysis | ASQ](https://asq.org/quality-resources/fmea) \
 2. [AIAG & VDA FMEA Handbook 2022](https://www.aiag.org/store/publications/details?ProductCode=FMEAAV-1) _(Automotive) (August 2022)_
-
+3. [FMECA Vs FMEA (What is the Difference Between Them?)](https://www.twi-global.com/technical-knowledge/faqs/fmeca-vs-fmea#FMEA); TWI
