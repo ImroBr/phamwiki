@@ -246,11 +246,19 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 | H-2 | Collide with ground facilities | L-1, L-2, L-3 |
 | H-3 | Hinder other aircraft and ground facilities operation | L-1, L-2 |
 
+**Control structure diagram**
+
+| ![STPA example scenario Control Structure diagram](images/Safety_analysis_of_wheel_brake_system_based_on_STAMP_STPA_and_Monte_Carlo_simulation_pic3_l_nosubtext.png) | (images/stpa_handbook_figureB.6_page153_noreference.png) |
+| :---: | 
+| <sup>STAMP-model of Wheel Brake System (WBS)</sup> | 
+
 **Unsafe control Actions**
 
 | Control Action | Not providing causes hazard | Providing causes hazard | Too early, too late, out of order | Stopped too soon, aplied too long |
 | - | - | - | - | - |
 | Brake | Does not provide manual braking when autobrake does not provide braking. (H-1) <br><br> Provide excessive manual braking, result in brake overheating or tire burst during landing. (H-2, H-3) | Provide inadequate deceleration (manual or autobrake) during landing. (H-1) | Provide manual braking before touchdown, result in wheel lockup, loss of control, or tire burst. (H-2, H-3) <br><br> Provide braking too late, result in rushing out off the runway. (H-1) | Manual braking applied too long, result in brake overheating or tire burst during Mlanding. (H-2, H-3) <br><br> Manual braking applied too long, result in stopping aircraft on runway, hinder other aircraft and ground facilities operation. (H-3) <br><br> Manual braking applied too soon, result in rushing out off the runway. (H-1) |
+
+** Identify loss scenario ** 
 
 ## Pros and cons
 Advantages of STPA over other hazard analysis: <sup>[[1]](#see-also), page 4</sup>
