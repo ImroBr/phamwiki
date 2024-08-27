@@ -87,6 +87,11 @@ A [controller](#used-terminology) makes decisions to achive goals via _control a
 
 [Common points of confusion](#common-points-of-confusion-when-modeling-control-structures) should be avoided when modeling the control structures.
 
+Following are 2 automotive control structure examples:
+| ![STPA Control Structure example 1](images/stpa_handbook_figureB.7_page154_noreference.png) | ![STPA Control Structure example 2](images/stpa_handbook_figureB.6_page153_noreference.png) |
+| :---: | :---: |
+| <sup>Control Structure for Automotive Auto-Hold System</sup> | <sup>Automotive Adaptive Cruise Control System</sup> |
+
 ### 3. Identify Unsafe Control Actions (UCA)s
 In the flow of control actions and feedback, what unsafe control actions can occur?
 
@@ -135,7 +140,6 @@ Use the following general notation when describing UCAs: `UCA-2: <Source> <Type>
 **Defining Controller Constraints**
 Once UCAs have been identified, contraints for the controller can be defined. Similar to defining [system-level constraints](#1.-scope), controller contraints can be attained by effectively inverting the UCAs.
 
-
 ### 4. Identify Loss Scenarios
 
 Two types of [loss scenarios](#used-definitions) are to be considered, also illustrated in corresponding figure<sup>[[1]](#see-also), page 43</sup>:  
@@ -172,14 +176,14 @@ Note the during this final step, physical sensors and actuators may be included 
 
    To create scenarios involving UCAs, we must consider the _unsafe controller behaviour_, or the _causes of inadequate feedback/information_ that caused the UCA. 
    
-   _Unsafe controller behaviour_
+   _Unsafe controller behaviour_ \
    Regarding _unsafe controller behaviour_, there are 4 general reasons why a controller may (or may not) provide a ACU:
    * Failures involving controller (for physical controllers)
    * Inadequate control algorithm
    * Unsafe control input (from other controller)
    * Inadequate [process models](#used-terminology)
    
-   _Causes of inadequate feedback information_
+   _Causes of inadequate feedback information_ \
    Regarding _causes of inadequate feedbackand information_, the following factors may be involved:
    * Feedback/ information not received (transmission errors, lost communication, delays in communication, etc.)
      * Feedback/info sent by sensor(s) but not received by controller
@@ -197,7 +201,7 @@ Note the during this final step, physical sensors and actuators may be included 
    
    Hazards can be cause by UCAs, but can also be cause without an UCA if the control actions are not executed properly or not executed at all. To create these scenarios, the [control path](#used-terminology) as well as factors affecting the controlled process, must be considered, as shown in the image to the right.
    
-   _Scenarios involving the control path_
+   _Scenarios involving the control path_ \
    Generally, scenoarios involving the control path may include:
    * Control action not executed 
      * Control action is sent by controller, but not received by actuator(s)
@@ -209,7 +213,7 @@ Note the during this final step, physical sensors and actuators may be included 
 	 * Actuator(s) respond adequately, but the control action is applied or received improperly at the controlled Process
 	 * Control action action is not sent by controller, but actuator(s) or other elements respond as if it has been sent
    
-   _Scenarios related to the controlled Process_
+   _Scenarios related to the controlled Process_ \
    Generally, scenarios related to the controlled process may include:
    * Control action not executed
      * Control action is applied or received process, but the controlled process does not respond
@@ -217,10 +221,7 @@ Note the during this final step, physical sensors and actuators may be included 
      * Control action is applied or received by the controlled process, but the controlled process responds improperly
 	 * Control action is not applied or received by the controlled process, but the process responds as if the control ation had been applied or received
    
-Finally, here are 2 control structure examples in the context of automotive processes:
-| ![STPA Control Structure example 1](images/stpa_handbook_figureB.7_page154_noreference.png) | ![STPA Control Structure example 2](images/stpa_handbook_figureB.6_page153_noreference.png) |
-| :---: | :---: |
-| <sup>Control Structure for Automotive Auto-Hold System</sup> | <sup>Automotive Adaptive Cruise Control System</sup> |
+
 
 ## Example scenario 
 For addition clarification in regards to the application of the STPA method, a scenario from the Journal of Systems Engineering and Electronics (Hu Jianbo, Zheng Lei et. al 2018)<sup>[[6]](#references)</sup> will be used.
@@ -252,18 +253,17 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 | :---: | 
 | <sup>STAMP-model of Wheel Brake System (WBS)</sup> | 
 
-| ![STPA hierarchical control structure](images/stpa_handbook_figure2.8_page24_noreference.png) |
-| - |
-| <sup>Example of a hierarchical control structure for aviation</sup> |
-
-
 **Unsafe control Actions**
 
 | Control Action | Not providing causes hazard | Providing causes hazard | Too early, too late, out of order | Stopped too soon, aplied too long |
 | - | - | - | - | - |
-| Brake | Does not provide manual braking when autobrake does not provide braking. (H-1) <br><br> Provide excessive manual braking, result in brake overheating or tire burst during landing. (H-2, H-3) | Provide inadequate deceleration (manual or autobrake) during landing. (H-1) | Provide manual braking before touchdown, result in wheel lockup, loss of control, or tire burst. (H-2, H-3) <br><br> Provide braking too late, result in rushing out off the runway. (H-1) | Manual braking applied too long, result in brake overheating or tire burst during Mlanding. (H-2, H-3) <br><br> Manual braking applied too long, result in stopping aircraft on runway, hinder other aircraft and ground facilities operation. (H-3) <br><br> Manual braking applied too soon, result in rushing out off the runway. (H-1) |
+| Brake | Does not provide manual braking when autobrake does not provide braking. (H-1) <br><br> Provide excessive manual braking, result in brake overheating or tire burst during landing. (H-2, H-3) | Provide inadequate deceleration (manual or autobrake) during landing. (H-1) | Provide manual braking before touchdown, result in wheel lockup, loss of control, or tire burst. (H-2, H-3) <br><br> Provide braking too late, result in rushing out off the runway. (H-1) | Manual braking applied too long, result in brake overheating or tire burst during landing. (H-2, H-3) <br><br> Manual braking applied too long, result in stopping aircraft on runway, hinder other aircraft and ground facilities operation. (H-3) <br><br> Manual braking applied too soon, result in rushing out off the runway. (H-1) |
 
-** Identify loss scenario ** 
+**Identify loss scenario**
+
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| - | - | - | - | - | - | - | - | - | - |
+| Column | Control action | $`V`$ | $ `T`$ | In/ out specified area | Other control actions | Not providing causes hazard | Providing causes hazard | Too early, too late, out of order | Stopped too soon, aplied too long |
 
 ## Pros and cons
 Advantages of STPA over other hazard analysis: <sup>[[1]](#see-also), page 4</sup>
