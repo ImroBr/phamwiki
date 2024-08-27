@@ -2,7 +2,7 @@
 
 ## Introduction 
 [[Failure Mode and Effects Analysis (FMEA) - asq.org](https://asq.org/quality-resources/fmea)] \
-Failure Mode and Effect Analysis (FMEA) is an inductive bottom-up hazard analysis technique, used for identifying all possible failures in a manufacturing/ assembly process, product or service. Best implemented early in the design phase, the goal of FMEA if to eliminate or mitigate failures. Through the FMEA process, failures are identified and numerically prioritized starting from the least desired outcome.
+Failure Mode and Effect Analysis (FMEA) is an inductive bottom-up hazard analysis method, used for identifying all possible failures in a manufacturing/ assembly process, product or service. Best implemented early in the design phase, the goal of FMEA if to eliminate or mitigate failures. Through the FMEA process, failures are identified and numerically prioritized starting from the least desired outcome.
 
 ## History
 Procedures for FMEA were first described November 9th 1949 by the U.S. Department of Defense (MIL-P-1629) [x] as FMECA (Failure Mode, Effects and Criticality Analysis). Primarily utilized in the military industry, it was later adopted by the space industry (NASA). In the 1970 in was introduced to the automotive industry (Ford). More information about FMEA history can be found through the [link is the _See Also_ heading](#see-also). 
@@ -155,13 +155,13 @@ Glossary containing as many relevant and specific terms
 | Process Control | Preventative or mitigating procedures, mechanisms or tests that attempt to prevent, or detect a failure before the client is affected. |
 | Risk Priority Number (RPN) | A multiplication of $`S \times O \times D`$, the total score helps prioritize failures by overall criticality. |
 | Severity | Signified as "S", severity denoted the degree of negative impact of a potential failure. Usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant. |
-| Single Point of Failure (SPOF)<br>Single Failure Points (SFP) | Part of a system that, if it fails, will stop the whole system form working |
+| Single Point of Failure (SPOF)<br>Single Failure Points (SFP) | Part of a system that, if it fails, will stop the whole system form working. |
 
 ## See also
-A more extensive history and standards regarding FMEA can be found at [FMEA history](https://www.superengineer.net/blog/fmea-history) \
+A more extensive history and standards regarding FMEA can be found at [here](https://www.superengineer.net/blog/fmea-history).
 
 ### FMEA Standards
-* MIL-STD 1629A  - “Procedures for performing a failure mode and effect analysis” (FMECA)
+* [MIL-STD 1629A](http://everyspec.com/MIL-STD/MIL-STD-1600-1699/MIL_STD_1629A_1556/) - “Procedures for performing a failure mode and effect analysis” (FMECA) (November 24<sup>th</sup> 1980)
 * MIL-HDBK-338B
 * IEC 60812  - [“Procedures for failure mode and effect analysis (FMEA)”](https://webstore.iec.ch/publication/26359) _(2018-18-10)_
 * BS 5760-5  - [“Guide to failure modes, effects and criticality analysis (FMEA and
@@ -169,7 +169,7 @@ FMECA)”](https://knowledge.bsigroup.com/products/reliability-of-systems-equipm
 * SAE ARP 5580 - [“Recommended failure modes and effects analysis (FMEA) practices for non-automobile applications”](https://www.sae.org/standards/content/arp5580/) _(Reaffirmed 2020-08-07)_
 * SAE J1739  - [“Potential Failure Mode and effects Analysis in Design (Design FMEA) and Potential Failure Mode and effects Analysis in Manufacturing and Assembly Processes (Process FMEA) and effects Analysis for Machinery (Machinery FMEA)”](https://www.sae.org/standards/content/j1739_202101/) _(Revised 2021-01-13)_
 * SEMATECH (1992) - [“Failure Modes and effects Analysis (FMEA): A Guide for Continuous Improvement for the Semiconductor Equipment Industry”](https://www.yumpu.com/en/document/view/3574368/failure-mode-and-effects-analysis-fmea-a-guide-for-sematech)
-* FMEAAV-1 - _AIAG & VDA FMEA Handbook_ <sup>[2]</sup> _(Automotive) (August 2022)_ <sup>[[2]](#references)</sup>
+* FMEAAV-1 - _AIAG & VDA FMEA Handbook_ <sup>[[2]](#references)</sup> _(Automotive) (August 2022)_ 
 
 ## References
 1. [What is FMEA? Failure Mode & Effects Analysis | ASQ](https://asq.org/quality-resources/fmea) \

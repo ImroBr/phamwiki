@@ -129,6 +129,7 @@ Use the following general notation when describing UCAs: `UCA-2: <Source> <Type>
 
 
 | Notation: | `UCA <nr>` | `<Source>` | `<Type>` | `<Control Action>` | `<Context>` | `<Link to Hazards>` |
+| - | :---: | :---: | :---: | :---: | :---: | :---: |
 | Example: | _UCA-2_ | _BSCU Autobrake_ | _provides_ | _Brake command_ | _during a normal takeoff_ | _[H-4.3] |
 
 **Defining Controller Constraints**
@@ -221,6 +222,38 @@ Finally, here are 2 control structure examples in the context of automotive proc
 | :---: | :---: |
 | <sup>Control Structure for Automotive Auto-Hold System</sup> | <sup>Automotive Adaptive Cruise Control System</sup> |
 
+## Example scenario 
+For addition clarification in regards to the application of the STPA method, a scenario from the Journal of Systems Engineering and Electronics (Hu Jianbo, Zheng Lei et. al 2018)<sup>[[6]](#references)</sup> will be used.
+
+The scenario entails a safety analysis the wheel brake system (WBS) of an aircraft, in an attempt to mitigate flight accidents. 
+
+In the interest of keeping this Wiki-document concise, additional descriptions regarding the scenario context and methodology steps may be omitted. If more information regarding this scenario is desired, it is recommended reading the aforementioned journal entry. 
+
+### Example scenario scope
+**System-level Losses**
+
+| Loss | Description |
+| - | - |
+| L-1 | People injured or killed |
+| L-2 | Aircraft damage |
+| L-3 | Ground facilities damage |
+
+**System-level Hazards**
+
+| Hazard | Description | Link to losses |
+| - | - | - |
+| H-1 | Rush off the runway | L-1, L-2 |
+| H-2 | Collide with ground facilities | L-1, L-2, L-3 |
+| H-3 | Hinder other aircraft and ground facilities operation | L-1, L-2 |
+
+**Unsafe control Actions**
+
+| Control Action | Not providing causes hazard | Providing causes hazard | Too early, too late, out of order | Stopped too soon, aplied too long |
+| - | - | - | - | - |
+| Brake | Does not provide manual braking when autobrake does not provide braking. (H-1) <br><br> Provide excessive manual braking, result in brake overheating or tire burst during
+landing. (H-2, H-3) | Provide inadequate deceleration (manual or autobrake) during landing. (H-1) | Provide manual braking before touchdown, result in wheel lockup, loss of control, or tire burst. (H-2, H-3) <br><br> Provide braking too late, result in rushing out off the
+runway. (H-1) | Manual braking applied too long, result in brake overheating or tire burst during Mlanding. (H-2, H-3) <br><br> Manual braking applied too long, result in stopping aircraft on runway, hinder other aircraft and ground facilities operation. (H-3) <br><br> Manual braking applied too soon, result in rushing out off the runway. (H-1) |
+
 ## Pros and cons
 Advantages of STPA over other hazard analysis: <sup>[[1]](#see-also), page 4</sup>
 * Very complex systems can be analyzed.
@@ -239,6 +272,7 @@ Disadvantages of STPA:
   * Harder to interpret by stakeholders.
 * May be unnecessarily complex for smaller/simpler projects.
 * May be less suited when a narrow, component-focused analysis is needed.
+* There is not a formal method to build the STAMP model <sup>[[6]](#references)</sup>
 
 ## Do's and dont's
 
@@ -338,4 +372,4 @@ For a more thorough description of the System-Theoretic Process Analysis method 
 4. Dunsford, Ross; Chatzimichailidou, Mikela (January 14<sup>th</sup> 2020), [Introducing a system theoretic framework for safety in the rail sector: supplementing CSM-RA with STPA](https://doi.org/10.1080/09617353.2019.1709289) p. 59-82
 5. Homey, David Craig; B,S, Aeronautical Engineering, United States Air Force Academy (2015), [SYSTEMS-THEORETIC PROCESS ANALYSIS AND SAFETY-GUIDED
 DESIGN OF MILITARY SYSTEMS](https://apps.dtic.mil/sti/trecms/pdf/AD1109554.pdf)
-
+6. Hu Jianbo; Zheing Lei; Xu Shukui, ["Safety analysis of wheel brake system based on STAMP/STPA and Monte Carlo simulation"](https://ieeexplore.ieee.org/document/8599114), _Journal of Systems Engineering and Electronics_, vol. 29, No. 6, pp 1327-1339, December 2018, doi: 10.21629/JSEE.2018.06.20.
