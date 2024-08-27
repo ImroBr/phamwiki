@@ -250,9 +250,7 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 
 | Control Action | Not providing causes hazard | Providing causes hazard | Too early, too late, out of order | Stopped too soon, aplied too long |
 | - | - | - | - | - |
-| Brake | Does not provide manual braking when autobrake does not provide braking. (H-1) <br><br> Provide excessive manual braking, result in brake overheating or tire burst during
-landing. (H-2, H-3) | Provide inadequate deceleration (manual or autobrake) during landing. (H-1) | Provide manual braking before touchdown, result in wheel lockup, loss of control, or tire burst. (H-2, H-3) <br><br> Provide braking too late, result in rushing out off the
-runway. (H-1) | Manual braking applied too long, result in brake overheating or tire burst during Mlanding. (H-2, H-3) <br><br> Manual braking applied too long, result in stopping aircraft on runway, hinder other aircraft and ground facilities operation. (H-3) <br><br> Manual braking applied too soon, result in rushing out off the runway. (H-1) |
+| Brake | Does not provide manual braking when autobrake does not provide braking. (H-1) <br><br> Provide excessive manual braking, result in brake overheating or tire burst during landing. (H-2, H-3) | Provide inadequate deceleration (manual or autobrake) during landing. (H-1) | Provide manual braking before touchdown, result in wheel lockup, loss of control, or tire burst. (H-2, H-3) <br><br> Provide braking too late, result in rushing out off the runway. (H-1) | Manual braking applied too long, result in brake overheating or tire burst during Mlanding. (H-2, H-3) <br><br> Manual braking applied too long, result in stopping aircraft on runway, hinder other aircraft and ground facilities operation. (H-3) <br><br> Manual braking applied too soon, result in rushing out off the runway. (H-1) |
 
 ## Pros and cons
 Advantages of STPA over other hazard analysis: <sup>[[1]](#see-also), page 4</sup>
