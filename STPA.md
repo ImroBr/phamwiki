@@ -263,7 +263,7 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 
 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 | - | - | :---: | :---: | - | - | - | - | - | - |
-| Scenario | Control action | $`V`$ | $`T`$ | In/ out specified area | Other control actions | Not providing causes hazard | Providing causes hazard | Too early, too late, out of order | Stopped too soon, aplied too long |
+| Scenario | Control action | $`V`$ | $`T`$ | In/ out specified area | Other control actions | Not providing causes hazard | Providing causes hazard | Too early | Too late |
 | 1 | Brake | <nobr>$`>V_0`$</nobr> | $`>C_0`$ | In | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
 
 ## Pros and cons
