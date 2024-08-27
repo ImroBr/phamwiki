@@ -249,12 +249,9 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 
 **Control structure diagram**
 
-| <img src="images/Safety_analysis_of_wheel_brake_system_based_on_STAMP_STPA_and_Monte_Carlo_simulation_pic3_l_nosubtext.png" width="92" height="90"> | 
+| <img src="images/Safety_analysis_of_wheel_brake_system_based_on_STAMP_STPA_and_Monte_Carlo_simulation_pic3_l_nosubtext.png" width="460" height="452"> | 
 | :---: | 
-| <sup>STAMP-model of Wheel Brake System (WBS)</sup> | 
-
-<img align="right" src="images/Safety_analysis_of_wheel_brake_system_based_on_STAMP_STPA_and_Monte_Carlo_simulation_pic3_l_nosubtext.png" width="92" height="90">
-![STPA example scenario Control Structure diagram](images/Safety_analysis_of_wheel_brake_system_based_on_STAMP_STPA_and_Monte_Carlo_simulation_pic3_l_nosubtext.png) <br>
+| <sup>STAMP-model of Wheel Brake System (WBS) (click to enlarge)</sup> | 
 
 **Unsafe control Actions**
 
