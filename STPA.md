@@ -272,8 +272,8 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 | 6  | Brake | <nobr>$`>V_0`$</nobr> | $`\leqC_0`$ | In  | Inadequate | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 |
 | 7  | Brake | <nobr>$`>V_0`$</nobr> | $`\leqC_0`$ | Out | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
 | 8  | Brake | <nobr>$`>V_0`$</nobr> | $`\leqC_0`$ | Out | Inadequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 9  | Brake | <nobr>$`\leqV_0`$</nobr> | $`>C_0`$ | In  | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 10 | Brake | <nobr>$`\leqV_0`$</nobr> | $`>C_0`$ | In  | Inadequate | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 |
+| 9  | Brake | <nobr>$`\leq V_0`$</nobr> | $`>C_0`$ | In  | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
+| 10 | Brake | <nobr>$`\leq V_0`$</nobr> | $`>C_0`$ | In  | Inadequate | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 |
 | 11 | Brake | <nobr>$`\leqV_0`$</nobr> | $`>C_0`$ | Out | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
 | 12 | Brake | <nobr>$`\leqV_0`$</nobr> | $`>C_0`$ | Out | Inadequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
 | 13 | Brake | <nobr>$`\leqV_0`$</nobr> | $`\leqC_0`$ | In  | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
