@@ -261,25 +261,37 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 
 **Identify loss scenario**
 
-| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+| 1  | 2     | 3                         | 4            | 5   | 6          | 7             | 8             | 9             | 10            |
 | - | - | :---: | :---: | - | - | - | - | - | - |
-| Scenario | Control action | Velocity $`(V)`$ | Braking temperature $`(T)`$ | In/ out specified area | Other control actions | Not providing causes hazard | Providing causes hazard | Too early causes hazard | Too late causes hazard |
-| 1  | Brake | <nobr>$`>V_0`$</nobr> | $`>C_0`$ | In  | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 2  | Brake | <nobr>$`>V_0`$</nobr> | $`>C_0`$ | In  | Inadequate | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 |
-| 3  | Brake | <nobr>$`>V_0`$</nobr> | $`>C_0`$ | Out | Adequate | H-2, H-3 | No | H-2, H-3 | No |
-| 4  | Brake | <nobr>$`>V_0`$</nobr> | $`>C_0`$ | Out | Inadequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 5  | Brake | <nobr>$`>V_0`$</nobr> | $`\leqC_0`$ | In  | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 6  | Brake | <nobr>$`>V_0`$</nobr> | $`\leqC_0`$ | In  | Inadequate | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 |
-| 7  | Brake | <nobr>$`>V_0`$</nobr> | $`\leqC_0`$ | Out | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 8  | Brake | <nobr>$`>V_0`$</nobr> | $`\leqC_0`$ | Out | Inadequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 9  | Brake | <nobr>$`\leq V_0`$</nobr> | $`>C_0`$ | In  | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 10 | Brake | <nobr>$`\leq V_0`$</nobr> | $`>C_0`$ | In  | Inadequate | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 |
-| 11 | Brake | <nobr>$`\leqV_0`$</nobr> | $`>C_0`$ | Out | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 12 | Brake | <nobr>$`\leqV_0`$</nobr> | $`>C_0`$ | Out | Inadequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 13 | Brake | <nobr>$`\leqV_0`$</nobr> | $`\leqC_0`$ | In  | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 14 | Brake | <nobr>$`\leqV_0`$</nobr> | $`\leqC_0`$ | In  | Inadequate | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 |
-| 15 | Brake | <nobr>$`\leqV_0`$</nobr> | $`\leqC_0`$ | Out | Adequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
-| 16 | Brake | <nobr>$`\leqV_0`$</nobr> | $`\leqC_0`$ | Out | Inadequate | H-1, H-2, H-3 | H-1 | H-2, H-3 | H-1 |
+| Scenario | Control action | Velocity $`(V)`$ | Braking temperature $`(T)`$ | In/ out specified area | Other control actions | Hazardous if conrol action provided | Hazardous if control action not provided | Hazardous if control action provided too early | Hazardous if control action provided too late |
+| 1  | Brake | <nobr>$`>V_0`$</nobr>     | $`>C_0`$     | In  | Adequate   | H-1, H-2, H-3 | H-1           |      H-2, H-3 | H-1           |
+| 2  | Brake | <nobr>$`>V_0`$</nobr>     | $`>C_0`$     | In  | Inadequate | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 |
+| 3  | Brake | <nobr>$`>V_0`$</nobr>     | $`>C_0`$     | Out | Adequate   |      H-3      | No            |      H-2, H-3 | No            |
+| 4  | Brake | <nobr>$`>V_0`$</nobr>     | $`>C_0`$     | Out | Inadequate | H-1, H-2, H-3 | H-1, H-2      |      H-2, H-3 | H-1, H-2, H-3 |
+| 5  | Brake | <nobr>$`>V_0`$</nobr>     | $`\leq C_0`$ | In  | Adequate   | H-1           | H-1           | No            | H-1           |
+| 6  | Brake | <nobr>$`>V_0`$</nobr>     | $`\leq C_0`$ | In  | Inadequate | H-1, H-2, H-3 | H-1, H-2, H-3 |      H-2, H-3 | H-1, H-2, H-3 |
+| 7  | Brake | <nobr>$`>V_0`$</nobr>     | $`\leq C_0`$ | Out | Adequate   | No            | No            |      H-4      | H-1           |
+| 8  | Brake | <nobr>$`>V_0`$</nobr>     | $`\leq C_0`$ | Out | Inadequate |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 | H-1, H-2, H-3 |
+| 9  | Brake | <nobr>$`\leq V_0`$</nobr> | $`>C_0`$     | In  | Adequate   |      H-2, H-3 | No            |      H-2, H-3 | No            |
+| 10 | Brake | <nobr>$`\leq V_0`$</nobr> | $`>C_0`$     | In  | Inadequate |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 |
+| 11 | Brake | <nobr>$`\leq V_0`$</nobr> | $`>C_0`$     | Out | Adequate   |      H-2, H-3 | No            |      H-2, H-3 | No            |
+| 12 | Brake | <nobr>$`\leq V_0`$</nobr> | $`>C_0`$     | Out | Inadequate |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 | No            |
+| 13 | Brake | <nobr>$`\leq V_0`$</nobr> | $`\leq C_0`$ | In  | Adequate   | No            | No            | No            | No            |
+| 14 | Brake | <nobr>$`\leq V_0`$</nobr> | $`\leq C_0`$ | In  | Inadequate |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 |
+| 15 | Brake | <nobr>$`\leq V_0`$</nobr> | $`\leq C_0`$ | Out | Adequate   |           H-3 | No            | No            | No            |
+| 16 | Brake | <nobr>$`\leq V_0`$</nobr> | $`\leq C_0`$ | Out | Inadequate |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 |
+
+This table shows all the loss scenario permutations. On the top row are the column numbers, which will explained further below:
+Column 1 signifies the numbered control action permutation. 
+
+Columns 2 through 6 contain the process model variables.
+Column 3 contains the critical point of the aircraft velocity $`V_0`$. Critical velocity values can be _greater than_ or _equal to and smaller than_.
+Column 4 contains the critical point of the braking temperature $`C_0`$. Critical braking temperature values can be _greater than_ or _equal to and smaller than_.
+Column 5 states whether this scenario plays within the confines the a permissible area. Here, _outside_ signifies a additional distance.
+Column 6 states whether external control actions were adequate.
+
+Columns 7-8 take into account whether a control action (braking) is provided or not.
+Columns 9-10 take into account the timing of the control action.
 
 ## Pros and cons
 Advantages of STPA over other hazard analysis: <sup>[[1]](#see-also), page 4</sup>
