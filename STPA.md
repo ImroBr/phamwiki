@@ -249,7 +249,9 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 
 **Control structure diagram**
 
-| ![STPA example scenario Control Structure diagram](images/Safety_analysis_of_wheel_brake_system_based_on_STAMP_STPA_and_Monte_Carlo_simulation_pic3_l_nosubtext.png) | 
+| ![STPA example scenario Control Structure diagram](images/Safety_analysis_of_wheel_brake_system_based_on_STAMP_STPA_and_Monte_Carlo_simulation_pic3_l_nosubtext.png) <br>
+<src="images/Safety_analysis_of_wheel_brake_system_based_on_STAMP_STPA_and_Monte_Carlo_simulation_pic3_l_nosubtext.png" width="92" height="90"> <br>
+<img align="right" src="images/Safety_analysis_of_wheel_brake_system_based_on_STAMP_STPA_and_Monte_Carlo_simulation_pic3_l_nosubtext.png" width="92" height="90"> | 
 | :---: | 
 | <sup>STAMP-model of Wheel Brake System (WBS)</sup> | 
 
@@ -259,7 +261,7 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 | - | - | - | - | - |
 | Brake | Does not provide manual braking when autobrake does not provide braking. (H-1) <br><br> Provide excessive manual braking, result in brake overheating or tire burst during landing. (H-2, H-3) | Provide inadequate deceleration (manual or autobrake) during landing. (H-1) | Provide manual braking before touchdown, result in wheel lockup, loss of control, or tire burst. (H-2, H-3) <br><br> Provide braking too late, result in rushing out off the runway. (H-1) | Manual braking applied too long, result in brake overheating or tire burst during landing. (H-2, H-3) <br><br> Manual braking applied too long, result in stopping aircraft on runway, hinder other aircraft and ground facilities operation. (H-3) <br><br> Manual braking applied too soon, result in rushing out off the runway. (H-1) |
 
-**Identify loss scenario**
+**Identify loss scenarios**
 
 | 1  | 2     | 3                         | 4            | 5   | 6          | 7             | 8             | 9             | 10            |
 | - | - | :---: | :---: | - | - | - | - | - | - |
@@ -270,7 +272,7 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 | 4  | Brake | <nobr>$`>V_0`$</nobr>     | $`>C_0`$     | Out | Inadequate | H-1, H-2, H-3 | H-1, H-2      |      H-2, H-3 | H-1, H-2, H-3 |
 | 5  | Brake | <nobr>$`>V_0`$</nobr>     | $`\leq C_0`$ | In  | Adequate   | H-1           | H-1           | No            | H-1           |
 | 6  | Brake | <nobr>$`>V_0`$</nobr>     | $`\leq C_0`$ | In  | Inadequate | H-1, H-2, H-3 | H-1, H-2, H-3 |      H-2, H-3 | H-1, H-2, H-3 |
-| 7  | Brake | <nobr>$`>V_0`$</nobr>     | $`\leq C_0`$ | Out | Adequate   | No            | No            |      H-4      | H-1           |
+| 7  | Brake | <nobr>$`>V_0`$</nobr>     | $`\leq C_0`$ | Out | Adequate   | No            | No            | H-4<sub>[sic]</sub>      | H-1           |
 | 8  | Brake | <nobr>$`>V_0`$</nobr>     | $`\leq C_0`$ | Out | Inadequate |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 | H-1, H-2, H-3 |
 | 9  | Brake | <nobr>$`\leq V_0`$</nobr> | $`>C_0`$     | In  | Adequate   |      H-2, H-3 | No            |      H-2, H-3 | No            |
 | 10 | Brake | <nobr>$`\leq V_0`$</nobr> | $`>C_0`$     | In  | Inadequate |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 |
