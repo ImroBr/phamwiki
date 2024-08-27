@@ -263,7 +263,7 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 
 | 1  | 2     | 3                         | 4            | 5   | 6          | 7             | 8             | 9             | 10            |
 | - | - | :---: | :---: | - | - | - | - | - | - |
-| Scenario | Control action | Velocity $`(V)`$ | Braking temperature $`(T)`$ | In/ out specified area | Other control actions | Hazardous if conrol action provided | Hazardous if control action not provided | Hazardous if control action provided too early | Hazardous if control action provided too late |
+| \# | Control action | Velocity $`(V)`$ | Braking temperature $`(T)`$ | In/ out specified area | Other control actions | Hazardous if conrol action provided | Hazardous if control action not provided | Hazardous if control action provided too early | Hazardous if control action provided too late |
 | 1  | Brake | <nobr>$`>V_0`$</nobr>     | $`>C_0`$     | In  | Adequate   | H-1, H-2, H-3 | H-1           |      H-2, H-3 | H-1           |
 | 2  | Brake | <nobr>$`>V_0`$</nobr>     | $`>C_0`$     | In  | Inadequate | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 | H-1, H-2, H-3 |
 | 3  | Brake | <nobr>$`>V_0`$</nobr>     | $`>C_0`$     | Out | Adequate   |      H-3      | No            |      H-2, H-3 | No            |
