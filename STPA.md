@@ -17,12 +17,12 @@ Systems Theory is an interdisciplinary framework that studies the complex intera
 
 ## Variations
 **CAST** - Causal Analysis based on Sytems Theory (CAST) is a retroactive analysis method that examines an accident/incident that has occurred and 
-identifies the causal factors that were involved. It is another analysis method based on STAMP. [p12-13] 
+identifies the causal factors that were involved. It is another analysis method based on STAMP.
 
 ## Application
 Fields in which the STPA is applied:
 * Aerospace (Such as NASA and in aviation)
-* Automotive (In the context of _Autonomous Driving Systems_ (ADS) and _Advanced Driver-Assistence Systems_ (ADAS)
+* Automotive (In the context of _Automated Driving Systems_ (ADS) and _Advanced Driver-Assistence Systems_ (ADAS)
 * Healthcare <sup>[[2]](#references)</sup>
 * Nuclear Energy <sup>[[3]](#references)</sup>
 * Railroading <sup>[[4]](#references)</sup>
@@ -312,7 +312,7 @@ Disadvantages of STPA:
   * Harder to interpret by stakeholders.
 * May be unnecessarily complex for smaller/simpler projects.
 * May be less suited when a narrow, component-focused analysis is needed.
-* There is not a formal method to build the STAMP model <sup>[[6]](#references)</sup>
+* There is not a formal method to build the STAMP model. <sup>[[6]](#references)</sup>
 
 ## Do's and dont's
 
@@ -321,13 +321,13 @@ From the [STPA Handbook](#see-also) (page 19):
 > _A common mistake in defining hazards is to confuse hazards with causes of hazards. For example, “brake failure”, “brake failure not annunciated”, “operator is distracted”, “engine failure”, and “hydraulic leak” are not system-level hazards but potential causes of hazards. To avoid this mistake, make sure the identified hazards do not refer to individual components of the system, like brakes, engines, hydraulic lines, etc. Instead, the hazards should refer to the overall system and system states. 
 
 > **Too many hazards containing unnecessary detail** \
-Like losses, there are no hard limits on the number of system-level hazards to include. As a rule of thumb, if you have more than about seven to ten system-level hazards, consider grouping or combining hazards to create a more manageable list. You may be including unnecessary detail and making the list unmanageable, difficult to review, and harder to identify things that are missing. Instead, begin with a more abstract and manageable set of system-level hazards and refine them into sub-hazards later if needed (as explained in the section on refining hazards below). \
+Like losses, there are no hard limits on the number of system-level hazards to include. As a rule of thumb, if you have more than about seven to ten system-level hazards, consider grouping or combining hazards to create a more manageable list. You may be including unnecessary detail and making the list unmanageable, difficult to review, and harder to identify things that are missing. Instead, begin with a more abstract and manageable set of system-level hazards and refine them into sub-hazards later if needed (as explained in the section on refining hazards below). 
 
 > **Ambiguous or recursive wording** \
 The system-level hazards define exactly what “unsafe” means at the system level. A common mistake is to use the word “unsafe” in the hazards themselves. Doing so creates a recursive definition and does not add information or value to the analysis. For example, it might be tempting to write “H-1: Aircraft experiences unsafe flight [L-1]”. It can be tempting because it certainly sounds dangerous—an unsafe flight by definition must be hazardous, right? The problem is that it is too vague and does not help specify the actual condition that is unsafe. Some have fallen into the same trap with statements like “H-1: Aircraft experiences an unsafe state [L-1]”, only to struggle with the rest of the analysis and miss important cases. A simple solution is to avoid using the word “unsafe” in the hazard itself and instead specify exactly what is meant by “unsafe”—what system states or conditions would make it unsafe? For example, an aircraft that is uncontrolled or that is too close to other aircraft would be unsafe. As you will see, specifying actual conditions like this is extremely useful during later STPA steps.
 
 > **Confusing hazards with failures** \
-Professionals who are experienced in other hazard analysis methods sometimes fall into the trap of writing STPA hazards describing potential deviations from specified technical functions or describing physical component failures. You may be familiar with traditional techniques that begin by searching for a set of deviations, faults, or functional failures in the technical system. To identify a broader set of causes in STPA, we cannot assume that the defined and specified functions are safe and correct, that human operators will perform as expected, that automated behaviors will not induce human error or confusion, that off-nominal cases will not occur, or that the technical design, specification, and requirements are correct. For example, the hazard “Controlled flight of aircraft into terrain” can be included in STPA while it may be omitted by efforts to examine only purely technical functional failures. Hazard identification in STPA is about system states and conditions that are inherently unsafe—regardless of the cause. In fact, the system hazards should be specified at a high-enough level that does not distinguish between causes related to technical failures, design errors, flawed requirements, or human procedures and interactions._
+Professionals who are experienced in other hazard analysis methods sometimes fall into the trap of writing STPA hazards describing potential deviations from specified technical functions or describing physical component failures. You may be familiar with traditional techniques that begin by searching for a set of deviations, faults, or functional failures in the technical system. To identify a broader set of causes in STPA, we cannot assume that the defined and specified functions are safe and correct, that human operators will perform as expected, that automated behaviors will not induce human error or confusion, that off-nominal cases will not occur, or that the technical design, specification, and requirements are correct. For example, the hazard “Controlled flight of aircraft into terrain” can be included in STPA while it may be omitted by efforts to examine only purely technical functional failures. Hazard identification in STPA is about system states and conditions that are inherently unsafe—regardless of the cause. In fact, the system hazards should be specified at a high-enough level that does not distinguish between causes related to technical failures, design errors, flawed requirements, or human procedures and interactions.
 
 > **What should I look for when reviewing hazards?** \
 Tips to prevent common mistakes when identifying hazards:
@@ -374,7 +374,7 @@ From the [STPA Handbook](#see-also) (page 41):
 > * Ensure traceability is documented to link every UCA with one or more hazards.
 > * Review any control action types assumed to be N/A, and verify they are not applicable.
 > * For any continuous control actions with a parameter, ensure that excessive, insufficient, and wrong direction of the parameters are considered.
-> * Ensure any assumptions or special reasoning behind the UCAs are documented
+> * Ensure any assumptions or special reasoning behind the UCAs are documented.
 
 ### Tips to prevent common mistakes when identifying loss scenarios
 From the [STPA Handbook](#see-also) (page 25):
@@ -404,7 +404,7 @@ From the [STPA Handbook](#see-also) (page 25):
 A [video introduction to STPA](https://www.youtube.com/watch?v=2W-iqnPbhyc).
 
 For a more thorough description of the System-Theoretic Process Analysis method including examples and use-cases, see the
-* [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf)
+1. [STPA Handbook](http://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf)
 
 ## References
 2. Antoine, Blandine (2013), [Systems Theoretic Hazard Analysis (STPA) applied to the risk review of complex systems: an example from the medical device industry](https://dspace.mit.edu/handle/1721.1/79424)
