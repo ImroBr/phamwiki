@@ -8,8 +8,12 @@ Failure Mode and Effect Analysis (FMEA) is an inductive bottom-up hazard analysi
 Procedures for FMEA were first described November 9th 1949 by the U.S. Department of Defense (MIL-P-1629) [x] as FMECA (Failure Mode, Effects and Criticality Analysis). Primarily utilized in the military industry, it was later adopted by the space industry (NASA). In the 1970 in was introduced to the automotive industry (Ford). More information about FMEA history can be found through the [link is the _See Also_ heading](#see-also). 
 
 ## Application
-Used for: (List)\
-Most use cases in current day. Type(s) of application domains.
+FMEA is widely used across various industries today. Here is a list of industries where FMEA is applied:
+* Automotive industry <sup>[[2]](#references)</sup>
+* Aerospace industry ([SAE ARP 5580](#fmea-standards))
+* Healthcare and medical devices
+* Electronics and semiconductor industry
+* Oil and gas industy
 
 ## Method steps
 Below are the steps necessary to utilize the FMEA method.
@@ -67,20 +71,20 @@ Assign actions that lower the RPN, by focusing on mitigating the underlying Seve
 Measure the effectiveness of the assigned actions and log their progress.
 
 ## Example(s)
-Now we will go through the [steps](#method-steps) in wherein the filling in of an FMEA worksheet takes place. These steps will start from #3 through #11. The worksheet layout used will be the same as the FMEA worksheet image displayed above.
+Now we will go through the [steps](#method-steps) wherein we fill in an FMEA worksheet. These steps will start from #3 through #11. The worksheet layout used will be the same as the FMEA worksheet image displayed above.
 
 The example scenario will be in the context of and _ADS (Automated Driving System)_ detecting an object while on the road. 
 
 Note that the example FMEA sheet may vary depending on the context and scope of the hazard. Here are some ways other FMEA sheets may vary from the example or vice versa:
 * The FMEA sheet column order may be in the same order as the method execution steps, from left to right. This may make filing an FMEA sheet quicker and easier for the individual filing it, due to only having to shift to the right and adhering to the column name. Though this may make it (marginally) harder to interpret.
 * The detection process controls (or any) may not be present in some variations
-* Some FMEA contain a [_Criticality_](#used-references) rating column typically similar to the Severity, Occurence and Detection rating. If present, this must be taen into account for RPN calculation, usually also by way of multiplication. This will make this a [FMECA](#variations) sheet.
+* Some FMEA contain a [_Criticality_](#used-references) rating column typically similar to the Severity, Occurence and Detection rating. If present, this must be taken into account for RPN calculation, usually also by way of multiplication. This will make this a [FMECA](#variations) sheet.
 * This sheets utilizes some color coding, to signify difference in the numerical values. This is purely visual and optional.
 
 | Step | Description | Visualization |
 | - | - | - |
 | 1-2 | Define scope <br>Assemble Interdisciplinary team<br>Identify scope functions | Due to these steps already being defined, these steps will be skipped for the purposes of this example case. |
-| 3 | Identify scope functions: In the scenario of an ADS detecting an obstacle, what are the main functions or (sub)systems that are involved in that scenario? For this excercise, these will be: Obstacle Detection <br>Obstacle Identification <br>Decision Making <br>Braking System <br>Driver Intervention. | ![FMEA Example step 3](images/fmea_example_step03.png) |
+| 3 | Identify scope functions: In the scenario of an ADS detecting an obstacle, what are the main functions or (sub)systems that are involved in that scenario? For this excercise, these will be: <br>Obstacle Identification <br>Decision Making <br>Braking System <br>Driver Intervention. | ![FMEA Example step 3](images/fmea_example_step03.png) |
 | 4 | Define failure modes: Find the maximum amount of ways each of the above (sub)systems may fail, following by what would be the consequence of that failure.  | ![FMEA Example step 4](images/fmea_example_step04.png) |
 | 5 | Determine failure severity: For each failure mode, assign a severity rating under `S`. | ![FMEA Example step 5](images/fmea_example_step05.png) | 
 | 6 | Determine potential root causes: Write down the (potential) root cause for the failure. | ![FMEA Example step 6](images/fmea_example_step06.png) |
@@ -93,9 +97,11 @@ Note that the example FMEA sheet may vary depending on the context and scope of 
 
 ## Variations
 * **FMECA** (*Failure Modes, effects and criticality analysis*): 
-  In addition to the FMEA process, FMECA also includes a Criticality Analysis (CA) that ultimately produces a [(C)riticality Ranking](#used-references). A Criticality ranking associated with a failure mode is a measurements or indicator that usually reflects safety or compliance with government regulations and need special controls. Criticality rankings have a high importance because of this, and thus FMECA is usually applied when increased reliability and safety are required. Note: FMECA is sometimes used interchangably with FMEA. 
+  * In addition to the FMEA process, FMECA also includes a Criticality Analysis (CA) that ultimately produces a [(C)riticality Ranking](#used-references). A Criticality ranking associated with a failure mode is a measurements or indicator that usually reflects safety or compliance with government regulations and need special controls. Criticality rankings have a high importance because of this, and thus FMECA is usually applied when increased reliability and safety are required. Note: FMECA is sometimes used interchangably with FMEA. 
 * **DFMEA** (Design FMEA)
-* **PFMEA** (Process FMEA) (https://safetyculture.com/topics/fmea/)
+  * A variation of FMEA that focuses on the design phase of a product, focusing on omproving reliability, safety and performance before the manufactuing of the product
+* **PFMEA** (Process FMEA) 
+  * Pertains to uncovering risks within new or existing processes. PFMEA is done before a new process is implemented or, in the case of existing processes, is conducted before changes made to old processes take effect.
 * **AFMEA** (Advanced FMEA)
 * Revised FMEA standard **(AIAG & VDA FMEA 2022)**<sup>[[2]](#references)</sup> for Automotive:
   A more detailed, structured and automotive industry-specific opproach to FMEA. Key differences to the traditional FMEA include:
@@ -130,12 +136,6 @@ In relation to other Hazard Analyses, FMEA has both advantageous and disadvantag
 * (Advanced) probabilistic techniques not required for implementation
 * Encourages a proactive approach to identify and mitigate potential failure modes before they occur, enhancing reliability and safety
 
-## Additions/ Notes
-<img align="right" src="images/fmea_example02.png" width="274" height="81"> 
-
-A FMEA example Excel worksheet (as visible on the right) can be found [here](example_files/fmea_testsheet_95.xls).
-
-<br clear="right"/>
 
 ## Used terminology
 Glossary containing as many relevant and specific terms 
@@ -156,6 +156,13 @@ Glossary containing as many relevant and specific terms
 | Risk Priority Number (RPN) | A multiplication of $`S \times O \times D`$, the total score helps prioritize failures by overall criticality. |
 | Severity | Signified as "S", severity denoted the degree of negative impact of a potential failure. Usually noted on a 1-10 scale, in which 10 can be likened to catastrophe and 1 to insignificant. |
 | Single Point of Failure (SPOF)<br>Single Failure Points (SFP) | Part of a system that, if it fails, will stop the whole system form working. |
+
+## Additions/ Notes
+<img align="right" src="images/fmea_example02.png" width="274" height="81"> 
+
+A FMEA example Excel worksheet (as visible on the right) can be found [here](example_files/fmea_testsheet_95.xls).
+
+<br clear="right"/>
 
 ## See also
 A more extensive history and standards regarding FMEA can be found at [here](https://www.superengineer.net/blog/fmea-history).
