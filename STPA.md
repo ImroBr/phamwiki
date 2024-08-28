@@ -282,11 +282,12 @@ In the interest of keeping this Wiki-document concise, additional descriptions r
 | 16 | Brake | <nobr>$`\leq V_0`$</nobr> | $`\leq C_0`$ | Out | Inadequate |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 |      H-2, H-3 |
 
 This table shows all the loss scenario permutations. On the top row are the column numbers, which will explained further below: \
+<br>
 Column 1 signifies the numbered control action permutation. \
 <br>
 Columns 2 through 6 contain the process model variables: \
-Column 3 contains the critical point of the aircraft velocity $`V_0`$. Critical velocity values can be _greater than_ or _equal to and smaller than_. \
-Column 4 contains the critical point of the braking temperature $`C_0`$. Critical braking temperature values can be _greater than_ or _equal to or smaller than_. \
+Column 3 contains the critical point of the aircraft velocity $`V_0`$.  \
+Column 4 contains the critical point of the braking temperature $`C_0`$. \
 Column 5 states whether this scenario plays within the confines the a permissible area. Here, _outside_ signifies a additional distance. \
 Column 6 states whether external control actions were adequate. \
 <br>

@@ -4,10 +4,10 @@
 
 <img align="right" src="images/Fault-Tree-Analysis-FTA-functional-safety-measures-prevent-traffic-accidents-caused-by.png" width="425" height="319"> 
 
-Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate undesired state of a system. This is usually done visually resembling a flowchart diagram, with downwardly cascading branches with corresponding probabilities and Boolean logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
+Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate an undesired state of a system. This is usually done visually resembling a flowchart diagram, with downwardly cascading branches with corresponding probabilities and Boolean logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
 
 * Providing clarity and logical foundation directly starting from a failure or otherwise underised state.
-* Diagnosing and mitigating the caus(es) of a top event.
+* Diagnosing and mitigating the caus(es) of a potential failure [top event](#used-terminology).
 * A tool to assist in the design of a system, name to hope create (output/ lower level) requirement.
 * Optimize and minimize resources.
 * Substantiate compliance with system safety/ reliability requirements.
@@ -67,7 +67,7 @@ Start by clearly and concisely describing the hazard (top event). As this will b
 * What is the regulatory impact?
 
 ### 2. System analysis and contributing events identification
-Identify factors and events that might contribute to the most undesired (top level) event. These factors should fall into 2 categories: [basic events](#used-terminology) and [intermediate events](#used-terminology). \
+Identify factors and events that might contribute to the most undesired (top level) event. These factors should fall into 2 categories: [basic events](#used-terminology) and [intermediate events](#used-terminology).
 * Create or utilize the following resources: <sup>[[4]](#references)</sup>
 	* List of components (Bill of Materials)
 	* Boundary Diagram
@@ -86,7 +86,7 @@ Identify factors and events that might contribute to the most undesired (top lev
 Construct a visual fault tree diagram using standard [gate symbols and event symbols](#symbols). The _top event_ should at the top, and any relations to that cause below it in a hierarchical fashion. Following this, basic events must end up at the bottom. \
 The middle portion of the tree which entails intermediate events require more attention. In pathing the tree, [logic gates](#event-symbols) should be utilized.
 
-For clarity, color codes can be used for basic events to prioritize critical paths. These can range from green (acceptable risk) to yellow/orange (moderate/ high risk) to red (critical risk). \
+For clarity, color codes can be used for basic events to prioritize critical paths. These can range from green (acceptable risk) to yellow/orange (moderate/ high risk) to red (critical risk).
 
 ![Fault Tree Analysis example](images/fta_01b.png)
  
