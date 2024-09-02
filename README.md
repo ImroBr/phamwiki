@@ -5,7 +5,16 @@ As such, a need arises for a robust foundation and contrast of PHA methodologies
 This GitHub WIKI-environment contains documentation about Hazard Analysis (HA) methodologies. A _Hazard Analysis_ entails identification of undesired events that may lead to a hazard, analysis of underlying causes of this hazard, and coupled with an estimation of hazard likeliness and magnitude of harmful effects.
 
 ## Goal of this Wiki
-This Wiki documents Process Hazard Analyses, aiming to support (automotive/ RDW) inspectors/ auditors operating on behalf of a Type Approval Authority, in better understanding (Process) Hazard Analyses performed by (automotive) OEM's (_Original Equipment Manufacturers_). This tool may aid in: 
+This Wiki documents Process Hazard Analyses, aiming to support (automotive/ RDW) inspectors/ auditors operating on behalf of a Type Approval Authority, in better understanding (Process) Hazard Analyses performed by (automotive) OEM's (_Original Equipment Manufacturers_). 
+
+Hazard analysis pages within this Wiki contain at least the following topics:
+* Method name and description
+* Method steps
+* Advantages and disadvantages
+* Example(s)
+* Related literature/ studies
+
+This Wiki tool may aid in: 
 * Formulating better informed advice regarding OEM's PHA decision choice(s)
 * Better validating process methodology steps 
 
@@ -29,21 +38,12 @@ From the quoted text, the following conclusions can be made:
 
 The 3 Hazard Analyses stated above are the basis for inclusion in this wiki, with the addition of ETA (Event Tree Analysis). This is because ETA is a method that may neatly and easily converge with an FTA top event, and because conforms to the top-down (FTA) and bottom-up (ETA) binary requirement. 
 
-Additionally, the contours of the project interface with the [ISO 26262 <sup>[3]</sup>](#references) standard.
+Additionally, the contours of the project interface with the [ISO 26262 <sup>[[3]](#references)</sup>] standard.
 
 ### PHA distinctions and scope
 Although the PHA methodology mostly applies to physical industrial processes, the other [Hazard Analyses](#available-hazard-analysis-methods) are described in a global manner. Meaning, additional factors that go beyond industrial processes can be taken into consideration. These additional factors can be in a human context such as personnel safety, customer satisfaction or company reputation, or more abstract context such as computational scenarios or software interaction (which can also include emerging or future technology such a AI or quantum computing).
 
 As such, these other methodologies in this WIKI are considered parallel or complimentary in relation to PHA, rather than an instance or subset of PHA. Rather, these other methodologies and indeed the PHA method are considered a subset of _Hazard Analyses_.
-
-## Wiki page prerequisites
-Each particular wiki-page at will at least contain the following subjects/ headings:
-* Method name
-* Method description
-* Method steps
-* Pro’s and con’s
-* Example(s)
-* Related literature/ studies
 
 ## Available hazard analysis methods
 Following are the available HA pages on this WIKI:

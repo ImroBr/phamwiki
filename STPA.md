@@ -29,7 +29,6 @@ Fields in which the STPA is applied:
 * Military Defense <sup>[[5]](#references)</sup>
 * Chemical and Process Industries 
 
-
 ## Method steps
 The STPA method steps are defined in 4 parts, described below.
 
@@ -115,7 +114,7 @@ The following high-level safety constraints can be created:
 * **Controller X shall enforce B**
 * ...
 
-For  each of the 4 stated ACU's above, the following respective constraints van be constructed:
+For each of the 4 stated ACU's above, the following respective constraints van be constructed:
 1. **`Controller X` shall provide `Command Y` when `D`**\
  `Controller X` = The responsible controller\
  `Command Y` = Output\
@@ -131,7 +130,6 @@ Below is an example table of UCAs for a BSCU (Brake System Control Unit):
 | Brake | UCA-1: BSCU Autobrake does not provide the Brake control action during landing roll when the BSCU is armed [H-4.1] | UCA-2: BSCU Autobrake provides Brake control action during a normal takeoff [H-4.3, H-4.6]<br><br>UCA-5: BSCU Autobrake provides Brake control action with an insufficient level of braking during landing roll [H-4.1] <br><br>UCA-6: BSCU Autobrake provides Brake control action with directional or asymmetrical braking during landing roll [H-4.1, H-4.2] | UCA-3: BSCU Autobrake provides the Brake control action too late (>TBD seconds) after touchdown [H-4.1] | UCA-4: BSCU Autobrake stops providing the Brake control action too early (before TBD taxi speed attained) when aircraft lands [H-4.1] |
 
 Use the following general notation when describing UCAs: `UCA-2: <Source> <Type> <Control Action> <Context> <Link to Hazards>`, as examplified below:
-
 
 | Notation: | `UCA <nr>` | `<Source>` | `<Type>` | `<Control Action>` | `<Context>` | `<Link to Hazards>` |
 | - | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -202,16 +200,16 @@ Note the during this final step, physical sensors and actuators may be included 
    Hazards can be cause by UCAs, but can also be cause without an UCA if the control actions are not executed properly or not executed at all. To create these scenarios, the [control path](#used-terminology) as well as factors affecting the controlled process, must be considered, as shown in the image to the right.
    
    _Scenarios involving the control path_ \
-   Generally, scenoarios involving the control path may include:
+   Generally, scenarios involving the control path may include:
    * Control action not executed 
      * Control action is sent by controller, but not received by actuator(s)
 	 * Control action is received by actuator(s), but actuator(s) do not respond
 	 * Actuator(s) responds, but the control action is not applied ot or received by the controlled process
    * Control action improperly executed   
-     * Control action is sent by controller, but received improperly bu actuator(s)
-	 * Control action is received coorectly, but actuator(s) but actuator(s) respond inadequately
+     * Control action is sent by controller, but received improperly by actuator(s)
+	 * Control action is received correctly, but actuator(s) respond inadequately
 	 * Actuator(s) respond adequately, but the control action is applied or received improperly at the controlled Process
-	 * Control action action is not sent by controller, but actuator(s) or other elements respond as if it has been sent
+	 * Control action is not sent by controller, but actuator(s) or other elements respond as if it has been sent
    
    _Scenarios related to the controlled Process_ \
    Generally, scenarios related to the controlled process may include:
@@ -219,12 +217,10 @@ Note the during this final step, physical sensors and actuators may be included 
      * Control action is applied or received process, but the controlled process does not respond
    * Control action improperly executed
      * Control action is applied or received by the controlled process, but the controlled process responds improperly
-	 * Control action is not applied or received by the controlled process, but the process responds as if the control ation had been applied or received
+	 * Control action is not applied or received by the controlled process, but the process responds as if the control action had been applied or received
    
-
-
 ## Example scenario 
-For addition clarification in regards to the application of the STPA method, a scenario from the Journal of Systems Engineering and Electronics (Hu Jianbo, Zheng Lei et. al 2018)<sup>[[6]](#references)</sup> will be used.
+For additional clarification in regards to the application of the STPA method, a scenario from the Journal of Systems Engineering and Electronics (Hu Jianbo, Zheng Lei et. al 2018)<sup>[[6]](#references)</sup> will be used.
 
 The scenario entails a safety analysis the wheel brake system (WBS) of an aircraft, in an attempt to mitigate flight accidents. 
 
@@ -378,7 +374,7 @@ From the [STPA Handbook](#see-also) (page 41):
 
 ### Tips to prevent common mistakes when identifying loss scenarios
 From the [STPA Handbook](#see-also) (page 25):
-> Tips to prevent common mistakes The most common mistake is to identify individual causal factors rather than a scenario. For example, you may be tempted to create list of factors like “wheel speed sensor failure”, “wheel speed feedback is delayed”, “loss of power”, etc. The problem with listing individual factors outside the context of a scenario is that it’s easy to overlook how several factors interact with each other, you can overlook non-trivial and non-obvious factors that indirectly lead to UCAs and hazards, and you may not consider how combinations of factors can lead to a hazard. Considering single factors essentially reduces to a FMEA where only single component failures are considered. 
+> The most common mistake is to identify individual causal factors rather than a scenario. For example, you may be tempted to create list of factors like “wheel speed sensor failure”, “wheel speed feedback is delayed”, “loss of power”, etc. The problem with listing individual factors outside the context of a scenario is that it’s easy to overlook how several factors interact with each other, you can overlook non-trivial and non-obvious factors that indirectly lead to UCAs and hazards, and you may not consider how combinations of factors can lead to a hazard. Considering single factors essentially reduces to a FMEA where only single component failures are considered. 
 
 ## Used terminology
 
