@@ -222,7 +222,7 @@ Note the during this final step, physical sensors and actuators may be included 
 ## Example scenario 
 For additional clarification in regards to the application of the STPA method, a scenario from the Journal of Systems Engineering and Electronics (Hu Jianbo, Zheng Lei et. al 2018)<sup>[[6]](#references)</sup> will be used.
 
-The scenario entails a safety analysis the wheel brake system (WBS) of an aircraft, in an attempt to mitigate flight accidents. 
+The scenario entails a safety analysis of the wheel brake system (WBS) of an aircraft, in an attempt to mitigate flight accidents. 
 
 In the interest of keeping this Wiki-document concise, additional descriptions regarding the scenario context and methodology steps may be omitted. If more information regarding this scenario is desired, it is recommended reading the aforementioned journal entry. 
 
@@ -404,7 +404,7 @@ For a more thorough description of the System-Theoretic Process Analysis method 
 
 ## References
 2. Antoine, Blandine (2013), [Systems Theoretic Hazard Analysis (STPA) applied to the risk review of complex systems: an example from the medical device industry](https://dspace.mit.edu/handle/1721.1/79424)
-3. Torok, Ray; Geddes, Bruce (March 26-28, 2013), [Systems Theoretic Process Analysis (STPA) - Applied to a Nuclear Power Plant Control System](file:///C:/Users/BRAMMERL/Downloads/02_EPRI_MIT_STAMP_Mar2013.pdf)
+3. Torok, Ray; Geddes, Bruce (March 26-28, 2013), [Systems Theoretic Process Analysis (STPA) - Applied to a Nuclear Power Plant Control System](http://psas.scripts.mit.edu/home/wp-content/uploads/2013/04/02_EPRI_MIT_STAMP_Mar2013.pdf)
 4. Dunsford, Ross; Chatzimichailidou, Mikela (January 14<sup>th</sup> 2020), [Introducing a system theoretic framework for safety in the rail sector: supplementing CSM-RA with STPA](https://doi.org/10.1080/09617353.2019.1709289) p. 59-82
 5. Homey, David Craig; B,S, Aeronautical Engineering, United States Air Force Academy (2015), [SYSTEMS-THEORETIC PROCESS ANALYSIS AND SAFETY-GUIDED
 DESIGN OF MILITARY SYSTEMS](https://apps.dtic.mil/sti/trecms/pdf/AD1109554.pdf)
