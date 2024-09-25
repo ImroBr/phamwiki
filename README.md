@@ -4,6 +4,9 @@ As such, a need arises for a robust foundation and contrast of PHA methodologies
 
 This GitHub WIKI-environment contains documentation about Hazard Analysis (HA) methodologies. A _Hazard Analysis_ entails identification of undesired events that may lead to a hazard, analysis of underlying causes of this hazard, and coupled with an estimation of hazard likeliness and magnitude of harmful effects.
 
+### Disclaimer
+All content in this WIKI is purely for informational purposes and is not intended as an instruction for real-world implementation. Descriptions of hazard analyses on this WIKI are global in nature, and can differ in standard or implementation from real-world applications, depending the respective industry and product use case among other things.
+
 ## Goal of this Wiki
 This Wiki documents Process Hazard Analyses, aiming to support (automotive/ RDW) inspectors/ auditors operating on behalf of a Type Approval Authority, in better understanding (Process) Hazard Analyses performed by (automotive) OEM's (_Original Equipment Manufacturers_). 
 
