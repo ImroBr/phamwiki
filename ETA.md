@@ -3,7 +3,7 @@
 ## Introduction 
 Event tree analysis (ETA) is a forward (bottom-up), logical modeling technique for both success and failure that explores responses through a single initiating event and lays a path for assessing probabilities of the outcomes and overall system analysis.<sup>[[1]](#references)</sup> This inductive analysis technique is used to analyze the effects of functioning or failed systems given that an event has occurred. <sup>[[2]](#references)</sup> \
 This technique explores system responses to an initiating _challenge_ and enables assessment of the probability of an unfavorable or favorable outcome. The system challenge may be a failure or fault, an undesirable event, or a normal system operating command.<sup>[[1]](#references)</sup>
-The ETA method can be used in conjuction with the [FTA (_Fault Tree Analysis_)]((/FTA.md)) method, where FTA focuses on preventing multiple causes to the main undesired event, whereas ETA focuses on mitigating multiple consequences from the main undesired event. The conjuction of these techniques is sometimes called a _'Bow-tie'_ technique.
+The ETA method can be used in conjuction with the [FTA (_Fault Tree Analysis_)](/FTA.md) method, where FTA focuses on preventing multiple causes to the main undesired event, whereas ETA focuses on mitigating multiple consequences from the main undesired event. The conjuction of these techniques is sometimes called a _'Bow-tie'_ technique.
 
 ## History
 The concept of what eventually came to be named _Event Tree_ was conceived by the UKAEA (United Kingdom Atomic Energy Agency) in 1968, as risk assesment tool to optimize the design of a 500MW Steam-Generating Heavy Water Reactor. Use of ETA resulted into a manageable form. <sup>[[1]](#references)</sup> 
