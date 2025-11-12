@@ -180,5 +180,5 @@ FMECA)”](https://knowledge.bsigroup.com/products/reliability-of-systems-equipm
 
 ## References
 1. [What is FMEA? Failure Mode & Effects Analysis | ASQ](https://asq.org/quality-resources/fmea) \
-2. [AIAG & VDA FMEA Handbook 2022](https://www.aiag.org/store/publications/details?ProductCode=FMEAAV-1) _(Automotive) (August 2022)_
+2. [AIAG & VDA FMEA Handbook 2022](https://www.aiag.org/training-and-resources/manuals/details/FMEAAV-1) _(Automotive) (August 2022)_
 3. [FMECA Vs FMEA (What is the Difference Between Them?)](https://www.twi-global.com/technical-knowledge/faqs/fmeca-vs-fmea#FMEA); TWI
