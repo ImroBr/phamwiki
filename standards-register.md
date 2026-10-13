@@ -1,0 +1,25 @@
+# Regulations, standards and publication status
+
+[Home](README.md) · [Foundations](foundations.md) · [FMEA](FMEA.md) · [FTA](FTA.md) · [ETA](ETA.md) · [STPA](STPA.md) · [Sources](sources.md)
+
+**Revision:** 13 October 2026 draft. Independent technical review pending. Source-status checks are dated 6 October 2026; see [maintenance and limitations](review-guidance.md#maintenance-and-release).
+
+**Status-check boundary: 6 October 2026.** These entries identify sources used by the Wiki. Inclusion does not make a document legally mandatory for every assessment. Distinguish regulations, standards, handbooks, research and historical references. Establish jurisdiction, scope, applicable version and transitional provisions for each approval case. Public metadata verifies identity/status, not compliance with unseen normative clauses.
+
+| ID | Publication/topic | Status and scope |
+|---|---|---|
+| U01 | EU 2022/1426 | **Commission Implementing Regulation (EU) 2022/1426**, as amended by **Commission Implementing Regulation (EU) 2026/481**; discussion based on the consolidation dated **24 March 2026**. Consult the act and applicable amendments for an approval case. [B03](references.md#b03), [B04](references.md#b04) |
+| U02 | Method-selection clause | The top-down/bottom-up and method-example discussion is located in **Annex III, Part 2, 3.5.5.2(b)** of EU 2022/1426. That provision remains in the consolidation used here; read it with the surrounding assessment and coverage provisions. [B03](references.md#b03) |
+| U03 | UN R157 | **UN Regulation No. 157 — Automated Lane Keeping Systems.** The original 2021 text is used here as a historical source. Later amendment material exists; this Wiki has not established a complete currently applicable series/supplement set for all approvals. Identify that set and the relevant transitional provisions before relying on the text for a specific case. [B02](references.md#b02), [B14](references.md#b14) |
+| U04 | AIAG & VDA | **AIAG & VDA FMEA Handbook**, first edition, 2019. AIAG's catalog checked on 6 October 2026 identifies FMEAAV-1 as first edition, second printing. Record relevant errata and customer adoption requirements separately. [B06](references.md#b06), [B08](references.md#b08) |
+| U05 | SAE J1739 | **SAE J1739_202605**, *Potential Failure Mode and Effects Analysis (FMEA) Including Design FMEA, Supplemental FMEA-MSR, and Process FMEA*. Stabilized **8 May 2026**; the SAE citation identifies **January 2021** as the technical revision. [B07](references.md#b07) |
+| U06 | IEC 60812 | **IEC 60812:2018**, *Failure modes and effects analysis (FMEA and FMECA)*, edition 3, published **10 August 2018**. [B05](references.md#b05) |
+| U07 | IEC/NEN 61025 | **IEC 61025:2006**, *Fault tree analysis (FTA)*. The corresponding cited Dutch/European adoption is **NEN-EN-IEC 61025:2007**. The different publication years identify different publication/adoption records. [B10](references.md#b10), [B15](references.md#b15) |
+| U08 | IEC 31010 | **IEC 31010:2019**, *Risk management — Risk assessment techniques*. This is the designation in the ISO catalog; it is a broad technique-selection reference, not a dedicated automotive approval procedure. [B16](references.md#b16) |
+| U09 | IEC 62502 | **IEC 62502:2010**, *Analysis techniques for dependability — Event tree analysis (ETA)*. Listed here as the dedicated ETA reference inspected in the IEC catalog. [B11](references.md#b11) |
+| U10 | ISO 26262 | **ISO 26262:2018 series — Road vehicles — Functional safety.** Cite the relevant part; Part 1 is vocabulary, and Part 3 addresses the concept phase including HARA. Published editions and revision projects are recorded separately; a draft revision is not automatically the operative baseline. [B17](references.md#b17), [B18](references.md#b18) |
+| U11 | MIL-STD-1629A | **MIL-STD-1629A (1980)** — historical FMECA reference; canceled **4 August 1998**. Retained for historical/methodological context, not presented as a generally current requirement. [B19](references.md#b19) |
+| U12 | SAE ARP5580 | **SAE ARP5580**, *Recommended Failure Modes and Effects Analysis (FMEA) Practices for Non-Automobile Applications*; reaffirmed August 2020. Its scope is non-automobile applications. [B20](references.md#b20) |
+| U13 | BS 5760-5 | **Historical reference:** BS 5760-5, *Guide to failure modes, effects and criticality analysis (FMEA and FMECA)*. This entry is not used to establish a current requirement; exact withdrawal metadata has not been independently checked in this Wiki revision. |
+| U14 | STPA age/resources | The **March 2018 STPA Handbook** remains a methodological reference for this tutorial. MIT maintains public materials and links to additional resources; age and resource availability should be described through named publications and check dates rather than “recent” or “few resources”. [B12](references.md#b12), [B13](references.md#b13) |
+| U15 | Fictional action dates | Dates and owner labels in archived worked examples are fictional teaching entries, not actual RDW or OEM corrective actions. They do not establish implementation or closure. |
