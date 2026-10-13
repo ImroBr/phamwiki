@@ -1,44 +1,43 @@
-# Hazard Analysis Template
-This is an early document which serves as a blueprint for adding specific Hazard Analysis Methodologies.
+# [Method name and abbreviation]
 
-## Introduction 
-Abbreviation and full name. 
+## Purpose and decision supported
+[State the question answered and the decisions the output can support.]
 
-## History
-First inception and cause of hazard analysis method. (Year, person/ group, (geographic) location)
+## Scope and selected variant
+[State the variant, system level, lifecycle stage and important exclusions.]
 
-## Underlying systems
-Possible underlying system or system predecessor of current hazard analysis
+## Inputs and prerequisites
+[List necessary system information, expertise and data; distinguish required inputs from optional refinements.]
 
-## Variations
-Specific variations or successions of main hazard analysis method.
+## Outputs and traceability
+[List expected work products and how they connect to requirements, controls and verification.]
 
-## Applications
-Used for: (List)\
-Most use cases in current day. Type(s) of application domains.
+## Assumptions and limitations
+[State causal, statistical, timing, independence and human-role assumptions where relevant. Explain what the method does not establish.]
 
 ## Method steps
-Specific steps, formulas, symbols and/or terminology
+[For each step: purpose, input, action, output and a review question. Identify the source procedure and any simplification.]
 
-## Example(s)
-* Example figure
-* Theoretical example
-* Example of historical factual application
+## Worked example
+[Define scope once. Use consistent IDs and units. Mark invented values. Include a coherent result and its limitations.]
 
-## Best practices or tips/ things to avoid
-Common (theoretical or practical) best practices or mistakes
+## Interpreting results and selecting actions
+[Distinguish analysis outputs, action priorities and acceptance decisions.]
 
-## Pros and cons
-List of advantages and disadvantages
+## Assessor review questions
+[Include scope, model completeness, dependencies, evidence quality, traceability, verification and open issues.]
 
-## Additions/ Notes
+## Relationship to other methods
+[Explain transferable inputs/outputs and mismatches to resolve.]
 
-## Used terminology
-Glossary containing as many relevant and specific terms
+## Terminology and notation
+[Use framework-specific definitions; identify explanatory paraphrases.]
 
-## See also
+## References and publication status
+[Give edition/version, precise locator and the claim supported. Separate current, historical and research sources.]
 
-## References
+## Maintenance status
+[Record content version, reviewed sections, review dates, reviewer and unresolved issues. Do not infer technical review from a commit date.]
 
-
-
+## History and further reading
+[Optional background after practical content.]

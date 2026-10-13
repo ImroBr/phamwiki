@@ -1,3 +1,5 @@
+> Development sample: this file tests formatting and is not part of the hazard-analysis guidance. Programming samples may be incomplete; they are not safety-analysis instructions.
+
 # Advanced Formatting Test File
 This file is intended for testing only
 
@@ -24,9 +26,9 @@ public static void main(String args[]) {
 ```
 
 ### Local (relative) linking
-[Readme.md](/README.md) <!-- Case sensitive -->
+[Readme.md](../README.md) <!-- Case sensitive -->
 
-[testfile mark](/testfilemark)
+[testfile mark](testfilemark)
 
 ### Mathematical expressions
 $\sqrt{3x-1}+(1+x)^2$
@@ -38,7 +40,7 @@ $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \
 
 | Apple | Pear |
 | - | - |
-| [google](www.google.com) | $\sqrt{3^x/7}+(1^{-x})^{log(2)}$ |
+| [Google](https://www.google.com) | $\sqrt{3^x/7}+(1^{-x})^{log(2)}$ |
 
 ### 3D model
 ```stl
@@ -77,7 +79,7 @@ endsolid
 ### Image alignment
 _Surrounded by text_ \
 This is example text to illustrate something or rather, somewhat, text alignment, pineapple. More text is to be included, which may or not be useful considering a necessary thing with another specific thing. Following is the image text.
-<img align="right" src="images/fta_symbol_xor.png">
+<img align="right" src="formatting-demo.svg">
 _Alignment should be broken with the following text/statement_
 <br clear="right"/>
 This text should have space above it. \
@@ -86,12 +88,12 @@ Or perhaps, this one.
 abc
 defghi
 <p align="right">
-	<img src="images/fta_symbol_xor.png">
+	<img src="formatting-demo.svg">
 </p> zz
 jklmno
 ffabc
 dffefghi
-<img align="right" src="images/fta_symbol_xor.png"> ddd
+<img align="right" src="formatting-demo.svg"> ddd
 djklmno
 
 def
@@ -153,7 +155,7 @@ H2 Header (Underline)
 **Emphasis**  __Emphasis__
 ***Emphasis Italic*** ___Emphasis Italic___
 
-Superscript: X<sub>2</sub>，Subscript: O<sup>2</sup>
+Superscript: X<sup>2</sup>; subscript: O<sub>2</sub>
 
 **Abbreviation(link HTML abbr tag)**
 

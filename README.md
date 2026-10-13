@@ -1,85 +1,45 @@
-# Process Hazard Analysis Wiki (phamwiki)
-In an evolving automotive industry, there must exist an equal or greater evolving need for safety. Many `Process Hazard Analyses (PHA)` exist to mitigate risks, but may risk falling behind in a world where processes increase in complexity, creating unforeseen risks.
-As such, a need arises for a robust foundation and contrast of PHA methodologies. This project aims to add to this foundation in the form of online documentation for future use.
+# Hazard Analysis Methods for Automotive Safety Assessment
 
-This GitHub WIKI-environment contains documentation about Hazard Analysis (HA) methodologies. A _Hazard Analysis_ entails identification of undesired events that may lead to a hazard, analysis of underlying causes of this hazard, and coupled with an estimation of hazard likeliness and magnitude of harmful effects.
+[Home](README.md) · [Foundations](foundations.md) · [FMEA](FMEA.md) · [FTA](FTA.md) · [ETA](ETA.md) · [STPA](STPA.md) · [Sources](sources.md)
 
-### Disclaimer
-All content in this WIKI is purely for informational purposes and is not intended as an instruction for real-world implementation. Descriptions of hazard analyses on this WIKI are global in nature, and can differ in standard or implementation from real-world applications, depending the respective industry and product use case among other things.
+**Revision:** 13 October 2026 draft. Independent technical review pending. Source-status checks are dated 6 October 2026; see [maintenance and limitations](review-guidance.md#maintenance-and-release).
 
-## Goal of this Wiki
-This Wiki documents Process Hazard Analyses, aiming to support (automotive/ RDW) inspectors/ auditors operating on behalf of a Type Approval Authority, in better understanding (Process) Hazard Analyses performed by (automotive) OEM's (_Original Equipment Manufacturers_). 
+This Wiki introduces methods that can support the examination of automotive safety analyses. Its main focus is the reasoning, assumptions and evidence behind an analysis, rather than the selection of a particular method name.
 
-Hazard analysis pages within this Wiki contain at least the following topics:
-* Method name and description
-* Method steps
-* Advantages and disadvantages
-* Example(s)
-* Related literature/ studies
+Process Hazard Analysis is a process-safety assessment activity that may use techniques such as FMEA, FTA, HAZOP and What-if analysis. It is therefore not treated here as a separate technique that excludes those methods. For an example of this terminology, OSHA 1910.119(e)(2) lists several techniques that may be used in a Process Hazard Analysis. That US provision is cited to clarify terminology, not as a regulatory basis for European vehicle type approval. [B01](references.md#b01)
 
-This Wiki tool may aid in: 
-* Formulating better informed advice regarding OEM's PHA decision choice(s)
-* Better validating process methodology steps 
+The methods covered here also have applications outside industrial process safety. Their applicability depends on the system, the analysis question and the decision that the results must support.
 
-### Wiki scope and regulatory foundation
-This wiki is (in the process of) being deployed as a consequence of:
-* In the ontext of _ALKS (Assisted Lane Keeping System)_; [UN Regulation No. 157 <sup>[1]</sup>](#references) annex 4, 3.4.4 (p. 34 of pdf), namely:
+## Purpose and status
 
-> **3.4.4**: ... The Type Approval Authority shall perform an assessment of the application 
-of the analytical approach(es):  
+**Status:** educational reference under technical revision. The content is intended to help readers understand and question safety analyses; it is not an RDW approval procedure or a substitute for the applicable regulations and standards. The technical-review status of each page is stated separately.
 
-> **(b)<sub>(1st)</sub>**: Inspection of the safety approach at the system level including a top down (from possible hazard to design) and bottom up approach (from design to possible hazards). The safety approach may be based on a Failure Mode and Effect Analysis (FMEA), a Fault Tree Analysis (FTA) and a System-Theoretic Process Analysis (STPA) or any similar process appropriate to system functional and operational safety. 
+This project supports readers, including automotive inspectors and auditors, in understanding and questioning OEM safety analyses. It is maintained by Imro Brammerloo. The repository name remains phamwiki.
 
-* And in the more broader context of ADS; [EU 2022/1426 <sup>[2]</sup>](#references) 3.5.5.2, namely:
-> **3.5.5.2** ... The type-approval authority shall assess the application of the analytical approach(es): 
+## Start here
 
-> **(b)**: Inspection of the safety approach at the ADS level including a top down (from possible hazard to design) and bottom-up approach (from design to possible hazards). The safety approach may be based on a failure mode and effect analysis (FMEA), a fault tree analysis (FTA) and a System-theoretic process analysis (STPA) or any similar process appropriate to system functional and operational safety.
+1. Read [terminology and scope](foundations.md).
+2. Read the [automotive assessment context](automotive-context.md).
+3. Compare the [questions answered by each method](method-comparison.md).
+4. Explore [FMEA](FMEA.md), [FTA](FTA.md), [ETA](ETA.md) and [STPA](STPA.md), alongside the [shared automotive example](automotive-example.md).
+5. Apply the [review questions and evidence guidance](review-guidance.md).
 
-From the quoted text, the following conclusions can be made:
-* An inspection ***shall*** require a top-down and bottom-up approach
-* The hazard analyses ***may*** include FMEA, FTA and STPA or any similar process
+Publication versions are recorded in the [standards register](standards-register.md). [Sources](sources.md) separates methodological references from research awaiting review. [Related methods](related-methods.md) introduces possible extensions.
 
-The 3 Hazard Analyses stated above are the basis for inclusion in this wiki, with the addition of ETA (Event Tree Analysis). This is because ETA is a method that may neatly and easily converge with an FTA top event, and because conforms to the top-down (FTA) and bottom-up (ETA) binary requirement. 
+The [implementation record](audit-implementation.md) maps the correction guide to this draft. Authors can use the [method-page template](PHA_template.md).
 
-Additionally, the contours of the project interface with the [ISO 26262 <sup>[[3]](#references)</sup>] standard.
+## Analysis and its limits
 
-### PHA distinctions and scope
-Although the PHA methodology mostly applies to physical industrial processes, the other [Hazard Analyses](#available-hazard-analysis-methods) are described in a global manner. Meaning, additional factors that go beyond industrial processes can be taken into consideration. These additional factors can be in a human context such as personnel safety, customer satisfaction or company reputation, or more abstract context such as computational scenarios or software interaction (which can also include emerging or future technology such a AI or quantum computing).
+Hazard analysis identifies hazardous system conditions and examines how they could arise or lead to harm. Depending on its purpose, it may produce qualitative findings, causal models, constraints, failure-effect descriptions or quantitative estimates. Not every hazard-analysis method requires a numerical likelihood estimate.
 
-As such, these other methodologies in this WIKI are considered parallel or complimentary in relation to PHA, rather than an instance or subset of PHA. Rather, these other methodologies and indeed the PHA method are considered a subset of _Hazard Analyses_.
+Risk analysis develops an understanding of risk; risk evaluation compares the results with stated decision criteria. Risk treatment selects and implements measures to change the risk. An analysis supports risk reduction, but the analysis alone does not implement or verify a safety measure. [B16](references.md#b16)
 
-## Available hazard analysis methods
-Following are the available HA pages on this WIKI:
-* [System-Theoretic Process Analysis (STPA)](/STPA.md) _(Top-down approach)_
-* [Failure Mode and Effect Analysis (FMEA)](/FMEA.md) _(Bottom-up approach)_
-* [Failure Tree Analysis (FTA)](/FTA.md) _(Top-down approach)_
-* [Event Tree Analysis (ETA)](/ETA.md) _(Bottom-up approach)_
+## Regulatory context
 
-## Future additions
-This WIKI may be supplemented with additional documents and features going forward, depending on available time and functional-utilitary demand. Some of these feature are already known and may be included in the next project update:
+**Reading the regulatory requirement.** For Regulation (EU) 2022/1426, the method examples appear in Annex III, Part 2, point 3.5.5.2(b). Read this together with the concept-level assessment, validation/verification review and coverage provisions in points 3.5.5.2–3.5.5.4. The analysis must support a defensible safety argument, not merely demonstrate that a named technique was used. This Wiki uses the consolidation dated 24 March 2026 for that discussion. [B03](references.md#b03)
 
-### Future Hazard Analyses methodologies
-* Process Hazard Analysis (PHA) (stand-alone description)
-* Hazard and Operability Study (HAZOP)
-* Bowtie-analysis
-* Layer of Protection Analysis (LOPA)
-* [Kepner-Tregoe method](https://kepner-tregoe.com/faqs/)
-* Safety Integrity Level (SIL)
-* Root Cause Analysis (RCA)
-* Reliability Block Diagram (RBD)
+For UN Regulation No. 157, the historical extract used here is from Annex 4, point 3.4.4 of the original version. It is not presented as a complete statement of the amendment set applicable to every current approval. [B02](references.md#b02)
 
-### Features to be added
-* Further theoretical expansion of method descriptions and literature
-* Better visual support along with method steps
-* (More advanced) examples
-* (Advanced) cross-comparisons between Hazard Analysis methods
+ALKS means **Automated Lane Keeping Systems**. ADS means **Automated Driving System**.
 
-### References
-1. [UN Regulation No. 157](https://unece.org/transport/documents/2021/03/standards/un-regulation-no-157-automated-lane-keeping-systems-alks), 22<sup>th</sup> of January 2021
-2. [Commision Emplementing Regulation EU 2022/1426](https://eur-lex.europa.eu/eli/reg_impl/2022/1426/oj), 5<sup>th</sup> of August 2022
-3. [ISO 26262-1:2018](https://www.iso.org/standard/68383.html); Road vehicles - Functional Safety, December 2018
-
-<sub>_This project is currently maintained by [Imro Brammerloo, advisor at RDW](mailto:ibrammerloo@rdw.nl)._ </sub> 
-
-
-<!-- Hidden [SUCCESFUL DESKTOP] !-->
+ETA is included because it complements FTA: FTA examines combinations of conditions leading to a selected top event, while ETA examines possible developments following an initiating event. This complementarity is useful, but using the two methods together does not by itself demonstrate regulatory compliance. An assessment must establish that the chosen analyses actually cover the required reasoning from hazards to design and from design to possible hazards, including relevant functions, interactions, operating conditions and safety measures. Method labels do not establish that coverage. [B02](references.md#b02), [B03](references.md#b03)

@@ -1,202 +1,145 @@
 # Fault Tree Analysis (FTA)
 
-## Introduction 
+[Home](README.md) · [Foundations](foundations.md) · [FMEA](FMEA.md) · [FTA](FTA.md) · [ETA](ETA.md) · [STPA](STPA.md) · [Sources](sources.md)
 
-<img align="right" src="images/Fault-Tree-Analysis-FTA-functional-safety-measures-prevent-traffic-accidents-caused-by.png" width="425" height="319"> 
+**Revision:** 13 October 2026 draft. Independent technical review pending. Source-status checks are dated 6 October 2026; see [maintenance and limitations](review-guidance.md#maintenance-and-release).
 
-Fault Tree Analysis (FTA) is a deductive top-down failure analysis tool. Starting at the root cause of a potential failure, a breakdown of composite parts is established to identify, analyze and mitigate an undesired state of a system. This is usually done visually resembling a flowchart diagram, with downwardly cascading branches with corresponding probabilities and Boolean logical gateways into what is called a _fault tree_. Analysis of the fault tree can be used for:
+Fault Tree Analysis (FTA) is a deductive method that starts with a defined undesired top event and examines the combinations of lower-level events or conditions that can produce it. Boolean gates express those logical relationships. The resulting model can support qualitative analysis and, where suitable data and assumptions are available, quantitative analysis. FTA does not start with an already established root cause, and its diagram is not a chronological flowchart. [B09](references.md#b09), [B10](references.md#b10)
 
-* Providing clarity and logical foundation directly starting from a failure or otherwise underised state.
-* Diagnosing and mitigating the caus(es) of a potential failure [top event](#used-terminology).
-* A tool to assist in the design of a system, name to hope create (output/ lower level) requirement.
-* Optimize and minimize resources.
-* Substantiate compliance with system safety/ reliability requirements.
+## Inputs and outputs
 
-<p align="right"><sup>Image from Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks, [1], CC4.0 </sup></p>
-
-## History
-Fault tree Analysis was originally developed in 1962 Bell laboratories by H. Watson and A Mears, to evaluate the _Minuteman I Intercontinental Ballistic Missile_ for the U.S. Air Force.<sup>[[2]](#references)</sup> Since then, fault trees have gained in popularity as a failure analysis tool.
-
-## Underlying systems
-FTA is based on Reliability theory, Boolean algebra and probability theory. A very simple set of rules and symbols provides the mechanism for analyzing very complex systems, and complex relationships between hardware, software and humans. <sup>[[2]](#references)</sup>
-
-## Variations
-There are several variations of the FTA method. Though not exhaustive, the following list contains 10 FTA variations of note.
-
-1. **Dynamic Fault Tree Analysis (DFTA)**: \
-   DFTA incorporates time-dependent behavior and system dynamics into traditional FTA. It is particularly useful for systems where component failures and repairs occur over time.
-2. **Probabilistic Fault Tree Analysis (PFTA)**: \
-   PFTA quantifies the likelihood of the top event by assigning probabilities to the basic events. This approach uses probability theory and statistical methods to calculate the overall system failure probability.
-3. **Common Cause Failure Analysis (CCFA)**: \
-   CCFA is an extension of FTA that focuses on common cause failures (CCFs) where multiple failures result from a single root cause. It is used to identify and analyze dependencies between events that can lead to simultaneous failures.
-4. **Bayesian Fault Tree Analysis (BFTA)**: \
-   BFTA integrates Bayesian networks with FTA to handle uncertainties and update failure probabilities as new information becomes available. This method is particularly useful for complex systems with limited failure data.
-5. **Markov Fault Tree Analysis (MFTA)**: \
-   MFTA combines Markov chains with FTA to model state transitions and time-dependent behaviors in the system. It is useful for systems with multiple states and transitions over time.
-6. **Dynamic Reliability Block Diagram (DRBD)**: \
-   DRBD combines the concepts of reliability block diagrams (RBD) with dynamic behaviors to model complex systems. It is similar to DFTA but uses a block diagram representation instead of a fault tree.
-7. **Software Fault Tree Analysis (SFTA)**: \
-   SFTA is tailored for software systems and focuses on identifying potential software faults and their impacts on the overall system. It considers software-specific issues such as bugs, code errors, and logic flaws.
-8. **Integrated FTA (IFTA)**: \
-   IFTA integrates FTA with other analysis techniques such as Failure Modes and Effects Analysis (FMEA) or Event Tree Analysis (ETA) to provide a comprehensive assessment of system reliability and safety.
-9. **Hierarchical Fault Tree Analysis (HFTA)**: \
-   HFTA organizes fault trees into hierarchical levels, allowing for a more structured and scalable analysis of complex systems. It breaks down the system into manageable sub-systems and analyzes each level separately.
-10. **Petri Net Fault Tree Analysis (PNFTA)**: \
-    PNFTA uses Petri nets to represent fault trees, enabling the modeling of concurrent and asynchronous events. It is useful for analyzing systems with parallel processes and interactions.
-
-
-## Applications
-Fault Tree Analysis is a tried-and-true analysis method utilizied in many industries. A few these include (including a few use cases):
-
-* Aerospace/ aviation (such as analyzing potential failure modes entailing engine failure or loss of control)
-* Nuclear energy (such as evaluating scenarios that could lead to reactor core damage or radioactive release)
-* Automotive (such as analysis potential causes of brake failure or unintended acceleration)
-* Chemical and Process industries (such as identifying potential causes of chemical releases or explosions)
-* Defense and Military (such as evaluating causes of missile guidance system failures or communication breakdowns)
-* Software and IT systems (such as identifying possible causes of software bugs or cyber-security breaches.)
+Inputs are a defined top event, system configuration and architecture, operating conditions and relevant causal knowledge. Quantification additionally needs applicable data and a dependence model. Outputs include the fault tree, event register, minimal cut sets, open modeling issues and any conditional numerical result.
 
 ## Method steps
-Following are steps necessary to apply the FTA method.
 
-### 1. Define hazard
-Start by clearly and concisely describing the hazard (top event). As this will be the basis for following steps, a specific and measurable definition is recommended. Clarifying factors for top event precision may include: <sup>[[4]](#references)
-* How much?
-* How long (duration)?
-* What is the safety impact?
-* What is the environmental impact?
-* What is the regulatory impact?
+### 1. Define the top event and analysis boundary
 
-### 2. System analysis and contributing events identification
-Identify factors and events that might contribute to the most undesired (top level) event. These factors should fall into 2 categories: [basic events](#used-terminology) and [intermediate events](#used-terminology).
-* Create or utilize the following resources: <sup>[[4]](#references)</sup>
-	* List of components (Bill of Materials)
-	* Boundary Diagram
-	* Schematic
-	* Code requirements
-	* Engineering Noises and Environments
-	* Existing examples or templates of similar products or failures
+Define the undesired event or state to be examined, the system configuration, the operating mode and the time or demand basis. Explain its relationship to the safety hazard or loss of concern. A top event can be a system failure, hazardous state or another selected event; it need not be the final accident or the most severe conceivable outcome.
 
-* Identify potential causes:
-	* Include experts on the subject (such as system design engineers or reliability engineers) 
-	* consult similar product or failure history and/ or external (historical) records
+Example: “The braking function fails to provide the specified deceleration after a valid brake demand, during the defined low-speed operating condition.” State the required deceleration, response deadline and exclusions before quantifying this event.
 
-* Estimate probability of causes at the basic-event level
+### 2. Identify contributors and construct the logic
 
-### 3. Construct the fault Tree
-Construct a visual fault tree diagram using standard [gate symbols and event symbols](#symbols). The _top event_ should at the top, and any relations to that cause below it in a hierarchical fashion. Following this, basic events must end up at the bottom. \
-The middle portion of the tree which entails intermediate events require more attention. In pathing the tree, [logic gates](#event-symbols) should be utilized.
+Work down from the top event using system functions, failure effects, interfaces and known dependencies. For each parent event, justify whether any one input is sufficient or a combination is necessary. Stop decomposition at an explicit, justified boundary.
 
-For clarity, color codes can be used for basic events to prioritize critical paths. These can range from green (acceptable risk) to yellow/orange (moderate/ high risk) to red (critical risk).
+Use the [event definitions](#event-symbols) and [gate semantics](#logic-gates-and-advanced-symbols); the tree is not a time sequence.
 
-![Fault Tree Analysis example](images/fta_01b.png)
- 
-### 4. Gather failure data
-In order to assess risks of (basic) events occuring, resources should be allocated accruing failure data. This failure data is expressed as _failure data_ or _failure rates_, depending upon the type of analysis. \
-Sources for these failure data may include:
-* Historical records
-* Manual of similar product(s) or subcomponents
-* Industry databases
-* Expert opinions
+### 3. Reduce the logic and identify cut sets
 
-### 5. Perform the analysis
-Calulate/ estimate the risk of each event by the acquired failure data to lay bare the critical chain to the top event ([cut sets](#used-terminology)). 
+First identify combinations of basic events sufficient to produce the top event. A cut set is such a combination; a minimal cut set has no unnecessary member. “Minimal” does not mean that it has the smallest number of events among all cut sets.
 
-These calculations are associated with _statistical probabilities_ or _Poisson-Exponentially distributed constant rates_. For example, for a given component with constant _failure rate_ $\lambda$ and exposure time $t$, there is: \
-$`P=1-e^{-λt}`$ \
-where: \
-$`P\approx \lambda t`$ if $`\lambda t<0.001`$ 
+Reduce the logic before quantification. If T = A OR (A AND B), then T = A; adding the second branch does not create another independent way for A to happen. If the same physical event appears more than once, use the same identifier and treat it as one event. When different cut sets overlap, summing their probabilities can double-count the overlap. Calculate their union or use a justified approximation with stated limitations.
 
-When encountering logic gates in a cut set, care must be taken to maintain the corresponding input event integrity. Global rules for for conservation of inputs at logic gates are:
+### 4. Gather applicable data
 
-| Symbol | Name | Formula |
-| :---: | :---: | - |
-| ![FTA Logic Gate](images/fta_symbol_and.png) | `AND` | P (A and B) = P (A ∩ B) = P(A) P(B) |
-| ![FTA Logic Gate](images/fta_symbol_or.png) | `OR` | P (A or B) = P (A ∪ B) = P(A) + P(B) - P (A ∩ B) |
-| ![FTA Logic Gate](images/fta_symbol_xor.png) | `XOR` | P (A xor B) = P(A) + P(B) - 2P (A ∩ B) |
+For each event record its definition, population, reference mission/time/demand, source, uncertainty and dependencies. Do not assign a random-hardware rate to a software design defect or attack without an explicit operational model.
 
-Output of an `AND` as a combination of input events $`1`$ and $`2`$ where $`Q=1-e^{-λt}`$ if $`\lambda t<0.001`$: \
-Failure frequency=$`\lambda_1 Q_2 + \lambda_2 Q_1`$ \
-Failure frequency=$`\lambda_1 \lambda_2 t_2 + \lambda_2 \lambda_1 t_1`$ if $`\lambda_2 \lambda_1 t_1 < 0.001`$ and $`\lambda_2 t_2 < 0.001`$ 
+### 5. Quantify only under justified assumptions
 
-Cut sets wirth risk greater than the system can tolerate are selected for mitigation. Actions are required for _Critical_ (red) and _High Risk_ (orange). 
+| Gate | General probability expression for two inputs | Additional condition |
+|---|---|---|
+| AND | P(A ∩ B) = P(A)P(B given A) | It reduces to P(A)P(B) only if A and B are independent. |
+| OR | P(A ∪ B) = P(A) + P(B) − P(A ∩ B) | Do not omit the overlap without justification. |
+| XOR | P(A XOR B) = P(A) + P(B) − 2P(A ∩ B) | Here XOR means exactly one of two input events occurs. |
 
-List of cut sets can be used for identifying duplicated events and branches, often referred to as _MOB's_ (multiple occurring branches) and _MOE's_ (multiple occurring events). 
+These expressions concern event probabilities on a common, defined basis. Independence must be justified; it does not follow from drawing events on separate branches. Shared power, environment, maintenance, design or software can create dependence. Preserve the identity of repeated events throughout the tree. [B09](references.md#b09)
 
-### 6. Risk mitigation
-Depending on the system being analyzed, Risk Mitigation can take many forms. One popular method is the use of a _criticality method_, which use a broad selection of indicators to describe various factors including geological, technological, geopolitical, social, and environmental factors. 
+**Probability is not failure frequency.** This introductory example calculates the probability of a top event over a specified mission. It does not calculate an occurrence rate or the frequency of entering a failed state. Those quantities require a defined time-dependent model, including repair, restoration and event recurrence where applicable. Do not obtain a frequency by substituting rates into a probability equation or by treating dimensionless probabilities as rates.
 
-Other techniques require a level of mitigation calculated to _Defects per Million Opportunities_ (_DPMO_). DPMO is defined as: \
-$`DPMO=\frac{1.000.000 \quad \times \quad number \quad \quad of \quad defects}{number \quad of \quad units \quad \times \quad number \quad of \quad Defects \quad opportunities \quad per \quad unit}`$ 
+For an item initially functioning at time zero, with a constant failure hazard λ and no repair during the mission, the probability of failure by time t is:
 
-When unacceptable risks have been found, multiple mitigation strategies are available. Some examples:
-* Design change
-* Replacement of (Base-event) component with another component with higher reliability
-* Physical redundancy of (Base-event) component
-* Software redundancy
-* Warning system
-* Quality Control
+Q(t) = 1 − exp(−λt).
 
-## Things to avoid
-While going through the steps of utilizing a FTA cycle, there are some elements best to avoid in order to reach success. Following are some matters best to be avoided: 
-* Relying on incomplete, outdated or inaccurate data.
-* Performing the analysis without consulting with experts of the relevant field
-* Too broad categorizations; events not sufficiently broken down
-* Using non-standard symbols and conventions
-* Overlooking cases where a single cause leads to multiple failures (_CCFs, Common Cause Failure_)
+λ has units of inverse time and t uses the corresponding time unit. Their product is dimensionless. For sufficiently small λt, Q(t) ≈ λt; the required accuracy determines whether the approximation is suitable. For example, at λt = 0.001 the approximation overestimates Q by approximately 0.05% relative to Q.
 
-## Pros and cons
-### Advantages of FTA
-* Very good at showing how resistant a system is to single or multiple initiating faults
+This is a lifetime model under stated assumptions. It is not a general expression for repairable-system unavailability and should not be assigned to software design faults without a justified operational model.
 
-### Limitations to FTA
-* The accuracy and effectiveness of FTA in analyzing relevant causes of failure is heavily reliant on the expertise of the analysts <sup>[[3]](#references)</sup>
-* Large and complex systems require large and complex fault trees, which makes analysis time-consuming and challenging <sup>[[3]](#references)</sup>
-* One single top event can be examined at a time <sup>[[3]](#references)</sup>
-* Data regarding failure and quality determines precision of calculated probabilities in a fault tree <sup>[[3]](#references)</sup>
-* Not good at finding all possible initiating faults
+### 6. Select measures and evaluate residual issues
+
+Select safety measures based on the modeled causes, the applicable safety objectives and the wider system analysis. Candidate measures include eliminating a hazardous behavior, changing the architecture, preventing a failure mechanism, detecting a condition in time, or providing an effective recovery response. Assess whether each measure introduces new hazards or dependencies, then update the analysis and verify the implemented measure.
+
+A manufacturing defect metric such as defects per million opportunities does not by itself establish that a system safety objective has been met. Any acceptance argument must use criteria appropriate to the defined hazard, operating context and evidence.
+
+Redundancy can reduce the contribution of some failure combinations, but only if the relevant independence, separation, detection and switching assumptions are justified. Consider common power, environmental exposure, shared requirements or software defects and maintenance errors. Additional software instances do not establish independent protection against a shared design defect.
+
+Compare the results with the stated acceptance criteria and document remaining uncertainty, responsible decision-makers and required actions. A color or a small numerical estimate is not itself an acceptance decision.
+
+## Worked Boolean example
+
+The diagram below is newly authored for the existing A–E logic. It is a generic teaching model, separate from the automotive stopping example.
+
+```mermaid
+flowchart TD
+    T["Top event T: OR"] --> AB["A AND B"]
+    T --> C["C"]
+    T --> D["D"]
+    T --> E["E"]
+    AB --> A["A"]
+    AB --> B["B"]
+```
+
+The illustrated logic is T = (A AND B) OR C OR D OR E. Its minimal cut sets are {A,B}, {C}, {D} and {E}. For this numerical demonstration only, assume A–E are mutually independent events defined over the same mission and assign P(A)=0.01, P(B)=0.02, P(C)=0.001, P(D)=0.002 and P(E)=0.003.
+
+Then P(T) = 1 − [1−P(A)P(B)][1−P(C)][1−P(D)][1−P(E)] = 0.0061878081988, or approximately 0.619% per defined mission. These invented values demonstrate calculation, not acceptable vehicle safety performance.
+
+Dependence changes the answer. Keeping P(A)=0.01 and P(B)=0.02, suppose P(B given A)=0.5 instead. Then P(A AND B)=0.005 rather than 0.0002. If the pair {A,B} remains independent of C, D and E, and those three remain mutually independent, P(T)=0.01095906097. Documenting dependence is therefore part of the model, not an optional comment added after calculation.
+
+## Event symbols
+
+**Intermediate event:** an event represented as the output of a gate and potentially as an input to a higher-level gate. Its occurrence contributes according to that higher gate’s logic; it does not necessarily produce the parent event on its own. For example, one input to an AND gate is insufficient unless the other required inputs also occur.
+
+| Term | Description |
+|---|---|
+| Basic event | An event not developed further within this fault tree. The stopping point reflects the analysis scope and available modeling/data, not necessarily physical indivisibility. |
+| Undeveloped event | An event deliberately left without further decomposition; record why it is undeveloped and whether the remaining uncertainty affects the conclusion. |
+| Conditioning event | A condition restricting when another modeled event or gate relationship applies. |
+| House event | A modeled condition assigned a fixed Boolean state for the analyzed configuration or operating case. |
+
+A top/intermediate event is conventionally shown in a rectangle, a basic event in a circle, an undeveloped event in a diamond, a conditioning event in an oval, and a house event with a house symbol. Define the notation in each analysis; the simplified diagram above uses labeled boxes.
+
+## Logic gates and advanced symbols
+
+| Term | Definition |
+|---|---|
+| k-out-of-N gate | Output occurs when at least k of the N input events occur, under the stated model. |
+| Two-input XOR gate | Output occurs when exactly one of the two input events occurs. |
+| Priority AND gate | Output depends on all required input events occurring in the specified order. State whether simultaneous events satisfy the ordering rule and how reset/repair is treated. |
+| Transfer symbols | Cross-reference the same identified subtree/event between diagram locations; they do not introduce a separate failure event. |
+
+AND requires all inputs, OR at least one. Two-input probability expressions are given in step 5. Sequence-sensitive gates require temporal semantics and an appropriate solver; ordinary static Boolean calculations do not supply those semantics.
+
+## Extensions and complementary models
+
+| Topic | Relationship to FTA |
+|---|---|
+| Qualitative and quantitative FTA | Complementary uses of the fault-tree model; quantification is not a separate prerequisite for qualitative insight. |
+| Dynamic FTA | An extension for order, sequence or state-dependent behavior; gate semantics and solution method must be specified. |
+| Bayesian-network or Markov modeling | Related modeling approaches that may be combined with, derived from or compared with a fault tree. They are not merely new names for an unchanged static FTA. |
+| Common-cause/dependent-failure analysis | Supports identification and modeling of dependencies affecting the tree. |
+| Software-focused FTA | Application of fault-tree reasoning to specified software/system behavior; numerical treatment needs its own justification. |
+| FTA combined with FMEA, ETA or STPA | Integration of different analysis outputs, requiring consistent event definitions and assumptions. |
+| Reliability Block Diagrams | A related reliability representation, usually organized around function success; not an FTA variant. |
+
+Use source-specific names for research extensions and explain their added semantics. Hierarchical organization alone is not a distinct analysis method. This list introduces relationships; it does not prescribe an extension for every analysis. [B09](references.md#b09), [B10](references.md#b10)
 
 ## Used terminology
-Glossary containing as many relevant and specific terms
-| Term | Definition |
-| - | - |
-| Basic event | Events that cannot be broken down further into more fundamental composite parts, the lowest level in a fault tree. | 
-| Cut set | Combination of basic event(s) causing the top event. |
-| Input event | Event that is sent from a basic event or intermediate even into a (logic) gate. |
-| [Intermediate event](event-symbols) | Event between the top event and lower level (basic) event. Therefore, an intermediate event always causes 1 or more event(s) and itself is cause by preceding event. |
-| Logic gate | A conjunction between events that output probabilities related to the set operations of Boolean logic. |
-| Minimal Cut Sets (MCS) | In a cut set, if no event can be removed without failing to cause the top event. |
-| MOB | Multiple occurring branches |
-| MOE | Multiple occurring events |
 
-## Symbols
+| Quantity | Meaning in this page |
+|---|---|
+| Probability | Dimensionless measure for a specified event and reference conditions. |
+| Unreliability Q(t) | Probability of failure by t in the stated lifetime model. |
+| Unavailability | Probability that the required function is unavailable at the specified time or demand; restoration can matter. |
+| Failure hazard λ(t) | Instantaneous failure rate conditional on survival to time t. |
+| Event frequency | Expected number of defined event occurrences per unit exposure, such as operating time. |
 
-**Event symbols**
-| Symbol | Term | Meaning | Symbol | Term | Meaning |
-| :---: | - | - | :---: | - | - |
-| ![FTA Basic Event](images/fta_symbol_event.png) | Basic Event (BE) | Lowest-level random event that cannot be broken down further with sufficient data available. | ![FTA Basic Event](images/fta_symbol_intermediate_event.png) | Intermediate event | Event between the top event and lower level (basic) event. Therefore, an intermediate event always causes 1 or more event(s) and itself is cause by preceding event. |
-| ![FTA Basic Event](images/fta_symbol_conditional_event.png) | Conditioning Event | Specific condition or restriction associated with another logic gate. | ![FTA Basic Event](images/fta_symbol_house_event.png) | External (House) event | Event of which its occurence is expected. Generally has a fixed probability of 0 or 1. |
-| ![FTA Basic Event](images/fta_symbol_top_event.png) | Top Event (TE) | The main undesired outcome or state of system. | ![FTA Basic Event](images/fta_symbol_underdeveloped_event.png) | Un(der)developed event | Event about which there is insufficient information available, or is inconsequential. |
+## Assessor review and limitations
 
-**Logic gates and advanced symbols**
-| Symbol \ Logic Gate | Term | Meaning | Symbol \ Advanced | Term | Meaning |
-| :---: | - | - | :---: | - | - |
-| ![FTA Logic Gate](images/fta_symbol_and.png) | `AND` gate | Output event occurs only when *all* input events occur. | ![FTA Advanced](images/fta_symbol_kn.png) | k/N gate | Output event occurs a certain amount `k` of total input events `N` occur. |
-| ![FTA Logic Gate](images/fta_symbol_or.png) | `OR` gate | Output event occurs when *any* of the input events occur. | ![FTA Advanced](images/fta_symbol_inhibit.png) | Inhibit gate | Output event occurs when input event occurs, and corresponding condition is satisfied. |
-| ![FTA Logic Gate](images/fta_symbol_xor.png) | Exclusive `OR` gate (`XOR`) | Output event occurs only if *either input* events occurs (never both or none). | ![FTA Advanced](images/fta_symbol_transfer_in.png) | Transfer In | The tree is developed urther at another point within the tree. |
-| ![FTA Logic Gate](images/fta_symbol_and_priority.png) | Priority `AND` gate | Output event occurs when *all* input events occur, in a *specific sequence*. | ![FTA Advanced](images/fta_symbol_transfer_out.png) | Transfer Out | This portion of the tree is attached to another location within the same tree. |
+Use the [assessor checklist and acceptance guidance](review-guidance.md). Record open assumptions, owners and evidence; completing this tutorial does not establish conformity with a standard.
 
-## See also
-### FTA Standards
-* [NEN-EN-IEC 61025:2007](https://www.nen.nl/nen-en-iec-61025-2007-en-fr-116774) _(Published April 1st, 2007)_
-* [ISO/IEC 31010:2019](https://www.iso.org/standard/72140.html) _(Published June 2019)_
+A precise calculation cannot compensate for omitted causes, overlapping events treated as independent, an undefined mission or unsuitable data. See [method reconciliation](automotive-example.md#reconciling-the-methods).
 
-## References
-[1] Winkle, Thomas. 2016. Technische Universität München. ["Development and Approval of Automated Vehicles: Considerations of Technical, Legal, and Economic Risks"](https://www.researchgate.net/publication/303480787_Development_and_Approval_of_Automated_Vehicles_Considerations_of_Technical_Legal_and_Economic_Risks), Autonomous Driving (pp.589-618) \
-[2] [Fault Tree Analysis – A History](https://web.archive.org/web/20110723124816/http://www.fault-tree.net/papers/ericson-fta-history.pdf) \
-[3] [What is fault tree analysis (FTA)?](https://www.ibm.com/topics/fault-tree-analysis) \
-[4] [FTA | Fault Tree Analysis](https://quality-one.com/fta/) \
+## References and historical context
 
------ \
-<sup>[5]</sup> [What is a "cutset"](https://www.wilderisk.co.uk/about/blog/cutset-in-fault-tree-analysis/) \
+Method references: NASA’s public Fault Tree Handbook [B09](references.md#b09), IEC 61025:2006 [B10](references.md#b10), and the distinct NEN-EN-IEC 61025:2007 adoption [B15](references.md#b15).
 
-
+The former traffic-accident percentage figure has been removed from the tutorial. Its historical population, denominator and causal-attribution basis were not established for an ADS probability calculation. See Winkle (2016), [Development and Approval of Automated Vehicles](https://www.researchgate.net/publication/303480787_Development_and_Approval_of_Automated_Vehicles_Considerations_of_Technical_Legal_and_Economic_Risks), for the original discussion; no percentage is adopted here.

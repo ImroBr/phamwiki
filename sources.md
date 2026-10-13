@@ -1,234 +1,223 @@
-# Process Hazard Analysis Sources
+# Annotated reading list
 
-## FMEA (Failure Mode and Effects Analysis)
-### _Failure analysis of FMEA_ (20-03-2024)
-- [x] _IEEE, 12-05-2009_
-> **Abstract: ** Failure mode and effect analysis (FMEA) is a proactive tool developed to identify, evaluate and prevent product and/or process failures. The conventional FMEA procedure suffers from inadequate definitions for some steps, high uncertainty, and even decision making failures throughout the procedure. The effectiveness of an FMEA can be significantly improved by identifying potential pitfalls, and raising awareness of potential problems. Applying a strategy that utilizes controls and rules can efficiently mitigate, or even avoid, all known possible harmful effects. This article proposes proven solutions that support the entire end-to-end FMEA sequence of activities (from the point of initiation of the analysis - Failure Modes identification - up to its culmination - evaluation of the effectiveness of the procedure), and the remedies proposed, in reducing risk.
+[Home](README.md) · [Foundations](foundations.md) · [FMEA](FMEA.md) · [FTA](FTA.md) · [ETA](ETA.md) · [STPA](STPA.md) · [Sources](sources.md)
 
-https://ieeexplore.ieee.org/abstract/document/4914700
+**Revision:** 13 October 2026 draft. Independent technical review pending. Source-status checks are dated 6 October 2026; see [maintenance and limitations](review-guidance.md#maintenance-and-release).
 
+This page is an annotated reading list. Inclusion does not mean that a source’s method or conclusions have been adopted by the Wiki. Each entry distinguishes discovery, access and technical review. Historical checkmarks in earlier versions did not record those distinctions and should not be interpreted as evidence of full-text review.
 
-### _A STATE-OF-THE-ART REVIEW OF FMEA/FMECA_ (20-03-2024)
-- [ ] _World Scientific, 05-10-1994_
-> **Abstract: ** The Failure Mode and Effects Analysis (FMEA) documents single failures of a system, by identifying the failure modes, and the causes and effects of each potential failure mode on system service and defining appropriate detection procedures and corrective actions. When extended by Criticality Analysis procedure (CA) for failure modes classification, it is known as Failure Mode Effects and Criticality Analysis (FMECA). The present paper presents a literature review of FME(C)A, covering the following aspects: description and review of the basic principles of FME(C)A, types, enhancement of the method, automation and available computer codes, combination with other techniques and specific applications. We conclude with a discussion of various issues raised as a result of the review.
+Use these review states: **Listed** — identified as potentially relevant; **Abstract checked** — relevance assessed from the abstract only; **Relevant sections checked** — specified sections inspected; **Applied and reviewed** — used to support an identified Wiki claim, with the location and limitations recorded. Access status is recorded separately.
 
-> [!IMPORTANT]
-> Access required
-https://www.worldscientific.com/doi/abs/10.1142/S0218539394000362
+**How to use comparisons.** A study comparing two methods reports results for its chosen system, analysts, scope and evaluation criteria. Similar findings in one case do not show that the methods are equivalent in every application, and additional findings do not automatically establish superior safety assurance. Before applying a comparison, examine the input information, analyst experience, level of detail, effort, treatment of uncertainty and how completeness or usefulness was judged.
 
-## STPA (System-Theoretic Process Analysis)
-### _STPA Handbook_ (20-03-2024)
-- [x] 
-https://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf
+Sources actually used in this revision are linked from the [reference register](references.md) and [standards register](standards-register.md). The discovery list below preserves the earlier research leads; its dates are collection dates, not inferred publication dates.
 
 
-### _A comprehensive safety engineering approach for software-intensive systems based on STPA_
-- [x]
-https://www.sciencedirect.com/science/article/pii/S1877705815038588
+## STPA Handbook record
 
+| Field | Example entry |
+|---|---|
+| Source | Leveson, N. G., and Thomas, J. P. (2018), *STPA Handbook*, March 2018. |
+| Public location | [MIT STPA Handbook](https://psas.scripts.mit.edu/home/get_file.php?name=STPA_handbook.pdf) |
+| Source type | Author handbook; explanatory methodological guidance. |
+| Access | Public PDF. |
+| Review state | Relevant sections checked for the Wiki’s method explanation and cited page references. |
+| Supports | STPA method structure; distinction between UCA contexts and causal scenarios; selected review prompts. |
+| Limitations | Does not establish that the Wiki’s separate automotive example is complete or validated. |
+| Bibliographic year | 2018. |
+| Wiki check date | 6 October 2026. |
 
-### _Model Based STPA for Assisted Driving Functions_ (20-03-2024)
-- [x] _IEEE, 22-12-2023_
-> **Abstract: ** In the context of safety analyses for driving functions of advanced driver assistance systems, weaknesses were identified in executing STPAs (System Theoretic Process Analysis) with a given tool. Transparency, interrelations between domain-specific work products and traceability issues made it difficult to work efficiently and prove compliance to relevant standards. An exploration activity investigated the feasibility and benefits of a model-based approach, incorporating the STPA into the existing system design framework. The RAAML (Risk Analysis and Assessment Mark-up Language) was used as a starting point. Additional model artefacts and dependencies were defined as needed. The activity resulted in a model based STPA environment prototype with diagram and table views as well as a preliminary method guideline. The selected approach avoids tool-breaks and an early evaluation indicates an easier justification of standard compliance.
+## Failure analysis of FMEA
 
-https://ieeexplore.ieee.org/document/10350810/
+**Review state:** Listed; publication metadata and full technical review not yet verified.
 
+**Earlier collection date:** 20-03-2024.
 
-### _Algorithms Development for Automating the Execution of Safety Guided Test Scenarios in Automated Vehicles Based on STPA_ (20-03-2024)
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/abstract/document/4914700)
 
-- [x] _IEEE, 19-12-2022_
-> **Abstract:** To achieve a high level of safety in a self-driving car, an almost infinite number of scenarios need to be tested, and a lot of time for testing to complete such level for safety. Automate execution for critical safety scenarios test is researched to achieve the goal that will significantly reduce total time of safety or safety guided testing with the STPA based test scenarios, including both functional safety(FUSA) and safety of the intended functionality(SOTIF). The execution for safety guided the test scenarios is aimed to virtual test platform and real world test platform. The algorithms for the automation are analyzed and explored in this paper. With these algorithms it will be possible to facilitate the test execution activities in an automated fashion.
+Listed for research; no general superiority or effectiveness claim is adopted here.
 
-https://ieeexplore.ieee.org/document/10071296
+## A STATE-OF-THE-ART REVIEW OF FMEA/FMECA
 
+**Review state:** Listed; publication metadata and full technical review not yet verified.
 
-### _Safety analysis of wheel brake system based on STAMP/STPA and Monte Carlo simulation_ (20-03-2024)
+**Earlier collection date:** 20-03-2024.
 
-- [x] _IEEE, 12-2018_
-> **Abstract:** The wheel brake system safety is a complex problem which refers to its technical state, operating environment, human factors, etc., in aircraft landing taxiing process. Usually, professors consider system safety with traditional probability techniques based on the linear chain of events. However, it could not comprehensively analyze system safety problems, especially in operating environment, interaction of subsystems, and human factors. Thus, we consider system safety as a control problem based on the system-theoretic accident model, the processes (STAMP) model and the system theoretic process analysis (STPA) technique to compensate the deficiency of traditional techniques. Meanwhile, system safety simulation is considered as system control simulation, and Monte Carlo methods are used which consider the range of uncertain parameters and operation deviation to quantitatively study system safety influence factors in control simulation. Firstly, we construct the STAMP model and STPA feedback control loop of the wheel brake system based on the system functional requirement. Then four unsafe control actions are identified, and causes of them are analyzed. Finally, we construct the Monte Carlo simulation model to analyze different scenarios under disturbance. The results provide a basis for choosing corresponding process model variables in constructing the context table and show that appropriate brake strategies could prevent hazards in aircraft landing taxiing.
+**Public landing page:** [Source 1](https://www.worldscientific.com/doi/abs/10.1142/S0218539394000362)
 
-https://ieeexplore.ieee.org/document/8599114
+Listed for research; no general superiority or effectiveness claim is adopted here.
 
+## A comprehensive safety engineering approach for software-intensive systems based on STPA
 
-## FTA (Fault-Tree Analysis)
+**Review state:** Listed; publication metadata and full technical review not yet verified.
 
-### _Application of fuzzy fault tree analysis in the fault diagnosis for automobile engine system_ (25-03-2024)
-- [x] _IEEE, 22-03-2018_
-> **Abstract:** Fuzzy Fault tree analysis is one of important means for analysis of reliability and safety and fault diagnosis of the system. It features a strong logical and visual image. It is a reliable analysis method for both qualitative and quantitative analysis of the typical fault of a system and thus provides a theoretical basis for fault analysis processing and system design. This paper presents a fault tree analysis used in the analysis of fault mode for automobile engine system, builds the fault tree of common fault mode. Through the qualitative and quantitative analysis of fault tree, the causal relationship between the faults can be fully reflected, and the combination of the common fault mode for the system can be obtained. It can provide powerful technical support and decision basis for maintenance staff to improve the integrity of fault analysis, the accuracy of fault location and the timeliness of fault exclusion. 
+**Public landing page:** [Source 1](https://www.sciencedirect.com/science/article/pii/S1877705815038588)
 
-https://ieeexplore.ieee.org/document/8321547
+Listed for research; no general superiority or effectiveness claim is adopted here.
 
-### _Dataset Fault Tree Analysis for Systematic Evaluation of Machine Learning Systems_ (20-03-2024)
-- [x] _IEEE, 14-01-2021_
-> **Abstract:** Recently, machine learning, particularly deep learning, is attracting much interest and is applied in various systems. Applications include not only entertainment systems, but safety-critical systems such as those found in autonomous vehicles. The reliability of such safety-critical systems must be guaranteed before they are released into society. However, methods for ensuring the safety of machine learning-based systems have yet to be established. In this paper, we propose a method for systematically evaluating the safety of such systems. The method consists of dataset-based safety analysis and statistical evaluation of testing results. In the safety analysis, we extend the widely used fault tree analysis to deal with datasets. In the testing, we use statistical estimation to guarantee recognition rates obtained in the safety analysis. We conducted experiments using a handwritten character recognition system implemented as a CNN to demonstrate the feasibility and effectiveness of our method.
+## Model Based STPA for Assisted Driving Functions
 
-https://ieeexplore.ieee.org/document/9320326
+**Review state:** Listed; publication metadata and full technical review not yet verified.
 
-### _Ontology-Based Fault Tree Analysis Algorithms in a Fuzzy Environment for Autonomous Ships_ (20-03-2024)
-- [x] _IEEE, 24-02-2021_
-> **Abstract:** This study deals with fault tree analysis algorithms based on an ontology-based approach in a fuzzy environment. We extend fuzzy fault tree analysis by embedding ontology-based fault tree structures. The ontology-based approach allows conducting advanced analyses grounded on rich domain knowledge. Two approaches as the conventional approach and rule-based method are applied for the calculations of failure probability and analysis of the fault tree. Collision and grounding of an autonomous ship are investigated in two scenarios. The structural design, probability calculations, and sensitivity analyses prove that the proposed system is applicable, robust, accurate and reliable. Thus, the propounded ontology-based fault tree algorithms fill a gap in safety engineering by its capability of comprehensiveness.
+**Earlier collection date:** 20-03-2024.
 
-https://ieeexplore.ieee.org/document/9361551
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/document/10350810/)
 
-## ETA	(Event-Tree Analysis)
+Listed for research; no general superiority or effectiveness claim is adopted here.
 
-### _Event-tree analysis using binary decision diagrams_ (25-03-2024)
-- [x] _IEEE, 02-06-2000_
-> **Abstract:** This paper is concerned with ETA (event-tree analysis) where the branch point event causes are defined using fault trees. Attention is on the nontrivial situation where there are dependencies amongst the branch point events. The dependencies are due to component-failures in more than one of the fault trees. In these situations the analysis methods based on traditional FTA (fault-tree analysis) are inaccurate and inefficient. The inaccuracies are not consistent across the outcome events. If frequency predictions calculated in this way are then used in a risk assessment then the relative risks would be distorted and could lead to resources being used inappropriately to reduce the overall risk. A new approach using BDD (binary decision diagram) is described which addresses these deficiencies.
+## Algorithms Development for Automating the Execution of Safety Guided Test Scenarios in Automated Vehicles Based on STPA
 
-https://ieeexplore.ieee.org/document/877343
+**Review state:** Listed; publication metadata and full technical review not yet verified.
 
-### Analysis techniques for dependability - Event tree analysis (ETA) (14-05-2024)
-- [ ] _IEC, 27-10-2010_
-> **Abstract:** IEC 62502:2010 specifies the consolidated basic principles of Event Tree Analysis (ETA) and provides guidance on modelling the consequences of an initiating event as well as analysing these consequences qualitatively and quantitatively in the context of dependability and risk related measures.
+**Earlier collection date:** 20-03-2024.
 
-https://webstore.iec.ch/publication/7131
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/document/10071296)
 
-## Cross-Analysis 
-### _Comparison of the FMEA and STPA safety analysis methods-a case study_ (20-03-2024)
-- [x] _Springer, 04-12-2017_
-> **Abstract:** As our society becomes more and more dependent on IT systems, failures of these systems can harm more and more people and organizations. Diligently performing risk and hazard analysis helps to minimize the potential harm of IT system failures on the society and increases the probability of their undisturbed operation. Risk and hazard analysis is an important activity for the development and operation of critical software intensive systems, but the increased complexity and size puts additional requirements on the effectiveness of risk and hazard analysis methods. This paper presents a qualitative comparison of two hazard analysis methods, failure mode and effect analysis (FMEA) and system theoretic process analysis (STPA), using case study research methodology. Both methods have been applied on the same forward collision avoidance system to compare the effectiveness of the methods and to investigate what are the main differences between them. Furthermore, this study also evaluates the analysis process of both methods by using a qualitative criteria derived from the technology acceptance model (TAM). The results of the FMEA analysis were compared to the results of the STPA analysis, which were presented in a previous study. Both analyses were conducted on the same forward collision avoidance system. The comparison shows that FMEA and STPA deliver similar analysis results.
+Listed for research; no general superiority or effectiveness claim is adopted here.
 
-| Process hazard | Included  | 
-| ---:           |     :---  | 
-| FMEA           |    X      |   
-| STPA           |    X      |  
-| FTA            |           |    
-| ETA            |           |   
-| HAZOP          |           |  
+## Safety analysis of wheel brake system based on STAMP/STPA and Monte Carlo simulation
 
-https://link.springer.com/article/10.1007/s11219-017-9396-0
+**Review state:** Listed; publication metadata and full technical review not yet verified.
 
-### _A comparison of FMEA, AFMEA and FTA_ (25-03-2024)
-- [x] _IEEE, 11-08-2011_
-> **Abstact:** Reliability design and reliability management have been fast developed for more than half a century. Failure Modes and Effects Analysis (FMEA), advanced Failure Modes and Effects Analysis (AFMEA) and Fault Tree Analysis (FTA) are three popular methods, which focus attention on finding the causes of functional and physical failure, rather than statistic mathematic methods. This paper compared and discussed the features of these three methods. After the discussion we proposed a scenario to incorporate FMEA and FTA, in order to solve some problems that cannot be managed by one method alone. With the comparison, further discussion of these three methods, and tentative incorporation of FMEA and FTA, we formed some new ideas of the possible development of reliability design.
+**Earlier collection date:** 20-03-2024.
 
-| Process hazard | Included  | 
-| ---:           |     :---  | 
-| FMEA           |     X     |   
-| STPA           |           |  
-| FTA            |     X     |    
-| ETA            |           |   
-| HAZOP          |           |  
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/document/8599114)
 
-https://ieeexplore.ieee.org/document/5979423
+Listed for research; no general superiority or effectiveness claim is adopted here.
 
-### _A combined analysis method of FMEA and FTA for improving the safety analysis quality of safety-critical software_ (25-03-2024)
-- [x] _IEEE, 17-02-2014_
-> **Abstract:** Software safety analysis methods are used broadly in safety-critical systems to secure software safety and to recognize potential errors during software development, particularly at the early stage. FMEA and FTA are two traditional safety analysis methods, both of which provide a complementary way of identifying errors and tracking their possible influences. They have already been widely adopted in safety-critical industries. However, the effectiveness of FMEA and FTA depends on a complete understanding of the software being analyzed. Unlike hardware safety analysis, software safety analysis is usually a process of iteration. It is more difficult to get a comprehensive understanding of the software being analyzed at the early stage of software life cycle. A combined analysis method of FMEA and FTA was presented in this paper, which could detect more potential errors of software at the early stage. An analysis process which can convert and verify between FMEA and FTA was created. A semi-auto analyzing tool was developed to carry the process. Comparison experiments were carried out to testify the effectiveness of this method, which showed that the combined method proposed by this paper achieved better results.
+## Application of fuzzy fault tree analysis in the fault diagnosis for automobile engine system
 
-https://ieeexplore.ieee.org/document/6740435
+**Review state:** Listed; publication metadata and full technical review not yet verified.
 
-| Process hazard | Included  | 
-| ---:           |     :---  | 
-| FMEA           |    X      |   
-| STPA           |           |  
-| FTA            |    X      |    
-| ETA            |           |   
-| HAZOP          |           |  
+**Earlier collection date:** 25-03-2024.
 
-### _Integrating Fault Tree Analysis with System Theoretic Process Analysis_ (25-03-2024)
-- [x] _IEEE, 05-04-2023_
-> **Abstract:** When designing a digital instrumentation and control (DI&C) system, flaws in the architecture or software, failures of components, cyber-attacks, and human failures can lead to unintended effects on the system under control. There are several approaches for assessing potential hazards from inappropriate operation of a system, but that the best approach is likely a combination of assessment techniques [1]. The approach that showed the most potential was an integration of Systems Theoretic Process Analysis (STPA) with Fault Tree Analysis (FTA).While the STPA process is very effective at identifying things that could go wrong with the system, it does not have any tools to prioritize the Unsafe Control Actions (UCAs) to identify which UCAs are the most important. When a fault tree is available for assessing the risk of a system, the integration of FTA with STPA can be used to assign a risk rank to the UCAs. This allows the system designer to prioritize either design changes or control methods to address each UCA appropriately. This paper demonstrates one approach for integrating FTA and STPA for risk ranking the UCAs identified by the STPA.This integrated process allows the designer to focus on the most important aspects of the design when transitioning from conceptual design to preliminary design to detailed design. At each step, the design is informed by the STPA and FTA to make the final design safer and more reliable. The result is a final design that is complete, accurately specified, and has a low risk of emergent behaviors.
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/document/8321547)
 
-https://ieeexplore.ieee.org/document/10088187
+Listed for research; no general superiority or effectiveness claim is adopted here.
 
-| Process hazard | Included  | 
-| ---:           |     :---  | 
-| FMEA           |           |   
-| STPA           |   X       |  
-| FTA            |   X       |    
-| ETA            |           |   
-| HAZOP          |           |  
+## Dataset Fault Tree Analysis for Systematic Evaluation of Machine Learning Systems
 
-### _A reliability risk analysis method based on the fuzzy fault tree and fuzzy event tree_ (25-03-2024)
-- [x] _IEEE, 28-09-2017_
-> **Abstract:** Based on the analyses systems of fuzzy fault tree and event tree, this paper proposes a method for a reliability risk analysis to mitigate problems associated with risk modeling of fuzzy and uncertain information. Risk event occurrence probabilities were obtained with fuzzy linguistic variables instead of exact values used in fault tree analysis. Quantitative analysis was applied to the fuzzy fault tree to determine the fuzzy importance degree of each basic event, which were then ranked and divided to distinguish the influence of these basic events. Based on this analysis, a fuzzy event tree was constructed and linguistic terms used to evaluate occurrence probabilities and outcomes. Mitigation measures were put forward for risk events and the expected risk magnitudes were calculated under the mitigation strategies. This ensured the mitigation measures were intuitive and accurate. Finally, an application example was illustrated to verify that the proposed method was effective and feasible.
+**Review state:** Listed; publication metadata and full technical review not yet verified.
 
-https://ieeexplore.ieee.org/document/8050082
+**Earlier collection date:** 20-03-2024.
 
-| Process hazard | Included  | 
-| ---:           |     :---  | 
-| FMEA           |           |   
-| STPA           |           |  
-| FTA            |   X       |    
-| ETA            |   X       |   
-| HAZOP          |           |  
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/document/9320326)
 
-## Miscellaneous public online resources
+Listed for research; no general superiority or effectiveness claim is adopted here.
 
-### Chapter 3 - Event Tree Analysis
-Filename: **chapt03-eta.pdf** \
-_Author: Marvin Rausand \
-Organisation: Norwegian University of Science and Technology \
-Subdivision: RAMS Group/ Departmnt of Production and Quality Engineering \
-Year: \
-Pages: 24_
+## Ontology-Based Fault Tree Analysis Algorithms in a Fuzzy Environment for Autonomous Ships
 
-| PHA | Included  | 
-| ---:           |     :---  | 
-| FMEA           |           |   
-| STPA           |          |  
-| FTA            |          |    
-| ETA            |   X        |   
-| HAZOP          |           | 
+**Review state:** Listed; publication metadata and full technical review not yet verified.
 
-### Systems Safety and Risk management
-Filename: **ClemensSimmonsSystemSafetyandRiskManagementNIOSH96-37768 [ETA] OCR.pdf** \
-_Author:_
-1. _Pat. L. Clemens, P.E., CSP \
-	Corporate Safety Manager \
-	Sverdrup Technology, Incorporated
-2. Rodney J. Simmons, Ph.D., CSP
-	Technical Director, Board of Certified Safety Professionals _ \
-_Organisation: Centers for Disease Control and Prevention (CDC) \
-Subdivision: US Department of Health and Human Services, National Institute for Occupational Safety and Health \
+**Earlier collection date:** 20-03-2024.
 
-Date: March 1998 \
-Pages: 208 \
-Original link: [https://en.wikipedia.org/wiki/Event_tree_analysis](https://en.wikipedia.org/wiki/Event_tree_analysis) \
-Source page link: [https://en.wikipedia.org/wiki/Event_tree_analysis#cite_ref-Clemments_1_1-0](https://en.wikipedia.org/wiki/Event_tree_analysis#cite_ref-Clemments_1_1-0) \
-Note: OCR applied_
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/document/9361551)
 
+Listed for research; no general superiority or effectiveness claim is adopted here.
 
-| PHA | Included  | 
-| ---:           |     :---  | 
-| FMEA           |   X        |   
-| STPA           |          |  
-| FTA            |   X      |    
-| ETA            |   X        |   
-| HAZOP          |   -        | 
+## Event-tree analysis using binary decision diagrams
 
-### Fault Tree Analysis (FTA) and Event Tree Analysis (ETA)
-Filename: **Fault Tree Analysis and Event Tree Analysis.pdf** \
-_Identifying Hazards, Assessing and Evaluting Risks \
-NEBOSH National Diploma \
-Organisation: Managing Health and Safety_ \
+**Review state:** Listed; publication metadata and full technical review not yet verified.
 
-### Fault Trees, Decision Trees, And Binary Decision Diagrams: A Systematic Comparison (08-05-2024)
-Filename:
-* **Fault_trees_def [2310.04448v1.pdf].pdf**
-* Fault_trees_def.pdf 
+**Earlier collection date:** 25-03-2024.
 
-_Author:_
-1. _Lisandro A. Jimenez-Roa \
-	Formal Methods and Tools (FMT) \
-	University of Twente, The Netherlands \
-	Email: l.jimenezroa@utwente.nl_
-2. _Tom Heskes \
-	Institute for Computing and Information Sciences \
-	Radboud Univerity Nijmegen, The Netherlands \
-	Email: Tom.Heskes@ru.nl_
-3. _Marielle Stoelinga \
-	Formal Methods and Tools (FMT) \
-	University of Twente, The Netherlands \
-	Email: m.i.a.stoelinga@utwente.nl_ 
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/document/877343)
 
-Date: 03-10-2023 \
-Pages: 8
+Listed for research; no general superiority or effectiveness claim is adopted here.
 
-Original link: [Fault Trees, Decision Trees, And Binary Decision Diagrams: A Systematic Comparison](https://arxiv.org/pdf/2310.04448) \
-Source page link: [Fault Trees, Decision Trees, And Binary Decision Diagrams: A Systematic Comparison](https://arxiv.org/abs/2310.04448)
+## Comparison of the FMEA and STPA safety analysis methods-a case study
 
+**Review state:** Listed; publication metadata and full technical review not yet verified.
 
+**Earlier collection date:** 20-03-2024.
 
+**Public landing page:** [Source 1](https://link.springer.com/article/10.1007/s11219-017-9396-0)
+
+Listed for research; no general superiority or effectiveness claim is adopted here.
+
+## A comparison of FMEA, AFMEA and FTA
+
+**Review state:** Listed; publication metadata and full technical review not yet verified.
+
+**Earlier collection date:** 25-03-2024.
+
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/document/5979423)
+
+Listed for research; no general superiority or effectiveness claim is adopted here.
+
+## A combined analysis method of FMEA and FTA for improving the safety analysis quality of safety-critical software
+
+**Review state:** Listed; publication metadata and full technical review not yet verified.
+
+**Earlier collection date:** 25-03-2024.
+
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/document/6740435)
+
+Listed for research; no general superiority or effectiveness claim is adopted here.
+
+## Integrating Fault Tree Analysis with System Theoretic Process Analysis
+
+**Review state:** Listed; publication metadata and full technical review not yet verified.
+
+**Earlier collection date:** 25-03-2024.
+
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/document/10088187)
+
+Listed for research; no general superiority or effectiveness claim is adopted here.
+
+## A reliability risk analysis method based on the fuzzy fault tree and fuzzy event tree
+
+**Review state:** Listed; publication metadata and full technical review not yet verified.
+
+**Earlier collection date:** 25-03-2024.
+
+**Public landing page:** [Source 1](https://ieeexplore.ieee.org/document/8050082)
+
+Listed for research; no general superiority or effectiveness claim is adopted here.
+
+## Chapter 3 - Event Tree Analysis
+
+**Review state:** Listed; publication metadata and full technical review not yet verified.
+
+**Access:** Public link not established. Earlier local filenames are provenance only; those files are not distributed by this repository.
+
+Listed for research; no general superiority or effectiveness claim is adopted here.
+
+## Systems Safety and Risk management
+
+**Review state:** Listed; publication metadata and full technical review not yet verified.
+
+**Access:** Public link not established. Earlier local filenames are provenance only; those files are not distributed by this repository.
+
+Listed for research; no general superiority or effectiveness claim is adopted here.
+
+## Fault Tree Analysis (FTA) and Event Tree Analysis (ETA)
+
+**Review state:** Listed; publication metadata and full technical review not yet verified.
+
+**Access:** Public link not established. Earlier local filenames are provenance only; those files are not distributed by this repository.
+
+Listed for research; no general superiority or effectiveness claim is adopted here.
+
+## Fault Trees, Decision Trees, And Binary Decision Diagrams: A Systematic Comparison
+
+**Review state:** Listed; publication metadata and full technical review not yet verified.
+
+**Earlier collection date:** 08-05-2024.
+
+**Public landing page:** [Source 1](https://arxiv.org/abs/2310.04448)
+
+Listed for research; no general superiority or effectiveness claim is adopted here.
+
+## How to review comparison studies
+
+| Review question | Entry required |
+|---|---|
+| What was compared? | Methods, variants and system/function. |
+| On what information? | Shared versus different inputs and scope. |
+| Who performed it? | Expertise, training and independence where reported. |
+| What counted as better? | Findings, effort, traceability, verification value or another criterion. |
+| What can this Wiki adopt? | Specific transferable insight, with limitations. |
+| Review boundary | Abstract only, selected sections, or full relevant method/results reviewed. |
+
+Record these fields before adopting a study’s conclusion. Shared labels do not establish identical scopes, inputs or evaluation criteria.
